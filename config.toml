@@ -1,2 +1,5 @@
+baseURL = "https://jeangoes.netlify.app/"
 languageCode = "en-us"
-title = "My New Netlify Victor Hugo Site"
+title = "Jean Goes"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
