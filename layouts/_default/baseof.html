@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- HTML Meta Tags -->
+    {{ $title := site.Title }}
+    {{ if not .IsHome }}
+      {{ $title = printf "%s | %s" .Title site.Title }}
+    {{ end }}
+    <title>
+      {{ $title }}
+    </title>
+    <meta name="author" content="Gabriela Gonçalves">
+    <meta name="description" content="Portfólio de Jean Goes.">
+    <!-- <link rel="image_src" href="http://www.gabidigital.work/assets/img/thumb-redessociais-gabidigital.jpg" /> -->
+    <!-- <link rel="canonical" href="http://www.gabidigital.work/"> -->
+
+    <!-- FAVICON -->
+    <!-- third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+        href="https://www.anamon.com/assets/img/favicon-ana.png">
+    <!-- iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+        href="https://www.anamon.com/assets/img/favicon-ana.png">
+    <!-- first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+         href="https://www.anamon.com/assets/img/favicon-ana.png">
+    <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->      
+    <link rel="apple-touch-icon-precomposed" href="https://www.anamon.com/assets/img/favicon-ana.png">
+    <!-- basic favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon-ana.png" />
+    <link rel="icon" type="image/png" href="assets/img/favicon-ana.png" />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Jean Goes - Portfólio">
+    <meta itemprop="description" content="Portfólio de Jean Goes.">
+    <meta itemprop="image" content="https://www.anamon.com.br/assets/img/anamon-thumb.jpg">
+
+    <!-- Facebook     -->
+    <meta property="og:site_name" content="Jean Goes" />
+    <meta property="og:title" content="Jean Goes - Portfólio" />
+    <meta property="og:description" content="Portfólio pessoal de Ana Amon." />
+    <meta property="og:image" content="https://www.anamon.com.br/assets/img/anamon-thumb.jpg">
+    <meta property="og:image:type" content="image/jpg" />             
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://www.anamon.com.br/">
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://www.anamon.com.br/assets/img/anamon-thumb.jpg">
+    <meta name="twitter:image:alt" content="Logo Jean Goes">
+
+    <!-- Pinterest -->
+    <meta property="pin:media" content="http://www.anamon.com.br/assets/img/anamon-thumb.jpg"/>
+    <meta property="pin:description" content="Jean Goes - Portfólio" />
+
+    <!-- External Links -->
+    <link rel="stylesheet" type="text/css" href="../assets/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+    <body class="scroll">
+
+      <div class="layout scroll">   
+  
+          {{ partial "header.html" . }}
+        
+          {{ block "main" . }}{{ end }}
+   
+      </div>
+
+      <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
+      
+    </body>
+</html>

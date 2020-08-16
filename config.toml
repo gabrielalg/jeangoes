@@ -1,5 +1,3 @@
 baseURL = "https://jeangoes.netlify.app/"
-languageCode = "en-us"
+languageCode = "pt-br"
 title = "Jean Goes"
-
-disableKinds = ["taxonomy", "taxonomyTerm"]
