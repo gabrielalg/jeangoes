@@ -1,30 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+{{ define "main" }}
 
-    {{ partial "head" . }}
-
-    <body class="scroll">
-
-      <div class="layout scroll">   
-  
-        {{ partial "header.html" . }}
-
-        <section id="pages" class="scroll">          
-            <!-- <div class="page-container"> -->
-            <div class="container">
-                <div class="grid scroll" id="grid">
-                    <div style="background-color: red; height: 200px">
-
-                    </div>
-                </div>
+  <section id="pages" class="scroll">          
+      <!-- <div class="page-container"> -->
+      <div class="container">
         
-            </div>
-      
-            {{ partial "footer-page.html" . }}
+        {{ partial "contato" . }}
 
-        </section>
+          <div class="grid scroll" id="grid">
+              <div style="background-color: red; height: 200px">
 
+              </div>
+          </div>
+  
       </div>
-      
-    </body>
-</html>
+
+      {{ partial "footer-page.html" . }}
+
+  </section>
+
+{{ end }}
