@@ -6,7 +6,7 @@ site_url: https://jeangoes.netlify.app/
 logo_url: "../assets/img/logo-jean-rgb.svg"
 
 # publish_mode: editorial_workflow
-media_folder: assets/img
+media_folder: static/assets/img
 
 collections: # A list of collections the CMS should be able to edit
   - name: "pages"
