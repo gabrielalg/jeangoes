@@ -1,5 +1,4 @@
 ---
 title: Jean Goes
-image: /assets/img/jeangoes-logo.svg
-# link-youtube: QzMNxsGTKtA
+image: /static/assets/img/fav-gabi.svg
 ---
