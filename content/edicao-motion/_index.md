@@ -1,5 +1,4 @@
 ---
 title: Edição e Motion
+layout: edicao-motion
 ---
-
-<h1> TESTETES </h1>
