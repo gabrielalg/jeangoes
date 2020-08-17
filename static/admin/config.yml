@@ -18,4 +18,4 @@ collections: # A list of collections the CMS should be able to edit
         name: "inicio"
         fields:
           - {label: Logo, name: image, widget: image, default: "assets/img/jeangoes-logo.svg"}
-          - {label: "Link do Vimeo", name: "linkVimeo", widget: "string"}
+          - {label: "Link do Vimeo", name: "linkVimeo", widget: string}
