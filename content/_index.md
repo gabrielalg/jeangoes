@@ -1,4 +1,4 @@
 ---
 title: Jean Goes
-image: /assets/img/fav-gabi.svg
+image: /assets/img/jeangoes-logo.svg
 ---
