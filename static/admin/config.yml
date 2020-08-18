@@ -19,10 +19,16 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Logo, name: image, widget: image, default: "assets/img/jeangoes-logo.svg"}
           - {label: "Link do Vídeo de Início", name: "linkVimeo", widget: string}
-          - {label: "Mídias Sociais", name: midiasSociais, widget: object, fields: [
-              {label: "Perfil do Vimeo", name: perfilVimeo, widget: object, fields: [
-                {label: "Contato Vimeo", name: "linkVimeoContact", widget: string},
-                {label: "Visualizar", name: "viewVimeo", widget: "boolean", default: true}
-              ]}
+          - {label: "Perfil do Vimeo", name: perfilVimeo, widget: object, fields: [
+              {label: "Contato Vimeo", name: "linkVimeoContact", widget: string},
+              {label: "Visualizar", name: "viewVimeo", widget: "boolean", default: true}
             ]}
+                   
+
+          # - {label: "Mídias Sociais", name: midiasSociais, widget: object, fields: [
+          #     {label: "Perfil do Vimeo", name: perfilVimeo, widget: object, fields: [
+          #       {label: "Contato Vimeo", name: "linkVimeoContact", widget: string},
+          #       {label: "Visualizar", name: "viewVimeo", widget: "boolean", default: true}
+          #     ]}
+          #   ]}
        
