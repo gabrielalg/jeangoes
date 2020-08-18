@@ -48,7 +48,7 @@
 
                     <div class="sm-contato">
 
-                        <!-- {{ partial "social-media" . }} -->
+                        {{ partialCached "social-media" (dict "context" . "linkVimeoContact" .linkVimeoContact) }}
                         
                     </div>
                 </div>

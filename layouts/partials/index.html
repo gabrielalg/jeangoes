@@ -3,18 +3,17 @@
     <div class="container">
 
         <div class="social-media">
-          
-            {{ partial "social-media" . }}
+       
+            {{ partialCached "social-media" (dict "context" . "linkVimeoContact" .linkVimeoContact) }}
          
         </div> 
 
-
-        {{ partial "contato" . }}
+            {{ partial "contato" . }}
 
         <div class="inicio-content">
             <div class="logo-img-container">
                 <!-- <img src="assets/img/jeangoes-logo.svg" class="logo-img"/> -->
-                <img src="{{.imageUrl}}" class="logo-img"/>
+            <img src="{{.imageUrl}}" gggg="{{.linkVimeoContact}}" class="logo-img"/>
             </div>
         
             <div class="video-wrap">
