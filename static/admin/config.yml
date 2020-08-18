@@ -21,7 +21,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Link do Vídeo de Início", name: "linkVimeo", widget: string}
           - {label: "Mídias Sociais", name: midiasSociais, widget: object, fields: [
               {label: "Perfil do Vimeo", name: perfilVimeo, widget: object, fields: [
-                {label: "Contato Vimeo", name: "linkVimeoContact", widget: string},
+                {label: "Link", name: "linkVimeoContact", widget: string},
                 {label: "Visualizar", name: "viewVimeo", widget: "boolean", default: true}
               ]}
             ]}
