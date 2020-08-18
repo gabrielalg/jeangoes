@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "index" (dict "imageUrl" .Params.image "title" .Title "linkVimeo" .Params.linkVimeo "linkVimeoContact" .Params.perfilVimeo)}}
+{{ partial "index" .Params.midiasSociais (dict "imageUrl" .Params.image "title" .Title "linkVimeo" .Params.linkVimeo) }}
 
 {{ end }}
 
