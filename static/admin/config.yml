@@ -28,7 +28,7 @@ collections: # A list of collections the CMS should be able to edit
                 {label: "Link", name: "linkYoutubeContact", widget: string},
                 {label: "Visualizar", name: "viewYoutube", widget: "boolean", default: false}
               ]},
-              {label: "Perfil do Instagram", name: perfilInstagram, widget: object, fields: [
+              {label: "Perfil do Instagram", name: perfilInsta, widget: object, fields: [
                 {label: "Link", name: "linkInstaContact", widget: string},
                 {label: "Visualizar", name: "viewInsta", widget: "boolean", default: true}
               ]},
