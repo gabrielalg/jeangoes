@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+site_url: https://jeangoes.netlify.app/
+logo_url: "../assets/img/logo-jean-rgb.svg"
+
+# publish_mode: editorial_workflow
+media_folder: static/assets/img
+public_folder: /assets/img
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "pages"
+    label: "Páginas"
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - file: "content/_index.md"
+        label: "Início"
+        name: "inicio"
+       
+        fields:
+          - {label: Logo, name: image, widget: image, default: "assets/img/jeangoes-logo.svg"}
+          - {label: "Link do Vídeo de Início", name: "linkVimeo", widget: string}
+          - {label: "Mídias Sociais", name: midiasSociais, widget: object, fields: [
+              {label: "Perfil do Vimeo", name: perfilVimeo, widget: object, fields: [
+                {label: "Link", name: "linkVimeoContact", widget: string},
+                {label: "Visualizar", name: "viewVimeo", widget: "boolean", default: true}
+              ]},
+              {label: "Perfil do YouTube", name: perfilYoutube, widget: object, fields: [
+                {label: "Link", name: "linkYoutubeContact", widget: string},
+                {label: "Visualizar", name: "viewYoutube", widget: "boolean", default: false}
+              ]},
+              {label: "Perfil do Instagram", name: perfilInsta, widget: object, fields: [
+                {label: "Link", name: "linkInstaContact", widget: string},
+                {label: "Visualizar", name: "viewInsta", widget: "boolean", default: true}
+              ]},
+              {label: "Link do WhastApp", name: perfilWhats, widget: object, fields: [
+                {label: "Link", name: "linkWhatsContact", widget: string},
+                {label: "Visualizar", name: "viewWhats", widget: "boolean", default: true}
+              ]},
+              {label: "Perfil do Linkedin", name: perfilLinkedin, widget: object, fields: [
+                {label: "Link", name: "linkLinkedinContact", widget: string},
+                {label: "Visualizar", name: "viewLinkedin", widget: "boolean", default: true}
+              ]},
+              {label: "Perfil do Facebook", name: perfilFace, widget: object, fields: [
+                {label: "Link", name: "linkFaceContact", widget: string},
+                {label: "Visualizar", name: "viewFace", widget: "boolean", default: false}
+              ]}
+            ]}
+       
