@@ -4,31 +4,35 @@
     </a>
 {{ end }}
 
-{{ if eq .midiasSociais.perfilYoutube.viewYoutube true }}
+{{ if .midiasSociais.perfilYoutube.viewYoutube }}
     <a href="{{ .midiasSociais.perfilYoutube.linkYoutubeContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/YouTube.svg"/>
     </a>
 {{ end }}
 
-{{ if eq .midiasSociais.perfilInsta.viewInsta true }}
+{{ if .midiasSociais.perfilInsta.viewInsta }}
     <a href="{{ .midiasSociais.perfilInsta.linkInstaContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/Instagram.svg"/>
     </a>
 {{ end }}
 
-{{ if eq .midiasSociais.perfilWhats.viewWhats true }}
+<a href="{{ .midiasSociais.perfilInsta.linkInstaContact }}" ggg3="{{.midiasSociais}}" ggg4="{{.midiasSociais.perfilInsta.linkInstaContact}}" class="social-media-icon" target="_blank">
+    <img src="../assets/icons/Instagram.svg"/>
+</a>
+
+{{ if .midiasSociais.perfilWhats.viewWhats }}
     <a href="{{ .midiasSociais.perfilWhats.linkWhatsContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/Whatsapp.svg"/>
     </a>
 {{ end }}
 
-{{ if eq .midiasSociais.perfilLinkedin.viewLinkedin true }}
+{{ if .midiasSociais.perfilLinkedin.viewLinkedin }}
     <a href="{{ .midiasSociais.perfilLinkedin.linkLinkedinContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/Linkedin.svg"/>
     </a>
 {{ end }}
 
-{{ if eq .midiasSociais.perfilFace.viewFace true }}
+{{ if .midiasSociais.perfilFace.viewFace }}
     <a href="{{ .midiasSociais.perfilFace.linkFaceContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/Facebook.svg"/>
     </a>
