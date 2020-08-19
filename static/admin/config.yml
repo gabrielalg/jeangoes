@@ -24,5 +24,26 @@ collections: # A list of collections the CMS should be able to edit
                 {label: "Link", name: "linkVimeoContact", widget: string},
                 {label: "Visualizar", name: "viewVimeo", widget: "boolean", default: true}
               ]}
+              {label: "Perfil do YouTube", name: perfilYoutube, widget: object, fields: [
+                {label: "Link", name: "linkYoutubeContact", widget: string},
+                {label: "Visualizar", name: "viewYoutube", widget: "boolean", default: false}
+              ]}
+              {label: "Perfil do Instagram", name: perfilInstagram, widget: object, fields: [
+                {label: "Link", name: "linkInstaContact", widget: string},
+                {label: "Visualizar", name: "viewInsta", widget: "boolean", default: true}
+              ]}
+              {label: "Link do WhastApp", name: perfilWhats, widget: object, fields: [
+                {label: "Link", name: "linkWhatsContact", widget: string},
+                {label: "Visualizar", name: "viewWhats", widget: "boolean", default: true}
+              ]}
+              {label: "Perfil do Linkedin", name: perfilLinkedin, widget: object, fields: [
+                {label: "Link", name: "linkLinkedinContact", widget: string},
+                {label: "Visualizar", name: "viewLinkedin", widget: "boolean", default: true}
+              ]}
+              {label: "Perfil do Facebook", name: perfilFace, widget: object, fields: [
+                {label: "Link", name: "linkFaceContact", widget: string},
+                {label: "Visualizar", name: "viewFace", widget: "boolean", default: false}
+              ]}
+
             ]}
        

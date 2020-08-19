@@ -1,21 +1,35 @@
 {{ if eq .midiasSociais.perfilVimeo.viewVimeo true }}
-<a href="{{ .midiasSociais.perfilVimeo.linkVimeoContact }}" class="social-media-icon" target="_blank">
-    <img src="../assets/icons/Vimeo.svg" />
-</a>
+    <a href="{{ .midiasSociais.perfilVimeo.linkVimeoContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/Vimeo.svg" />
+    </a>
 {{ end }}
 
-<a href="javascript:;" class="social-media-icon" target="_blank">
-    <img src="../assets/icons/YouTube.svg"/>
-</a>
-<a href="javascript:;" class="social-media-icon" target="_blank">
-    <img src="../assets/icons/Instagram.svg"/>
-</a>
-<a href="javascript:;" class="social-media-icon" target="_blank">
-    <img src="../assets/icons/Whatsapp.svg"/>
-</a>
-<a href="javascript:;" class="social-media-icon" target="_blank">
-    <img src="../assets/icons/Linkedin.svg"/>
-</a>
-<a href="javascript:;" class="social-media-icon" target="_blank">
-    <img src="../assets/icons/Facebook.svg"/>
-</a>
+{{ if eq .midiasSociais.perfilYoutube.viewYoutube true }}
+    <a href="{{ .midiasSociais.perfilYoutube.linkYoutubeContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/YouTube.svg"/>
+    </a>
+{{ end }}
+
+{{ if eq .midiasSociais.perfilInsta.viewInsta true }}
+    <a href="{{ .midiasSociais.perfilInsta.linkInstaContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/Instagram.svg"/>
+    </a>
+{{ end }}
+
+{{ if eq .midiasSociais.perfilWhats.viewWhats true }}
+    <a href="{{ .midiasSociais.perfilWhats.linkWhatsContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/Whatsapp.svg"/>
+    </a>
+{{ end }}
+
+{{ if eq .midiasSociais.perfilLinkedin.viewLinkedin true }}
+    <a href="{{ .midiasSociais.perfilLinkedin.linkLinkedinContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/Linkedin.svg"/>
+    </a>
+{{ end }}
+
+{{ if eq .midiasSociais.perfilFace.viewFace true }}
+    <a href="{{ .midiasSociais.perfilFace.linkFaceContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/Facebook.svg"/>
+    </a>
+{{ end }}
