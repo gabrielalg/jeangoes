@@ -1,6 +1,6 @@
 ---
 title: Jean Goes
-image: /assets/img/jeangoes-logo.svg
+image: /assets/img/perfil_jean.jpg
 linkVimeo: "448393321"
 midiasSociais:
   perfilVimeo:
@@ -8,7 +8,7 @@ midiasSociais:
     viewVimeo: true
   perfilYoutube:
     linkYoutubeContact: Coloque o link do YouTube aqui
-    viewYoutube: true #mudar p/ false depois 
+    viewYoutube: true
   perfilInsta:
     linkInstaContact: https://www.instagram.com/jeangoes_/
     viewInsta: true
@@ -20,5 +20,5 @@ midiasSociais:
     viewLinkedin: true
   perfilFace:
     linkFaceContact: Coloque o link do Facebook aqui
-    viewFace: true #mudar p/ false depois 
+    viewFace: true
 ---
