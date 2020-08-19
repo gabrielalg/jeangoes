@@ -1,6 +1,52 @@
 {{ define "main" }}
 
-{{ partial "index" (dict "imageUrl" .Params.image "title" .Title "linkVimeo" .Params.linkVimeo "midiasSociais" .Params.midiasSociais) }}
+<section id="pages" class="scroll">
+
+    <div class="container">
+
+        <div class="social-media" gggg="{{.midiasSociais}}">
+       
+            {{ partial "social-media" (dict "midiasSociais" .midiasSociais) }}
+         
+        </div> 
+
+        {{ partial "contato" . }}
+
+        <div class="inicio-content">
+            <div class="logo-img-container">
+                <!-- <img src="assets/img/jeangoes-logo.svg" class="logo-img"/> -->
+            <img src="{{.imageUrl}}" class="logo-img" />
+            </div>
+        
+            <div class="video-wrap">
+                <div class="video-container">
+                    <iframe src="https://player.vimeo.com/video/{{.linkVimeo}}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1" 
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen" 
+                    allowfullscreen>
+                    </iframe>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <!-- <iframe id="ytplayer" type="text/html" 
+                    src="https://www.youtube.com/embed/QzMNxsGTKtA?loop=1&modestbranding=1&color=white&iv_load_policy=3"
+                    frameborder="0" allowfullscreen class="video"> </iframe>  -->
+                </div>
+            </div>
+
+        </div>
+       
+        <footer class="footer">
+            <div class="copyright copyright-mobile">
+                <span>
+                    © Copyright Jean Goes 2020
+                </span>
+            </div>
+            <a href="http://www.gabidigital.work/" class="assinatura" target="blank">Desenvolvido por <img src="assets/icons/fav-gabi.svg" class="assinatura-img" /></a>
+        </footer>
+    
+    </div>
+
+</section>
 
 {{ end }}
 
