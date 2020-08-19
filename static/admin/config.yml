@@ -12,10 +12,14 @@ public_folder: /assets/img
 collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Páginas"
+    delete: false # Prevent users from deleting documents in this collection
+      editor:
+        preview: false
     files:
       - file: "content/_index.md"
         label: "Início"
         name: "inicio"
+       
         fields:
           - {label: Logo, name: image, widget: image, default: "assets/img/jeangoes-logo.svg"}
           - {label: "Link do Vídeo de Início", name: "linkVimeo", widget: string}
