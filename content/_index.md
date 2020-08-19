@@ -8,7 +8,7 @@ midiasSociais:
     viewVimeo: true
   perfilYoutube:
     linkYoutubeContact: Coloque o link do YouTube aqui
-    viewYoutube: false
+    viewYoutube: true #mudar p/ false depois 
   perfilInsta:
     linkInstaContact: https://www.instagram.com/jeangoes_/
     viewInsta: true
@@ -20,5 +20,5 @@ midiasSociais:
     viewLinkedin: true
   perfilFace:
     linkFaceContact: Coloque o link do Facebook aqui
-    viewFace: false  
+    viewFace: true #mudar p/ false depois 
 ---

@@ -1,7 +1,7 @@
 <section id="contato" class="container-contato contato-await transform scroll">
 
     <div class="content-active">
-    
+
         <div class="contato-actions transform">
 
             <a href="javascript:;" class="contato-link openmenu">
@@ -9,52 +9,54 @@
                 <img src="../assets/icons/triangle.svg" class="seta-contato">
             </a>
 
-            <a href="javascript:;" class="close-btn"><img src="../assets/icons/close-btn.svg" style="width:40px;"/></a>
+            <a href="javascript:;" class="close-btn"><img src="../assets/icons/close-btn.svg" style="width:40px;" /></a>
 
         </div>
 
-            <div class="contato-content ">
+        <div class="contato-content ">
 
-                <div class="contato-top">
-                    
-                    <img class="foto-perfil" src="../assets/img/perfil_jean.jpg"/>
-                
-                    <p class="resume-text">Mussum Ipsum, cacilds vidis litro abertis. 
+            <div class="contato-top">
+
+                <img class="foto-perfil" src="../assets/img/perfil_jean.jpg" />
+
+                <p class="resume-text">Mussum Ipsum, cacilds vidis litro abertis.
                     Mé faiz elementum girarzis, nisi eros vermeio. </p>
-                    
-                    <a href="javascript:;" class="resume-btn">
-                        <img src="../assets/icons/download-button.svg" class="resume-icon">
-                        Currículo
-                    </a>
-                    
-                    <form action="/dados-processados.php" method="post" id="contato-form" class="form">
-                    
-                            <input id="nome-form" type="text" name="nome" placeholder="nome" class="form-field" />
-                
-                            <input id="email-form" type="text" name="email" placeholder="e-mail" class="form-field" />
-                        
-                            <input id="assunto-form" type="text" name="assunto" placeholder="asssunto" class="form-field" />
-                    
-                            <textarea id="mensagem-form" name="mensagem" form="contato-form" placeholder="mensagem" class="form-field scroll"></textarea>
-                        
-                        <div class="submit-btn">
-                            <a onclick="submitForm()" href="javascript:;">Enviar</a>
-                        </div>
-                    </form>
-                </div>
 
-                <div class="contato-bottom">
-                    <a href="mailto:jean.goes00@gmail.com" class="email">jean.goes00@gmail.com</a>
+                <a href="javascript:;" class="resume-btn">
+                    <img src="../assets/icons/download-button.svg" class="resume-icon">
+                    Currículo
+                </a>
 
-                    <div class="sm-contato">
+                <form action="/dados-processados.php" method="post" id="contato-form" class="form">
 
-                        {{ partialCached "social-media" (dict "context" . "linkVimeoContact" .linkVimeoContact) }}
-                        
+                    <input id="nome-form" type="text" name="nome" placeholder="nome" class="form-field" />
+
+                    <input id="email-form" type="text" name="email" placeholder="e-mail" class="form-field" />
+
+                    <input id="assunto-form" type="text" name="assunto" placeholder="asssunto" class="form-field" />
+
+                    <textarea id="mensagem-form" name="mensagem" form="contato-form" placeholder="mensagem"
+                        class="form-field scroll"></textarea>
+
+                    <div class="submit-btn">
+                        <a onclick="submitForm()" href="javascript:;">Enviar</a>
                     </div>
-                </div>
-
+                </form>
             </div>
 
+            <div class="contato-bottom">
+                <a href="mailto:jean.goes00@gmail.com" class="email">jean.goes00@gmail.com</a>
+
+                <div class="sm-contato">
+
+                    {{ partialCached "social-media" (dict "context" . "midiasSociais" .midiasSociais) }}
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
-    
+
+
 </section>
