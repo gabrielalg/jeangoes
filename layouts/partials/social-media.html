@@ -1,9 +1,11 @@
-{{ if eq .midiasSociais.perfilVimeo.viewVimeo "true" }}
+{{ if eq .midiasSociais.perfilVimeo.viewVimeo true }}
     <a href="{{ .midiasSociais.perfilVimeo.linkVimeoContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/Vimeo.svg" />
     </a>
 {{ end }}
-
+<a href="{{ .midiasSociais.perfilVimeo.linkVimeoContact }}" class="social-media-icon" target="_blank">
+    <img src="../assets/icons/Vimeo.svg" />
+</a>
 {{ if eq .midiasSociais.perfilYoutube.viewYoutube true }}
     <a href="{{ .midiasSociais.perfilYoutube.linkYoutubeContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/YouTube.svg"/>
