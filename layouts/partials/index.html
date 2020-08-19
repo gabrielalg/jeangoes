@@ -4,7 +4,7 @@
 
         <div class="social-media" gggg="{{.midiasSociais}}">
        
-            {{ partial "social-media" (dict "context" . "midiasSociais" .midiasSociais) }}
+            {{ partial "social-media" (dict "midiasSociais" .midiasSociais) }}
          
         </div> 
 
@@ -13,7 +13,7 @@
         <div class="inicio-content">
             <div class="logo-img-container">
                 <!-- <img src="assets/img/jeangoes-logo.svg" class="logo-img"/> -->
-            <img src="{{.imageUrl}}" class="logo-img" gggg="{{.midiasSociais}}"/>
+            <img src="{{.imageUrl}}" class="logo-img" />
             </div>
         
             <div class="video-wrap">
