@@ -4,23 +4,23 @@
 
     <div class="container">
 
-        <div class="social-media" gggg="{{.midiasSociais}}">
+        <div class="social-media">
        
-            {{ partial "social-media" (dict "midiasSociais" .midiasSociais) }}
+            {{ partial "social-media" (dict "midiasSociais" .Params.midiasSociais) }}
          
         </div> 
 
-        {{ partial "contato" . }}
+        {{ partial "contato" (dict "midiasSociais" .Params.midiasSociais)}}
 
         <div class="inicio-content">
-            <div class="logo-img-container">
+            <div class="logo-img-container" ggg="{{.Params.midiasSociais}}">
                 <!-- <img src="assets/img/jeangoes-logo.svg" class="logo-img"/> -->
-            <img src="{{.imageUrl}}" class="logo-img" />
+            <img src="{{ .Params.image }}" class="logo-img" />
             </div>
         
-            <div class="video-wrap">
+            <div class="video-wrap" >
                 <div class="video-container">
-                    <iframe src="https://player.vimeo.com/video/{{.linkVimeo}}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1" 
+                    <iframe src="https://player.vimeo.com/video/{{.Params.linkVimeo}}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1" 
                     style="position:absolute;top:0;left:0;width:100%;height:100%;" 
                     frameborder="0" 
                     allow="autoplay; fullscreen" 
