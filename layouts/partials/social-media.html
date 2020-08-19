@@ -10,15 +10,16 @@
     </a>
 {{ end }}
 
-{{ if .midiasSociais.perfilInsta.viewInsta }}
-    <a href="{{ .midiasSociais.perfilInsta.linkInstaContact }}" class="social-media-icon" target="_blank">
+{{ $viewInsta := (index .midiasSociais.perfilInsta "viewInsta") }}
+{{ $linkInstaContact := (index .midiasSociais.perfilInsta "linkInstaContact") }}
+
+{{ if eq $viewInsta true }}
+    <a href="{{ $linkInstaContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/Instagram.svg"/>
     </a>
 {{ end }}
 
-<a href="{{ .midiasSociais.perfilInsta.linkInstaContact }}" ggg3="{{.midiasSociais}}" ggg4="{{.midiasSociais.perfilInsta.linkInstaContact}}" class="social-media-icon" target="_blank">
-    <img src="../assets/icons/Instagram.svg"/>
-</a>
+<h1>{{(index .midiasSociais.perfilInsta "viewInsta")}}</h1>
 
 {{ if .midiasSociais.perfilWhats.viewWhats }}
     <a href="{{ .midiasSociais.perfilWhats.linkWhatsContact }}" class="social-media-icon" target="_blank">
