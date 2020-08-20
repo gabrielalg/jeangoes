@@ -1,15 +1,35 @@
-{{ if eq .viewVimeo "true" }}
-    <a href="{{ .linkVimeoContact }}" teste1="STRING" class="social-media-icon" target="_blank">
-        <img src="../assets/icons/Vimeo.svg" />
-    </a>
-{{ end }}
-
-<h2>{{ .viewVimeo }}</h2>
-<h2>{{ .linkVimeoContact }}</h2>
-
 {{ if eq .viewVimeo true }}
-    <a href="{{ .linkVimeoContact }}" teste="BOLEANO" class="social-media-icon" target="_blank">
+    <a href="{{ .linkVimeoContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/Vimeo.svg" />
     </a>
 {{ end }}
 
+{{ if eq .viewYoutube true}}
+    <a href="{{ .linkYoutubeContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/YouTube.svg"/>
+    </a>
+{{ end }}
+
+{{ if eq .viewInsta true }}
+    <a href="{{ .linkInstaContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/Instagram.svg"/>
+    </a>
+{{ end }}
+
+{{ if .viewWhats }}
+    <a href="{{ .linkWhatsContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/Whatsapp.svg"/>
+    </a>
+{{ end }}
+
+{{ if .viewLinkedin }}
+    <a href="{{ .linkLinkedinContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/Linkedin.svg"/>
+    </a>
+{{ end }}
+
+{{ if .viewFace }}
+    <a href="{{ .linkFaceContact }}" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/Facebook.svg"/>
+    </a>
+{{ end }}
