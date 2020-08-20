@@ -1,7 +1,12 @@
 {{ if eq .viewVimeo "true" }}
-    <a href="{{ .linkVimeoContact }}" class="social-media-icon" target="_blank">
+    <a href="{{ .linkVimeoContact }}" teste1="STRING" class="social-media-icon" target="_blank">
         <img src="../assets/icons/Vimeo.svg" />
     </a>
 {{ end }}
 
+{{ if eq .viewVimeo true }}
+    <a href="{{ .linkVimeoContact }}" teste="BOLEANO" class="social-media-icon" target="_blank">
+        <img src="../assets/icons/Vimeo.svg" />
+    </a>
+{{ end }}
 
