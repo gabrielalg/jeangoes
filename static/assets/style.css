@@ -143,9 +143,8 @@ ul {
   text-decoration: none;
   color: #9b9b9b;
   margin: 10px 0;
-  justify-content: flex-start;
   position: relative;
-  margin: 0 auto;
+  width: 100%;
 }
 
 
@@ -391,11 +390,11 @@ ul {
 }
 
 .seta-menu {
-  rotate: -45deg;
+  transform: rotate(-45deg);
   margin: 0;
   margin-right: 15px;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 
 .text-contato {
@@ -1225,7 +1224,6 @@ footer {
     margin: 0;
     font-size: 20px;
     margin-left: 12px;
-    font-weight: 600;
    }
 
    .menu-button {
@@ -1241,16 +1239,6 @@ footer {
       top: 100px;
     }
 
-    /* .menu.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    } */
-    
-    /* .menu.responsive a {
-      display: flex;
-      margin-top: 20px;
-    } */
 
     .menu-layout {
       padding: 0;
@@ -1280,6 +1268,7 @@ footer {
       margin: -5px 20%;
       padding: 15px 10px;
       border-radius: 3px;
+      text-align: center;
     }
 
     .menu-item:hover {
