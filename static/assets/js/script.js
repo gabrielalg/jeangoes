@@ -4,10 +4,12 @@ function toggleMenuMobile(){
   if (!$('#menu').hasClass('responsive')) {
     $('#menu').addClass('responsive')
     $('.mobile-menu').addClass('mobile-menu-active')
+    $('.mobile-menu .mobile-menu-wrap').removeClass('shadow')
   } else {
     $('#menu').removeClass('responsive')
     $('#menu').addClass('menu')
     $('.mobile-menu').removeClass('mobile-menu-active')
+    $('.mobile-menu .mobile-menu-wrap').addClass('shadow')
   }
 }
 
@@ -57,7 +59,7 @@ $(document).ready(function(){
       
     });
    
-    $('.mobile-menu').on('click', () => {
+    $('.mobile-menu .menu-button').on('click', () => {
         toggleMenuMobile()
     });
 
