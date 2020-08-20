@@ -13,7 +13,7 @@
 {{ $viewInsta := (index .midiasSociais.perfilInsta "viewInsta") }}
 {{ $linkInstaContact := (index .midiasSociais.perfilInsta "linkInstaContact") }}
 
-{{ if eq $viewInsta true }}
+{{ if eq $viewInsta "true" }}
     <a href="{{ $linkInstaContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/Instagram.svg"/>
     </a>
