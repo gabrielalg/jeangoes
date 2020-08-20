@@ -1,43 +1,7 @@
-{{ if .midiasSociais.perfilVimeo.viewVimeo }}
-    <a href="{{ .midiasSociais.perfilVimeo.linkVimeoContact }}" class="social-media-icon" target="_blank">
+{{ if eq .viewVimeo "true" }}
+    <a href="{{ .linkVimeoContact }}" class="social-media-icon" target="_blank">
         <img src="../assets/icons/Vimeo.svg" />
     </a>
 {{ end }}
 
-{{ if .midiasSociais.perfilYoutube.viewYoutube }}
-    <a href="{{ .midiasSociais.perfilYoutube.linkYoutubeContact }}" class="social-media-icon" target="_blank">
-        <img src="../assets/icons/YouTube.svg"/>
-    </a>
-{{ end }}
 
-{{ if eq .midiasSociais.perfilInsta.viewInsta true }}
-    <a href="{{ .midiasSociais.perfilInsta.linkInstaContact }}" class="social-media-icon" target="_blank">
-        <img src="../assets/icons/Instagram.svg"/>
-    </a>
-{{ end }}
-
-<h1>
-    {{ .midiasSociais }}
-</h1>
-
-<a href="{{ .midiasSociais }}" teste="{{ .midiasSociais.perfilInsta.linkInstaContact }}" class="social-media-icon" target="_blank">
-    <img src="../assets/icons/Instagram.svg"/>
-</a>
-
-{{ if .midiasSociais.perfilWhats.viewWhats }}
-    <a href="{{ .midiasSociais.perfilWhats.linkWhatsContact }}" class="social-media-icon" target="_blank">
-        <img src="../assets/icons/Whatsapp.svg"/>
-    </a>
-{{ end }}
-
-{{ if .midiasSociais.perfilLinkedin.viewLinkedin }}
-    <a href="{{ .midiasSociais.perfilLinkedin.linkLinkedinContact }}" class="social-media-icon" target="_blank">
-        <img src="../assets/icons/Linkedin.svg"/>
-    </a>
-{{ end }}
-
-{{ if .midiasSociais.perfilFace.viewFace }}
-    <a href="{{ .midiasSociais.perfilFace.linkFaceContact }}" class="social-media-icon" target="_blank">
-        <img src="../assets/icons/Facebook.svg"/>
-    </a>
-{{ end }}
