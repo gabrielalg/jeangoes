@@ -11,7 +11,7 @@ midiasSociais:
     viewYoutube: true #mudar p/ false depois 
   perfilInsta:
     linkInstaContact: https://www.instagram.com/jeangoes_/
-    viewInsta: "true"
+    viewInsta: true
   perfilWhats:
     linkWhatsContact: Coloque o link do WhatsApp aqui
     viewWhats: true
