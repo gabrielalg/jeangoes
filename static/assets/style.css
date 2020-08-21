@@ -111,7 +111,7 @@ ul {
 }
 
 #menu {
-  transition: all 0.5s ease-in-out;
+  transition: max-height 0.3s ease-out;
 }
 
 .menu-layout {
@@ -141,7 +141,7 @@ ul {
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   text-decoration: none;
-  color: #9b9b9b;
+  color: rgba(255, 255, 255, 0.4);
   margin: 10px 0;
   position: relative;
   width: 100%;
@@ -197,10 +197,10 @@ ul {
 }
 
 .mobile-menu-img {
-  height: 60px;
+  height: 70px;
   margin-left: 20px;
-  padding-top: 12px;
-  padding-bottom: 8px;
+  padding-top: 17px;
+  padding-bottom: 16px;
 
 }
 
@@ -345,13 +345,13 @@ ul {
 .contato-actions {
   display: flex;
   align-items: center;
-  padding: 8px;
-  margin: 0 30px;
+  padding: 12px;
+  margin: 0 25px;
   justify-content: space-between;
   right: 310px;
   position: relative;
   margin-top: 7vh;
-  width: 332px;
+  width: 340px;
   /* z-index: 9999; */
 }
 
@@ -383,6 +383,11 @@ ul {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.disable-btn {
+  pointer-events: none;
+  cursor: default;
+}
+
 .seta-contato {
   width: 12px;
   margin-left: 7px;
@@ -390,11 +395,16 @@ ul {
 }
 
 .seta-menu {
-  transform: rotate(-45deg);
   margin: 0;
   margin-right: 15px;
   width: 7px;
   height: 7px;
+  transform: rotate(-45deg);
+}
+
+.rotate-seta {
+  transform: rotate(-225deg);
+  margin-bottom: -4px;
 }
 
 .text-contato {
@@ -594,7 +604,6 @@ textarea {
 #pages {
   flex: 1;
   overflow: auto;
-  min-width: 480px;
 }
 
 .container {
@@ -627,6 +636,7 @@ textarea {
   display: flex;
   position: relative;
   justify-content: space-evenly;
+  min-height: 72vh;
 }
 
 .page-container {
@@ -729,7 +739,7 @@ footer {
   font-size: 12px;
   color: #9b9b9b;
   padding: 0 20px;
-  z-index: 999;
+  z-index: 5;
 }
 
 .copyright-mobile {
@@ -1166,6 +1176,8 @@ footer {
    .container {
     height: auto;
     margin: 2vh;
+    margin-top: 3vh;
+    min-height: 77vh;
    }
 
    .menu-layout {
@@ -1188,22 +1200,26 @@ footer {
 
    .menu {
     background-color: #001642;
-    position: fixed;
+    position: relative;
     width: 100%;
-    top: -60%;
-    overflow: unset;
     display: flex;
     overscroll-behavior: contain;
     min-width: 320px;
     z-index: -2;
     height: auto;
+    max-height: 0;
+    overflow: hidden;
+    top: 20px;
+    justify-content: flex-start;
    }
+   
+
 
    .mobile-menu {
     display: flex;
     flex-direction: column;
     z-index: 200;
-    height: 60px;
+    height: 70px;
     width: 100%;
     background-color: #2F2F31;
     transition: all 0.5s ease-in-out;
@@ -1220,6 +1236,11 @@ footer {
     padding: 8px;
    }
 
+  .mobile-menu-line {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+  }
+   
+
    .mobile-menu-wrap p {
     margin: 0;
     font-size: 20px;
@@ -1229,20 +1250,17 @@ footer {
    .menu-button {
     position: relative;
     z-index: -1;
+    height: 40px;
    }
 
     .menu .setas {
      display: none;
     } 
 
-    .menu.responsive {
-      top: 100px;
-    }
-
 
     .menu-layout {
       padding: 0;
-      height: 100px;
+      height: 110px;
       z-index: 99;
       width: 100vw;
       
@@ -1257,24 +1275,36 @@ footer {
       padding-bottom: 15px;
     } */
 
-   
-
     .item-active p::after {
       bottom:10px;
     }
 
     .menu-item {
-      width: 60%;
-      margin: -5px 20%;
-      padding: 15px 10px;
-      border-radius: 3px;
+      width: 100%;
       text-align: center;
     }
 
+    .menu-item:first-of-type {
+      padding-top: 25px;
+    }
+
+    .menu-item:last-of-type {
+      padding-bottom: 15px;
+    }
+
+    .menu-item p {
+      margin: 0 auto;
+      padding: 10px;
+      border-radius: 5px;
+      width: 200px;
+    }
+
     .menu-item:hover {
-      /* padding: 0 30%;
-      border-radius: 2px; */
-      background-color: #1b1b1b;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    .menu-item p:hover {
+      background-color: rgba(255, 255, 255, 0.1);
     }
 
     .logo-img {
