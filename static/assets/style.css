@@ -188,7 +188,6 @@ ul {
 
 .mobile-menu-img {
   height: 70px;
-  margin-left: 20px;
   padding-top: 17px;
   padding-bottom: 16px;
 
@@ -597,7 +596,7 @@ textarea {
 
 #pages {
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .container {
@@ -1094,8 +1093,8 @@ footer {
 @media screen and (max-width: 820px) {
 
   .logo-img-container {
-    margin-top: 7vh;
-    margin-bottom: 6vh;
+    margin-top: 45px;
+    margin-bottom: 35px;
   }
 
   .logo-img {
@@ -1187,6 +1186,7 @@ footer {
 
    #pages {
     height: auto;
+    margin-top: 110px;
    }
 
    .promotion-page {
@@ -1268,7 +1268,7 @@ footer {
       height: 110px;
       z-index: 99;
       width: 100vw;
-      
+      position: fixed;
     }
 
 
