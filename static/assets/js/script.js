@@ -8,13 +8,13 @@ function toggleMenuMobile(){
     $('.mobile-menu .mobile-menu-wrap').removeClass('shadow')
     $('.mobile-menu .mobile-menu-wrap').addClass('mobile-menu-line')
   } else {
-    $('#menu').removeClass('responsive')
     $('#menu').addClass('menu')
     $('.mobile-menu').removeClass('mobile-menu-active')
     setTimeout(() => {
       $('.mobile-menu .mobile-menu-wrap').addClass('shadow')
       $('.mobile-menu .mobile-menu-wrap').removeClass('mobile-menu-line')
-    }, 200)
+      $('#menu').removeClass('responsive')
+    }, 150)
   }
 }
 
@@ -24,6 +24,7 @@ $(document).ready(function(){
     if ($(this).width() >= 820 && $('#menu').hasClass('responsive')){
       toggleMenuMobile()
       $('.menu').removeAttr('style');
+      $('.mobile-menu .mobile-menu-wrap .seta-menu').removeClass('rotate-seta')
     }
 
   })
@@ -67,11 +68,12 @@ $(document).ready(function(){
 
   for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
-      var content = document.getElementById("menu");;
+      var content = document.getElementById("menu");
+      var contentHeight =  content.scrollHeight + 15;
       if (content.style.maxHeight){
         content.style.maxHeight = null;
       } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = contentHeight + "px" ;
       }
     });
   }

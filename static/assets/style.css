@@ -111,7 +111,7 @@ ul {
 }
 
 #menu {
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 .menu-layout {
@@ -204,7 +204,11 @@ ul {
 
 }
 
-
+.menu-img-wrap {
+  height: 70px;
+  display: inline-block;
+  margin-left: 20px;
+}
 
 /* MOBILE MENU  */
 
@@ -1211,10 +1215,14 @@ footer {
     height: auto;
     max-height: 0;
     overflow: hidden;
-    top: 20px;
     justify-content: flex-start;
+ 
    }
    
+   .responsive {
+    padding-top: 55px;
+    padding-bottom: 15px;
+   }
 
 
    .mobile-menu {
@@ -1284,14 +1292,6 @@ footer {
     .menu-item {
       width: 100%;
       text-align: center;
-    }
-
-    .menu-item:first-of-type {
-      padding-top: 25px;
-    }
-
-    .menu-item:last-of-type {
-      padding-bottom: 15px;
     }
 
     .menu-item p {
