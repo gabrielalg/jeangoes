@@ -1177,7 +1177,7 @@ footer {
     height: auto;
     margin: 2vh;
     margin-top: 3vh;
-    min-height: calc(95vh - 110px);
+    min-height: 92%;
    }
 
    .menu-layout {
