@@ -62,12 +62,12 @@ $(document).ready(function(){
     });
   //  ------
 
-  var coll = document.getElementsByClassName("mobile-menu");
+  var coll = document.getElementsByClassName("menu-button");
   var i;
 
   for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
-      var content = this.nextElementSibling;
+      var content = document.getElementById("menu");;
       if (content.style.maxHeight){
         content.style.maxHeight = null;
       } else {

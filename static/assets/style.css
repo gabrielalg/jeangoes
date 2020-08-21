@@ -636,7 +636,7 @@ textarea {
   display: flex;
   position: relative;
   justify-content: space-evenly;
-  min-height: 72vh;
+  min-height: 70vh;
 }
 
 .page-container {
@@ -1177,7 +1177,6 @@ footer {
     height: auto;
     margin: 2vh;
     margin-top: 3vh;
-    min-height: 77vh;
    }
 
    .menu-layout {
