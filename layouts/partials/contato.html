@@ -45,11 +45,11 @@
             </div>
 
             <div class="contato-bottom">
-                <a ggg="{{ .perfilVimeo.viewVimeo }}" href="mailto:jean.goes00@gmail.com" class="email">jean.goes00@gmail.com</a>
+                <a ggg="{{ .perfilVimeo }}" href="mailto:jean.goes00@gmail.com" class="email">jean.goes00@gmail.com</a>
 
                 <div class="sm-contato">
 
-                    {{ partial "social-media" .perfilVimeo }}
+                    {{ partial "social-media" (dict "viewVimeo" .perfilVimeo.viewVimeo "linkVimeoContact" .perfilVimeo.linkVimeoContact ) }}
 
                 </div>
             </div>
