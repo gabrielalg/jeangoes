@@ -4,6 +4,7 @@ backend:
 
 site_url: https://jeangoes.netlify.app/
 logo_url: "../assets/img/logo-jean-rgb.svg"
+locale: 'pt-BR'
 
 # publish_mode: editorial_workflow
 media_folder: static/assets/img
