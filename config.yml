@@ -1,4 +1,4 @@
-baseURL: https://jeangoes.netlify.app/
+baseURL: "/"
 languageCode: pt-br
 languageLang: pt
 title: "Jean Goes"
