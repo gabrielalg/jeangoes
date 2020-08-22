@@ -11,6 +11,43 @@ media_folder: static/assets/img
 public_folder: /assets/img
 
 collections: # A list of collections the CMS should be able to edit
+  - name: "settings"
+      label: "Configurações"
+      delete: false # Prevent users from deleting documents in this collection
+      editor:
+        preview: false
+      files:
+        - file: "config.yml"
+          label: "Configurações do Site"
+          name: "config"
+          fields:
+            - {label: "Mídias Sociais", name: midiasSociais, widget: object, fields: [
+                {label: "Perfil do Vimeo", name: perfilVimeo, widget: object, fields: [
+                  {label: "Link", name: "linkVimeoContact", widget: string},
+                  {label: "Visualizar", name: "viewVimeo", widget: "boolean"}
+                ]},
+                {label: "Perfil do YouTube", name: perfilYoutube, widget: object, fields: [
+                  {label: "Link", name: "linkYoutubeContact", widget: string},
+                  {label: "Visualizar", name: "viewYoutube", widget: "boolean"}
+                ]},
+                {label: "Perfil do Instagram", name: perfilInsta, widget: object, fields: [
+                  {label: "Link", name: "linkInstaContact", widget: string},
+                  {label: "Visualizar", name: "viewInsta", widget: "boolean"}
+                ]},
+                {label: "Link do WhastApp", name: perfilWhats, widget: object, fields: [
+                  {label: "Link", name: "linkWhatsContact", widget: string},
+                  {label: "Visualizar", name: "viewWhats", widget: "boolean"}
+                ]},
+                {label: "Perfil do Linkedin", name: perfilLinkedin, widget: object, fields: [
+                  {label: "Link", name: "linkLinkedinContact", widget: string},
+                  {label: "Visualizar", name: "viewLinkedin", widget: "boolean"}
+                ]},
+                {label: "Perfil do Facebook", name: perfilFace, widget: object, fields: [
+                  {label: "Link", name: "linkFaceContact", widget: string},
+                  {label: "Visualizar", name: "viewFace", widget: "boolean"}
+                ]}
+              ]}
+
   - name: "pages"
     label: "Páginas"
     delete: false # Prevent users from deleting documents in this collection
@@ -51,39 +88,4 @@ collections: # A list of collections the CMS should be able to edit
               ]}
             ]}
 
-  - name: "settings"
-    label: "Configurações"
-    delete: false # Prevent users from deleting documents in this collection
-    editor:
-      preview: false
-    files:
-      - file: "../../config.yml"
-        label: "Configurações do Site"
-        name: "config"
-        fields:
-          - {label: "Mídias Sociais", name: midiasSociais, widget: object, fields: [
-              {label: "Perfil do Vimeo", name: perfilVimeo, widget: object, fields: [
-                {label: "Link", name: "linkVimeoContact", widget: string},
-                {label: "Visualizar", name: "viewVimeo", widget: "boolean"}
-              ]},
-              {label: "Perfil do YouTube", name: perfilYoutube, widget: object, fields: [
-                {label: "Link", name: "linkYoutubeContact", widget: string},
-                {label: "Visualizar", name: "viewYoutube", widget: "boolean"}
-              ]},
-              {label: "Perfil do Instagram", name: perfilInsta, widget: object, fields: [
-                {label: "Link", name: "linkInstaContact", widget: string},
-                {label: "Visualizar", name: "viewInsta", widget: "boolean"}
-              ]},
-              {label: "Link do WhastApp", name: perfilWhats, widget: object, fields: [
-                {label: "Link", name: "linkWhatsContact", widget: string},
-                {label: "Visualizar", name: "viewWhats", widget: "boolean"}
-              ]},
-              {label: "Perfil do Linkedin", name: perfilLinkedin, widget: object, fields: [
-                {label: "Link", name: "linkLinkedinContact", widget: string},
-                {label: "Visualizar", name: "viewLinkedin", widget: "boolean"}
-              ]},
-              {label: "Perfil do Facebook", name: perfilFace, widget: object, fields: [
-                {label: "Link", name: "linkFaceContact", widget: string},
-                {label: "Visualizar", name: "viewFace", widget: "boolean"}
-              ]}
-            ]}
+  
