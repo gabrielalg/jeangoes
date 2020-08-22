@@ -45,11 +45,25 @@
             </div>
 
             <div class="contato-bottom">
-                <a ggg="{{ .perfilVimeo }}" href="mailto:jean.goes00@gmail.com" class="email">jean.goes00@gmail.com</a>
+                <a ggg="{{.midiasSociais}}" href="mailto:jean.goes00@gmail.com" class="email">jean.goes00@gmail.com</a>
 
                 <div class="sm-contato">
 
-                    {{ partial "social-media" (dict "viewVimeo" .perfilVimeo.viewVimeo "linkVimeoContact" .perfilVimeo.linkVimeoContact ) }}
+                    {{ partial "social-media" (dict `` `
+                    ` "context" . `` `
+                    ` "viewVimeo" .viewVimeo `` `
+                    ` "linkVimeoContact" .linkVimeoContact `` ` 
+                    ` "viewYoutube" .viewYoutube `` `
+                    ` "linkYoutubeContact" .linkYoutubeContact `` ` 
+                    ` "viewInsta" .viewInsta `` `
+                    ` "linkInstaContact" .linkInstaContact `` ` 
+                    ` "viewWhats" .viewWhats `` `
+                    ` "linkWhatsContact" .linkWhatsContact `` ` 
+                    ` "viewLinkedin" .viewLinkedin `` `
+                    ` "linkLinkedinContact" .linkLinkedinContact `` ` 
+                    ` "viewFace" .viewFace `` `
+                    ` "linkFaceContact" .linkFaceContact) `` ` 
+                    ` -}}
 
                 </div>
             </div>

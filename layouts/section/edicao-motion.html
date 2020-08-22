@@ -4,7 +4,20 @@
       <!-- <div class="page-container"> -->
       <div class="container">
         
-        {{ partial "contato" (dict "perfilVimeo" .Site.Params.midiasSociais.perfilVimeo)}}
+        {{ partial "contato" (dict `` `
+        ` "viewVimeo" .Site.Params.midiasSociais.perfilVimeo.viewVimeo `` `
+        ` "linkVimeoContact" .Site.Params.midiasSociais.perfilVimeo.linkVimeoContact `` ` 
+        ` "viewYoutube" .Site.Params.midiasSociais.perfilYoutube.viewYoutube `` `
+        ` "linkYoutubeContact" .Site.Params.midiasSociais.perfilYoutube.linkYoutubeContact `` ` 
+        ` "viewInsta" .Site.Params.midiasSociais.perfilInsta.viewInsta `` `
+        ` "linkInstaContact" .Site.Params.midiasSociais.perfilInsta.linkInstaContact `` ` 
+        ` "viewWhats" .Site.Params.midiasSociais.perfilWhats.viewWhats `` `
+        ` "linkWhatsContact" .Params.midiasSociais.perfilWhats.linkWhatsContact `` ` 
+        ` "viewLinkedin" .Site.Params.midiasSociais.perfilLinkedin.viewLinkedin `` `
+        ` "linkLinkedinContact" .Site.Params.midiasSociais.perfilLinkedin.linkLinkedinContact `` ` 
+        ` "viewFace" .Site.Params.midiasSociais.perfilFace.viewFace `` `
+        ` "linkFaceContact" .Site.Params.midiasSociais.perfilFace.linkFaceContact) `` ` 
+        ` -}}
 
           <div class="grid scroll" id="grid" TESTE="{{ .Site.Params.midiasSociais.perfilVimeo }}">
               <div style="background-color: red; height: 200px">

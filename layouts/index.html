@@ -6,10 +6,37 @@
 
         <div class="social-media">
    
+            {{ partial "social-media" (dict `` `
+                ` "viewVimeo" .Site.Params.midiasSociais.perfilVimeo.viewVimeo `` `
+                ` "linkVimeoContact" .Site.Params.midiasSociais.perfilVimeo.linkVimeoContact `` ` 
+                ` "viewYoutube" .Site.Params.midiasSociais.perfilYoutube.viewYoutube `` `
+                ` "linkYoutubeContact" .Site.Params.midiasSociais.perfilYoutube.linkYoutubeContact `` ` 
+                ` "viewInsta" .Site.Params.midiasSociais.perfilInsta.viewInsta `` `
+                ` "linkInstaContact" .Site.Params.midiasSociais.perfilInsta.linkInstaContact `` ` 
+                ` "viewWhats" .Site.Params.midiasSociais.perfilWhats.viewWhats `` `
+                ` "linkWhatsContact" .Site.Params.midiasSociais.perfilWhats.linkWhatsContact `` ` 
+                ` "viewLinkedin" .Site.Params.midiasSociais.perfilLinkedin.viewLinkedin `` `
+                ` "linkLinkedinContact" .Site.Params.midiasSociais.perfilLinkedin.linkLinkedinContact `` ` 
+                ` "viewFace" .Site.Params.midiasSociais.perfilFace.viewFace `` `
+                ` "linkFaceContact" .Site.Params.midiasSociais.perfilFace.linkFaceContact) `` ` 
+                ` -}}
          
         </div> 
 
-
+        {{ partial "contato" (dict `` `
+            ` "viewVimeo" .Site.Params.midiasSociais.perfilVimeo.viewVimeo `` `
+            ` "linkVimeoContact" .Site.Params.midiasSociais.perfilVimeo.linkVimeoContact `` ` 
+            ` "viewYoutube" .Site.Params.midiasSociais.perfilYoutube.viewYoutube `` `
+            ` "linkYoutubeContact" .Site.Params.midiasSociais.perfilYoutube.linkYoutubeContact `` ` 
+            ` "viewInsta" .Site.Params.midiasSociais.perfilInsta.viewInsta `` `
+            ` "linkInstaContact" .Site.Params.midiasSociais.perfilInsta.linkInstaContact `` ` 
+            ` "viewWhats" .Site.Params.midiasSociais.perfilWhats.viewWhats `` `
+            ` "linkWhatsContact" .Site.Params.midiasSociais.perfilWhats.linkWhatsContact `` ` 
+            ` "viewLinkedin" .Site.Params.midiasSociais.perfilLinkedin.viewLinkedin `` `
+            ` "linkLinkedinContact" .Site.Params.midiasSociais.perfilLinkedin.linkLinkedinContact `` ` 
+            ` "viewFace" .Site.Params.midiasSociais.perfilFace.viewFace `` `
+            ` "linkFaceContact" .Site.Params.midiasSociais.perfilFace.linkFaceContact) `` ` 
+            ` -}}
 
         <div class="inicio-content">
             <div class="logo-img-container" ggg="{{.Params.midiasSociais}}">
