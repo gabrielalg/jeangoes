@@ -8,7 +8,7 @@ disableKinds:
 - term
 
 params:
-  author: Nikola Tesla
+  author: Gabriela Gonçalves
   description: Tesla's Awesome Hugo Site
   midiasSociais:
     perfilVimeo:
