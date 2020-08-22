@@ -21,8 +21,8 @@ collections: # A list of collections the CMS should be able to edit
         label: "Configurações do Site"
         name: "config"
         fields:
-          - {label: "Mídias Sociais", name: midiasSociais, widget: object, fields: [
-              {label: "Perfil do Vimeo", name: perfilVimeo, widget: object, fields: [
+          - {label: "Mídias Sociais", name: "midiasSociais", widget: object, fields: [
+              {label: "Perfil do Vimeo", name: "perfilVimeo", widget: object, fields: [
                 {label: "Link", name: "linkVimeoContact", widget: string},
                 {label: "Visualizar", name: "viewVimeo", widget: "boolean"}
               ]},
