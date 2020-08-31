@@ -1,3 +1,8 @@
+import CMS from 'netlify-cms-app';
+import { pt } from 'netlify-cms-locales';
+
+CMS.registerLocale('pt', pt);
+
 function toggleMenuMobile(){
 
   $('.mobile-menu .mobile-menu-wrap .seta-menu').toggleClass('rotate-seta')
