@@ -40,8 +40,7 @@
 
         <div class="inicio-content">
             <div class="logo-img-container">
-                <!-- <img src="assets/img/jeangoes-logo.svg" class="logo-img"/> -->
-            <img src="{{ .Params.image }}" class="logo-img" />
+            <img src="{{ .Site.Params.logoSite }}" class="logo-img" />
             </div>
         
             <div class="video-wrap" >
@@ -64,7 +63,7 @@
         <footer class="footer">
             <div class="copyright copyright-mobile">
                 <span>
-                    © Copyright Jean Goes 2020
+                    © Copyright Jean Goes <span id="year"> </span>
                 </span>
             </div>
             <a href="http://www.gabidigital.work/" class="assinatura" target="blank">Desenvolvido por <img src="assets/icons/fav-gabi.svg" class="assinatura-img" /></a>

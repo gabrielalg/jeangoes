@@ -9,7 +9,11 @@ disableKinds:
 
 params:
   author: Gabriela Gonçalves
-  description: Tesla's Awesome Hugo Site
+  logoSite: /assets/img/jeangoes-logo.svg
+  favSite: /assets/img/fav_jean.png
+  thumbRect: /assets/img/jean_thumb.png
+  thumbQuad: /assets/img/jean_thumb_quad.png
+  description: Portfólio de Jean Goes.
   perfilVimeo:
     linkVimeoContact: https://vimeo.com/user72822778
     viewVimeo: true

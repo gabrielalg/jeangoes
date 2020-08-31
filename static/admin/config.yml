@@ -4,7 +4,7 @@ backend:
 
 locale: 'pt'
 site_url: https://jeangoes.netlify.app/
-logo_url: "../assets/img/logo-jean-rgb.svg"
+logo_url: "../assets/img/pages/logo-jean-rgb.svg"
 display_url: https://jeangoes.netlify.app/
 
 # publish_mode: editorial_workflow
@@ -22,7 +22,8 @@ collections: # A list of collections the CMS should be able to edit
         label: "Configurações do Site"
         name: "config"
         fields:
-          - {label: "Mídias Sociais", name: "params", widget: object, fields: [
+          - {label: "Configurações", name: "params", widget: hidden, fields: [
+              {label: Logo, name: image, widget: image, default: "assets/img/jeangoes-logo.svg"},
               {label: "Perfil do Vimeo", name: "perfilVimeo", widget: object, fields: [
                 {label: "Link", name: "linkVimeoContact", widget: string},
                 {label: "Visualizar", name: "viewVimeo", widget: "boolean"}
@@ -60,6 +61,5 @@ collections: # A list of collections the CMS should be able to edit
         name: "inicio"
        
         fields:
-          - {label: Logo, name: image, widget: image, default: "assets/img/jeangoes-logo.svg"}
           - {label: "Link do Vídeo de Início", name: "linkVimeo", widget: string}
   
