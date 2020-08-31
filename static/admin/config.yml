@@ -19,10 +19,10 @@ collections: # A list of collections the CMS should be able to edit
       preview: false
     files:
       - file: "config.yml"
-        label: "Configurações Gerais"
+        label: "Configurações"
         name: "config"
         fields:
-          - {label: "Configurações", name: "params", widget: object, fields: [
+          - {label: "Configurações Gerais", name: "params", widget: object, fields: [
               {label: "Logo (.svg) ", name: "logoSite", widget: image},
               {
                 label: "Favicon do Site (.png) | 256 x 256", 
