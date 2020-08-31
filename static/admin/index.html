@@ -6,11 +6,11 @@
   <title>Admin</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script type="text/javascript">
-    console.log(window.netlifyIdentity)
-    if (window.netlifyIdentity) {
-        console.log('Netlify Identity carregado.')
-        window.netlifyIdentity.setLocale('pt')
-      }
+    console.log(netlifyIdentity)
+    window.onload = function() {
+      console.log('Netlify Identity carregado.')
+      netlifyIdentity.setLocale('pt')
+    }
 </script> 
 </head>
 <body>
