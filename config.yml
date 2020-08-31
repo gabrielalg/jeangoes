@@ -1,6 +1,6 @@
 baseURL: "/"
-languageCode: pt-br
-languageLang: pt
+languageCode: "pt-br"
+languageLang: "pt"
 title: "Jean Goes"
 
 disableKinds:
