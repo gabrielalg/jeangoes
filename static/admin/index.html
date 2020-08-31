@@ -13,9 +13,10 @@
 <script type="text/javascript">
     console.log(window.netlifyIdentity)
     if (window.netlifyIdentity) {
-        console.log('netlify Identity carregado.')
+        console.log('Netlify Identity carregado.')
         setTimeout(() => {
-          netlifyIdentity.setLocale('pt')
+          console.log('Entrou no setLocale.')
+          window.netlifyIdentity.setLocale('pt')
         }, 2000) 
       }
 </script> 
