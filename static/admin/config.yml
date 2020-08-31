@@ -22,8 +22,12 @@ collections: # A list of collections the CMS should be able to edit
         label: "Configurações do Site"
         name: "config"
         fields:
+          comment: 'Teste de comentário'
           - {label: "Configurações", name: "params", widget: hidden, fields: [
-              {label: Logo, name: image, widget: image, default: "assets/img/jeangoes-logo.svg"},
+              {label: Logo, name: logoSite, widget: image},
+              {label: Favicon do Site, name: favSite, hint: "O Favicon é o ícone que aparece nas barras dos navegadores.", widget: image},
+              {label: Thumbnail (Retangular), name: thumbRect, hint: "Deve ter 1200x630 pixels. A thumbnail é a imagem que aparece quando você compartilha o link do seu site.", widget: image},
+              {label: Thumbnail (Quadrada), name: thumbQuad, hint: "Deve ter 630x630. Algumas plataformas (como o WhastApp) só reconhecem thumbnails quadradas e por isso é importante upar também a thumb quadrada.", widget: image},
               {label: "Perfil do Vimeo", name: "perfilVimeo", widget: object, fields: [
                 {label: "Link", name: "linkVimeoContact", widget: string},
                 {label: "Visualizar", name: "viewVimeo", widget: "boolean"}
