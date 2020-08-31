@@ -14,9 +14,9 @@
     console.log(window.netlifyIdentity)
     if (window.netlifyIdentity) {
         console.log('netlify Identity carregado.')
-        window.netlifyIdentity.on("init", user => {
-         netlifyIdentity.setLocale('pt')
-        });
+        setTimeout(() => {
+          netlifyIdentity.setLocale('pt')
+        }, 2000) 
       }
 </script> 
 </html>
