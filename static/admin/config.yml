@@ -13,31 +13,31 @@ public_folder: /assets/img
 
 collections: # A list of collections the CMS should be able to edit
   - name: "settings"
-    label: "Configurações"
+    label: "Configurações Gerais"
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
     files:
       - file: "config.yml"
-        label: "Configurações do Site"
+        label: "Configurações Gerais"
         name: "config"
         fields:
           - {label: "Configurações", name: "params", widget: object, fields: [
               {label: "Logo (.svg) ", name: "logoSite", widget: image},
               {
-                label: "Favicon do Site (.png) | 256x256 pixels", 
+                label: "Favicon do Site (.png) | 256 x 256", 
                 name: "favSite", 
                 widget: image, 
                 hint: "O Favicon é o ícone que aparece na barra dos navegadores."
               },
               {
-                label: "Thumbnail Retangular (.jpg ou .png) | 1200x630 pixels", 
+                label: "Thumbnail Retangular (.jpg ou .png) | 1200 x 630", 
                 name: "thumbRect", 
                 widget: image, 
                 hint: "A thumbnail é a imagem que aparece quando você compartilha o link do seu site."
               },
               {
-                label: "Thumbnail Quadrada (.jpg ou .png)  | 630x630 pixels", 
+                label: "Thumbnail Quadrada (.jpg ou .png)  | 630 x 630", 
                 name: "thumbQuad", 
                 widget: image,
                 hint: "Algumas plataformas, como o WhatsApp, só reconhecem thumbnails quadradas e por isso é importante upar também essa versão."
