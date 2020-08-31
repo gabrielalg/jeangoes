@@ -6,6 +6,12 @@
   <title>Admin</title>
   <script src="https://cdn.netlify.com/js/850db0f8f3e16fcfe260f5445fa0fda1cb527c0e/netlify-identity-widget.js"></script>
   <script type="text/javascript">
+  
+    var CMS = require('netlify-cms-app');
+    var { pt } = require('netlify-cms-locales');
+
+    CMS.registerLocale('pt', pt);
+
     window.onload = function() {
       netlifyIdentity.setLocale('pt')
     }
