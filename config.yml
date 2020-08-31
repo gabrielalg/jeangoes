@@ -8,7 +8,6 @@ disableKinds:
 - term
 
 params:
-  author: Gabriela Gonçalves
   logoSite: /assets/img/jeangoes-logo.svg
   favSite: /assets/img/fav_jean.png
   thumbRect: /assets/img/jean_thumb.png

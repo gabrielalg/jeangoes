@@ -10,51 +10,56 @@
     <title>
       {{ $title }}
     </title>
-    <meta name="author" content="Gabriela Gonçalves">
-    <meta name="description" content="Portfólio de Jean Goes.">
+    <meta name="author" content="Gabriela Gonçalves - www.gabidigital.work">
+    <meta name="description" content="{{ .Site.Params.description }}">
     <!-- <link rel="image_src" href="http://www.gabidigital.work/assets/img/thumb-redessociais-gabidigital.jpg" /> -->
     <!-- <link rel="canonical" href="http://www.gabidigital.work/"> -->
 
     <!-- FAVICON -->
     <!-- third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
-        href="https://www.anamon.com/assets/img/favicon-ana.png">
+        href=" {{ .Site.Params.favSite }} ">
     <!-- iPhone with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="114x114"
-        href="https://www.anamon.com/assets/img/favicon-ana.png">
+        href="{{ .Site.Params.favSite }}">
     <!-- first- and second-generation iPad: -->
     <link rel="apple-touch-icon-precomposed" sizes="72x72"
-         href="https://www.anamon.com/assets/img/favicon-ana.png">
+         href="{{ .Site.Params.favSite }}">
     <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->      
-    <link rel="apple-touch-icon-precomposed" href="https://www.anamon.com/assets/img/favicon-ana.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ .Site.Params.favSite }}">
     <!-- basic favicon -->
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon-ana.png" />
-    <link rel="icon" type="image/png" href="assets/img/favicon-ana.png" />
+    <link rel="shortcut icon" type="image/png" href="{{ .Site.Params.favSite }}" />
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favSite }}" />
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Jean Goes - Portfólio">
-    <meta itemprop="description" content="Portfólio de Jean Goes.">
-    <meta itemprop="image" content="https://www.anamon.com.br/assets/img/anamon-thumb.jpg">
+    <meta itemprop="name" content="Jean Goes">
+    <meta itemprop="description" content="{{ .Site.Params.description  }}">
+    <meta itemprop="image" content="{{ .Site.Params.thumbRect }}">
 
     <!-- Facebook     -->
     <meta property="og:site_name" content="Jean Goes" />
-    <meta property="og:title" content="Jean Goes - Portfólio" />
-    <meta property="og:description" content="Portfólio pessoal de Ana Amon." />
-    <meta property="og:image" content="https://www.anamon.com.br/assets/img/anamon-thumb.jpg">
+    <meta property="og:title" content="Jean Goes" />
+    <meta property="og:description" content="{{ .Site.Params.description  }}" />
+    <meta property="og:image" content="{{ .Site.Params.thumbRect }}">
     <meta property="og:image:type" content="image/jpg" />             
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:url" content="https://www.anamon.com.br/">
+    <!-- <meta property="og:url" content="https://www.anamon.com.br/"> -->
     <meta property="og:type" content="website" />
+
+    <meta property="og:image" content="{{ .Site.Params.thumbQuad }}" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="630" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="http://www.anamon.com.br/assets/img/anamon-thumb.jpg">
-    <meta name="twitter:image:alt" content="Logo Jean Goes">
+    <meta name="twitter:image" content="{{ .Site.Params.thumbRect }}">
+    <meta name="twitter:image:alt" content="{{ .Site.Params.description  }}">
 
     <!-- Pinterest -->
-    <meta property="pin:media" content="http://www.anamon.com.br/assets/img/anamon-thumb.jpg"/>
-    <meta property="pin:description" content="Jean Goes - Portfólio" />
+    <meta property="pin:media" content="{{ .Site.Params.thumbRect }}"/>
+    <meta property="pin:description" content="{{ .Site.Params.description  }}" />
 
     <!-- External Links -->
     <link rel="stylesheet" type="text/css" href="../assets/normalize.css" />
