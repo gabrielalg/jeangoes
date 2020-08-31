@@ -19,6 +19,7 @@
             if (!user) {
               window.netlifyIdentity.on("login", () => {
                 document.location.href = "/admin/";
+                locale = 'pt';
               });
             }
           });
