@@ -4,11 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin</title>
-  <script src="https://d33wubrfki0l68.cloudfront.net/js/850db0f8f3e16fcfe260f5445fa0fda1cb527c0e/netlify-identity-widget.js"></script>
+  <script src="https://cdn.netlify.com/js/850db0f8f3e16fcfe260f5445fa0fda1cb527c0e/netlify-identity-widget.js"></script>
   <script type="text/javascript">
-    console.log(netlifyIdentity)
     window.onload = function() {
-      console.log('Netlify Identity carregado.')
       netlifyIdentity.setLocale('pt')
     }
 </script> 
@@ -16,7 +14,6 @@
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  <div data-netlify-identity-button>Login with Netlify Identity</div>
 </body>
 
 </html>
