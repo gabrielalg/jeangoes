@@ -23,30 +23,30 @@ collections: # A list of collections the CMS should be able to edit
         name: "config"
         fields:
           - {label: "Configurações", name: "params", widget: object, fields: [
-              {label: "Logo", name: "logoSite", widget: image},
+              {label: "Logo (.svg) ", name: "logoSite", widget: image},
               {
-                label: "Favicon do Site", 
+                label: "Favicon do Site (.png) | 256x256 pixels", 
                 name: "favSite", 
                 widget: image, 
                 hint: "O Favicon é o ícone que aparece na barra dos navegadores."
               },
               {
-                label: "Thumbnail (Retangular)", 
+                label: "Thumbnail Retangular (.jpg ou .png) | 1200x630 pixels", 
                 name: "thumbRect", 
                 widget: image, 
-                hint: "Deve ter 1200x630 pixels. A thumbnail é a imagem que aparece quando você compartilha o link do seu site."
+                hint: "A thumbnail é a imagem que aparece quando você compartilha o link do seu site."
               },
               {
-                label: "Thumbnail (Quadrada)", 
+                label: "Thumbnail Quadrada (.jpg ou .png)  | 630x630 pixels", 
                 name: "thumbQuad", 
                 widget: image,
-                hint: "Deve ter 630x630. Algumas plataformas (como o WhastApp) só reconhecem thumbnails quadradas e por isso é importante upar também a thumb quadrada."
+                hint: "Algumas plataformas, como o WhatsApp, só reconhecem thumbnails quadradas e por isso é importante upar também essa versão."
               },
               {
                 label: "Descrição do Site", 
                 name: "description",  
                 widget: "text", 
-                hint: "A descrição do site aparece nos links de compartilhados e na pesquisa do Google."
+                hint: "A descrição do site aparece nos links compartilhados e na pesquisa do Google."
               },
               {label: "Perfil do Vimeo", name: "perfilVimeo", widget: object, fields: [
                 {label: "Link", name: "linkVimeoContact", widget: string},
