@@ -4,13 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    netlifyIdentity.setLocale('pt')
-  </script> 
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 </body>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script type="text/javascript">
+    console.log(window.netlifyIdentity)
+    if (window.netlifyIdentity) {
+        console.log('netlify Identity carregado.')
+        window.netlifyIdentity.on("init", user => {
+         window.netlifyIdentity.setLocale('pt')
+        });
+      }
+</script> 
 </html>
