@@ -22,7 +22,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Configurações do Site"
         name: "config"
         fields:
-          - {label: "Configurações", name: "params", fields: [
+          - {label: "Configurações", name: "params", widget: object, fields: [
               {label: "Logo", name: "logoSite", widget: image},
               {
                 label: "Favicon do Site", 
