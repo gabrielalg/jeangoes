@@ -86,5 +86,10 @@ collections: # A list of collections the CMS should be able to edit
         name: "inicio"
        
         fields:
-          - {label: "Link do Vídeo de Início", name: "linkVimeo", widget: string}
+          - {
+              label: "Link do Vídeo de Início", 
+              name: "linkVimeo", 
+              widget: string,
+              hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: '448393321'. "
+            }
   
