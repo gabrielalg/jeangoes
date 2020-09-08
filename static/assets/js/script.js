@@ -83,7 +83,8 @@ $(document).ready(function(){
     e.preventDefault()
     let url = window.location.origin + "/" + $(this).attr('action')
     $('.lds-ellipsis').css({'display' : 'table'})
-    $('.form-btn-send').css({'display' : 'none'})
+    $('.form-label-send').css({'display' : 'none'})
+    $('.form-message').css({'display' : 'none'})
 
     $.ajax({
       url: url,
@@ -104,12 +105,8 @@ $(document).ready(function(){
         setTimeout(() => {
           $('.form-message').css({'display' : 'block'})
           $('.lds-ellipsis').css({'display' : 'none'})
-          $('.form-btn-send').css({'display' : 'block'})
+          $('.form-label-send').css({'display' : 'block'})
         }, 2000)
-        setTimeout(() => {
-          $('.form-message').css({'display' : 'none'})
-        }, 6000)
-
       }
     })
   })

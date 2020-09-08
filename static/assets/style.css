@@ -575,7 +575,7 @@ textarea {
   width: 100%;
 }
 
-.submit-btn button {
+.submit-btn .form-btn-send, .form-btn-sucess {
   background-color: #003399;
   padding: 5px;
   font-size: 14px;
@@ -586,7 +586,7 @@ textarea {
   cursor: pointer;
 }
 
-.submit-btn button:hover {
+.submit-btn .form-btn-send:hover {
   background-color: #0039ac;
 }
 
