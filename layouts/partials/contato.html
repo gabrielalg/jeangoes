@@ -46,9 +46,18 @@
                     <input class="hidden" name="bot-field" placeholder="Don't fill this out if you're a human"/>
 
                     <div class="submit-btn">
-                        <button type="submit">Enviar</button>
+                        <button type="submit">
+                            <div class="lds-ellipsis">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <span class="form-btn-send">Enviar</span>
+                            <span class="form-btn-sucess">Mensagem enviada com sucesso!</span>
+                        </button>
                     </div>
-                    <p class="form-message"></p>
+                    <p class="form-message">Falha ao enviar mensagem. Por favor, tente novamente.</p>
                 </form>
             </div>
 

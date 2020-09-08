@@ -82,17 +82,34 @@ $(document).ready(function(){
   $('#contato-form').on('submit', function(e) {
     e.preventDefault()
     let url = window.location.origin + "/" + $(this).attr('action')
-  
+    $('.lds-ellipsis').css({'display' : 'table'})
+    $('.form-btn-send').css({'display' : 'none'})
+
     $.ajax({
       url: url,
       method: "POST",
       data: $(this).serialize(),
       success: function(data) {
-        $('.submit-btn button').html('Mensagem enviada com sucesso!')
-        $('.submit-btn button').css({'background-color' : '#059900'})
+        setTimeout(() => {
+          $('.lds-ellipsis').css({'display' : 'none'})
+          $('.form-btn-send').css({'display' : 'none'})
+          $('.form-btn-sucess').css({'display' : 'block'})
+        }, 2000)
+        setTimeout(() => {
+          $('.form-btn-sucess').css({'display' : 'none'})
+          $('.form-btn-send').css({'display' : 'block'})
+        }, 6000)
       },
       error: function(error, textMessage) {
-        console.log("✖ Falha ao enviar mensagem. Por favor, tente novamente.")
+        setTimeout(() => {
+          $('.form-message').css({'display' : 'block'})
+          $('.lds-ellipsis').css({'display' : 'none'})
+          $('.form-btn-send').css({'display' : 'block'})
+        }, 2000)
+        setTimeout(() => {
+          $('.form-message').css({'display' : 'none'})
+        }, 6000)
+
       }
     })
   })
