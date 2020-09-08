@@ -370,6 +370,7 @@ ul {
   padding: 10px;
   transition: all 0.3s;
   border-radius: 5px;
+  margin-left: -5px;
 }
 
 .contato-link:hover  {
@@ -436,7 +437,7 @@ ul {
   width: 42px;
   padding: 10px;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-right: -10px;
 }
 
 .close-btn:hover {
@@ -464,7 +465,8 @@ ul {
 .contato-content {
   flex-direction: column;
   align-items: center;
-  padding: 0 40px;
+  padding-left: 40px;
+  padding-right: 35px;
   position: relative;
   justify-content: space-between;
   height: 100%;
@@ -498,19 +500,16 @@ ul {
 .resume-btn {
   background-color: #003399;
   color: #fff;
-  min-width: 25px;
   font-size: 14px;
   display: flex;
   justify-content: center;
-  padding: 6px 20px;
-  margin-bottom: 15px;
+  padding: 5px 20px;
+  margin-top: 10px;
+  width: 110px;
 }
 
-
-
-.resume-btn:hover span {
-  display: block !important;
-
+.resume-btn:hover {
+  background-color: #0039ac;
 }
 
 .resume-icon {
@@ -520,10 +519,26 @@ ul {
 
 .resume-text {
   color: #fff;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   margin: 0;
-  margin: 10px;
+  overflow: hidden;
+}
+
+.resume-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  text-align: start;
+  margin-top: 12px;
+  height: 105px;
+}
+
+.resume-header {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  justify-content: center;
 }
 
 .form {
@@ -531,20 +546,22 @@ ul {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .form-field {
   width: 100%;
-  background: transparent;
+  background: rgba(36, 36, 38, 0.5);
   margin: 2px 0;
   color: #fff;
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
+  padding: 4px 10px;
   border: 0;
-  outline: 0;
-  border-bottom: 1px solid #9B9B9B;
+  /* outline: 0; */
+  /* border-bottom: 1px solid #9B9B9B; */
 }
 
 textarea {
@@ -554,17 +571,19 @@ textarea {
 
 .submit-btn {
   margin-top: 10px;
+  width: 100%;
 }
 
 .submit-btn a {
-  color: #000;
-  background-color: #FFCC33;
-  padding: 3px 8px;
+  background-color: #003399;
+  padding: 5px;
   font-size: 14px;
+  width: 100%;
+  display: block;
 }
 
 .submit-btn a:hover {
-  background-color: rgb(255, 225, 134);
+  background-color: #0039ac;
 }
 
 .bottom-items {
@@ -577,12 +596,13 @@ textarea {
 .email {
   color: #fff;
   font-size: 16px;
+  margin: 20px 0;
 }
 
 .sm-contato {
   display: flex;
-  padding: 30px 0;
   height: auto;
+  margin-bottom: 20px;
 }
 
 .transform {
@@ -1264,51 +1284,46 @@ footer {
     } 
 
 
-    .menu-layout {
-      padding: 0;
-      height: 110px;
-      z-index: 99;
-      width: 100vw;
-      position: fixed;
-    }
+  .menu-layout {
+    padding: 0;
+    height: 110px;
+    z-index: 99;
+    width: 100vw;
+    position: fixed;
+  }
 
 
-    .page-title {
-      padding-top: 25px;
-    }
+  .page-title {
+    padding-top: 25px;
+  }
 
-    /* .grid-title ul {
-      padding-bottom: 15px;
-    } */
+  /* .grid-title ul {
+    padding-bottom: 15px;
+  } */
 
-    .item-active p::after {
-      bottom:10px;
-    }
+  .item-active p::after {
+    bottom:10px;
+  }
 
-    .menu-item {
-      width: 100%;
-      text-align: center;
-    }
+  .menu-item {
+    width: 100%;
+    text-align: center;
+  }
 
-    .menu-item p {
-      margin: 0 auto;
-      padding: 10px;
-      border-radius: 5px;
-      width: 200px;
-    }
+  .menu-item p {
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+  }
 
-    .menu-item:hover {
-      background-color: rgba(255, 255, 255, 0);
-    }
-
-    .menu-item p:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-
+  .menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
     
   .contato-actions {
     margin-top: 0;
-    right: 265px;
+    right: 260px;
   }
 
   .contato-actions-open {
@@ -1351,7 +1366,7 @@ footer {
   }
 
   .contato-await {
-    right: -103%;
+    right: -105%;
   }
 
   .contato-await-active {
@@ -1360,4 +1375,40 @@ footer {
     overscroll-behavior: contain;
   }
 
+  .contato-content {
+    width: auto;
+    padding: 0 20px;
+  }
+
+  .contato-actions {
+    width: auto;
+    margin: 0 10px;
+    right: 225px;
+  }
+
+  .contato-actions-open {
+    right: 0;
+  }
+
+  .resume-header {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .resume-btn {
+    margin: auto;
+  }
+
+  .resume-description {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .text-contato {
+    font-size: 18px;
+  }
+
+  .contato-link {
+    margin-left: -10px;
+  }
 }

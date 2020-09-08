@@ -17,23 +17,28 @@
 
             <div class="contato-top">
 
-                <img class="foto-perfil" src="../assets/img/perfil_jean.jpg" />
+                <div class="resume-header">
+                    <img class="foto-perfil" src="../assets/img/perfil_jean.jpg" />
 
-                <p class="resume-text">Mussum Ipsum, cacilds vidis litro abertis.
-                    Mé faiz elementum girarzis, nisi eros vermeio. </p>
+                    <div class="resume-description">
+                        <p class="resume-text"> Mussum Ipsum, cacilds vidis litro abertis.
+                            Mé faiz elementum girarzis, nisi eros vermeio eros eros eros. </p>
+        
+                        <a href="javascript:;" class="resume-btn">
+                            <img src="../assets/icons/download-button.svg" class="resume-icon">
+                            Currículo
+                        </a>
+                    </div>
+                   
+                </div>
 
-                <a href="javascript:;" class="resume-btn">
-                    <img src="../assets/icons/download-button.svg" class="resume-icon">
-                    Currículo
-                </a>
-
-                <form action="/dados-processados.php" method="post" id="contato-form" class="form">
+                <form netlify data-netlify="true" name="Contato" method="post" id="contato-form" class="form">
 
                     <input id="nome-form" type="text" name="nome" placeholder="nome" class="form-field" />
 
                     <input id="email-form" type="text" name="email" placeholder="e-mail" class="form-field" />
 
-                    <input id="assunto-form" type="text" name="assunto" placeholder="asssunto" class="form-field" />
+                    <input id="assunto-form" type="text" name="assunto" placeholder="assunto" class="form-field" />
 
                     <textarea id="mensagem-form" name="mensagem" form="contato-form" placeholder="mensagem"
                         class="form-field scroll"></textarea>
