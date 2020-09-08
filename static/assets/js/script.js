@@ -86,8 +86,22 @@ $(document).ready(function(){
     $('.form-label-send').css({'display' : 'none'})
     $('.form-message').css({'display' : 'none'})
 
-    if ($('.form-field').value == ""){
-      alert('Por favor, preencha o campo nome');
+    var empty = true;
+    $('.form-field').each(function(){
+      if($(this).val()!=""){
+          empty =false;
+          return false;
+        }
+    });
+
+    if (empty == true){
+      setTimeout(() => {
+        $('.form-message').css({'display' : 'block'})
+        $('.form-message').html('Por favor, preencha pelo menos um campo para enviar sua mensagem.')
+        $('.lds-ellipsis').css({'display' : 'none'})
+        $('.form-label-send').css({'display' : 'block'})
+        $('#nome-form').focus()
+      }, 1000)
     } else {
       $.ajax({
         url: url,
@@ -105,6 +119,7 @@ $(document).ready(function(){
         error: function(error, textMessage) {
           setTimeout(() => {
             $('.form-message').css({'display' : 'block'})
+            $('.form-message').html('Falha ao enviar mensagem. Por favor, tente novamente.')
             $('.lds-ellipsis').css({'display' : 'none'})
             $('.form-label-send').css({'display' : 'block'})
           }, 2000)
