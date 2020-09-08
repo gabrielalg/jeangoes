@@ -88,10 +88,11 @@ $(document).ready(function(){
       method: "POST",
       data: $(this).serialize(),
       success: function(data) {
-        $('.form-message').html('Mensagem enviada com sucesso!')
+        $('.submit-btn button').html('Mensagem enviada com sucesso!')
+        $('.submit-btn button').css({'background-color' : '#059900'})
       },
       error: function(error, textMessage) {
-        console.log("Falha ao enviar contato. Por favor, tente novamente.")
+        console.log("✖ Falha ao enviar mensagem. Por favor, tente novamente.")
       }
     })
   })
