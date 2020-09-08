@@ -99,6 +99,7 @@ $(document).ready(function(){
         setTimeout(() => {
           $('.form-btn-sucess').css({'display' : 'none'})
           $('.form-btn-send').css({'display' : 'block'})
+          $('.form-label-send').css({'display' : 'block'})
         }, 6000)
       },
       error: function(error, textMessage) {
