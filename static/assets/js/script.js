@@ -95,12 +95,9 @@ $(document).ready(function(){
           $('.lds-ellipsis').css({'display' : 'none'})
           $('.form-btn-send').css({'display' : 'none'})
           $('.form-btn-sucess').css({'display' : 'block'})
+          $('.new-message').css({'display' : 'block'})
         }, 2000)
-        setTimeout(() => {
-          $('.form-btn-sucess').css({'display' : 'none'})
-          $('.form-btn-send').css({'display' : 'block'})
-          $('.form-label-send').css({'display' : 'block'})
-        }, 6000)
+        
       },
       error: function(error, textMessage) {
         setTimeout(() => {
@@ -112,5 +109,13 @@ $(document).ready(function(){
     })
   })
 
+
+  $('.new-message').on('click', function(event) {
+    $('#contato-form')[0].reset();
+    $('.form-btn-send').css({'display' : 'block'})
+    $('.form-label-send').css({'display' : 'block'})
+    $('.form-btn-sucess').css({'display' : 'none'})
+  });
+  
 
 });

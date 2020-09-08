@@ -605,6 +605,12 @@ textarea {
   display: none;
 }
 
+.new-message {
+  text-decoration: underline;
+  display: none;
+}
+
+
 .bottom-items {
   display: flex;
   flex-direction: column;
