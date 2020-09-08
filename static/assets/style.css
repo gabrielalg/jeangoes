@@ -582,6 +582,7 @@ textarea {
   color: #fff;
   border: 0;
   display: block;
+  cursor: pointer;
 }
 
 .submit-btn button:hover {
@@ -605,6 +606,10 @@ textarea {
   display: flex;
   height: auto;
   margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
 }
 
 .transform {
