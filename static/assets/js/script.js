@@ -79,5 +79,22 @@ $(document).ready(function(){
     });
   }
 
+  $('#contato-form').on('submit', function(e) {
+    e.preventDefault()
+    let url = window.location.origin + "/" + $(this).attr('action')
+  
+    $.ajax({
+      url: url,
+      method: "POST",
+      data: $(this).serialize(),
+      success: function(data) {
+        $('.form-message').html('Mensagem enviada com sucesso!')
+      },
+      error: function(error, textMessage) {
+        console.log("Falha ao enviar contato. Por favor, tente novamente.")
+      }
+    })
+  })
+
 
 });
