@@ -574,15 +574,17 @@ textarea {
   width: 100%;
 }
 
-.submit-btn a {
+.submit-btn button {
   background-color: #003399;
   padding: 5px;
   font-size: 14px;
   width: 100%;
+  color: #fff;
+  border: 0;
   display: block;
 }
 
-.submit-btn a:hover {
+.submit-btn button:hover {
   background-color: #0039ac;
 }
 
