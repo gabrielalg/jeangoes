@@ -86,7 +86,7 @@ $(document).ready(function(){
     $('.form-label-send').css({'display' : 'none'})
     $('.form-message').css({'display' : 'none'})
 
-    if (($('input').value == "") && ($('textarea').value == "")){
+    if ($('.form-field').value == ""){
       alert('Por favor, preencha o campo nome');
     } else {
       $.ajax({
