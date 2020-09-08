@@ -1468,7 +1468,7 @@ footer {
   }
 
   .contato-await {
-    right: -105%;
+    right: -105vw;
   }
 
   .contato-await-active {
@@ -1478,14 +1478,15 @@ footer {
   }
 
   .contato-content {
-    width: auto;
+    width: 97vw;
     padding: 0 20px;
   }
 
   .contato-actions {
-    width: auto;
+    width: 92vw;
     margin: 0 10px;
-    right: 225px;
+    right: 230px;
+    padding: 14px;
   }
 
   .contato-actions-open {
@@ -1498,12 +1499,13 @@ footer {
   }
 
   .resume-btn {
-    margin: auto;
+    margin: 8px auto;
   }
 
   .resume-description {
     margin-left: 0;
     text-align: center;
+    height: auto;
   }
 
   .text-contato {
