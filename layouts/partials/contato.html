@@ -22,7 +22,7 @@
 
                     <div class="resume-description">
                         <p class="resume-text"> Mussum Ipsum, cacilds vidis litro abertis.
-                            Mé faiz elementum girarzis, nisi eros vermeio eros eros eros. </p>
+                            Mé faiz elementum girarzis, nisi eros vermeio eros epos epos. </p>
         
                         <a href="javascript:;" class="resume-btn">
                             <img src="../assets/icons/download-button.svg" class="resume-icon">
@@ -33,17 +33,18 @@
                 </div>
 
                 <form netlify data-netlify="true" name="Contato" method="post" id="contato-form" class="form">
+                    <p class="form-message"></p>
 
                     <input id="nome-form" type="text" name="nome" placeholder="nome" class="form-field" />
 
-                    <input id="email-form" type="text" name="email" placeholder="e-mail" class="form-field" />
+                    <input id="email-form" type="email" name="email" placeholder="e-mail" class="form-field" required/>
 
                     <input id="assunto-form" type="text" name="assunto" placeholder="assunto" class="form-field" />
 
                     <textarea id="mensagem-form" name="mensagem" form="contato-form" placeholder="mensagem"
-                        class="form-field scroll"></textarea>
+                        class="form-field scroll" required></textarea>
 
-                    <input class="hidden" name="bot-field" placeholder="Don't fill this out if you're a human"/>
+                    <input class="hidden" name="bot-field" placeholder="Não preencha esse campo se você for humano."/>
 
                     <div class="submit-btn">
                         <button class="form-btn-send" type="submit">
@@ -60,7 +61,6 @@
                         </button>
                     </div>
                     <a href="javascript:;" class="new-message"> Enviar outra mensagem</a>
-                    <p class="form-message"></p>
                 </form>
             </div>
 

@@ -1,5 +1,5 @@
 
-function toggleMenuMobile(){
+function toggleMenuMobile() {
 
   $('.mobile-menu .mobile-menu-wrap .seta-menu').toggleClass('rotate-seta')
 
@@ -19,10 +19,10 @@ function toggleMenuMobile(){
   }
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-  $(window).resize(function(){
-    if ($(this).width() >= 820 && $('#menu').hasClass('responsive')){
+  $(window).resize(function () {
+    if ($(this).width() >= 820 && $('#menu').hasClass('responsive')) {
       toggleMenuMobile()
       $('.menu').removeAttr('style');
       $('.mobile-menu .mobile-menu-wrap .seta-menu').removeClass('rotate-seta')
@@ -35,108 +35,89 @@ $(document).ready(function(){
   });
 
 
-    var timeInterval
+  var timeInterval
 
-    // ABRIR E FECHAR CONTATO
-    $(".openmenu").on('click', function(event) {
+  // ABRIR E FECHAR CONTATO
+  $(".openmenu").on('click', function (event) {
 
-      $('.contato-actions').addClass('transform contato-actions-open');
-      $('.container-contato.contato-await').addClass('transform contato-await-active');
+    $('.contato-actions').addClass('transform contato-actions-open');
+    $('.container-contato.contato-await').addClass('transform contato-await-active');
 
-      timeInterval = setTimeout(() => {
-        clearTimeout(timeInterval)
-        $('.container-contato.contato-await').css({'overflow-y' : 'auto'});
-      }, 700)
-      
-    });
+    timeInterval = setTimeout(() => {
+      clearTimeout(timeInterval)
+      $('.container-contato.contato-await').css({ 'overflow-y': 'auto' });
+    }, 700)
 
-    $(".close-btn").on('click', function(event) {
+  });
 
-      $('.contato-actions.contato-actions-open').removeClass('contato-actions-open');
-      $('.container-contato.contato-await.contato-await-active').removeClass('contato-await-active');
-      $('.container-contato.contato-await').removeAttr('style');
-     
-      setTimeout(() => {
-        $('.contato-actions').removeClass('transform');
-        $('.container-contato.contato-await').removeClass('transform');
-      }, 700)
-      
-    });
+  $(".close-btn").on('click', function (event) {
+
+    $('.contato-actions.contato-actions-open').removeClass('contato-actions-open');
+    $('.container-contato.contato-await.contato-await-active').removeClass('contato-await-active');
+    $('.container-contato.contato-await').removeAttr('style');
+
+    setTimeout(() => {
+      $('.contato-actions').removeClass('transform');
+      $('.container-contato.contato-await').removeClass('transform');
+    }, 700)
+
+  });
   //  ------
 
   var coll = document.getElementsByClassName("menu-button");
   var i;
 
   for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function () {
       var content = document.getElementById("menu");
-      var contentHeight =  content.scrollHeight + 15;
-      if (content.style.maxHeight){
+      var contentHeight = content.scrollHeight + 15;
+      if (content.style.maxHeight) {
         content.style.maxHeight = null;
       } else {
-        content.style.maxHeight = contentHeight + "px" ;
+        content.style.maxHeight = contentHeight + "px";
       }
     });
   }
 
-  $('#contato-form').on('submit', function(e) {
+  $('#contato-form').on('submit', function (e) {
     e.preventDefault()
     let url = window.location.origin + "/" + $(this).attr('action')
-    $('.lds-ellipsis').css({'display' : 'table'})
-    $('.form-label-send').css({'display' : 'none'})
-    $('.form-message').css({'display' : 'none'})
+    $('.lds-ellipsis').css({ 'display': 'table' })
+    $('.form-label-send').css({ 'display': 'none' })
+    $('.form-message').css({ 'display': 'none' })
 
-    var empty = true;
-    $('.form-field').each(function(){
-      if($(this).val()!=""){
-          empty =false;
-          return false;
-        }
-    });
+    $.ajax({
+      url: url,
+      method: "POST",
+      data: $(this).serialize(),
+      success: function (data) {
+        setTimeout(() => {
+          $('.lds-ellipsis').css({ 'display': 'none' })
+          $('.form-btn-send').css({ 'display': 'none' })
+          $('.form-btn-sucess').css({ 'display': 'block' })
+          $('.new-message').css({ 'display': 'block' })
+        }, 2000)
 
-    if (empty == true){
-      setTimeout(() => {
-        $('.form-message').css({'display' : 'block'})
-        $('.form-message').html('Por favor, preencha pelo menos um campo para enviar sua mensagem.')
-        $('.lds-ellipsis').css({'display' : 'none'})
-        $('.form-label-send').css({'display' : 'block'})
-        $('#nome-form').focus()
-      }, 1000)
-    } else {
-      $.ajax({
-        url: url,
-        method: "POST",
-        data: $(this).serialize(),
-        success: function(data) {
-          setTimeout(() => {
-            $('.lds-ellipsis').css({'display' : 'none'})
-            $('.form-btn-send').css({'display' : 'none'})
-            $('.form-btn-sucess').css({'display' : 'block'})
-            $('.new-message').css({'display' : 'block'})
-          }, 2000)
-          
-        },
-        error: function(error, textMessage) {
-          setTimeout(() => {
-            $('.form-message').css({'display' : 'block'})
-            $('.form-message').html('Falha ao enviar mensagem. Por favor, tente novamente.')
-            $('.lds-ellipsis').css({'display' : 'none'})
-            $('.form-label-send').css({'display' : 'block'})
-          }, 2000)
-        }
-      })
-    }
-   
-  })
-
-
-  $('.new-message').on('click', function(event) {
-    $('#contato-form')[0].reset();
-    $('.form-btn-send').css({'display' : 'block'})
-    $('.form-label-send').css({'display' : 'block'})
-    $('.form-btn-sucess').css({'display' : 'none'})
-    $('.new-message').css({'display' : 'none'})
+      },
+      error: function (error, textMessage) {
+        setTimeout(() => {
+          $('.form-message').css({ 'display': 'block' })
+          $('.form-message').html('Falha ao enviar mensagem. Por favor, tente novamente.')
+          $('.lds-ellipsis').css({ 'display': 'none' })
+          $('.form-label-send').css({ 'display': 'block' })
+        }, 2000)
+      }
+    })
   });
+
+
+$('.new-message').on('click', function (event) {
+  $('#contato-form')[0].reset();
+  $('.form-btn-send').css({ 'display': 'block' })
+  $('.form-label-send').css({ 'display': 'block' })
+  $('.form-btn-sucess').css({ 'display': 'none' })
+  $('.new-message').css({ 'display': 'none' })
+});
   
 
 });

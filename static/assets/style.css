@@ -502,10 +502,11 @@ ul {
   color: #fff;
   font-size: 14px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   padding: 5px 20px;
-  margin-top: 10px;
+  margin-top: 8px;
   width: 110px;
+  height: 30px;
 }
 
 .resume-btn:hover {
@@ -513,7 +514,8 @@ ul {
 }
 
 .resume-icon {
-  width: 13px;
+  width: 12px;
+  height: 12px;
   margin-right: 6px;
 }
 
@@ -530,8 +532,8 @@ ul {
   flex-direction: column;
   margin-left: 15px;
   text-align: start;
-  margin-top: 12px;
-  height: 105px;
+  margin-top: 10px;
+  height: 110px;
 }
 
 .resume-header {
@@ -587,6 +589,7 @@ textarea {
   border: 0;
   display: block;
   cursor: pointer;
+  height: 30px;
 }
 
 .submit-btn .form-btn-send:hover {
@@ -605,6 +608,7 @@ textarea {
   line-height: normal;
   padding: 10px;
   border: 1px solid red;
+  margin-bottom: 10px;
   display: none;
 }
 
