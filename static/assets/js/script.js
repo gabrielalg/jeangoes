@@ -86,27 +86,32 @@ $(document).ready(function(){
     $('.form-label-send').css({'display' : 'none'})
     $('.form-message').css({'display' : 'none'})
 
-    $.ajax({
-      url: url,
-      method: "POST",
-      data: $(this).serialize(),
-      success: function(data) {
-        setTimeout(() => {
-          $('.lds-ellipsis').css({'display' : 'none'})
-          $('.form-btn-send').css({'display' : 'none'})
-          $('.form-btn-sucess').css({'display' : 'block'})
-          $('.new-message').css({'display' : 'block'})
-        }, 2000)
-        
-      },
-      error: function(error, textMessage) {
-        setTimeout(() => {
-          $('.form-message').css({'display' : 'block'})
-          $('.lds-ellipsis').css({'display' : 'none'})
-          $('.form-label-send').css({'display' : 'block'})
-        }, 2000)
-      }
-    })
+    if (($('input').value == "") && ($('textarea').value == "")){
+      alert('Por favor, preencha o campo nome');
+    } else {
+      $.ajax({
+        url: url,
+        method: "POST",
+        data: $(this).serialize(),
+        success: function(data) {
+          setTimeout(() => {
+            $('.lds-ellipsis').css({'display' : 'none'})
+            $('.form-btn-send').css({'display' : 'none'})
+            $('.form-btn-sucess').css({'display' : 'block'})
+            $('.new-message').css({'display' : 'block'})
+          }, 2000)
+          
+        },
+        error: function(error, textMessage) {
+          setTimeout(() => {
+            $('.form-message').css({'display' : 'block'})
+            $('.lds-ellipsis').css({'display' : 'none'})
+            $('.form-label-send').css({'display' : 'block'})
+          }, 2000)
+        }
+      })
+    }
+   
   })
 
 
@@ -115,6 +120,7 @@ $(document).ready(function(){
     $('.form-btn-send').css({'display' : 'block'})
     $('.form-label-send').css({'display' : 'block'})
     $('.form-btn-sucess').css({'display' : 'none'})
+    $('.new-message').css({'display' : 'none'})
   });
   
 
