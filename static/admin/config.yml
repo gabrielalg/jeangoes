@@ -9,8 +9,8 @@ logo_url: "../assets/img/pages/logo-jean-rgb.svg"
 display_url: https://jeangoes.netlify.app/
 
 # publish_mode: editorial_workflow
-media_folder: static/assets/img
-public_folder: /assets/img
+media_folder: static/assets/uploads
+public_folder: /assets/uploads
 
 collections: # A list of collections the CMS should be able to edit
   - name: "settings"
