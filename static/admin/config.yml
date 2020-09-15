@@ -5,7 +5,7 @@ backend:
 locale: 'pt'
 
 site_url: https://jeangoes.netlify.app/
-logo_url: "../assets/img/pages/logo-jean-rgb.svg"
+logo_url: "../assets/uploads/pages/logo-jean-rgb.svg"
 display_url: https://jeangoes.netlify.app/
 
 # publish_mode: editorial_workflow
@@ -58,7 +58,7 @@ collections: # A list of collections the CMS should be able to edit
                 label: "Descrição na Barra de Contato", 
                 name: "contactDescription",  
                 widget: "string", 
-                pattern: ['.{0,100}', "O texto só pode ter no máximo 100 caracteres."],
+                pattern: ['^.{0,100}$', "O texto só pode ter no máximo 100 caracteres."],
                 hint: "Máximo de 100 caracteres."
               },
               {

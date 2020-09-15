@@ -15,7 +15,7 @@ params:
   thumbQuad: /assets/uploads/jean_thumb_quad.jpg
   description: Portfólio de Jean Goes.
   fotoPerfil: /assets/uploads/perfil_jean.jpg
-  contactDescription: "Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio eros epos epos."
+  contactDescription: "Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio eros epos."
   curriculum: /assets/uploads/curriculum.pdf
   perfilVimeo:
     linkVimeoContact: https://vimeo.com/user72822778
