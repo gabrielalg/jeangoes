@@ -27,22 +27,23 @@
 
   <nav class="menu shadow" id="menu">
     <img src="../assets/icons/triangle.svg" class="setas" />
-    <a href="/" class="menu-item item-active">
+    <!-- {{ $url := .URL }} -->
+    <a href="/" class="menu-item {{ if eq $url "/" }}item-active{{ end }}">
       <p>Início</p>
     </a>
-    <a href="/edicao-motion" class="menu-item">
+    <a href="/edicao-motion" class="menu-item {{ if eq $url "/edicao-motion/" }}item-active{{ end }}">
       <p>Edição e Motion</p>
     </a>
-    <a href="#cinema" class="menu-item">
+    <a href="#cinema" class="menu-item {{ if eq $url "/edicao-motion/" }}item-active{{ end }}">
       <p>Cinema</p>
     </a>
-    <a href="#outros" class="menu-item">
+    <a href="#outros" class="menu-item {{ if eq $url "/edicao-motion/" }}item-active{{ end }}">
       <p>Outros ?</p>
     </a>
-    <a href="#fita-crepe" class="menu-item">
+    <a href="#fita-crepe" class="menu-item {{ if eq $url "/edicao-motion/" }}item-active{{ end }}">
       <p>Fita Crepe Produções</p>
     </a>
-    <a href="#fita-crepe" class="menu-item">
+    <a href="#fita-crepe" class="menu-item {{ if eq $url "/edicao-motion/" }}item-active{{ end }}">
       <p>Sobre Mim</p>
     </a>
     <img src="../assets/icons/triangle.svg" class="setas seta-inv" />

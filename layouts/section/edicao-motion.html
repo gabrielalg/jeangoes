@@ -16,7 +16,8 @@
         ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
         ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
         ` "viewFace" .Site.Params.perfilFace.viewFace `` `
-        ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact) `` ` 
+        ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact `` ` 
+        ` "fotoPerfil" .Site.Params.fotoPerfil) `` ` 
         ` -}}
 
           <div class="grid scroll" id="grid" TESTE="{{ .Site.Params.perfilVimeo }}">
@@ -24,11 +25,11 @@
 
               </div>
           </div>
+
+          {{ partial "footer" . }}
   
       </div>
-
-      {{ partial "footer-page.html" . }}
-
+      
   </section>
 
 {{ end }}

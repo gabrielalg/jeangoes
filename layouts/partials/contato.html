@@ -18,13 +18,12 @@
             <div class="contato-top">
 
                 <div class="resume-header">
-                    <img class="foto-perfil" src="../assets/img/perfil_jean.jpg" />
+                    <img class="foto-perfil" src="{{ .fotoPerfil }}" />
 
                     <div class="resume-description">
-                        <p class="resume-text"> Mussum Ipsum, cacilds vidis litro abertis.
-                            Mé faiz elementum girarzis, nisi eros vermeio eros epos epos. </p>
+                        <p class="resume-text">{{ .contactDescription }}</p>
         
-                        <a href="javascript:;" class="resume-btn">
+                        <a href="{{ .curriculum }}" class="resume-btn">
                             <img src="../assets/icons/download-button.svg" class="resume-icon">
                             Currículo
                         </a>
