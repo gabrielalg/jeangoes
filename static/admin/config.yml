@@ -58,6 +58,7 @@ collections: # A list of collections the CMS should be able to edit
                 label: "Descrição na Barra de Contato", 
                 name: "contactDescription",  
                 widget: "string", 
+                pattern: ['.{0,100}', "O texto só pode ter no máximo 100 caracteres."],
                 hint: "Máximo de 100 caracteres."
               },
               {
