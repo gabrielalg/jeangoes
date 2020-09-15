@@ -55,9 +55,9 @@ collections: # A list of collections the CMS should be able to edit
                 widget: image
               },
               {
-                label: "Descrição na Barra de Contato.", 
+                label: "Descrição na Barra de Contato", 
                 name: "contactDescription",  
-                widget: "text", 
+                widget: "string", 
                 hint: "Máximo de 100 caracteres."
               },
               {
