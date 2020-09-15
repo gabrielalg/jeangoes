@@ -1,17 +1,21 @@
-baseURL: /
-languageCode: pt-br
-languageLang: pt
-title: Jean Goes
+baseURL: "/"
+languageCode: "pt-br"
+languageLang: "pt"
+title: "Jean Goes"
+
 disableKinds:
-  - taxonomy
-  - term
+- taxonomy
+- term
+
 params:
+  dominio: https://jeangoes.netlify.app
+  logoSite: /assets/uploads/jeangoes-logo.svg
   favSite: /assets/uploads/fav_jean.png
   thumbRect: /assets/uploads/jean_thumb.jpg
   thumbQuad: /assets/uploads/jean_thumb_quad.jpg
   description: Portfólio de Jean Goes.
   fotoPerfil: /assets/uploads/perfil_jean.jpg
-  contactDescription: "Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio eros epos."
+  contactDescription: "Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio eros epos epos."
   curriculum: /assets/uploads/curriculum.pdf
   perfilVimeo:
     linkVimeoContact: https://vimeo.com/user72822778
@@ -25,28 +29,9 @@ params:
   perfilWhats:
     linkWhatsContact: Coloque o link do WhatsApp aqui
     viewWhats: true
-  perfilFace:
-    linkFaceContact: Coloque o link do Facebook aqui
-    viewFace: false
   perfilLinkedin:
     linkLinkedinContact: https://www.linkedin.com/in/jean-goes-5b9abb11a/
     viewLinkedin: true
-  dominio: https://jeangoes.netlify.app
-  perfilInsta:
-    linkInstaContact: https://www.instagram.com/jeangoes_/
-    viewInsta: true
-  fotoPerfil: /assets/uploads/perfil_jean.jpg
-  logoSite: /assets/uploads/jeangoes-logo.svg
-  perfilYoutube:
-    linkYoutubeContact: Coloque o link do YouTube aqui
-    viewYoutube: false
-  perfilVimeo:
-    linkVimeoContact: https://vimeo.com/user72822778
-    viewVimeo: true
-  thumbRect: /assets/uploads/jean_thumb.jpg
-  curriculum: /assets/uploads/curriculum.pdf
-  contactDescription: Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum
-    girarzis, nisi eros vermeio eros epos epos. Mussum Ipsum, cacilds vidis
-    litro abertis. Mé faiz elementum girarzis, nisi eros vermeio eros epos epos.
-  description: Portfólio de Jean Goes.
-  thumbQuad: /assets/uploads/jean_thumb_quad.jpg
+  perfilFace:
+    linkFaceContact: Coloque o link do Facebook aqui
+    viewFace: false
