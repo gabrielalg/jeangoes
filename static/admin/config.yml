@@ -49,6 +49,24 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "text", 
                 hint: "A descrição do site aparece nos links compartilhados e na pesquisa do Google."
               },
+              {
+                label: "Foto de Perfil (Quadrada)", 
+                name: "fotoPerfil", 
+                widget: image
+              },
+              {
+                label: "Descrição na Barra de Contato.", 
+                name: "contactDescription",  
+                widget: "text", 
+                hint: "Máximo de 100 caracteres."
+              },
+              {
+                label: "Currículo",
+                name: "curriculum",
+                widget: "file",
+                config:
+                  multiple: false
+              },
               {label: "Perfil do Vimeo", name: "perfilVimeo", widget: object, fields: [
                 {label: "Link", name: "linkVimeoContact", widget: string},
                 {label: "Visualizar", name: "viewVimeo", widget: "boolean"}
