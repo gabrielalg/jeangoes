@@ -64,7 +64,7 @@ collections: # A list of collections the CMS should be able to edit
                 label: "Currículo",
                 name: "curriculum",
                 widget: "file",
-                config:
+                config: ,
                   multiple: false
               },
               {label: "Perfil do Vimeo", name: "perfilVimeo", widget: object, fields: [
