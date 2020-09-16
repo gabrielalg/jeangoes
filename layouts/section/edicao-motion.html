@@ -2,7 +2,9 @@
 
 <section id="pages" class="scroll">
   <!-- <div class="page-container"> -->
-  <div class="container">
+  <div class="container" style="height: auto; display: flex;
+  flex-direction: column;
+  justify-content: space-between;">
 
     {{ partial "contato" (dict `` `
         ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
@@ -23,17 +25,23 @@
         ` "dominio" .Site.Params.dominio ) `` `  
         ` -}}
 
-    <div class="grid scroll" id="grid">
-
-      <div class="container-grid grid-title">
-        <div class="grid-item" style="background-color: transparent;">
-          <div class="grid-media" id="simple-title">
-            <h1 class="page-title absolute"> EDIÇÃO <br /> E MOTION </h1>
-          </div>
+    <div style="display: flex;">
+      
+    <div class="grid-title" style="order: 2;">
+      <div class="grid-item" style="background-color: transparent;">
+        <div id="simple-title">
+          <h1 class="page-title"> EDIÇÃO <br /> E MOTION </h1>
+          <p>Selecione uma categoria para filtrar:</p>
+          <a>Institucional</a>
+          <a>Evento</a>
+          <a>Publicidade</a>
         </div>
       </div>
+    </div>
+    
+    <div class="grid scroll" id="grid">
 
-      <div class="container-grid" style="order: 1;">
+      <div class="container-grid" style="order: 0;">
         <a href="javascript:;" class="grid-item open-modal">
           <div class="grid-media">
             <img src="/assets/uploads/pages/frame1.png" />
@@ -65,7 +73,7 @@
         </a>
       </div>
 
-      <div class="container-grid" style="order: 1;">
+      <div class="container-grid" style="order: 3;">
         <a href="javascript:;" class="grid-item open-modal">
           <div class="grid-media">
             <img src="/assets/uploads/pages/frame3.png" />
@@ -80,6 +88,41 @@
           </div>
         </a>
       </div>
+
+      <div class="container-grid" style="order: 3;">
+        <a href="javascript:;" class="grid-item open-modal">
+          <div class="grid-media">
+            <img src="/assets/uploads/pages/frame4.png" />
+            <div class="gif-hover">
+              <div class="title-hover">
+                <div class="title-hover-content">
+                  <h2>A Força de Uma Marca Jeep Dahruj</h2>
+                  <h3> Institucional </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="container-grid" style="order: 3;">
+        <a href="javascript:;" class="grid-item open-modal">
+          <div class="grid-media">
+            <img src="/assets/uploads/pages/frame5.png" />
+            <div class="gif-hover">
+              <div class="title-hover">
+                <div class="title-hover-content">
+                  <h2>A Força de Uma Marca Jeep Dahruj</h2>
+                  <h3> Institucional </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+    </div>
 
     </div>
 
