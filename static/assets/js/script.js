@@ -1,4 +1,3 @@
-
 function toggleMenuMobile() {
 
   $('.mobile-menu .mobile-menu-wrap .seta-menu').toggleClass('rotate-seta')
@@ -19,6 +18,12 @@ function toggleMenuMobile() {
   }
 }
 
+(function($) {
+  $.fn.hasScrollBar = function() {
+      return this.get(0).scrollHeight > this.height();
+  }
+})(jQuery);
+
 $(document).ready(function () {
 
   $(window).resize(function () {
@@ -38,6 +43,11 @@ $(document).ready(function () {
   var timeInterval
 
   // ABRIR E FECHAR CONTATO
+
+  // if ($('#pages').hasScrollBar()) {
+  //   $('#contato').addClass('absolute')
+  // }
+
   $(".openmenu").on('click', function (event) {
 
     $('.contato-actions').addClass('transform contato-actions-open');
@@ -118,6 +128,10 @@ $('.new-message').on('click', function (event) {
   $('.form-btn-sucess').css({ 'display': 'none' })
   $('.new-message').css({ 'display': 'none' })
 });
+
+if ($('.empty-state').length) {
+  $('.grid').addClass('grid-template')
+}
   
 
 });

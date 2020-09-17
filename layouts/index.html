@@ -2,11 +2,9 @@
 
 <section id="pages" class="scroll">
 
-    <div class="container">
+    <div class="container-wrap">
 
-        <div class="social-media">
-   
-            {{ partial "social-media" (dict `` `
+        {{ partial "contato" (dict `` `
                 ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
                 ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
                 ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
@@ -18,64 +16,71 @@
                 ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
                 ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
                 ` "viewFace" .Site.Params.perfilFace.viewFace `` `
-                ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact) `` ` 
+                ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact `` ` 
+                ` "fotoPerfil" .Site.Params.fotoPerfil `` ` 
+                ` "contactDescription" .Site.Params.contactDescription `` ` 
+                ` "curriculum" .Site.Params.curriculum `` ` 
+                ` "dominio" .Site.Params.dominio ) `` ` 
                 ` -}}
-         
-        </div> 
 
-        {{ partial "contato" (dict `` `
-            ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
-            ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
-            ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
-            ` "linkYoutubeContact" .Site.Params.perfilYoutube.linkYoutubeContact `` ` 
-            ` "viewInsta" .Site.Params.perfilInsta.viewInsta `` `
-            ` "linkInstaContact" .Site.Params.perfilInsta.linkInstaContact `` ` 
-            ` "viewWhats" .Site.Params.perfilWhats.viewWhats `` `
-            ` "linkWhatsContact" .Site.Params.perfilWhats.linkWhatsContact `` ` 
-            ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
-            ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
-            ` "viewFace" .Site.Params.perfilFace.viewFace `` `
-            ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact `` ` 
-            ` "fotoPerfil" .Site.Params.fotoPerfil `` ` 
-            ` "contactDescription" .Site.Params.contactDescription `` ` 
-            ` "curriculum" .Site.Params.curriculum `` ` 
-            ` "dominio" .Site.Params.dominio ) `` ` 
-            ` -}}
+        <div class="container">
 
-        <div class="inicio-content">
-            <div class="logo-img-container">
-            <img src="{{ .Site.Params.logoSite }}" class="logo-img" />
-            </div>
-        
-            <div class="video-wrap" >
-                <div class="video-container">
-                    <iframe src="https://player.vimeo.com/video/{{.Params.linkVimeo}}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1" 
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen" 
-                    allowfullscreen>
-                    </iframe>
-                    <script src="https://player.vimeo.com/api/player.js"></script>
-                    <!-- <iframe id="ytplayer" type="text/html" 
-                    src="https://www.youtube.com/embed/QzMNxsGTKtA?loop=1&modestbranding=1&color=white&iv_load_policy=3"
-                    frameborder="0" allowfullscreen class="video"> </iframe>  -->
+            <div class="social-media">
+    
+                {{ partial "social-media" (dict `` `
+                    ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
+                    ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
+                    ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
+                    ` "linkYoutubeContact" .Site.Params.perfilYoutube.linkYoutubeContact `` ` 
+                    ` "viewInsta" .Site.Params.perfilInsta.viewInsta `` `
+                    ` "linkInstaContact" .Site.Params.perfilInsta.linkInstaContact `` ` 
+                    ` "viewWhats" .Site.Params.perfilWhats.viewWhats `` `
+                    ` "linkWhatsContact" .Site.Params.perfilWhats.linkWhatsContact `` ` 
+                    ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
+                    ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
+                    ` "viewFace" .Site.Params.perfilFace.viewFace `` `
+                    ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact) `` ` 
+                    ` -}}
+            
+            </div> 
+
+            
+
+            <div class="inicio-content">
+                <div class="logo-img-container">
+                <img src="{{ .Site.Params.logoSite }}" class="logo-img" />
                 </div>
+            
+                <div class="video-wrap" >
+                    <div class="video-container">
+                        <iframe src="https://player.vimeo.com/video/{{.Params.linkVimeo}}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1" 
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                        frameborder="0" 
+                        allow="autoplay; fullscreen" 
+                        allowfullscreen>
+                        </iframe>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                        <!-- <iframe id="ytplayer" type="text/html" 
+                        src="https://www.youtube.com/embed/QzMNxsGTKtA?loop=1&modestbranding=1&color=white&iv_load_policy=3"
+                        frameborder="0" allowfullscreen class="video"> </iframe>  -->
+                    </div>
+                </div>
+
             </div>
 
+            <footer class="footer" style="border: none;">
+
+                <div class="copyright copyright-mobile">
+                    <span>
+                        © Copyright Jean Goes <span id="year"> </span>
+                    </span>
+                </div>
+                <a href="http://www.gabidigital.work/" class="assinatura assinatura-inicio" target="blank" >Desenvolvido por <img src="../assets/icons/fav-gabi.svg" class="assinatura-img" /></a>
+            </footer>
+        
         </div>
 
-        <footer class="footer" style="border: none;">
-
-            <div class="copyright copyright-mobile">
-                <span>
-                    © Copyright Jean Goes <span id="year"> </span>
-                </span>
-            </div>
-            <a href="http://www.gabidigital.work/" class="assinatura assinatura-inicio" target="blank" >Desenvolvido por <img src="../assets/icons/fav-gabi.svg" class="assinatura-img" /></a>
-        </footer>
-    
     </div>
-
 </section>
 
 {{ end }}

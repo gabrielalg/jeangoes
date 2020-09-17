@@ -2,131 +2,72 @@
 
 <section id="pages" class="scroll">
   <!-- <div class="page-container"> -->
-  <div class="container" style="height: auto; display: flex;
-  flex-direction: column;
-  justify-content: space-between;">
+
+  <div class="container-wrap">
 
     {{ partial "contato" (dict `` `
-        ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
-        ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
-        ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
-        ` "linkYoutubeContact" .Site.Params.perfilYoutube.linkYoutubeContact `` ` 
-        ` "viewInsta" .Site.Params.perfilInsta.viewInsta `` `
-        ` "linkInstaContact" .Site.Params.perfilInsta.linkInstaContact `` ` 
-        ` "viewWhats" .Site.Params.perfilWhats.viewWhats `` `
-        ` "linkWhatsContact" .Params.perfilWhats.linkWhatsContact `` ` 
-        ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
-        ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
-        ` "viewFace" .Site.Params.perfilFace.viewFace `` `
-        ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact `` ` 
-        ` "fotoPerfil" .Site.Params.fotoPerfil `` `
-        ` "contactDescription" .Site.Params.contactDescription `` ` 
-        ` "curriculum" .Site.Params.curriculum `` ` 
-        ` "dominio" .Site.Params.dominio ) `` `  
-        ` -}}
+    ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
+    ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
+    ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
+    ` "linkYoutubeContact" .Site.Params.perfilYoutube.linkYoutubeContact `` ` 
+    ` "viewInsta" .Site.Params.perfilInsta.viewInsta `` `
+    ` "linkInstaContact" .Site.Params.perfilInsta.linkInstaContact `` ` 
+    ` "viewWhats" .Site.Params.perfilWhats.viewWhats `` `
+    ` "linkWhatsContact" .Params.perfilWhats.linkWhatsContact `` ` 
+    ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
+    ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
+    ` "viewFace" .Site.Params.perfilFace.viewFace `` `
+    ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact `` ` 
+    ` "fotoPerfil" .Site.Params.fotoPerfil `` `
+    ` "contactDescription" .Site.Params.contactDescription `` ` 
+    ` "curriculum" .Site.Params.curriculum `` ` 
+    ` "dominio" .Site.Params.dominio ) `` `  
+    ` -}}
 
-    <div style="display: flex;">
-      
-    <div class="grid-title" style="order: 2;">
-      <div class="grid-item" style="background-color: transparent;">
-        <div id="simple-title">
-          <h1 class="page-title"> EDIÇÃO <br /> E MOTION </h1>
-          <p>Selecione uma categoria para filtrar:</p>
-          <a>Institucional</a>
-          <a>Evento</a>
-          <a>Publicidade</a>
+    <div class="container container-page">
+
+      <div style="display: flex;">
+
+        <div class="grid-title">
+
+          <div id="simple-title">
+            <h1 class="page-title"> EDIÇÃO <br /> E MOTION </h1>
+            <p>Selecione uma categoria para filtrar:</p>
+            <ul class="grid-item-tag">
+              <li> <a href="javascript:;"> Institucional </a> </li>
+              <li> <a href="javascript:;"> Evento </a> </li>
+              <li> <a href="javascript:;"> Publicidade </a> </li>
+              <li> <a href="javascript:;"> Evento </a> </li>
+              <li> <a href="javascript:;"> Institucional </a> </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="grid scroll" id="grid">
+
+          {{ range .Params.videoGrid }}
+
+            {{ partial "video-grid" . }}
+
+          {{ else }}
+
+          <div class="empty-state">
+            <div class="empty-state-wrap">
+              <img style="width: 30px;" src="/assets/icons/empty.svg" />
+              <p style="margin: 0;
+              font-size: 16px;
+              color: rgba(255, 255, 255, 0.4);">Nenhum vídeo aqui</p>
+            </div>
+          </div>
+
+          {{ end }}
         </div>
       </div>
-    </div>
-    
-    <div class="grid scroll" id="grid">
 
-      <div class="container-grid" style="order: 0;">
-        <a href="javascript:;" class="grid-item open-modal">
-          <div class="grid-media">
-            <img src="/assets/uploads/pages/frame1.png" />
-            <div class="gif-hover">
-              <div class="title-hover">
-                <div class="title-hover-content">
-                  <h2>A Força de Uma Marca Jeep Dahruj</h2>
-                  <h3> Institucional </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="container-grid" style="order: 1;">
-        <a href="javascript:;" class="grid-item open-modal">
-          <div class="grid-media">
-            <img src="/assets/uploads/pages/frame2.png" />
-            <div class="gif-hover">
-              <div class="title-hover">
-                <div class="title-hover-content">
-                  <h2>A Força de Uma Marca Jeep Dahruj</h2>
-                  <h3> Institucional </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="container-grid" style="order: 3;">
-        <a href="javascript:;" class="grid-item open-modal">
-          <div class="grid-media">
-            <img src="/assets/uploads/pages/frame3.png" />
-            <div class="gif-hover">
-              <div class="title-hover">
-                <div class="title-hover-content">
-                  <h2>A Força de Uma Marca Jeep Dahruj</h2>
-                  <h3> Institucional </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="container-grid" style="order: 3;">
-        <a href="javascript:;" class="grid-item open-modal">
-          <div class="grid-media">
-            <img src="/assets/uploads/pages/frame4.png" />
-            <div class="gif-hover">
-              <div class="title-hover">
-                <div class="title-hover-content">
-                  <h2>A Força de Uma Marca Jeep Dahruj</h2>
-                  <h3> Institucional </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="container-grid" style="order: 3;">
-        <a href="javascript:;" class="grid-item open-modal">
-          <div class="grid-media">
-            <img src="/assets/uploads/pages/frame5.png" />
-            <div class="gif-hover">
-              <div class="title-hover">
-                <div class="title-hover-content">
-                  <h2>A Força de Uma Marca Jeep Dahruj</h2>
-                  <h3> Institucional </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
+      {{ partial "footer" . }}
 
     </div>
-
-    </div>
-
-    {{ partial "footer" . }}
 
   </div>
 

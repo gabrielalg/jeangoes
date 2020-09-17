@@ -1,6 +1,44 @@
 {{ define "main" }}
 
-<h1>Nothing Here...</h1>
-<h3><a href="{{ "/" | relURL }}">Go Home</a></h3>
+<section id="pages" class="scroll">
+
+    <div class="container-wrap">
+
+        {{ partial "contato" (dict `` `
+                ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
+                ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
+                ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
+                ` "linkYoutubeContact" .Site.Params.perfilYoutube.linkYoutubeContact `` ` 
+                ` "viewInsta" .Site.Params.perfilInsta.viewInsta `` `
+                ` "linkInstaContact" .Site.Params.perfilInsta.linkInstaContact `` ` 
+                ` "viewWhats" .Site.Params.perfilWhats.viewWhats `` `
+                ` "linkWhatsContact" .Site.Params.perfilWhats.linkWhatsContact `` ` 
+                ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
+                ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
+                ` "viewFace" .Site.Params.perfilFace.viewFace `` `
+                ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact `` ` 
+                ` "fotoPerfil" .Site.Params.fotoPerfil `` ` 
+                ` "contactDescription" .Site.Params.contactDescription `` ` 
+                ` "curriculum" .Site.Params.curriculum `` ` 
+                ` "dominio" .Site.Params.dominio ) `` ` 
+                ` -}}
+
+        <div class="container container-page">
+
+            <div class="not-found">
+                <img style="width: 80px;" src="/assets/icons/popcorn.svg" />
+                <h2>Desculpe, não conseguimos encontrar essa página :/</h1>
+                <h3 style="margin-top: 0; color: rgba(255, 255, 255, 0.4);">Erro 404 - Not Found</h3>
+            </div>
+
+            {{ partial "footer" . }}
+
+        </div>
+        
+    </div>
+
+</section>
+
+
 
 {{ end }}
