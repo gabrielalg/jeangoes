@@ -909,7 +909,7 @@ footer {
 
 .grid-template {
   grid-template-columns: 100%;
-  grid-template-rows: 74vh;
+  /* grid-template-rows: 74vh; */
 }
 
 .auto-rows {
