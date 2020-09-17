@@ -1172,7 +1172,7 @@ footer {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 80vh;
+  flex: 1;
   justify-content: center;
 }
 
