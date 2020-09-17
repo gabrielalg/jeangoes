@@ -131,6 +131,7 @@ $('.new-message').on('click', function (event) {
 
 if ($('.empty-state').length) {
   $('.grid').addClass('grid-template')
+  $('#flex-page').css({'flex':'1'})
 }
   
 
