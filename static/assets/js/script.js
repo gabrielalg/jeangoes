@@ -56,7 +56,7 @@ $(document).ready(function () {
     timeInterval = setTimeout(() => {
       clearTimeout(timeInterval)
       $('.container-contato.contato-await').css({ 'overflow-y': 'auto' });
-    }, 700)
+    }, 450)
 
   });
 
@@ -69,7 +69,7 @@ $(document).ready(function () {
     setTimeout(() => {
       $('.contato-actions').removeClass('transform');
       $('.container-contato.contato-await').removeClass('transform');
-    }, 700)
+    }, 450)
 
   });
   //  ------
@@ -133,6 +133,21 @@ if ($('.empty-state').length) {
   $('.grid').addClass('grid-template')
   $('#flex-page').css({'flex':'1'})
 }
+
+$('.open-modal').on('click', () => {
+  $('#modal').css('display','flex')
+  setTimeout(() => {
+    $('#modal').css('opacity','1')
+  },10)
+});
+
+$('.close-modal-btn').on('click', () => {
+  $('#modal').css('opacity','0')
+  setTimeout(() => {
+    $('#modal').css('display','none')
+  },250)
+});
+
   
 
 });

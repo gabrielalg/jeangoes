@@ -46,7 +46,7 @@
 
         <div class="grid scroll" id="grid">
 
-          {{ range .Params.videoGrid }}
+          {{ range $elem_key, $elem_val := .Params.videoGrid }}
 
             {{ partial "video-grid" . }}
 
