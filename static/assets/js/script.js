@@ -130,7 +130,6 @@ $(document).ready(function () {
   });
 
   if ($('.empty-state').length) {
-    $('.grid').addClass('grid-template')
     $('#flex-page').css({ 'flex': '1' })
   }
 

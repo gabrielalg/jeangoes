@@ -26,44 +26,74 @@
 
     <div class="container container-page">
 
-      <div id="flex-page" style="display: flex;">
+      {{ with .Params.videoGrid }}
 
-        <div class="grid-title">
+        <div id="flex-page" style="display: flex;">
 
-          <div id="simple-title">
-            <h1 class="page-title"> EDIÇÃO <br /> E MOTION </h1>
-            <p>Selecione uma categoria para filtrar:</p>
-            <ul class="grid-item-tag">
-              <li> <a href="javascript:;"> Institucional </a> </li>
-              <li> <a href="javascript:;"> Evento </a> </li>
-              <li> <a href="javascript:;"> Publicidade </a> </li>
-              <li> <a href="javascript:;"> Evento </a> </li>
-              <li> <a href="javascript:;"> Institucional </a> </li>
-            </ul>
+          <div class="grid-title">
+
+            <div id="simple-title">
+              <h1 class="page-title"> EDIÇÃO <br /> E MOTION </h1>
+              <p>Selecione uma categoria para filtrar:</p>
+              <ul class="grid-item-tag">
+                <li> <a href="javascript:;"> Institucional </a> </li>
+                <li> <a href="javascript:;"> Evento </a> </li>
+                <li> <a href="javascript:;"> Publicidade </a> </li>
+                <li> <a href="javascript:;"> Evento </a> </li>
+                <li> <a href="javascript:;"> Institucional </a> </li>
+              </ul>
+            </div>
+
           </div>
 
-        </div>
+          <div class="grid scroll" id="grid">
 
-        <div class="grid scroll" id="grid">
-
-          {{ range .Params.videoGrid }}
+            {{ range . }}
 
             {{ partial "video-grid" . }}
 
-          {{ else }}
+            {{end}}
 
-          <div class="empty-state">
-            <div class="empty-state-wrap">
-              <img style="width: 30px;" src="/assets/icons/empty.svg" />
-              <p style="margin: 0;
-              font-size: 16px;
-              color: rgba(255, 255, 255, 0.4);">Nenhum vídeo aqui</p>
-            </div>
           </div>
 
-          {{ end }}
         </div>
-      </div>
+
+      {{ else }}
+
+        <div id="flex-page" style="display: flex; flex: 1;">
+
+          <div class="grid-title">
+
+            <div id="simple-title">
+              <h1 class="page-title"> EDIÇÃO <br /> E MOTION </h1>
+              <p>Selecione uma categoria para filtrar:</p>
+              <ul class="grid-item-tag">
+                <li> <a href="javascript:;"> Institucional </a> </li>
+                <li> <a href="javascript:;"> Evento </a> </li>
+                <li> <a href="javascript:;"> Publicidade </a> </li>
+                <li> <a href="javascript:;"> Evento </a> </li>
+                <li> <a href="javascript:;"> Institucional </a> </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="grid grid-template scroll" id="grid">
+
+            <div class="empty-state">
+              <div class="empty-state-wrap">
+                <img style="width: 30px;" src="/assets/icons/empty.svg" />
+                <p style="margin: 0;
+                  font-size: 16px;
+                  color: rgba(255, 255, 255, 0.4);">Nenhum vídeo aqui</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      {{end}}
 
       {{ partial "footer" . }}
 

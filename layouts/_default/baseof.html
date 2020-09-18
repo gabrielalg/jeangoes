@@ -7,13 +7,13 @@
 
       <div class="layout scroll">   
   
-          {{ partial "header.html" . }}
+          {{ partial "header" . }}
         
           {{ block "main" . }}{{ end }}
    
       </div>
 
-          {{ partial "modal.html" . }}
+          {{ partial "modal" . }}
 
       <script>
         if (window.netlifyIdentity) {
