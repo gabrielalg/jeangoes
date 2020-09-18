@@ -1,0 +1,77 @@
+{{ define "main" }}
+
+<section id="pages" class="scroll">
+  <!-- <div class="page-container"> -->
+
+  <div class="container-wrap">
+
+    {{ partial "contato" (dict `` `
+    ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
+    ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
+    ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
+    ` "linkYoutubeContact" .Site.Params.perfilYoutube.linkYoutubeContact `` ` 
+    ` "viewInsta" .Site.Params.perfilInsta.viewInsta `` `
+    ` "linkInstaContact" .Site.Params.perfilInsta.linkInstaContact `` ` 
+    ` "viewWhats" .Site.Params.perfilWhats.viewWhats `` `
+    ` "linkWhatsContact" .Params.perfilWhats.linkWhatsContact `` ` 
+    ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
+    ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
+    ` "viewFace" .Site.Params.perfilFace.viewFace `` `
+    ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact `` ` 
+    ` "fotoPerfil" .Site.Params.fotoPerfil `` `
+    ` "contactDescription" .Site.Params.contactDescription `` ` 
+    ` "curriculum" .Site.Params.curriculum `` ` 
+    ` "dominio" .Site.Params.dominio ) `` `  
+    ` -}}
+
+    <div class="container container-page">
+
+      <div id="flex-page" style="display: flex;">
+
+        <div class="grid-title">
+
+          <div id="simple-title">
+            <h1 class="page-title"> CINEMA </h1>
+            <p>Selecione uma categoria para filtrar:</p>
+            <ul class="grid-item-tag">
+              <li> <a href="javascript:;"> Institucional </a> </li>
+              <li> <a href="javascript:;"> Evento </a> </li>
+              <li> <a href="javascript:;"> Publicidade </a> </li>
+              <li> <a href="javascript:;"> Evento </a> </li>
+              <li> <a href="javascript:;"> Institucional </a> </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="grid scroll" id="grid">
+
+          {{ range .Params.videoGrid }}
+
+            {{ partial "video-grid" . }}
+
+          {{ else }}
+
+          <div class="empty-state">
+            <div class="empty-state-wrap">
+              <img style="width: 30px;" src="/assets/icons/empty.svg" />
+              <p style="margin: 0;
+              font-size: 16px;
+              color: rgba(255, 255, 255, 0.4);">Nenhum vídeo aqui</p>
+            </div>
+          </div>
+
+          {{ end }}
+          
+        </div>
+      </div>
+
+      {{ partial "footer" . }}
+
+    </div>
+
+  </div>
+
+</section>
+
+{{ end }}
