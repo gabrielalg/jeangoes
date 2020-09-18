@@ -18,9 +18,9 @@ function toggleMenuMobile() {
   }
 }
 
-(function($) {
-  $.fn.hasScrollBar = function() {
-      return this.get(0).scrollHeight > this.height();
+(function ($) {
+  $.fn.hasScrollBar = function () {
+    return this.get(0).scrollHeight > this.height();
   }
 })(jQuery);
 
@@ -121,33 +121,51 @@ $(document).ready(function () {
   });
 
 
-$('.new-message').on('click', function (event) {
-  $('#contato-form')[0].reset();
-  $('.form-btn-send').css({ 'display': 'block' })
-  $('.form-label-send').css({ 'display': 'block' })
-  $('.form-btn-sucess').css({ 'display': 'none' })
-  $('.new-message').css({ 'display': 'none' })
-});
+  $('.new-message').on('click', function (event) {
+    $('#contato-form')[0].reset();
+    $('.form-btn-send').css({ 'display': 'block' })
+    $('.form-label-send').css({ 'display': 'block' })
+    $('.form-btn-sucess').css({ 'display': 'none' })
+    $('.new-message').css({ 'display': 'none' })
+  });
 
-if ($('.empty-state').length) {
-  $('.grid').addClass('grid-template')
-  $('#flex-page').css({'flex':'1'})
-}
+  if ($('.empty-state').length) {
+    $('.grid').addClass('grid-template')
+    $('#flex-page').css({ 'flex': '1' })
+  }
 
-$('.open-modal').on('click', () => {
-  $('#modal').css('display','flex')
-  setTimeout(() => {
-    $('#modal').css('opacity','1')
-  },10)
-});
+  $('.open-modal').on('click', function () {
+    $('#modal').css('display', 'flex')
+    let modalTitle = $(this).find('#videoTitle').val()
+    let modalLink = $(this).find('#videoLink').val()
+    let modalImage = $(this).find('#videoImage').val()
+    let modalRoles = $(this).find('#videoRoles').val().split(', ')
+    $('#modal').find('#videoTitle').text(modalTitle)
+    $('#modal').find('#videoLink').attr('src', `https://player.vimeo.com/video/${modalLink}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1`)
+    $('#modal').find('#videoImage').css({ 'background-image': `url('${modalImage}')` })
 
-$('.close-modal-btn').on('click', () => {
-  $('#modal').css('opacity','0')
-  setTimeout(() => {
-    $('#modal').css('display','none')
-  },250)
-});
+    var htmlContent = ""
+    for (var i = 0; i < modalRoles.length; i++) {
+      htmlContent += `<li> <a href="javascript:;" > ${modalRoles[i]} </a> </li>`
+    }
+    $('#modal').find('#videoRoles').html(htmlContent)
 
-  
+    setTimeout(() => {
+      $('#modal').css('opacity', '1')
+    }, 100)
+  });
+
+  $('.close-modal-btn').on('click', function () {
+    $('#modal').css('opacity', '0')
+    setTimeout(() => {
+      $('#modal').css('display', 'none')
+      $('#modal').find('#videoTitle').text('')
+      $('#modal').find('#videoLink').removeAttr('src')
+      $('#modal').find('#videoImage').removeAttr('style')
+      $('#modal').find('#videoRoles').html('')
+    }, 300)
+  });
+
+
 
 });

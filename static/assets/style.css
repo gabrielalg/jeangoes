@@ -25,9 +25,9 @@ h1, h2, h3 {
 
 .grid h3 {
   font-size: 16px;
-  color: #9B9B9B;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
-  font-style: italic;
+  /* font-style: italic; */
   margin: 0;
   padding-bottom: 8px;
 }
@@ -452,7 +452,7 @@ ul {
 .close-modal {
   margin: 0;
   width: 53px;
-  padding: 10px 15px 8px 15px;
+  padding: 12px 15px 7px 14px;
   background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -760,6 +760,7 @@ textarea {
 .video-wrap-modal {
   /* min-width: 130vh; */
   width: 100%;
+  background-size: cover;
 }
 
 .video-container {
@@ -979,7 +980,7 @@ footer {
 .title-hover {
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
 }
 
 .title-hover-content {
