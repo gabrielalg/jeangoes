@@ -30,7 +30,7 @@ videoGrid:
     videoCategory: Evento
   - videoTitle: Quarto Título
     videoImage: /assets/uploads/frame4.png
-    videoGif: /assets/uploads/frame4.png
+    videoGif: /assets/uploads/entrementes.gif
     videoLink: "239438136"
     videoCategory: Evento
     videoRoles:
