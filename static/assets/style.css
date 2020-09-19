@@ -934,7 +934,7 @@ footer {
 }
 
 .grid-template {
-  grid-template-columns: 100%;
+  grid-template-columns: 100% !important;
   grid-template-rows: 100%;
 }
 
