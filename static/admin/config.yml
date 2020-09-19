@@ -103,7 +103,6 @@ collections: # A list of collections the CMS should be able to edit
       - file: "content/_index.md"
         label: "Início"
         name: "inicio"
-       
         fields:
           - {
               label: "Link do Vídeo de Início", 
@@ -111,4 +110,35 @@ collections: # A list of collections the CMS should be able to edit
               widget: string,
               hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: '448393321'. "
             }
+      - file: "content/edicao-motion/_index.md"
+        label: "Ediçao e Motion"
+        name: "edicao-motion"
+        fields:
+          name: video-grid
+          widget: list
+          fields:
+            - label: Título do Vídeo
+              name: videoTitle
+              widget: string
+            - label: Imagem
+              name: videoImage
+              widget: image
+            - label: Gif
+              name: videoGif
+              widget: image
+            - label: Link
+              name: videoLink
+              widget: string
+              hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: '448393321'."
+            - label: Categoria
+              name: videoCategory
+              widget: select
+              options: ["Institucional", "Evento", "Publicidade"]
+            - label: Funções
+              name: videoRoles
+              widget: select
+              multiple: true
+              options: ["Assistente de Direção", "Editor", "Produtor", "Diretor de Fotografia"]
+
+
   
