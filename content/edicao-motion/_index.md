@@ -1,6 +1,13 @@
 ---
 title: Edição e Motion
 videoGrid:
+  - videoTitle: Quarto Título
+    videoImage: /assets/uploads/frame4.png
+    videoGif: /assets/uploads/entrementes.gif
+    videoLink: "239438136"
+    videoCategory: Evento
+    videoRoles:
+      - Produtor
   - videoTitle: A Força de Uma Marca Jeep Dahruj
     videoImage: /assets/uploads/pages/frame1.png
     videoGif: /assets/uploads/gifs/entrementes.gif
@@ -28,11 +35,4 @@ videoGrid:
       - Produtor
       - Diretor de Fotografia
     videoCategory: Evento
-  - videoTitle: Quarto Título
-    videoImage: /assets/uploads/frame4.png
-    videoGif: /assets/uploads/entrementes.gif
-    videoLink: "239438136"
-    videoCategory: Evento
-    videoRoles:
-      - Produtor
 ---
