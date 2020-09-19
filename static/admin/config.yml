@@ -111,11 +111,11 @@ collections: # A list of collections the CMS should be able to edit
               hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: '448393321'. "
             }
       - file: "content/edicao-motion/_index.md"
-        label: "Ediçao e Motion"
+        label: "Edição e Motion"
         name: "edicao-motion"
         fields:
           - label: Vídeos
-            name: video-grid
+            name: videoGrid
             widget: list
             fields:
               - label: Título do Vídeo
