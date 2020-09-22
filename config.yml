@@ -23,7 +23,7 @@ params:
   fotoPerfil: /assets/uploads/perfil_jean.jpg
   logoSite: /assets/uploads/jeangoes-logo.svg
   perfilYoutube:
-    linkYoutubeContact: Coloque o link do YouTube aquii
+    linkYoutubeContact: Coloque o link do YouTube aqui
     viewYoutube: false
   perfilVimeo:
     linkVimeoContact: https://vimeo.com/user72822778
