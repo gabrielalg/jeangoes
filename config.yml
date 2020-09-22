@@ -24,7 +24,7 @@ params:
   logoSite: /assets/uploads/jeangoes-logo.svg
   perfilYoutube:
     linkYoutubeContact: Coloque o link do YouTube aqui
-    viewYoutube: false
+    viewYoutube: true
   perfilVimeo:
     linkVimeoContact: https://vimeo.com/user72822778
     viewVimeo: true
