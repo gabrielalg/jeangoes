@@ -127,6 +127,7 @@ collections: # A list of collections the CMS should be able to edit
               - label: Gif
                 name: videoGif
                 widget: image
+                hint: "Obs: O Gif só aparece quando o usuário passa o mouse na imagem do vídeo."
               - label: Link
                 name: videoLink
                 widget: string
