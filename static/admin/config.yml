@@ -135,7 +135,7 @@ collections: # A list of collections the CMS should be able to edit
               - label: Categoria
                 name: videoCategory
                 widget: select
-                options: ["Publicidade", "Evento", "Institucional"]
+                options: ["Publicidade", "Institucional"]
               - label: Funções
                 name: videoRoles
                 widget: select
