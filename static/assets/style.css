@@ -681,7 +681,7 @@ textarea {
 
 .container-wrap {
   height: 100vh;
-  width: 100%;
+  width: calc(100vw - 245px);
   position: relative;
   padding: 30px;
 }
@@ -854,6 +854,7 @@ footer {
   padding: 10px 0;
   margin: 0 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 0;
 }
 
 .assinatura {
@@ -914,6 +915,7 @@ footer {
   position: relative;
   width: 32%;
   min-width: 310px;
+  z-index: 50;
 }
 
 /* .grid {
@@ -1421,6 +1423,7 @@ footer {
   .container-wrap {
     padding: 15px;
     height: 100%;
+    width: 100%;
   }
 
   .menu-layout {

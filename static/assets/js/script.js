@@ -167,7 +167,7 @@ $(document).ready(function () {
 
   // ----- FILTRO
 
-  filterSelection('all')
+  filterSelection('')
 
   $('.tag-btn').on('click', function () {
     filterSelection($(this).text());
@@ -178,9 +178,6 @@ $(document).ready(function () {
     var videosList, i;
     videosList = $('.container-grid') // document.getElementsByClassName("container-grid");
     category = category.trim();
-    if (category === 'all') {
-      category = "";
-    }
      // Add the "show" class (display:block) to the filtered elements, 
      // and remove the "show" class from the elements that are not selected
     for (i = 0; i < videosList.length; i++) {

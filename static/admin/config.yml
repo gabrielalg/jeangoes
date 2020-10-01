@@ -100,6 +100,18 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
+      - file: "config.yml"
+        label: "Categorias"
+        name: "tagConfig"
+        fields:
+          - label: Categorias
+            name: params
+            widget: list
+            fields:
+              - label: Título do Vídeo
+                name: allVideoCategories
+                widget: string
+            
       - file: "content/_index.md"
         label: "Início"
         name: "inicio"
@@ -135,7 +147,7 @@ collections: # A list of collections the CMS should be able to edit
               - label: Categoria
                 name: videoCategory
                 widget: select
-                options: ["Institucional", "Evento", "Publicidade"]
+                options: "{{tagConfig.allVideoCategories}}"
               - label: Funções
                 name: videoRoles
                 widget: select

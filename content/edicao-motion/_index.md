@@ -30,12 +30,19 @@ videoGrid:
     videoCategory: Evento
   - videoTitle: Quarto Título
     videoImage: /assets/uploads/pages/frame1.png
-    videoGif: /assets/uploads/entrementes.gif
+    videoGif: /assets/uploads/pages/frame1.png
     videoLink: "239438136"
     videoCategory: Evento
     videoRoles:
       - Produtor  
       - Assistente de Direção
       - Editor
-      - Diretor de Fotografia 
+      - Diretor de Fotografia
+  - videoTitle: Quinto Título
+    videoImage: /assets/uploads/pages/frame5.png
+    videoGif: /assets/uploads/gifs/entrementes.gif
+    videoLink: "239438136"
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
 ---
