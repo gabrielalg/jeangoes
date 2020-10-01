@@ -5,7 +5,7 @@ title: Jean Goes
 disableKinds:
   - taxonomy
   - term
-  
+
 params:
   favSite: /assets/uploads/fav_jean.png
   perfilWhats:
@@ -35,15 +35,3 @@ params:
     fotografia e produtor audiovisual.
   description: Portfólio de Jean Goes.
   thumbQuad: /assets/uploads/jean_thumb_quad.jpg
-
- 
-  allVideoCategories:
-    - Institucional
-    - Evento
-    - Publicidade
-
-  allVideoRoles:
-    - Assistente de Direção
-    - Editor
-    - Produtor
-    - Diretor de Fotografia
