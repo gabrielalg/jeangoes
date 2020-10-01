@@ -108,7 +108,7 @@ collections: # A list of collections the CMS should be able to edit
             name: params
             widget: list
             fields:
-              - label: Título do Vídeo
+              - label: Categorias
                 name: allVideoCategories
                 widget: string
             
@@ -129,7 +129,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: Vídeos
             name: videoGrid
             widget: list
-            fields:
+            types:
               - label: Título do Vídeo
                 name: videoTitle
                 widget: string
