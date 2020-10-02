@@ -17,7 +17,33 @@ function toggleMenuMobile() {
   }
 }
 
+function resizeGridItem(item) {
+  grid = document.getElementsByClassName('grid')[0];
+  rowHeight = parseInt(
+    window.getComputedStyle(grid).getPropertyValue('grid-auto-rows')
+  );
+  rowGap = parseInt(
+    window.getComputedStyle(grid).getPropertyValue('grid-row-gap')
+  );
+  rowSpan = Math.ceil(
+    (item.querySelector('.grid-item').getBoundingClientRect().height +
+      rowGap) /
+      (rowHeight + rowGap)
+  );
+  item.style.gridRowEnd = 'span ' + rowSpan;
+}
+
+function resizeAllGridItems() {
+  allItems = document.getElementsByClassName('container-grid');
+  for (x = 0; x < allItems.length; x++) {
+    resizeGridItem(allItems[x]);
+  }
+}
+
+
 $(document).ready(function () {
+
+  window.addEventListener('resize', resizeAllGridItems);
 
   $(window).resize(function () {
     if ($(this).width() >= 820 && $('#menu').hasClass('responsive')) {
@@ -170,10 +196,10 @@ $(document).ready(function () {
 
   // ----- FILTRO
 
-  filterSelection('')
+  filterSelection('');
 
   $('.tag-btn').on('click', function () {
-    if($(this).hasClass('tag-active')) {
+    if ($(this).hasClass('tag-active')) {
       $(this).removeClass('tag-active');
       $(this).find('span').text('');
       filterSelection('');
@@ -185,18 +211,21 @@ $(document).ready(function () {
       $(this).find('span').text('✕');
     }
   });
-  
+
   function filterSelection(category) {
-    
     category = category.trim();
 
+   
     $('.container-grid.show').removeClass('animate-video');
     setTimeout(() => {
       $('.container-grid').removeClass('show');
-      if (category === '' || $('.container-grid[category=' + category + ']')[0]) {
+      if (
+        category === '' ||
+        $('.container-grid[category=' + category + ']')[0]
+      ) {
         var currentVideo = $('.container-grid:not(.show)');
         if (category.length > 0) {
-          currentVideo = $('.container-grid[category=' + category + ']')
+          currentVideo = $('.container-grid[category=' + category + ']');
         }
         currentVideo.addClass('show');
         setTimeout(() => {
@@ -204,7 +233,8 @@ $(document).ready(function () {
         }, 10);
       }
     }, 400);
-  }; 
-
-
+    setTimeout(() => {
+      resizeAllGridItems();
+    }, 400); 
+  }
 });

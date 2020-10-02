@@ -1,17 +1,26 @@
-<div class="container-grid" category="{{ .videoCategory }}">
-  <a href="javascript:;" class="grid-item open-modal">
+<div class="container-grid grid-item-hover" category="{{ .videoCategory }}">
+  <a href="javascript:;" class="grid-item open-modal ">
     <div class="grid-media">
       <img src="{{ .videoImage }}" />
       <div class="gif-hover" style="background-image: url('{{ .videoGif }}');">
-        <div class="title-hover">
+        <!-- <div class="title-hover">
          
-        </div>
+        </div> -->
       </div>
     </div>
 
-    <div class="title-hover-content">
+    <div class="video-details">
       <h2>{{ .videoTitle }}</h2>
       <h3>{{ .videoCategory }}</h3>
+
+      <div class="video-roles-wrap">
+
+      {{ range .videoRoles }}
+        <p class="video-roles"> {{ . }} <span> | &nbsp</span></p>
+      {{end}}
+
+      </div>
+
     </div>
 
     <input type="hidden" value="{{ .videoTitle }}" id="videoTitle" />

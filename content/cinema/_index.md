@@ -17,17 +17,21 @@ videoGrid:
     videoLink: "239438136"
     videoCategory: Publicidade
     videoRoles:
-      - Editor
-      - Produtor
+      - Diretor
       - Diretor de Fotografia
   - videoTitle: Terceiro Título
     videoImage: /assets/uploads/pages/frame9.png
     videoGif: /assets/uploads/gifs/entrementes.gif
     videoLink: "448393321"
+    videoCategory: Evento
     videoRoles:
       - Produtor
       - Diretor de Fotografia
-    videoCategory: Evento
+      - Roteirista
+      - Diretor de Fotografia
+      - Montagem
+      - Editor
+    videoDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' 
   - videoTitle: Quarto Título
     videoImage: /assets/uploads/pages/frame6.png
     videoGif: /assets/uploads/pages/frame6.png
@@ -38,4 +42,13 @@ videoGrid:
       - Assistente de Direção
       - Editor
       - Diretor de Fotografia
+  - videoTitle: Quinto Título
+    videoImage: /assets/uploads/pages/frame5.png
+    videoGif: /assets/uploads/pages/frame5.png
+    videoLink: "239438136"
+    videoCategory: Evento
+    videoRoles:
+      - Roteirista
+      - Editor
+      - Montagem
 ---
