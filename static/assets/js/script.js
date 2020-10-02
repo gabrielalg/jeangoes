@@ -187,37 +187,24 @@ $(document).ready(function () {
   });
   
   function filterSelection(category) {
-    var videosList, i;
-    videosList = $('.container-grid') // document.getElementsByClassName("container-grid");
+    
     category = category.trim();
-     // Add the "show" class (display:block) to the filtered elements, 
-     // and remove the "show" class from the elements that are not selected
-    for (i = 0; i < videosList.length; i++) {
-      const videoCategory = videosList.eq(i).attr('category')
-      hideVideo(videosList.eq(i));
-      if (videoCategory.split(' ').indexOf(category) > -1 || category === '') {
-        showVideo(videosList.eq(i));
+
+    $('.container-grid.show').removeClass('animate-video');
+    setTimeout(() => {
+      $('.container-grid').removeClass('show');
+      if (category === '' || $('.container-grid[category=' + category + ']')[0]) {
+        var currentVideo = $('.container-grid:not(.show)');
+        if (category.length > 0) {
+          currentVideo = $('.container-grid[category=' + category + ']')
+        }
+        currentVideo.addClass('show');
+        setTimeout(() => {
+          currentVideo.addClass('animate-video');
+        }, 10);
       }
-    }
+    }, 400);
   }; 
 
-  // Show filtered elements
-  function showVideo(currentVideo) {
 
-    if (!currentVideo.hasClass('show')) {
-      currentVideo.addClass('show');
-      setTimeout(() => {
-        currentVideo.addClass('animate-video');
-      }, 50);
-    }
-    
-  }
-
-  // Hide elements that are not selected
-  function hideVideo(currentVideo) {
-    if(!currentVideo.hasClass('show')) {
-      currentVideo.removeClass('animate-video');
-    } 
-      currentVideo.removeClass('show');
-  }
 });

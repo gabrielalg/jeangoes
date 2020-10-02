@@ -510,6 +510,7 @@ ul {
   align-items: center;
   text-align: center;
   margin: auto;
+  width: 100%;
 }
 
 .contato-bottom {
@@ -575,6 +576,8 @@ ul {
   margin-bottom: 20px;
   margin-top: 10px;
   justify-content: center;
+  width: 100%;
+  flex: 1;
 }
 
 .form {
@@ -958,13 +961,11 @@ footer {
   width: 100%;
   opacity: 0;
   display: none;
+  transition: all 0.4s ease;
 }
 
 .show {
-  display: block;
-  transition: all 0.4s ease;
-  /* transition: all 1s ease; */
-  /* transition-delay: 200ms; */
+  display: block !important;
 }
 
 .animate-video {
