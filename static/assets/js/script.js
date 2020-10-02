@@ -122,8 +122,11 @@ $(document).ready(function () {
     $('.new-message').css({ display: 'none' });
   });
 
-  if ($('.empty-state').length) {
+  if ($('#grid').children().hasClass('empty-state')) {
     $('#flex-page').css({ flex: '1' });
+    setTimeout(() => {
+      $('.empty-state').addClass('show');
+    }, 50);
   }
 
   $('.open-modal').on('click', function () {
@@ -145,7 +148,7 @@ $(document).ready(function () {
 
     var htmlContent = '';
     for (var i = 0; i < modalRoles.length; i++) {
-      htmlContent += `<li> <a href="javascript:;" > ${modalRoles[i]} </a> </li>`;
+      htmlContent += `<li> <a href="javascript:;" class="grid-item-tag tag-active-disabled" > ${modalRoles[i]} </a> </li>`;
     }
     $('#modal').find('#videoRoles').html(htmlContent);
 
@@ -170,10 +173,19 @@ $(document).ready(function () {
   filterSelection('')
 
   $('.tag-btn').on('click', function () {
-    filterSelection($(this).text());
+    if($(this).hasClass('tag-active')) {
+      $(this).removeClass('tag-active');
+      $(this).find('span').text('');
+      filterSelection('');
+    } else {
+      filterSelection($(this).text());
+      $('.tag-btn').removeClass('tag-active');
+      $('.tag-btn').find('span').text('');
+      $(this).addClass('tag-active');
+      $(this).find('span').text('✕');
+    }
   });
   
-  // $('.tag-btn').on('click', 
   function filterSelection(category) {
     var videosList, i;
     videosList = $('.container-grid') // document.getElementsByClassName("container-grid");
@@ -181,53 +193,31 @@ $(document).ready(function () {
      // Add the "show" class (display:block) to the filtered elements, 
      // and remove the "show" class from the elements that are not selected
     for (i = 0; i < videosList.length; i++) {
-      // videosList[i].hide();
-      hideVideo(videosList[i], "show");
       const videoCategory = videosList.eq(i).attr('category')
+      hideVideo(videosList.eq(i));
       if (videoCategory.split(' ').indexOf(category) > -1 || category === '') {
-        showVideo(videosList[i], "show");
+        showVideo(videosList.eq(i));
       }
-      // if (videosList[i].className.indexOf(category) > -1){
-      //   // videosList[i].show();
-      //   showVideo(videosList[i], "show");
-      // }
     }
   }; 
 
   // Show filtered elements
-  function showVideo(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {
-        element.className += " " + arr2[i];
-      }
+  function showVideo(currentVideo) {
+
+    if (!currentVideo.hasClass('show')) {
+      currentVideo.addClass('show');
+      setTimeout(() => {
+        currentVideo.addClass('animate-video');
+      }, 50);
     }
+    
   }
 
   // Hide elements that are not selected
-  function hideVideo(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);
-      }
-    }
-    element.className = arr1.join(" ");
+  function hideVideo(currentVideo) {
+    if(!currentVideo.hasClass('show')) {
+      currentVideo.removeClass('animate-video');
+    } 
+      currentVideo.removeClass('show');
   }
-
-  // Add active class to the current control button (highlight it)
-  // var btnContainer = document.getElementsByClassName("grid-item-tag");
-  // var btns = btnContainer.getElementsByClassName("btn");
-  // for (var i = 0; i < btns.length; i++) {
-  //   btns[i].addEventListener("click", function() {
-  //     var current = document.getElementsByClassName("active");
-  //     current[0].className = current[0].className.replace(" active", "");
-  //     this.className += " active";
-  //   });
-  // }
-
 });

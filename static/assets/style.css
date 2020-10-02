@@ -61,11 +61,11 @@ ul {
   flex-wrap: wrap;
 }
 
-.grid-item-tag li {
+#tag-container li, #videoRoles li {
   margin: 8px 0;
 }
 
-.grid-item-tag li a {
+.grid-item-tag {
   font-size: 14px;
   padding: 3px 10px;
   background-color: #242426;
@@ -77,19 +77,31 @@ ul {
   color: rgba(255, 255, 255, 0.4);
 }
 
-.grid-item-tag li a:hover {
+.grid-item-tag:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.tag-active li a {
-  background-color: #0039ac;
+.tag-active, .tag-active-disabled {
+  background-color: #003399;
   color: #fff;
   border: none;
-  cursor: default;
+  border: 1px solid #003399;
 }
 
-.tag-active li a:hover {
+.tag-active:hover {
   background-color: #0039ac;
+}
+
+.tag-active-disabled {
+ cursor: default;
+}
+
+.tag-active-disabled:hover {
+  background-color: #003399;
+}
+
+.tag-active span {
+  margin-left: 3px;
 }
 
 .grid-filter li {
@@ -902,7 +914,7 @@ footer {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   padding: 10px 20px 20px 20px;
   margin: 80px 40px 80px 0;
-  min-width: 310px;
+  min-width: 330px;
 }
 
 #simple-title p {
@@ -944,11 +956,19 @@ footer {
 
 .container-grid {
   width: 100%;
+  opacity: 0;
   display: none;
 }
 
 .show {
   display: block;
+  transition: all 0.4s ease;
+  /* transition: all 1s ease; */
+  /* transition-delay: 200ms; */
+}
+
+.animate-video {
+  opacity: 1;
 }
 
 .padding-bottom {
@@ -1187,6 +1207,7 @@ footer {
 
 .empty-state {
   order: 1;
+  display: none;
   /* height: 80vh;  */
   /* min-width: 38vw; */
 }
