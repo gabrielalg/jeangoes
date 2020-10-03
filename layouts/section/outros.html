@@ -1,0 +1,80 @@
+{{ define "main" }}
+
+<section id="pages" class="scroll">
+  <!-- <div class="page-container"> -->
+
+  <div class="container-wrap">
+
+    {{ partial "contato" (dict `` `
+    ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
+    ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
+    ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
+    ` "linkYoutubeContact" .Site.Params.perfilYoutube.linkYoutubeContact `` ` 
+    ` "viewInsta" .Site.Params.perfilInsta.viewInsta `` `
+    ` "linkInstaContact" .Site.Params.perfilInsta.linkInstaContact `` ` 
+    ` "viewWhats" .Site.Params.perfilWhats.viewWhats `` `
+    ` "linkWhatsContact" .Params.perfilWhats.linkWhatsContact `` ` 
+    ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
+    ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
+    ` "viewFace" .Site.Params.perfilFace.viewFace `` `
+    ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact `` ` 
+    ` "fotoPerfil" .Site.Params.fotoPerfil `` `
+    ` "contactDescription" .Site.Params.contactDescription `` ` 
+    ` "curriculum" .Site.Params.curriculum `` ` 
+    ` "dominio" .Site.Params.dominio ) `` `  
+    ` -}}
+
+    <div class="container container-page">
+
+      <div id="flex-page">
+
+        <div class="grid-title">
+
+          <div id="simple-title">
+            <h1 class="page-title"> Outros </h1>
+          </div>
+
+        </div>
+
+        {{ with .Params.otherGrid}}
+
+        <div class="grid scroll auto-rows scroll auto-rows-controller" id="grid" style="padding: 15px; grid-gap: 5px;">
+
+          {{ range . }}
+
+          {{ partial "other-grid" . }}
+
+          {{end}}
+
+        </div>
+
+        {{ else }}
+
+        <div class="grid grid-template" id="grid">
+
+          <div class="empty-state">
+            <div class="empty-state-wrap">
+              <img style="width: 30px;" src="/assets/icons/empty.svg" />
+              <p style="margin: 0;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.4);">Nenhum conteúdo aqui</p>
+            </div>
+          </div>
+
+        </div>
+
+        {{end}}
+
+      </div>
+
+      {{ partial "footer" . }}
+
+    </div>
+
+  </div>
+
+</section>
+
+{{ partial "modal-other" . }}
+
+{{ end }}

@@ -124,11 +124,15 @@ ul {
   margin-bottom: 20px;
 }
 
-.video-roles {
+.video-roles, .other-description {
   margin: 0;
   color: rgba(255, 255, 255, 0.4);
   font-size: 14px;
   line-height: 20px;
+}
+
+.other-description {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .video-roles-wrap .video-roles:last-child span{
@@ -1027,7 +1031,6 @@ footer {
 }
 
 .gif-hover {
-  background-image: url('/assets/uploads/gifs/entrementes.gif');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -1566,7 +1569,7 @@ footer {
   }
 
   .page-title {
-    padding-top: 15px;
+    padding-top: 20px;
   }
 
   /* .grid-title ul {
@@ -1638,7 +1641,7 @@ footer {
 @media screen and (max-width: 500px) {
   .page-title {
     font-size: 45px;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
   /* 
