@@ -162,10 +162,7 @@ $(document).ready(function () {
     let modalImage = $(this).find('#videoImage').val();
     let modalRoles = $(this).find('#videoRoles').val().split(', ');
     $('#modal').find('#videoTitle').text(modalTitle);
-    $('#modal')
-      .find('#videoLink')
-      .attr(
-        'src',
+    $('#modal').find('#videoLink').attr('src',
         `https://player.vimeo.com/video/${modalLink}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1`
       );
     $('#modal')
@@ -215,17 +212,19 @@ $(document).ready(function () {
   function filterSelection(category) {
     category = category.trim();
 
-   
     $('.container-grid.show').removeClass('animate-video');
+
+    // filters = $('.container-grid').eq(0).attr('tag-filters').split(',')
+    
     setTimeout(() => {
       $('.container-grid').removeClass('show');
-      if (
-        category === '' ||
-        $('.container-grid[category=' + category + ']')[0]
-      ) {
+      var filteredVideo = $('.container-grid').filter( function() {
+        return $(this).attr('tag-filter').split(',').indexOf(category) > -1
+      })
+      if (category === '' || filteredVideo[0]) {
         var currentVideo = $('.container-grid:not(.show)');
         if (category.length > 0) {
-          currentVideo = $('.container-grid[category=' + category + ']');
+          currentVideo = filteredVideo
         }
         currentVideo.addClass('show');
         setTimeout(() => {
@@ -233,8 +232,17 @@ $(document).ready(function () {
         }, 10);
       }
     }, 400);
+
     setTimeout(() => {
       resizeAllGridItems();
+      // toggleNotFoundVideo($('.container-grid.show').length > 0);
     }, 400); 
+
   }
+
+  // function toggleNotFoundVideo(hasVideo) {
+    
+  // } 
+
+
 });

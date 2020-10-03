@@ -17,7 +17,7 @@ videoGrid:
     videoLink: "239438136"
     videoCategory: Publicidade
     videoRoles:
-      - Diretor
+      # - Diretor
       - Diretor de Fotografia
   - videoTitle: Terceiro Título
     videoImage: /assets/uploads/pages/frame9.png
