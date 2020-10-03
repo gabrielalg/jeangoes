@@ -3,17 +3,17 @@ function toggleMenuMobile() {
 
   if (!$('#menu').hasClass('responsive')) {
     $('#menu').addClass('responsive');
-    $('.mobile-menu').addClass('mobile-menu-active');
     $('.mobile-menu .mobile-menu-wrap').removeClass('shadow');
-    $('.mobile-menu .mobile-menu-wrap').addClass('mobile-menu-line');
+    setTimeout(() => {
+      $('.mobile-menu .mobile-menu-wrap').addClass('mobile-menu-line');
+    },20);
   } else {
     $('#menu').addClass('menu');
-    $('.mobile-menu').removeClass('mobile-menu-active');
     setTimeout(() => {
       $('.mobile-menu .mobile-menu-wrap').addClass('shadow');
       $('.mobile-menu .mobile-menu-wrap').removeClass('mobile-menu-line');
       $('#menu').removeClass('responsive');
-    }, 150);
+    }, 300);
   }
 }
 
@@ -148,13 +148,6 @@ $(document).ready(function () {
     $('.new-message').css({ display: 'none' });
   });
 
-  if ($('#grid').children().hasClass('empty-state')) {
-    $('#flex-page').css({ flex: '1' });
-    setTimeout(() => {
-      $('.empty-state').addClass('show');
-    }, 50);
-  }
-
   $('.open-modal').on('click', function () {
     $('#modal').css('display', 'flex');
     let modalTitle = $(this).find('#videoTitle').val();
@@ -213,8 +206,6 @@ $(document).ready(function () {
     category = category.trim();
 
     $('.container-grid.show').removeClass('animate-video');
-
-    // filters = $('.container-grid').eq(0).attr('tag-filters').split(',')
     
     setTimeout(() => {
       $('.container-grid').removeClass('show');
@@ -234,15 +225,31 @@ $(document).ready(function () {
     }, 400);
 
     setTimeout(() => {
+      toggleNotFoundVideo($('.container-grid.show').length > 0);
       resizeAllGridItems();
-      // toggleNotFoundVideo($('.container-grid.show').length > 0);
     }, 400); 
 
   }
 
-  // function toggleNotFoundVideo(hasVideo) {
-    
-  // } 
+  function toggleNotFoundVideo(hasVideo) {
+    if (hasVideo === false) {
+      $('.grid.scroll').addClass('hide');
+      $('#flex-page').css({ flex: '1' });
+      $('.grid-template').removeClass('hide')
+      $('.empty-state').addClass('show');
+    } else {
+      $('.grid.scroll').removeClass('hide');
+      $('#flex-page').removeAttr('style');
+      $('.grid-template').addClass('hide');
+      $('.empty-state').removeClass('show');
+    }
+  } 
 
+  if ($('.grid.scroll').length === 0) {
+    $('#flex-page').css({ flex: '1' });
+    setTimeout(() => {
+      $('.empty-state').addClass('show');
+    }, 20);
+  }
 
 });

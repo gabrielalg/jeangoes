@@ -26,7 +26,7 @@
 
     <div class="container container-page">
 
-      <div id="flex-page" style="display: flex;">
+      <div id="flex-page">
 
         <div class="grid-title">
 
@@ -58,9 +58,20 @@
 
         </div>
 
+        <div class="grid grid-template hide" id="grid">
+          <div class="empty-state">
+            <div class="empty-state-wrap">
+              <img style="width: 30px;" src="/assets/icons/empty.svg" />
+              <p style="margin: 0;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.4);">Nenhum vídeo aqui</p>
+            </div>
+          </div>
+        </div>
+
         {{ else }}
 
-        <div class="grid grid-template scroll" id="grid">
+        <div class="grid grid-template" id="grid">
 
           <div class="empty-state">
             <div class="empty-state-wrap">
@@ -84,5 +95,7 @@
   </div>
 
 </section>
+
+{{ partial "modal" . }}
 
 {{ end }}
