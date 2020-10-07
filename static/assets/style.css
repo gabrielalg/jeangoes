@@ -753,16 +753,6 @@ textarea {
   justify-content: space-between;
 }
 
-.promotion-page {
-  width: 100%;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-  min-width: 260px;
-  /* min-height: 100%; */
-}
-
 .inicio-content {
   width: 100%;
   height: 100%;
@@ -1085,14 +1075,18 @@ footer {
   transition: all 0.2s ease-out;
 }
 
-.modal-container {
-  /* background-color: #fff; */
-  border-radius: 15px;
+.modal-container,.other-modal-container {
+  border-radius: 10px;
   position: relative;
   min-height: 200px;
-  /* width: max-content; */
   margin: 0 5%;
-  /* min-width: 320px; */
+}
+
+.other-modal-container {
+  background-color: #2f2f31;
+  margin: 40px 10%;
+  height: calc(100% - 80px);
+  overflow: hidden;
 }
 
 .modal-content {
@@ -1101,25 +1095,81 @@ footer {
   max-width: 90vw;
 }
 
-.header-modal {
+.other-modal-content {
+  width: 100%;
+  max-width: auto;
+  height: 100%;
+}
+
+.header-modal, .header-other-modal {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
 }
 
-.header-promotion {
-  min-height: 100vh;
-}
-.header-promotion-top {
-  min-height: 70vh;
+.header-other-modal {
+  padding: 10px 20px 5px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 80px;
 }
 
-.header-promotion-bottom {
+.bottom-other-modal {
+  height: calc(100% - 80px);
+  overflow: auto;
+  /* padding: 0 40px; */
+}
+
+.bottom-info {
   display: flex;
-  flex-wrap: wrap;
-  min-height: 30vh;
-  background-color: #141414;
+  background-color: #242426;
+  padding: 20px 40px;
+}
+
+.modal-info-text {
+  width: 60%;
+}
+
+.bottom-info img {
+  align-self: flex-start;
+  width: 40%;
+  margin-left: 20px;
+}
+
+.bottom-info p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.bottom-info h3 {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  /* margin-top: 0; */
+}
+
+.bottom-content {
+  padding: 20px 40px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8)
+}
+
+.bottom-content img {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .banner-img {
@@ -1138,107 +1188,6 @@ footer {
   flex-wrap: nowrap;
   padding-top: 30px;
   padding-left: 20px;
-}
-
-.title-promotion {
-  padding: 0 !important;
-  margin-left: 10px;
-  position: relative;
-  height: max-content;
-}
-
-.title-promotion::after {
-  width: 60%;
-  height: 1px;
-  content: '';
-  background-color: #ffcc33;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-}
-
-.perfil-promotion {
-  margin: 15px;
-}
-
-.promotion-resumo {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px;
-  margin-bottom: 0;
-  justify-content: center;
-  min-width: 250px;
-  flex: 1;
-}
-
-.header-promotion-bottom p {
-  font-size: 18px;
-  min-width: 250px;
-  width: 100%;
-  flex: 1;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 20px;
-  align-items: center;
-  display: flex;
-  margin-right: 15px;
-  padding-bottom: 30px;
-}
-
-.header-promotion-bottom img {
-  width: 110px;
-  margin-right: 30px;
-  padding-bottom: 30px;
-  /* margin-bottom: 30px; */
-}
-
-.bottom-promotion {
-  display: flex;
-  margin: 40px;
-  margin-bottom: 30px;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-}
-
-.content-bottom-promotion {
-  flex: 1;
-  min-width: 300px;
-  padding-bottom: 20px;
-}
-
-.content-bottom-promotion h3 {
-  margin-top: 0;
-  font-size: 24px;
-}
-
-.grid-promotion {
-  flex: 1;
-  /* min-width: 350px; */
-  max-width: 650px;
-  padding-bottom: 20px;
-}
-
-.content-bottom-promotion p {
-  font-size: 18px;
-  min-width: 250px;
-  width: 100%;
-  flex: 1;
-  line-height: 20px;
-  align-items: center;
-  display: flex;
-  padding-right: 40px;
-}
-
-.content-bottom-promotion p:last-child {
-  margin-bottom: 0;
-}
-
-.grid-promotion img {
-  max-width: 50%;
-}
-
-.grid-promotion-line {
-  display: flex;
 }
 
 .empty-state {
@@ -1460,10 +1409,6 @@ footer {
     padding: 0;
   }
 
-  .content-bottom-promotion p {
-    padding-right: 0;
-  }
-
   .layout {
     position: relative;
     overflow-y: auto;
@@ -1494,10 +1439,6 @@ footer {
   #pages {
     height: auto;
     margin-top: 110px;
-  }
-
-  .promotion-page {
-    padding: 0;
   }
 
   .shadow {
@@ -1617,14 +1558,6 @@ footer {
 
   .text-contato {
     font-size: 20px;
-  }
-
-  .header-promotion-bottom p {
-    margin-right: 0;
-  }
-
-  .header-promotion-bottom img {
-    margin: 0 30px;
   }
 
   .modal-container {

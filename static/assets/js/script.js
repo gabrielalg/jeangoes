@@ -148,6 +148,8 @@ $(document).ready(function () {
     $('.new-message').css({ display: 'none' });
   });
 
+  // -------- ABRIR E FECHAR MODAL 
+
   $('.open-modal').on('click', function () {
     $('#modal').css('display', 'flex');
     let modalTitle = $(this).find('#videoTitle').val();
@@ -172,6 +174,32 @@ $(document).ready(function () {
       $('#modal').css('opacity', '1');
     }, 100);
   });
+
+  $('.open-other-modal').on('click', function () {
+    $('#modal').css('display', 'flex');
+    // let modalTitle = $(this).find('#videoTitle').val();
+    // let modalLink = $(this).find('#videoLink').val();
+    // let modalImage = $(this).find('#videoImage').val();
+    // let modalRoles = $(this).find('#videoRoles').val().split(', ');
+    // $('#modal').find('#videoTitle').text(modalTitle);
+    // $('#modal').find('#videoLink').attr('src',
+    //     `https://player.vimeo.com/video/${modalLink}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1`
+    //   );
+    // $('#modal')
+    //   .find('#videoImage')
+    //   .css({ 'background-image': `url('${modalImage}')` });
+
+    // var htmlContent = '';
+    // for (var i = 0; i < modalRoles.length; i++) {
+    //   htmlContent += `<li> <a href="javascript:;" class="grid-item-tag tag-active-disabled" > ${modalRoles[i]} </a> </li>`;
+    // }
+    // $('#modal').find('#videoRoles').html(htmlContent);
+
+    setTimeout(() => {
+      $('#modal').css('opacity', '1');
+    }, 100);
+  });
+
 
   $('.close-modal-btn').on('click', function () {
     $('#modal').css('opacity', '0');
