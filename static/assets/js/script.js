@@ -74,7 +74,7 @@ $(document).ready(function () {
     timeInterval = setTimeout(() => {
       clearTimeout(timeInterval);
       $('.container-contato.contato-await').css({ 'overflow-y': 'auto' });
-    }, 450);
+    }, 500);
   });
 
   $('.close-btn').on('click', function (event) {
@@ -89,7 +89,7 @@ $(document).ready(function () {
     setTimeout(() => {
       $('.contato-actions').removeClass('transform');
       $('.container-contato.contato-await').removeClass('transform');
-    }, 450);
+    }, 550);
   });
   //  ------
 
@@ -186,7 +186,7 @@ $(document).ready(function () {
     $('#modal').find('#otherDescription').text(modalDescription);
     $('#modal').find('#otherCategory').text(modalCategory);
     $('#modal').find('#otherImage').attr('src', modalImage);
-    $('#modal').find('#otherContent').text(modalContent);
+    // $('#modal').find('#otherContent').text(modalContent);
  
     // $('#modal')
     //   .find('#videoImage')

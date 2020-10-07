@@ -413,7 +413,7 @@ ul {
 .contato-link {
   display: flex;
   padding: 10px;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   border-radius: 5px;
   margin-left: -5px;
 }
@@ -559,6 +559,7 @@ ul {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  align-self: center;
 }
 
 .resume-btn {
@@ -709,11 +710,11 @@ textarea {
 }
 
 .transform {
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   /* transition-delay: 50ms; */
 }
 
