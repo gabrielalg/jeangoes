@@ -97,8 +97,8 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Páginas"
     delete: false # Prevent users from deleting documents in this collection
-    editor:
-      preview: false
+    # editor:
+    #   preview: false
     files:
       - file: "content/_index.md"
         label: "Início"
@@ -141,3 +141,27 @@ collections: # A list of collections the CMS should be able to edit
                 widget: select
                 multiple: true
                 options: ["Assistente de Direção", "Editor", "Produtor", "Diretor de Fotografia"]
+      - file: "content/outros/_index.md"
+        label: "Outros"
+        name: "outros"
+        fields:
+          - label: Itens
+            name: otherGrid
+            widget: list
+            fields:
+              - label: Título
+                name: otherTitle
+                widget: string
+              - label: Imagem
+                name: otherImage
+                widget: image
+              - label: Categoria
+                name: otherCategory
+                widget: string
+              - label: Descrição, 
+                name: otherDescription,  
+                widget: text
+              - label: Conteúdo
+                name: otherContent
+                widget: markdown
+          

@@ -177,14 +177,17 @@ $(document).ready(function () {
 
   $('.open-other-modal').on('click', function () {
     $('#modal').css('display', 'flex');
-    // let modalTitle = $(this).find('#videoTitle').val();
-    // let modalLink = $(this).find('#videoLink').val();
-    // let modalImage = $(this).find('#videoImage').val();
-    // let modalRoles = $(this).find('#videoRoles').val().split(', ');
-    // $('#modal').find('#videoTitle').text(modalTitle);
-    // $('#modal').find('#videoLink').attr('src',
-    //     `https://player.vimeo.com/video/${modalLink}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1`
-    //   );
+    let modalTitle = $(this).find('#otherTitle').val();
+    let modalDescription = $(this).find('#otheDescription').val();
+    let modalCategory = $(this).find('#otherCategory').val();
+    let modalImage = $(this).find('#otherImage').val();
+    let modalContent = $(this).find('#otherContent').val();
+    $('#modal').find('#otherTitle').text(modalTitle);
+    $('#modal').find('#otherDescription').text(modalDescription);
+    $('#modal').find('#otherCategory').text(modalCategory);
+    $('#modal').find('#otherImage').attr('src', modalImage);
+    $('#modal').find('#otherContent').text(modalContent);
+ 
     // $('#modal')
     //   .find('#videoImage')
     //   .css({ 'background-image': `url('${modalImage}')` });
