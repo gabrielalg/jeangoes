@@ -158,8 +158,8 @@ collections: # A list of collections the CMS should be able to edit
               - label: Categoria
                 name: otherCategory
                 widget: string
-              - label: Descrição, 
-                name: otherDescription,  
+              - label: Descrição
+                name: otherDescription 
                 widget: text
               - label: Conteúdo
                 name: otherContent
