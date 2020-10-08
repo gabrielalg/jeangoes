@@ -178,26 +178,21 @@ $(document).ready(function () {
   $('.open-other-modal').on('click', function () {
     $('#modal').css('display', 'flex');
     let modalTitle = $(this).find('#otherTitle').val();
-    let modalDescription = $(this).find('#otheDescription').val();
+    let modalDescription = $(this).find('#otherDescription').val();
     let modalCategory = $(this).find('#otherCategory').val();
     let modalImage = $(this).find('#otherImage').val();
+    let firstParag = $(this.parentElement).find('#otherContent p').first();
+    if (firstParag.text().length === 0) {
+      firstParag.remove();
+    }
     let modalContent = $(this.parentElement).find('#otherContent').html();
+    console.log(modalDescription)
+    
     $('#modal').find('#otherTitle').text(modalTitle);
     $('#modal').find('#otherDescription').text(modalDescription);
     $('#modal').find('#otherCategory').text(modalCategory);
     $('#modal').find('#otherImage').attr('src', modalImage);
     $('#modal').find('#otherContent').html(modalContent);
-    console.log(this)
- 
-    // $('#modal')
-    //   .find('#videoImage')
-    //   .css({ 'background-image': `url('${modalImage}')` });
-
-    // var htmlContent = '';
-    // for (var i = 0; i < modalRoles.length; i++) {
-    //   htmlContent += `<li> <a href="javascript:;" class="grid-item-tag tag-active-disabled" > ${modalRoles[i]} </a> </li>`;
-    // }
-    // $('#modal').find('#videoRoles').html(htmlContent);
 
     setTimeout(() => {
       $('#modal').css('opacity', '1');

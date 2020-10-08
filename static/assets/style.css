@@ -12,9 +12,7 @@ body {
   font-family: 'Pt Sans', sans-serif;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
@@ -500,7 +498,7 @@ li {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-.close-btn:hover {
+.close-btn:hover, .close-modal:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -600,6 +598,7 @@ li {
   text-align: start;
   margin-top: 10px;
   height: 110px;
+  width: 180px;
 }
 
 .resume-header {
@@ -609,6 +608,7 @@ li {
   justify-content: center;
   width: 100%;
   flex: 1;
+  align-self: center;
 }
 
 .form {
@@ -1110,9 +1110,25 @@ footer {
 }
 
 .header-other-modal {
-  padding: 10px 20px 5px 40px;
+  padding: 8px 20px 5px 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   height: 80px;
+}
+
+.header-other-modal .close-modal {
+  background-color: transparent;
+}
+
+.header-other-modal .close-modal:hover {
+  background-color: rgba(255, 255, 255, 0.1)
+}
+
+.modal-title-triangle {
+  rotate: 270deg;
+  margin: 0;
+  margin-right: 10px;
+  padding-right: 8px;
+  width: 20px;
 }
 
 .bottom-other-modal {
@@ -1128,13 +1144,13 @@ footer {
 }
 
 .modal-info-text {
-  width: 60%;
+  width: 75%;
 }
 
 .bottom-info img {
   align-self: flex-start;
-  width: 40%;
-  margin-left: 20px;
+  width: 25%;
+  margin-left: 30px;
 }
 
 .bottom-info p {
@@ -1154,7 +1170,6 @@ footer {
 
 .bottom-content {
   padding: 20px 40px;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1165,13 +1180,43 @@ footer {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(255, 255, 255, 0.8)
+  color: rgba(255, 255, 255, 0.9)
+}
+
+.bottom-content ul li {
+  list-style-type: disc;
+}
+
+.bottom-content ol li {
+  list-style-type: decimal;
 }
 
 .bottom-content img {
-  width: 80%;
+  /* width: 100%; */
   max-width: 700px;
   margin: 0 auto;
+  display: flex;
+}
+
+.bottom-content a {
+  /* color: rgba(255, 255, 255, 0.6); */
+  text-decoration: underline;
+  font-weight: 700;
+  /* padding: 2px 5px; */
+}
+
+.bottom-content blockquote {
+  font-style: italic;
+  font-size: 18px;
+  border-left: 3px solid rgba(255, 255, 255, 0.6);
+  margin: 10px 20px;
+  margin-bottom: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bottom-content blockquote p {
+  font-size: 18px;
+  margin: 10px;
 }
 
 .banner-img {
@@ -1627,6 +1672,7 @@ footer {
     margin-left: 0;
     text-align: center;
     height: auto;
+    width: auto;
   }
 
   .text-contato {

@@ -1,7 +1,7 @@
 ---
 title: Outros
 otherGrid:
-  - otherTitle: Bota Fora Dahruj Chevrolet
+  - otherTitle: Roteiro Culpa
     otherImage: /assets/uploads/pages/frame7.png
     otherCategory: Roteiro
     otherDescription: Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum
@@ -29,11 +29,13 @@ otherGrid:
       Mussum Ipsum, *cacilds vidis litro abertis*. Mé faiz elementum girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Si num tem leite então bota uma pinga aí cumpadi! Mauris nec dolor in eros commodo tempor.
 
 
-      Mussum Ipsum, **cacilds vidis** litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non[ consequat odio.](https://jeangoes.netlify.app/)
+      Mussum Ipsum, **cacilds vidis** litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non [consequat odio.](https://jeangoes.netlify.app/)
 
 
-      > Citação muito bacana
+      > Creio que a pessoa que teve mais experiência de privações consegue enfrentar problemas  com mais firmeza que a pessoa que nunca passou por sofrimento. Portanto, visto por esse  ângulo, um pouco de sofrimento pode ser uma boa lição para a vida.
 
+
+      Mussum Ipsum, **cacilds vidis** litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Mussum Ipsum, cacilds vidis litro abertis.
 
       * Item 1
 
@@ -45,7 +47,7 @@ otherGrid:
       2. Item 2
 
 
-      ![Minha Foto de Perfil](/assets/uploads/perfil_jean.jpg "Foto Jean Goes")
+      ![Minha Foto de Perfil](/assets/uploads/pages/frame7.png "Foto Jean Goes")
 
 
       Mussum Ipsum, *cacilds vidis litro abertis*. Mé faiz elementum girarzis, nisi eros vermeio. [Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.](https://www.gabidigital.work/)
@@ -58,7 +60,8 @@ otherGrid:
       vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Nullam
       volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non
       consequat odio.
-    otherContent: Mussum Ipsum, **cacilds vidis** litro abertis. Mé faiz elementum
+    otherContent: >-
+      Mussum Ipsum, **cacilds vidis** litro abertis. Mé faiz elementum
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
       interdum diam laoreet. Sed non consequat odio.
   - otherTitle: Bota Fora Dahruj Chevrolet
@@ -68,7 +71,8 @@ otherGrid:
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
       interdum diam laoreet. Sed non consequat odio. Si num tem leite então bota
       uma pinga aí cumpadi! Mauris nec dolor in eros commodo tempor.
-    otherContent: Mussum Ipsum, **cacilds vidis** litro abertis. Mé faiz elementum
+    otherContent: >-
+      Mussum Ipsum, **cacilds vidis** litro abertis. Mé faiz elementum
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
       interdum diam laoreet. Sed non consequat odio.
   - otherTitle: Bota Fora Dahruj Chevrolet
@@ -77,7 +81,8 @@ otherGrid:
     otherDescription: Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
       interdum diam laoreet. Sed non consequat odio.
-    otherContent: Mussum Ipsum, **cacilds vidis** litro abertis. Mé faiz elementum
+    otherContent: >-
+      Mussum Ipsum, **cacilds vidis** litro abertis. Mé faiz elementum
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
       interdum diam laoreet. Sed non consequat odio.
 ---
