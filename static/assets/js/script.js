@@ -186,7 +186,6 @@ $(document).ready(function () {
       firstParag.remove();
     }
     let modalContent = $(this.parentElement).find('#otherContent').html();
-    console.log(modalDescription)
     
     $('#modal').find('#otherTitle').text(modalTitle);
     $('#modal').find('#otherDescription').text(modalDescription);
