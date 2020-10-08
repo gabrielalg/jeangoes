@@ -97,8 +97,6 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Páginas"
     delete: false # Prevent users from deleting documents in this collection
-    # editor:
-    #   preview: false
     files:
       - file: "content/_index.md"
         label: "Início"
@@ -162,6 +160,6 @@ collections: # A list of collections the CMS should be able to edit
                 name: otherDescription 
                 widget: text
               - label: Conteúdo
-                name: otherContent
+                name: body
                 widget: markdown
           

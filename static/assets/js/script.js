@@ -89,7 +89,7 @@ $(document).ready(function () {
     setTimeout(() => {
       $('.contato-actions').removeClass('transform');
       $('.container-contato.contato-await').removeClass('transform');
-    }, 550);
+    }, 600);
   });
   //  ------
 
