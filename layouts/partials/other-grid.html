@@ -10,15 +10,18 @@
         <div class="video-roles-wrap">
             <p class="other-description"> {{ .otherDescription }} </p>
         </div>
+        
       </div>
-  
+
       <input type="hidden" value="{{ .otherTitle }}" id="otherTitle" />
       <input type="hidden" value="{{ .otherCategory }}" id="otherCategory" />
       <input type="hidden" value="{{ .otherDescription }}" id="otherDescription" />
       <input type="hidden" value="{{ .otherImage }}" id="otherImage" />
-      <input type="hidden" value="{{ .otherContent }}" id="otherContent" />
-
+      
     </a>
+
+    <div id="otherContent" style="display: none;"> {{ .otherContent | markdownify }} </div>
+    
   </div>
   
   

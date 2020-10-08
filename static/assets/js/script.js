@@ -181,12 +181,13 @@ $(document).ready(function () {
     let modalDescription = $(this).find('#otheDescription').val();
     let modalCategory = $(this).find('#otherCategory').val();
     let modalImage = $(this).find('#otherImage').val();
-    let modalContent = $(this).find('#otherContent').val();
+    let modalContent = $(this.parentElement).find('#otherContent').html();
     $('#modal').find('#otherTitle').text(modalTitle);
     $('#modal').find('#otherDescription').text(modalDescription);
     $('#modal').find('#otherCategory').text(modalCategory);
     $('#modal').find('#otherImage').attr('src', modalImage);
-    // $('#modal').find('#otherContent').text(modalContent);
+    $('#modal').find('#otherContent').html(modalContent);
+    console.log(this)
  
     // $('#modal')
     //   .find('#videoImage')

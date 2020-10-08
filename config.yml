@@ -36,7 +36,6 @@ params:
   description: Portfólio de Jean Goes.
   thumbQuad: /assets/uploads/jean_thumb_quad.jpg
 
- 
   allVideoCategories:
     - Institucional
     - Evento

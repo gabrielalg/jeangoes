@@ -54,7 +54,7 @@ li {
   font-size: 15px;
 }
 
-ul {
+#tag-container, #videoRoles {
   margin: 0;
   padding: 0;
   display: flex;
@@ -1160,8 +1160,9 @@ footer {
   justify-content: center;
 }
 
-.bottom-content p {
+.bottom-content p, .bottom-content li {
   margin: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.8)

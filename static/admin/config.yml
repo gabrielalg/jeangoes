@@ -160,6 +160,6 @@ collections: # A list of collections the CMS should be able to edit
                 name: otherDescription 
                 widget: text
               - label: Conteúdo
-                name: body
+                name: otherContent
                 widget: markdown
           
