@@ -74,7 +74,7 @@ $(document).ready(function () {
     timeInterval = setTimeout(() => {
       clearTimeout(timeInterval);
       $('.container-contato.contato-await').css({ 'overflow-y': 'auto' });
-    }, 500);
+    }, 450);
   });
 
   $('.close-btn').on('click', function (event) {
@@ -89,7 +89,7 @@ $(document).ready(function () {
     setTimeout(() => {
       $('.contato-actions').removeClass('transform');
       $('.container-contato.contato-await').removeClass('transform');
-    }, 600);
+    }, 420);
   });
   //  ------
 
@@ -181,10 +181,12 @@ $(document).ready(function () {
     let modalDescription = $(this).find('#otherDescription').val();
     let modalCategory = $(this).find('#otherCategory').val();
     let modalImage = $(this).find('#otherImage').val();
-    let firstParag = $(this.parentElement).find('#otherContent p').first();
-    if (firstParag.text().length === 0) {
-      firstParag.remove();
-    }
+    let paragraphs = $(this.parentElement).find('#otherContent p');
+    paragraphs.each((i, parag) => {
+      if ($(parag).html().trim().length === 0) {
+        parag.remove();
+      }
+    });
     let modalContent = $(this.parentElement).find('#otherContent').html();
     
     $('#modal').find('#otherTitle').text(modalTitle);
@@ -192,6 +194,8 @@ $(document).ready(function () {
     $('#modal').find('#otherCategory').text(modalCategory);
     $('#modal').find('#otherImage').attr('src', modalImage);
     $('#modal').find('#otherContent').html(modalContent);
+
+    $('.bottom-other-modal').scrollTop(0);
 
     setTimeout(() => {
       $('#modal').css('opacity', '1');
