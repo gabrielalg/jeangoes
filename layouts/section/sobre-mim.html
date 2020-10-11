@@ -1,0 +1,73 @@
+{{ define "main" }}
+
+<section id="pages" class="toggle-scroll scroll">
+  <div class="container-wrap">
+    {{ partial "contato" (dict `` `
+    ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
+    ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
+    ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
+    ` "linkYoutubeContact" .Site.Params.perfilYoutube.linkYoutubeContact `` ` 
+    ` "viewInsta" .Site.Params.perfilInsta.viewInsta `` `
+    ` "linkInstaContact" .Site.Params.perfilInsta.linkInstaContact `` ` 
+    ` "viewWhats" .Site.Params.perfilWhats.viewWhats `` `
+    ` "linkWhatsContact" .Params.perfilWhats.linkWhatsContact `` ` 
+    ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
+    ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
+    ` "viewFace" .Site.Params.perfilFace.viewFace `` `
+    ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact `` ` 
+    ` "fotoPerfil" .Site.Params.fotoPerfil `` `
+    ` "contactDescription" .Site.Params.contactDescription `` ` 
+    ` "curriculum" .Site.Params.curriculum `` ` 
+    ` "dominio" .Site.Params.dominio ) `` `  
+    ` -}}
+
+    <div class="container container-page ">
+      <div class="about-page">
+        <div class="grid-title">
+          <div id="simple-title">
+            <h1 class="page-title">Sobre Mim</h1>
+          </div>
+        </div>
+
+        <div class="about">
+
+            <div class="container-about">
+                <img class="foto-perfil" src="{{ .Site.Params.fotoPerfil }}" />
+                <a href="{{ .Site.Params.dominio }}{{ .Site.Params.curriculum }}" class="resume-btn" target="_blank">
+                    <img src="../assets/icons/download-button.svg" class="resume-icon">
+                    Currículo
+                </a>
+                <a href="mailto:jean.goes00@gmail.com" class="email">jean.goes00@gmail.com</a>
+                <div class="sm-contato">
+
+                    {{ partial "social-media" (dict `` `
+                    ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
+                    ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
+                    ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
+                    ` "linkYoutubeContact" .Site.Params.perfilYoutube.linkYoutubeContact `` ` 
+                    ` "viewInsta" .Site.Params.perfilInsta.viewInsta `` `
+                    ` "linkInstaContact" .Site.Params.perfilInsta.linkInstaContact `` ` 
+                    ` "viewWhats" .Site.Params.perfilWhats.viewWhats `` `
+                    ` "linkWhatsContact" .Site.Params.perfilWhats.linkWhatsContact `` ` 
+                    ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
+                    ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
+                    ` "viewFace" .Site.Params.perfilFace.viewFace `` `
+                    ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact) `` ` 
+                    ` -}}
+
+                </div>
+            </div>
+
+            <div class="info-about scroll">
+                {{ .Params.aboutDescription | markdownify }}
+            </div>
+
+        </div>
+      </div>
+
+      {{ partial "footer" . }}
+    </div>
+  </div>
+</section>
+
+{{ end }}
