@@ -410,6 +410,7 @@ li {
 
 .contato-link {
   display: flex;
+  align-items: center;
   padding: 10px;
   transition: all 0.3s ease;
   border-radius: 5px;
@@ -527,7 +528,7 @@ li {
   padding-right: 35px;
   position: relative;
   justify-content: space-between;
-  height: auto;
+  height: 100%;
   width: 390px;
   /* margin-bottom: 30px; */
 }
@@ -726,7 +727,7 @@ textarea {
 }
 
 .container-wrap {
-  height: 100vh;
+  /* height: 100vh; */
   width: calc(100vw - 245px);
   position: relative;
   padding: 30px;
@@ -738,8 +739,6 @@ textarea {
   position: relative;
   background-color: #2f2f31;
   border-radius: 10px;
-  margin-bottom: 30px;
-  /* margin: 30px; */
   -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.2);
@@ -1081,9 +1080,11 @@ footer {
 
 .other-modal-container {
   background-color: #2f2f31;
-  margin: 5vh 8vw;
-  height: calc(100% - 10vh);
+  margin: 8vh 8vw;
+  height: calc(100% - 16vh);
   overflow: hidden;
+  max-width: 1300px;
+  /* min-height: 500px; */
 }
 
 .modal-content {
@@ -1120,7 +1121,11 @@ footer {
 }
 
 .modal-title-triangle {
-  rotate: 270deg;
+  transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
   margin: 0;
   margin-right: 10px;
   padding-right: 8px;
@@ -1219,8 +1224,6 @@ footer {
 .empty-state {
   order: 1;
   display: none;
-  /* height: 80vh;  */
-  /* min-width: 38vw; */
 }
 
 .empty-state-wrap {
@@ -1271,17 +1274,18 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 30px;
+  margin: 40px;
+  margin-bottom: 20px;
   margin-top: 150px;
-  min-width: 330px;
+  min-width: 400px;
   text-align: center;
-  max-height: 280px;
+  max-height: 300px;
 }
 
 .container-about .foto-perfil {
-  width: 250px;
-  height: 250px;
-  margin-top: -125px;
+  width: 280px;
+  height: 280px;
+  margin-top: -140px;
   -webkit-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 0.15);
@@ -1305,8 +1309,8 @@ footer {
 }
 
 .info-about {
-  margin-top: 152px;
-  height: 53vh;
+  margin-top: 170px;
+  height: calc(100vh - 312px);
   overflow: auto;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 20px;
@@ -1335,7 +1339,7 @@ footer {
 .header-promotion-bottom{
   display: flex;
   flex-wrap: wrap;
-  min-height: 25vh;
+  min-height: 20vh;
   padding: 10px;
   padding-bottom: 0;
   /* background-color: #242426; */
@@ -1399,7 +1403,7 @@ footer {
 
 .header-promotion-bottom img {
   width: 110px;
-  height: 150px;
+  /* height: 150px; */
   margin-right: 30px;
   padding-bottom: 30px;
   /* margin-bottom: 30px; */
