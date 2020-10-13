@@ -1,0 +1,101 @@
+{{ define "main" }}
+
+<section id="pages" class="pages scroll">
+  <!-- <div class="page-container"> -->
+
+  <div class="container-wrap">
+
+    {{ partial "contato" (dict `` `
+    ` "viewVimeo" .Site.Params.perfilVimeo.viewVimeo `` `
+    ` "linkVimeoContact" .Site.Params.perfilVimeo.linkVimeoContact `` ` 
+    ` "viewYoutube" .Site.Params.perfilYoutube.viewYoutube `` `
+    ` "linkYoutubeContact" .Site.Params.perfilYoutube.linkYoutubeContact `` ` 
+    ` "viewInsta" .Site.Params.perfilInsta.viewInsta `` `
+    ` "linkInstaContact" .Site.Params.perfilInsta.linkInstaContact `` ` 
+    ` "viewWhats" .Site.Params.perfilWhats.viewWhats `` `
+    ` "linkWhatsContact" .Params.perfilWhats.linkWhatsContact `` ` 
+    ` "viewLinkedin" .Site.Params.perfilLinkedin.viewLinkedin `` `
+    ` "linkLinkedinContact" .Site.Params.perfilLinkedin.linkLinkedinContact `` ` 
+    ` "viewFace" .Site.Params.perfilFace.viewFace `` `
+    ` "linkFaceContact" .Site.Params.perfilFace.linkFaceContact `` ` 
+    ` "fotoPerfil" .Site.Params.fotoPerfil `` `
+    ` "contactDescription" .Site.Params.contactDescription `` ` 
+    ` "curriculum" .Site.Params.curriculum `` ` 
+    ` "dominio" .Site.Params.dominio ) `` `  
+    ` -}}
+
+    <div class="container container-page" style="overflow: hidden;">
+
+      <div id="flex-page">
+
+        <div class="promotion-page">
+
+          <div class="header-promotion">
+      
+              <div class="header-promotion-top banner-img">
+                  <div class="gradiente-banner">
+                      <img src="/assets/uploads/fita-crepe/fita-crepe-logo.png" class="foto-perfil perfil-promotion"/>
+                      <h1 class="page-title title-promotion"> Fita Crepe Produções </h1>
+                  </div>
+              </div>
+      
+              <div class="header-promotion-bottom">
+                  <div class="promotion-resumo">
+                      <img src="/assets/uploads/fita-crepe/camera.svg" />
+                      <p>Mussum Ipsum, cacilds vidis litro abertis. 
+                          Todo mundo vê os porris que eu tomo, 
+                          mas ninguém vê os tombis que eu levo! 
+                          Mauris nec dolor in eros commodo tempor. </p>
+                  </div>
+      
+                  <div class="promotion-resumo">
+                      <img src="/assets/uploads/fita-crepe/pc-edicao.svg" />
+                      <p> Mussum Ipsum, cacilds vidis litro abertis. 
+                          Todo mundo vê os porris que eu tomo, 
+                          mas ninguém vê os tombis que eu levo! 
+                          Mauris nec dolor in eros commodo tempor. </p>
+                  </div>
+      
+              </div>
+      
+          </div>
+      
+          <div class="bottom-promotion">
+      
+              <div class="content-bottom-promotion">
+                  <h3>Esse é um título</h3>
+                  <p>
+                      Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu tomo,
+                       mas ninguém vê os tombis que eu levo! Mauris nec dolor in eros commodo tempor. 
+                       Aenean aliquam molestie leo, vitae iaculis nisl. Paisis, filhis, espiritis santis.
+                        Mé faiz elementum girarzis, nisi eros vermeio. </p>
+                  <p>
+                      Si num tem leite então bota uma pinga aí cumpadi! 
+                      Diuretics paradis num copo é motivis de denguis.
+                       Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. 
+                       Sed non consequat odio. Suco de cevadiss deixa as pessoas mais interessantis. 
+                  </p>
+              </div>
+      
+              <div class="grid-promotion">
+                  <div class="grid-promotion-line">
+                      <img src="assets/uploads/pages/frame1.jpg" />
+                  </div>
+              </div>
+      
+          </div>
+      
+      
+        </div>
+
+      </div>
+
+      {{ partial "footer" . }}
+
+    </div>
+
+  </div>
+
+</section>
+
+{{ end }}
