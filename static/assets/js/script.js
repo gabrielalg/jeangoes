@@ -57,7 +57,7 @@ $(document).ready(function () {
     toggleMenuMobile();
   });
 
-  var timeInterval;
+  var openInterval, closeInterval ;
 
   // ABRIR E FECHAR CONTATO
 
@@ -67,45 +67,43 @@ $(document).ready(function () {
 
   $('.openmenu').on('click', function (event) {
     $('.contato-actions').addClass('transform contato-actions-open');
-    $('.container-contato.contato-await').addClass(
-      'transform contato-await-active'
-    );
+    $('.container-contato.contato-await').addClass('transform contato-await-active');
 
-    timeInterval = setTimeout(() => {
-      clearTimeout(timeInterval);
+    clearTimeout(openInterval);
+    openInterval = setTimeout(() => {
       $('.container-contato.contato-await').css({ 'overflow-y': 'auto' });
     }, 450);
   });
 
   $('.close-btn').on('click', function (event) {
-    $('.contato-actions.contato-actions-open').removeClass(
-      'contato-actions-open'
-    );
-    $('.container-contato.contato-await.contato-await-active').removeClass(
-      'contato-await-active'
-    );
     $('.container-contato.contato-await').removeAttr('style');
+    $('.contato-actions.contato-actions-open').removeClass('contato-actions-open');
+    $('.container-contato.contato-await.contato-await-active').removeClass('contato-await-active');
 
-    setTimeout(() => {
+    clearTimeout(closeInterval);
+    closeInterval = setTimeout(() => {
       $('.contato-actions').removeClass('transform');
       $('.container-contato.contato-await').removeClass('transform');
-    }, 420);
+    }, 500);
   });
   //  ------
 
   var coll = document.getElementsByClassName('menu-button');
   var i;
-
+  let maxHeight = 0;
   for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener('click', function () {
       var content = document.getElementById('menu');
-      var contentHeight = content.scrollHeight + 15;
+      var contentHeight = content.scrollHeight + 10;
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
       } else {
         content.style.maxHeight = contentHeight + 'px';
       }
+      // maxHeight = content.style.maxHeight
+      // alert(maxHeight)
     });
+    
   }
 
   $('#contato-form').on('submit', function (e) {

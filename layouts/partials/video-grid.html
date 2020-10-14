@@ -12,6 +12,11 @@
       </div>
     </div>
 
+    <div class="video-details hide" >
+      <h2>{{ .videoTitle }}</h2>
+      <h3>{{ .videoCategory }}</h3>
+    </div>
+
     <input type="hidden" value="{{ .videoTitle }}" id="videoTitle" />
     <input type="hidden" value="{{ .videoLink }}" id="videoLink" />
     <input type="hidden" value="{{ .videoImage }}" id="videoImage" />
