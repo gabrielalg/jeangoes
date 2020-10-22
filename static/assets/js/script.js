@@ -66,16 +66,18 @@ $(document).ready(function () {
   // }
 
   $('.openmenu').on('click', function (event) {
-    $('.contato-actions').addClass('transform contato-actions-open');
+    $('.contato-actions').addClass('transform contato-actions-open disable-btn');
     $('.container-contato.contato-await').addClass('transform contato-await-active');
 
     clearTimeout(openInterval);
     openInterval = setTimeout(() => {
       $('.container-contato.contato-await').css({ 'overflow-y': 'auto' });
+      $('.contato-actions').removeClass('disable-btn');
     }, 450);
   });
 
   $('.close-btn').on('click', function (event) {
+    $('.contato-actions.contato-actions-open').addClass('disable-btn');
     $('.container-contato.contato-await').removeAttr('style');
     $('.contato-actions.contato-actions-open').removeClass('contato-actions-open');
     $('.container-contato.contato-await.contato-await-active').removeClass('contato-await-active');
@@ -83,8 +85,9 @@ $(document).ready(function () {
     clearTimeout(closeInterval);
     closeInterval = setTimeout(() => {
       $('.contato-actions').removeClass('transform');
+      $('.contato-actions').removeClass('disable-btn');
       $('.container-contato.contato-await').removeClass('transform');
-    }, 500);
+    }, 450);
   });
   //  ------
 
@@ -118,14 +121,17 @@ $(document).ready(function () {
       method: 'POST',
       data: $(this).serialize(),
       success: function (data) {
+        $('.form-btn-send').addClass('disable-btn');
         setTimeout(() => {
           $('.lds-ellipsis').css({ display: 'none' });
           $('.form-btn-send').css({ display: 'none' });
           $('.form-btn-sucess').css({ display: 'block' });
           $('.new-message').css({ display: 'block' });
+          $('.form-btn-send').removeClass('disable-btn');
         }, 2000);
       },
       error: function (error, textMessage) {
+        $('.form-btn-send').addClass('disable-btn');
         setTimeout(() => {
           $('.form-message').css({ display: 'block' });
           $('.form-message').html(
@@ -133,6 +139,7 @@ $(document).ready(function () {
           );
           $('.lds-ellipsis').css({ display: 'none' });
           $('.form-label-send').css({ display: 'block' });
+          $('.form-btn-send').removeClass('disable-btn');
         }, 2000);
       },
     });
