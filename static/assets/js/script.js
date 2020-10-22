@@ -71,22 +71,24 @@ $(document).ready(function () {
 
     clearTimeout(openInterval);
     openInterval = setTimeout(() => {
-      $('.container-contato.contato-await').css({ 'overflow-y': 'auto' });
+      $('.container-contato.contato-await').addClass('toggle-overflow');
       $('.contato-actions').removeClass('disable-btn');
     }, 450);
   });
 
   $('.close-btn').on('click', function (event) {
     $('.contato-actions.contato-actions-open').addClass('disable-btn');
-    $('.container-contato.contato-await').removeAttr('style');
+    $('.container-contato.contato-await').removeClass('toggle-overflow');
     $('.contato-actions.contato-actions-open').removeClass('contato-actions-open');
     $('.container-contato.contato-await.contato-await-active').removeClass('contato-await-active');
+    
 
     clearTimeout(closeInterval);
     closeInterval = setTimeout(() => {
       $('.contato-actions').removeClass('transform');
-      $('.contato-actions').removeClass('disable-btn');
       $('.container-contato.contato-await').removeClass('transform');
+      $('.contato-actions').removeClass('disable-btn');
+      
     }, 450);
   });
   //  ------
@@ -112,9 +114,9 @@ $(document).ready(function () {
   $('#contato-form').on('submit', function (e) {
     e.preventDefault();
     let url = window.location.origin + '/' + $(this).attr('action');
-    $('.lds-ellipsis').css({ display: 'table' });
-    $('.form-label-send').css({ display: 'none' });
-    $('.form-message').css({ display: 'none' });
+    $('.lds-ellipsis').css({ 'display':'table' });
+    $('.form-label-send').css({ 'display': 'none' });
+    $('.form-message').css({ 'display': 'none' });
     $('.form-btn-send').addClass('disable-btn');
     console.log('ENVIOU O FORMULÁRIO')
 
