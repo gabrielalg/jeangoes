@@ -115,13 +115,14 @@ $(document).ready(function () {
     $('.lds-ellipsis').css({ display: 'table' });
     $('.form-label-send').css({ display: 'none' });
     $('.form-message').css({ display: 'none' });
+    $('.form-btn-send').addClass('disable-btn');
+    console.log('ENVIOU O FORMULÁRIO')
 
     $.ajax({
       url: url,
       method: 'POST',
       data: $(this).serialize(),
       success: function (data) {
-        $('.form-btn-send').addClass('disable-btn');
         setTimeout(() => {
           $('.lds-ellipsis').css({ display: 'none' });
           $('.form-btn-send').css({ display: 'none' });
@@ -131,12 +132,9 @@ $(document).ready(function () {
         }, 2000);
       },
       error: function (error, textMessage) {
-        $('.form-btn-send').addClass('disable-btn');
         setTimeout(() => {
           $('.form-message').css({ display: 'block' });
-          $('.form-message').html(
-            'Falha ao enviar mensagem. Por favor, tente novamente.'
-          );
+          $('.form-message').html('Falha ao enviar mensagem. Por favor, tente novamente.');
           $('.lds-ellipsis').css({ display: 'none' });
           $('.form-label-send').css({ display: 'block' });
           $('.form-btn-send').removeClass('disable-btn');
@@ -151,6 +149,7 @@ $(document).ready(function () {
     $('.form-label-send').css({ display: 'block' });
     $('.form-btn-sucess').css({ display: 'none' });
     $('.new-message').css({ display: 'none' });
+    $('.form-btn-send').removeClass('disable-btn');
   });
 
   // -------- ABRIR E FECHAR MODAL 
