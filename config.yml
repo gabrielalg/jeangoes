@@ -40,6 +40,9 @@ params:
     - Institucional
     - Evento
     - Publicidade
+    - Curta-metragem
+    - Longa-metragem
+    - Roteiro
 
   allVideoRoles:
     - Assistente de Direção
@@ -49,3 +52,8 @@ params:
     - Roteirista
     - Montagem
     - Diretor
+
+  allOtherCategories:
+    - Videoclipes
+    - Realizações
+    - Mostras e Festivais

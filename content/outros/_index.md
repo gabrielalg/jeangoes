@@ -3,7 +3,7 @@ title: Outros
 otherGrid:
   - otherTitle: Roteiro Culpa
     otherImage: /assets/uploads/pages/frame7.png
-    otherCategory: Roteiro
+    otherCategory: Videoclipes
     otherDescription: Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
       interdum diam laoreet. Sed non consequat odio.
@@ -54,7 +54,7 @@ otherGrid:
       Mussum Ipsum, *cacilds vidis litro abertis*. Mé faiz elementum girarzis, nisi eros vermeio. [Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.](https://www.gabidigital.work/)
   - otherTitle: Bota Fora Dahruj Chevrolet
     otherImage: /assets/uploads/pages/frame5.png
-    otherCategory: Roteiro
+    otherCategory: Realizações
     otherDescription: Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
       interdum diam laoreet. Sed non consequat odio.  Mussum Ipsum, cacilds
@@ -87,7 +87,7 @@ otherGrid:
       Mussum Ipsum, **cacilds vidis** litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Mussum Ipsum, cacilds vidis litro abertis.
   - otherTitle: Bota Fora Dahruj Chevrolet
     otherImage: /assets/uploads/pages/frame3.png
-    otherCategory: Roteiro
+    otherCategory: Mostras e Festivais
     otherDescription: Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
       interdum diam laoreet. Sed non consequat odio. Si num tem leite então bota
@@ -98,7 +98,7 @@ otherGrid:
       interdum diam laoreet. Sed non consequat odio.
   - otherTitle: Bota Fora Dahruj Chevrolet
     otherImage: /assets/uploads/pages/frame2.png
-    otherCategory: Roteiro
+    otherCategory: Videoclipes
     otherDescription: Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
       interdum diam laoreet. Sed non consequat odio.

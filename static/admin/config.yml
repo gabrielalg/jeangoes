@@ -133,7 +133,7 @@ collections: # A list of collections the CMS should be able to edit
               - label: Categoria
                 name: videoCategory
                 widget: select
-                options: ["Publicidade", "Evento", "Institucional"]
+                options: ["Publicidade", "Evento", "Institucional", "Curta-metragem", "Longa-metragem", "Roteiro"]
               - label: Funções
                 name: videoRoles
                 widget: select
@@ -155,7 +155,8 @@ collections: # A list of collections the CMS should be able to edit
                 widget: image
               - label: Categoria
                 name: otherCategory
-                widget: string
+                widget: select
+                options: ["Videoclipes", "Realizações", "Mostras e Festivais"]
               - label: Descrição
                 name: otherDescription 
                 widget: text

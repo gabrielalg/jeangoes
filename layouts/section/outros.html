@@ -32,6 +32,16 @@
 
           <div id="simple-title">
             <h1 class="page-title"> Outros </h1>
+            <p>Selecione uma categoria para filtrar:</p>
+            <ul id="tag-container">
+
+                {{ range .Site.Params.allOtherCategories }}
+
+                <li> <a href="javascript:;" class="tag-btn grid-item-tag"> {{ . }} <span></span></a></li>
+          
+                {{end}}
+      
+            </ul>
           </div>
 
         </div>
@@ -46,6 +56,17 @@
 
           {{end}}
 
+        </div>
+
+        <div class="grid grid-template hide" id="grid">
+          <div class="empty-state">
+            <div class="empty-state-wrap">
+              <img style="width: 30px;" src="/assets/icons/empty.svg" />
+              <p style="margin: 0;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.4);">Nenhum conteúdo aqui</p>
+            </div>
+          </div>
         </div>
 
         {{ else }}
