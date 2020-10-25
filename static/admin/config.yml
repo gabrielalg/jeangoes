@@ -133,12 +133,51 @@ collections: # A list of collections the CMS should be able to edit
               - label: Categoria
                 name: videoCategory
                 widget: select
-                options: ["Publicidade", "Evento", "Institucional", "Curta-metragem", "Longa-metragem", "Roteiro"]
+                options: ["Publicidade", "Evento", "Institucional", "Curta-metragem", "Longa-metragem"]
               - label: Funções
                 name: videoRoles
                 widget: select
                 multiple: true
                 options: ["Assistente de Direção", "Editor", "Produtor", "Diretor de Fotografia"]
+      - file: "content/cinema/_index.md"
+        label: "Cinema"
+        name: "cinema"
+        fields:
+          - label: Vídeos
+            name: videoGrid
+            widget: list
+            fields:
+              - label: Título do Vídeo
+                name: videoTitle
+                widget: string
+              - label: Descrição
+                name: videoDescription
+                widget: text
+              - label: Imagem
+                name: videoImage
+                widget: image
+              - label: Gif
+                name: videoGif
+                widget: image
+                hint: "Obs: O Gif só aparece quando o usuário passa o mouse na imagem do vídeo."
+              - label: Link
+                name: videoLink
+                widget: string
+                required: false
+                hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: '448393321'."
+              - label: Categoria
+                name: videoCategory
+                widget: select
+                options: ["Publicidade", "Evento", "Institucional", "Curta-metragem", "Longa-metragem"]
+              - label: Funções
+                name: videoRoles
+                widget: select
+                multiple: true
+                options: ["Assistente de Direção", "Diretor", "Diretor de Fotografia", "Editor", "Montagem", "Produtor", "Roteirista"]
+              - label: Conteúdo
+                name: videoContent
+                required: false
+                widget: markdown
       - file: "content/outros/_index.md"
         label: "Outros"
         name: "outros"

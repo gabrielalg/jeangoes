@@ -1,7 +1,7 @@
 ---
 title: Outros
 otherGrid:
-  - otherTitle: Roteiro Culpa
+  - otherTitle: Videoclipe Música
     otherImage: /assets/uploads/pages/frame7.png
     otherCategory: Videoclipes
     otherDescription: Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum

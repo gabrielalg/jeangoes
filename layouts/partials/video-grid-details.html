@@ -1,5 +1,5 @@
 <div class="container-grid grid-item-hover" tag-filter="{{ delimit .videoRoles ","}}">
-  <a href="javascript:;" class="grid-item open-modal ">
+  <a href="javascript:;" class="grid-item open-cinema-modal ">
     <div class="grid-media">
       <img src="{{ .videoImage }}" />
       <div class="gif-hover" style="background-image: url('{{ .videoGif }}');">
@@ -26,8 +26,13 @@
     <input type="hidden" value="{{ .videoTitle }}" id="videoTitle" />
     <input type="hidden" value="{{ .videoLink }}" id="videoLink" />
     <input type="hidden" value="{{ .videoImage }}" id="videoImage" />
+    <input type="hidden" value="{{ .videoDescription }}" id="videoDescription" />
+    <input type="hidden" value="{{ .videoCategory }}" id="videoCategory" />
     <input type="hidden" value="{{ delimit .videoRoles ", " }}" id="videoRoles"/>
   </a>
+
+  <div id="videoContent" style="display: none;"> <p>{{ .videoContent | markdownify }}</p> </div>
+
 </div>
 
 
