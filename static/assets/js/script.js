@@ -221,22 +221,14 @@ $(document).ready(function () {
     let modalContent = $(this.parentElement).find('#videoContent').html();
 
     if(modalLink === '') {
-      console.log('#videoImage')
       $('.video-wrap-modal').addClass('hide')
-      $('.video-roles-modal').addClass('hide')
       $('.video-img-desc').addClass('show')
       $('.bottom-content').removeAttr('style')
     } else {
       $('#modal').find('#videoLink').attr('src',`https://player.vimeo.com/video/${modalLink}?color=ffffff&muted=1?silenciado=1`);
       $('#modal').find('#videoImage').css({ 'background-image': `url('/assets/uploads/pages/bg-cinza.jpg')` });
-      var htmlContent = '';
-      for (var i = 0; i < modalRoles.length; i++) {
-        htmlContent += `<li> <a href="javascript:;" class="grid-item-tag tag-active-disabled" > ${modalRoles[i]} </a> </li>`;
-      }
-      $('#modal').find('#videoRoles').html(htmlContent);
       $('.bottom-content').css({ 'padding-top':'10px' })
       $('.video-wrap-modal').removeClass('hide');
-      $('.video-roles-modal').removeClass('hide');
       $('.video-img-desc').removeClass('show')
     }
 
@@ -251,6 +243,12 @@ $(document).ready(function () {
     $('#modal').find('#videoDescription').text(modalDescription);
     $('#modal').find('#videoCategory').text(modalCategory);
     $('#modal').find('#videoImageDesc').attr('src', modalImage);
+
+    var htmlContent = '';
+    for (var i = 0; i < modalRoles.length; i++) {
+      htmlContent += `<li> <a href="javascript:;" class="grid-item-tag tag-active-disabled" > ${modalRoles[i]} </a> </li>`;
+    }
+    $('#modal').find('#videoRoles').html(htmlContent);
 
     $('.bottom-other-modal').scrollTop(0);
 
