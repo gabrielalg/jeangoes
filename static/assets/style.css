@@ -1555,7 +1555,7 @@ footer {
   }
 
   #flex-page {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
   }
 
