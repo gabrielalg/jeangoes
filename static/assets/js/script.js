@@ -40,7 +40,6 @@ function resizeAllGridItems() {
   }
 }
 
-
 $(document).ready(function () {
 
   window.addEventListener('resize', resizeAllGridItems);
