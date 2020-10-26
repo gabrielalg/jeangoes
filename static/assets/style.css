@@ -397,7 +397,7 @@ li {
   padding-right: 35px;
   position: relative;
   justify-content: space-between;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 110px);
   width: 390px;
   margin-bottom: 30px;
 }
@@ -411,7 +411,7 @@ li {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: auto;
+  margin: auto 0;
   width: 100%;
 }
 
@@ -442,7 +442,7 @@ li {
   align-items: center;
   padding: 5px 20px;
   margin-top: 8px;
-  width: 110px;
+  width: 115px;
   height: 30px;
   border-radius: 20px;
 }
@@ -454,7 +454,7 @@ li {
 .resume-icon {
   width: 12px;
   height: 12px;
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 .resume-text {
@@ -1852,6 +1852,10 @@ footer {
     font-size: 20px;
   }
 
+  .contato-content {
+    min-height: calc(100vh - 120px);
+  }
+
   .modal-container {
     margin: 0;
     margin-bottom: 20px;
@@ -2030,6 +2034,11 @@ footer {
 
   .contato-actions-open {
     right: 0;
+  }
+
+  .foto-perfil {
+    width: 140px;
+    height: 140px;
   }
 
   .resume-header {
