@@ -596,7 +596,7 @@ textarea {
   position: absolute;
   height: 100%;
   width: calc(100% - 330px);
-  background-color:#2f2f31;
+  background-color: #2f2f31;
   z-index: 9999;
   text-align: center;
 }
@@ -1619,6 +1619,15 @@ footer {
 /* ------ MOBILE -------- */
 
 @media screen and (max-width: 820px) {
+  
+  #cover {
+    width: 100%;
+  }
+
+  .cover-loading {
+    margin-top: 35vh;
+  }
+
   .grid {
     padding: 20px 0;
     grid-template-columns: 100%;
