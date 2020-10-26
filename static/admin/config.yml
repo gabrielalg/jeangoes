@@ -68,6 +68,11 @@ collections: # A list of collections the CMS should be able to edit
                 config: ,
                   multiple: false
               },
+              {
+                label: "E-mail",
+                name: "contactEmail",
+                widget: "string"
+              },
               {label: "Perfil do Vimeo", name: "perfilVimeo", widget: object, fields: [
                 {label: "Link", name: "linkVimeoContact", widget: string},
                 {label: "Visualizar", name: "viewVimeo", widget: "boolean"}
@@ -97,6 +102,8 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Páginas"
     delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
     files:
       - file: "content/_index.md"
         label: "Início"
@@ -202,4 +209,15 @@ collections: # A list of collections the CMS should be able to edit
               - label: Conteúdo
                 name: otherContent
                 widget: markdown
+      - file: "content/fita-crepe/_index.md"
+        label: "Fita Crepe Produções"
+        name: "fitaCrepe"
+        fields:
+      - file: "content/sobre-mim/_index.md"
+        label: "Sobre Mim"
+        name: "sobreMim"
+        fields: 
+          - label: Sobre Mim
+            name: aboutDescription
+            widget: markdown
           

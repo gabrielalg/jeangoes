@@ -18,7 +18,8 @@
     ` "fotoPerfil" .Site.Params.fotoPerfil `` `
     ` "contactDescription" .Site.Params.contactDescription `` ` 
     ` "curriculum" .Site.Params.curriculum `` ` 
-    ` "dominio" .Site.Params.dominio ) `` `  
+    ` "dominio" .Site.Params.dominio `` `
+    ` "contactEmail" .Site.Params.contactEmail ) `` `  
     ` -}}
 
     <div class="container container-page loading-all">
@@ -28,7 +29,7 @@
       <div class="about-page">
         <div class="grid-title">
           <div id="simple-title">
-            <h1 class="page-title">Sobre Mim</h1>
+            <h1 class="page-title">{{ .Params.title }}</h1>
           </div>
         </div>
 
@@ -40,7 +41,7 @@
                     <img src="../assets/icons/download-button.svg" class="resume-icon">
                     Currículo
                 </a>
-                <a href="mailto:jean.goes00@gmail.com" class="email">jean.goes00@gmail.com</a>
+                <a href="mailto:{{ .Site.Params.contactEmail }}" class="email">{{ .Site.Params.contactEmail }}</a>
                 <div class="sm-contato">
 
                     {{ partial "social-media" (dict `` `

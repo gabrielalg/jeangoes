@@ -21,7 +21,8 @@
     ` "fotoPerfil" .Site.Params.fotoPerfil `` `
     ` "contactDescription" .Site.Params.contactDescription `` ` 
     ` "curriculum" .Site.Params.curriculum `` ` 
-    ` "dominio" .Site.Params.dominio ) `` `  
+    ` "dominio" .Site.Params.dominio `` `
+    ` "contactEmail" .Site.Params.contactEmail ) `` ` 
     ` -}}
 
     <div class="container container-page loading-all">
@@ -37,7 +38,7 @@
               <div class="header-promotion-top banner-img">
                   <div class="gradiente-banner">
                     <img src="/assets/uploads/fita-crepe/fita-crepe-logo.png" class="foto-perfil perfil-promotion"/>
-                    <h1 class="page-title title-promotion"> Fita Crepe Produções </h1>
+                    <h1 class="page-title title-promotion">{{ .Params.title }}</h1>
                   </div>
               </div>
       

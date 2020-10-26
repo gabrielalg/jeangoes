@@ -8,6 +8,10 @@ disableKinds:
   
 params:
   favSite: /assets/uploads/fav_jean.png
+  curriculum: /assets/uploads/curriculum.pdf
+  contactEmail: jean.goes00@gmail.com
+  contactDescription: Olá, meu nome é Jean Goes. Sou um editor, diretor de
+    fotografia e produtor audiovisual.
   perfilWhats:
     linkWhatsContact: Coloque o link do WhatsApp aqui
     viewWhats: true
@@ -30,12 +34,9 @@ params:
     linkVimeoContact: https://vimeo.com/user72822778
     viewVimeo: true
   thumbRect: /assets/uploads/jean_thumb.jpg
-  curriculum: /assets/uploads/curriculum.pdf
-  contactDescription: Olá, meu nome é Jean Goes. Sou um editor, diretor de
-    fotografia e produtor audiovisual.
-  description: Portfólio de Jean Goes.
   thumbQuad: /assets/uploads/jean_thumb_quad.jpg
-
+  description: Site portfólio de Jean Goes.
+  
   allVideoCategories:
     - Evento
     - Institucional
