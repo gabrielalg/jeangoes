@@ -212,6 +212,10 @@ collections: # A list of collections the CMS should be able to edit
       - file: "content/fita-crepe/_index.md"
         label: "Fita Crepe Produções"
         name: "fitaCrepe"
+        fields:
+          - label: Fita Crepe
+            name: aboutDescription
+            widget: text
       - file: "content/sobre-mim/_index.md"
         label: "Sobre Mim"
         name: "sobreMim"
