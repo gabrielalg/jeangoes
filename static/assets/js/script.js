@@ -1,5 +1,5 @@
 function toggleMenuMobile() {
-  $('.mobile-menu .mobile-menu-wrap .seta-menu').toggleClass('rotate-seta');
+  $('.mobile-menu-wrap .seta-menu').toggleClass('rotate-seta');
 
   if (!$('#menu').hasClass('responsive')) {
     $('#menu').addClass('responsive');
