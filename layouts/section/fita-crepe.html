@@ -24,7 +24,9 @@
     ` "dominio" .Site.Params.dominio ) `` `  
     ` -}}
 
-    <div class="container container-page" style="overflow: hidden;">
+    <div class="container container-page loading-all">
+
+      {{ partial "loading" . }}
 
       <div id="flex-page">
 

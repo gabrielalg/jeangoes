@@ -21,7 +21,10 @@
     ` "dominio" .Site.Params.dominio ) `` `  
     ` -}}
 
-    <div class="container container-page ">
+    <div class="container container-page loading-all">
+
+      {{ partial "loading" . }}
+      
       <div class="about-page">
         <div class="grid-title">
           <div id="simple-title">
