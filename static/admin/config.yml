@@ -106,7 +106,7 @@ collections: # A list of collections the CMS should be able to edit
               label: "Link do Vídeo de Início", 
               name: "linkVimeo", 
               widget: string,
-              hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: '448393321'. "
+              hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: 448393321. "
             }
       - file: "content/edicao-motion/_index.md"
         label: "Edição e Motion"
@@ -129,7 +129,7 @@ collections: # A list of collections the CMS should be able to edit
               - label: Link
                 name: videoLink
                 widget: string
-                hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: '448393321'."
+                hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: 448393321."
               - label: Categoria
                 name: videoCategory
                 widget: select
@@ -164,11 +164,11 @@ collections: # A list of collections the CMS should be able to edit
                 name: videoLink
                 widget: string
                 required: false
-                hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: '448393321'."
+                hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: 448393321."
               - label: Categoria
                 name: videoCategory
                 widget: select
-                options: ["Publicidade", "Evento", "Institucional", "Curta-metragem", "Longa-metragem"]
+                options: ["Publicidade", "Evento", "Institucional", "Curta-metragem", "Longa-metragem", "Roteiro"]
               - label: Funções
                 name: videoRoles
                 widget: select
