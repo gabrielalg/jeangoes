@@ -1079,9 +1079,8 @@ footer {
 
 .bottom-content {
   padding: 20px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
+  display: block;
   order: 3;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1875,6 +1874,8 @@ footer {
   .bottom-info {
     flex-direction: column;
     justify-content: flex-start;
+    /* height: 100%; */
+    min-height: max-content;
     flex: 1;
     padding: 20px 4vw;
   }

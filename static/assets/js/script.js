@@ -156,7 +156,6 @@ $(document).ready(function () {
   // -------- ABRIR E FECHAR MODAL 
 
   $('.open-modal').on('click', function () {
-    $('#modal').css('display', 'flex');
     let modalTitle = $(this).find('#videoTitle').val();
     let modalLink = $(this).find('#videoLink').val();
     let modalImage = $(this).find('#videoImage').val();
@@ -177,7 +176,7 @@ $(document).ready(function () {
   });
 
   $('.open-other-modal').on('click', function () {
-    $('#modal').css('display', 'flex');
+    
     let modalTitle = $(this).find('#otherTitle').val();
     let modalDescription = $(this).find('#otherDescription').val();
     let modalCategory = $(this).find('#otherCategory').val();
@@ -196,6 +195,7 @@ $(document).ready(function () {
     $('#modal').find('#otherImage').attr('src', modalImage);
     $('#modal').find('#otherContent').html(modalContent);
 
+    $('#modal').css('display', 'flex');
     $('.bottom-other-modal').scrollTop(0);
 
     setTimeout(() => {
@@ -249,7 +249,9 @@ $(document).ready(function () {
     }
     $('#modal').find('#videoRoles').html(htmlContent);
 
+    $('#modal').css('display', 'flex');
     $('.bottom-other-modal').scrollTop(0);
+    
 
     setTimeout(() => {
       $('#modal').css('opacity', '1');
@@ -265,6 +267,8 @@ $(document).ready(function () {
       $('#modal').find('#videoLink').removeAttr('src');
       $('#modal').find('#videoImage').removeAttr('style');
       $('#modal').find('#videoRoles').html('');
+      $('#modal').find('#videoContent').html('');
+      $('#modal').find('#otherContent').html('');
     }, 300);
   });
 
