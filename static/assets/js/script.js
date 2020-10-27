@@ -170,6 +170,8 @@ $(document).ready(function () {
     }
     $('#modal').find('#videoRoles').html(htmlContent);
 
+    $('#modal').css('display', 'flex');
+
     setTimeout(() => {
       $('#modal').css('opacity', '1');
     }, 100);
