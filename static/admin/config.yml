@@ -119,7 +119,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Edição e Motion"
         name: "edicao-motion"
         fields:
-          - label: Vídeos
+          - label: Edição e Motion
             name: videoGrid
             widget: list
             fields:
@@ -145,12 +145,12 @@ collections: # A list of collections the CMS should be able to edit
                 name: videoRoles
                 widget: select
                 multiple: true
-                options: ["Assistente de Direção", "Editor", "Produtor", "Diretor de Fotografia"]
+                options: ["Assistente de Direção", "Diretor", "Diretor de Fotografia", "Editor", "Montagem", "Produtor", "Roteirista"]
       - file: "content/cinema/_index.md"
         label: "Cinema"
         name: "cinema"
         fields:
-          - label: Vídeos
+          - label: Cinema
             name: videoGrid
             widget: list
             fields:
@@ -189,7 +189,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Outros"
         name: "outros"
         fields:
-          - label: Itens
+          - label: Outros
             name: otherGrid
             widget: list
             fields:
@@ -211,14 +211,14 @@ collections: # A list of collections the CMS should be able to edit
                 widget: markdown
       - file: "content/fita-crepe/_index.md"
         label: "Fita Crepe Produções"
-        name: "fitaCrepe"
+        name: "fita-crepe"
         fields:
-          - label: Fita Crepe
+          - label: Fita Crepe Produções
             name: aboutDescription
             widget: text
       - file: "content/sobre-mim/_index.md"
         label: "Sobre Mim"
-        name: "sobreMim"
+        name: "sobre-mim"
         fields: 
           - label: Sobre Mim
             name: aboutDescription
