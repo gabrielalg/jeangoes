@@ -40,8 +40,7 @@ videoGrid:
     videoRoles:
       - Produtor
       - Diretor de Fotografia
-      - Diretor de Fotografia
-      - Montagem
+      - Montador
       - Editor
     videoDescription: Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
@@ -79,7 +78,7 @@ videoGrid:
     videoCategory: Longa-metragem
     videoRoles:
       - Editor
-      - Montagem
+      - Montador
     videoDescription: Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum
       girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut
       interdum diam laoreet. Sed non consequat odio.  Mussum Ipsum, cacilds

@@ -11,6 +11,7 @@ videoGrid:
       - Editor
       - Produtor
       - Diretor de Fotografia
+    videoDescription: Escreva a descrição do vídeo aqui
   - videoTitle: Um outro título
     videoImage: /assets/uploads/pages/frame2.png
     videoGif: /assets/uploads/gifs/reel-jean.gif
@@ -20,6 +21,7 @@ videoGrid:
       - Editor
       - Produtor
       - Diretor de Fotografia
+    videoDescription: Escreva a descrição do vídeo aqui
   - videoTitle: Terceiro Título
     videoImage: /assets/uploads/pages/frame3.png
     videoGif: /assets/uploads/gifs/reel-jean.gif
@@ -28,6 +30,7 @@ videoGrid:
       - Produtor
       - Diretor de Fotografia
     videoCategory: Evento
+    videoDescription: Escreva a descrição do vídeo aqui
   - videoTitle: Quarto Título
     videoImage: /assets/uploads/pages/frame1.png
     videoGif: /assets/uploads/pages/frame1.png
@@ -38,6 +41,7 @@ videoGrid:
       - Assistente de Direção
       - Editor
       - Diretor de Fotografia
+    videoDescription: Escreva a descrição do vídeo aqui
   - videoTitle: Quinto Título
     videoImage: /assets/uploads/pages/frame5.png
     videoGif: /assets/uploads/gifs/reel-jean.gif
@@ -45,4 +49,5 @@ videoGrid:
     videoCategory: Publicidade
     videoRoles:
       - Editor
+    videoDescription: Escreva a descrição do vídeo aqui
 ---

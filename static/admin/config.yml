@@ -126,6 +126,9 @@ collections: # A list of collections the CMS should be able to edit
               - label: Título do Vídeo
                 name: videoTitle
                 widget: string
+              - label: Descrição
+                name: videoDescription
+                widget: text
               - label: Imagem
                 name: videoImage
                 widget: image
