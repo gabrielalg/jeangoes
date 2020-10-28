@@ -258,11 +258,13 @@ li {
 .contato-actions {
   display: flex;
   align-items: center;
-  margin: 50px 40px 10px 40px;
+  padding: 12px;
+  margin: 0 30px;
   justify-content: space-between;
   right: 310px;
   position: relative;
-  width: 310px;
+  margin-top: 40px;
+  width: 340px;
   /* z-index: 9999; */
 }
 
