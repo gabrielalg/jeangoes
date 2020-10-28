@@ -148,7 +148,7 @@ collections: # A list of collections the CMS should be able to edit
                 name: videoRoles
                 widget: select
                 multiple: true
-                options: ["Assistente de Câmera", "Assistente de Direção", "Diretor", "Diretor de Fotografia", "Editor", "Montador", "Produtor", "Roteirista"]
+                options: ["Assistente de Câmera", "Assistente de Direção", "Diretor", "Diretor de Fotografia", "Editor", "Montador", "Motion Designer", "Produtor", "Roteirista"]
       - file: "content/cinema/_index.md"
         label: "Cinema"
         name: "cinema"
