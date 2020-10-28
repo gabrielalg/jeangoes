@@ -16,7 +16,7 @@ params:
     - Assistente de Câmera
     - Assistente de Direção
   perfilWhats:
-    linkWhatsContact: Coloque o link do WhatsApp aqui
+    linkWhatsContact: https://api.whatsapp.com/send?phone=5519995223659
     viewWhats: true
   perfilFace:
     linkFaceContact: Coloque o link do Facebook aqui
