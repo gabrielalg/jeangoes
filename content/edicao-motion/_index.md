@@ -119,8 +119,8 @@ videoGrid:
       - Motion Designer
   - videoTitle: Mega Missão Honda Dahruj
     videoDescription: Campanha Mega Missão Honda. - 2019
-    videoImage: /assets/uploads/mega-missão-honda.png
-    videoGif: /assets/uploads/mega-missão-honda.png
+    videoImage: /assets/uploads/thumb_megamissaohonda.jpg
+    videoGif: /assets/uploads/thumb_megamissaohonda.jpg
     videoLink: "472879305"
     videoCategory: Publicidade
     videoRoles:
@@ -128,8 +128,8 @@ videoGrid:
       - Motion Designer
   - videoTitle: Campanha Vá de Original, Vá de Goodyear
     videoDescription: Campanha Goodyear. - 2019
-    videoImage: /assets/uploads/goodyear.png
-    videoGif: /assets/uploads/goodyear.png
+    videoImage: /assets/uploads/thumb_goodyear.jpg
+    videoGif: /assets/uploads/thumb_goodyear.jpg
     videoLink: "472862072"
     videoCategory: Institucional
     videoRoles:
@@ -137,8 +137,8 @@ videoGrid:
       - Motion Designer
   - videoTitle: Novo Audi E-Tron
     videoDescription: Lançamento Audi E-Tron. - 2020
-    videoImage: /assets/uploads/audi-e-tron.png
-    videoGif: /assets/uploads/audi-e-tron.png
+    videoImage: /assets/uploads/thumb_audietron.jpg
+    videoGif: /assets/uploads/thumb_audietron.jpg
     videoLink: "472864052"
     videoCategory: Publicidade
     videoRoles:
@@ -146,16 +146,16 @@ videoGrid:
       - Motion Designer
   - videoTitle: Audi R8
     videoDescription: Lançamento Audi R8. 2020
-    videoImage: /assets/uploads/audi-r8.png
-    videoGif: /assets/uploads/audi-r8.png
+    videoImage: /assets/uploads/thumb_audir8.jpg
+    videoGif: /assets/uploads/thumb_audir8.jpg
     videoLink: "472863816"
     videoCategory: Publicidade
     videoRoles:
       - Editor
   - videoTitle: Novo Audi Q3
     videoDescription: Lançamento do Audi Q3. - 2020
-    videoImage: /assets/uploads/audi-q3.png
-    videoGif: /assets/uploads/audi-q3.png
+    videoImage: /assets/uploads/thumb_audiq3.jpg
+    videoGif: /assets/uploads/thumb_audiq3.jpg
     videoLink: "472864821"
     videoCategory: Publicidade
     videoRoles:
@@ -163,16 +163,16 @@ videoGrid:
       - Motion Designer
   - videoTitle: Audi Experience
     videoDescription: Evento Audi Experience para os modelos esportivos. - 2019
-    videoImage: /assets/uploads/audi-experience.png
-    videoGif: /assets/uploads/audi-experience.png
+    videoImage: /assets/uploads/thumb_audiexperience.jpg
+    videoGif: /assets/uploads/thumb_audiexperience.jpg
     videoLink: "472864327"
     videoCategory: Evento
     videoRoles:
       - Editor
   - videoTitle: "Nissan Beach Tennis "
     videoDescription: Open de Beach Tennis. - 2019
-    videoImage: /assets/uploads/beach-tennis.png
-    videoGif: /assets/uploads/beach-tennis.png
+    videoImage: /assets/uploads/thumb_beachtennis.jpg
+    videoGif: /assets/uploads/thumb_beachtennis.jpg
     videoLink: "472864327"
     videoCategory: Evento
     videoRoles:
