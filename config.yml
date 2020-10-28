@@ -5,13 +5,16 @@ title: Jean Goes
 disableKinds:
   - taxonomy
   - term
-  
 params:
   favSite: /assets/uploads/fav_jean.png
-  curriculum: /assets/uploads/curriculum.pdf
-  contactEmail: jean.goes00@gmail.com
-  contactDescription: Olá, meu nome é Jean Goes. Sou um editor, diretor de
-    fotografia e produtor audiovisual.
+  allVideoRoles:
+    - Diretor
+    - Roteirista
+    - Diretor de Fotografia
+    - Montador
+    - Produtor
+    - Assistente de Câmera
+    - Assistente de Direção
   perfilWhats:
     linkWhatsContact: Coloque o link do WhatsApp aqui
     viewWhats: true
@@ -19,7 +22,7 @@ params:
     linkFaceContact: Coloque o link do Facebook aqui
     viewFace: false
   perfilLinkedin:
-    linkLinkedinContact: https://www.linkedin.com/in/jean-goes-5b9abb11a/
+    linkLinkedinContact: https://www.linkedin.com/in/jeangoes00/
     viewLinkedin: true
   dominio: https://jeangoes.netlify.app
   perfilInsta:
@@ -27,6 +30,10 @@ params:
     viewInsta: true
   fotoPerfil: /assets/uploads/perfil_jean.jpg
   logoSite: /assets/uploads/jeangoes-logo.svg
+  allVideoCategories:
+    - Evento
+    - Institucional
+    - Publicidade
   perfilYoutube:
     linkYoutubeContact: Coloque o link do YouTube aqui
     viewYoutube: false
@@ -34,23 +41,9 @@ params:
     linkVimeoContact: https://vimeo.com/user72822778
     viewVimeo: true
   thumbRect: /assets/uploads/jean_thumb.jpg
-  thumbQuad: /assets/uploads/jean_thumb_quad.jpg
+  curriculum: /assets/uploads/curriculum.pdf
+  contactEmail: jean.goes00@gmail.com
+  contactDescription: Motion Designer • Editor de Vídeos • Roteirista • Diretor •
+    Fotógrafo • Produtor Audiovisual
   description: Site portfólio de Jean Goes.
-  
-  allVideoCategories:
-    - Evento
-    - Institucional
-    - Publicidade
-    # - Curta-metragem
-    # - Longa-metragem
-    # - Roteiro
-
-  allVideoRoles:
-    - Diretor
-    - Roteirista
-    - Diretor de Fotografia
-    # - Editor
-    - Montador
-    - Produtor
-    - Assistente de Câmera
-    - Assistente de Direção
+  thumbQuad: /assets/uploads/jean_thumb_quad.jpg
