@@ -30,16 +30,16 @@ videoGrid:
     videoDescription: Vídeo Publicitário para a inauguração da nova loja da Fiat
       Ventuno em Osasco em 2020.
   - videoTitle: A Força de Uma Marca Jeep
-    videoImage: /assets/uploads/jeep-dahruj-castelo.png
-    videoGif: /assets/uploads/jeep-dahruj-castelo.png
+    videoImage: /assets/uploads/thumb_jeepdahrujcastelo.jpg
+    videoGif: /assets/uploads/thumb_jeepdahrujcastelo.jpg
     videoLink: "472851168"
     videoCategory: Institucional
     videoRoles:
       - Editor
     videoDescription: Campanha Jeep nova loja Castelo - 2020
   - videoTitle: "Nissan Dahruj Bike Day "
-    videoImage: /assets/uploads/nissan-dahruj-bike-day.png
-    videoGif: /assets/uploads/nissan-dahruj-bike-day.png
+    videoImage: /assets/uploads/thumb_nissandahrujbikeday.jpg
+    videoGif: /assets/uploads/thumb_nissandahrujbikeday.jpg
     videoLink: "472842417"
     videoCategory: Evento
     videoRoles:
@@ -47,8 +47,8 @@ videoGrid:
     videoDescription: Evento Patrocinado pela Nissan Dahruj. - 2019
   - videoTitle: Fiat Forte de Portas Abertas
     videoDescription: Reabertura Loja Fiat Forte. 2020
-    videoImage: /assets/uploads/reabertura-fiat-forte.png
-    videoGif: /assets/uploads/reabertura-fiat-forte.png
+    videoImage: /assets/uploads/thumb_reaberturafiatforte.jpg
+    videoGif: /assets/uploads/thumb_reaberturafiatforte.jpg
     videoLink: "472849004"
     videoCategory: Publicidade
     videoRoles:
