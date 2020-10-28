@@ -99,4 +99,22 @@ videoGrid:
     videoRoles:
       - Editor
       - Motion Designer
+  - videoTitle: Inauguração Nissan Nova Loja
+    videoDescription: Vídeo de Inauguração da Loja Nissan em Indaiatuba. 2019
+    videoImage: /assets/uploads/nissan-indaiatuba.png
+    videoGif: /assets/uploads/nissan-indaiatuba.png
+    videoLink: "472856862"
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+      - Motion Designer
+  - videoTitle: Você de Novo Honda Dahruj
+    videoDescription: Campanha publicitária Honda HR-V. - 2019
+    videoImage: /assets/uploads/você-de-honda-novo.png
+    videoGif: /assets/uploads/você-de-honda-novo.png
+    videoLink: "472847322"
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+      - Motion Designer
 ---
