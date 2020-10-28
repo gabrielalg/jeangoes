@@ -42,7 +42,7 @@ p {
   font-weight: 400;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
   color: #fff;
   font-weight: 400;
@@ -258,13 +258,11 @@ li {
 .contato-actions {
   display: flex;
   align-items: center;
-  padding: 12px;
-  margin: 0 30px;
+  margin: 50px 40px 10px 40px;
   justify-content: space-between;
   right: 310px;
   position: relative;
-  margin-top: 40px;
-  width: 340px;
+  width: 310px;
   /* z-index: 9999; */
 }
 
