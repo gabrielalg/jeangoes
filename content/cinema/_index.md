@@ -30,8 +30,8 @@ videoGrid:
       noite, o que faz 
 
       com que passe a maior parte do seu tempo livre se deslocando pela cidade grande onde mora. Sua ansiedade faz com que se preocupe muito diariamente com problemas insignificantes, enquanto evita confrontar um conflito sério com seu pai, com o qual não  conversa há mais de um ano. Em um dia comum, Laís sai da rotina ao admirar um belo pôr  do sol, e após conversas com seus amigos e terapeuta, mudanças passam a ocorrer em sua vida.
-    videoImage: /assets/uploads/previsao.jpg
-    videoGif: /assets/uploads/previsao.jpg
+    videoImage: /assets/uploads/thumb_previsao.jpg
+    videoGif: /assets/uploads/thumb_previsao.jpg
     videoCategory: Curta-metragem
     videoRoles:
       - Diretor de Fotografia
