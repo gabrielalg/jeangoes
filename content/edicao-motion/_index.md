@@ -62,4 +62,14 @@ videoGrid:
     videoCategory: Institucional
     videoRoles:
       - Editor
+  - videoTitle: Vídeo de Apresentação Prof. Orestes
+    videoDescription: Vídeo de Apresentação para o Professor Orestes Toledo,
+      candidato a vereador em Campinas. - 2020
+    videoImage: /assets/uploads/orestes.png
+    videoGif: /assets/uploads/orestes.png
+    videoLink: "472871467"
+    videoCategory: Institucional
+    videoRoles:
+      - Editor
+      - Motion Designer
 ---
