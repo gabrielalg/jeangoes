@@ -90,4 +90,13 @@ videoGrid:
     videoRoles:
       - Editor
       - Motion Designer
+  - videoTitle: Compra Online Dahruj Chevrolet
+    videoDescription: Campanha de Compra Online após início da quarentena da Covid-19 - 2020
+    videoImage: /assets/uploads/compra-online-dahruj-chevrolet.png
+    videoGif: /assets/uploads/compra-online-dahruj-chevrolet.png
+    videoLink: "472851956"
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+      - Motion Designer
 ---
