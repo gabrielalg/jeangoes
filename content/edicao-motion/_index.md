@@ -152,4 +152,29 @@ videoGrid:
     videoCategory: Publicidade
     videoRoles:
       - Editor
+  - videoTitle: Novo Audi Q3
+    videoDescription: Lançamento do Audi Q3. - 2020
+    videoImage: /assets/uploads/audi-q3.png
+    videoGif: /assets/uploads/audi-q3.png
+    videoLink: "472864821"
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+      - Motion Designer
+  - videoTitle: Audi Experience
+    videoDescription: Evento Audi Experience para os modelos esportivos. - 2019
+    videoImage: /assets/uploads/audi-experience.png
+    videoGif: /assets/uploads/audi-experience.png
+    videoLink: "472864327"
+    videoCategory: Evento
+    videoRoles:
+      - Editor
+  - videoTitle: "Nissan Beach Tennis "
+    videoDescription: Open de Beach Tennis. - 2019
+    videoImage: /assets/uploads/beach-tennis.png
+    videoGif: /assets/uploads/beach-tennis.png
+    videoLink: "472864327"
+    videoCategory: Evento
+    videoRoles:
+      - Editor
 ---
