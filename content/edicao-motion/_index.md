@@ -45,4 +45,13 @@ videoGrid:
     videoRoles:
       - Editor
     videoDescription: Evento Patrocinado pela Nissan Dahruj. - 2019
+  - videoTitle: Fiat Forte de Portas Abertas
+    videoDescription: Reabertura Loja Fiat Forte. 2020
+    videoImage: /assets/uploads/reabertura-fiat-forte.png
+    videoGif: /assets/uploads/reabertura-fiat-forte.png
+    videoLink: "472849004"
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+      - Motion Designer
 ---
