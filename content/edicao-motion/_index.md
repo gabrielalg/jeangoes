@@ -2,8 +2,8 @@
 title: Edição e Motion
 videoGrid:
   - videoTitle: Dahruj Rent a Car - Ciro Bottini
-    videoImage: /assets/uploads/bottini.png
-    videoGif: /assets/uploads/bottini.png
+    videoImage: /assets/uploads/thumb_bottini.jpg
+    videoGif: /assets/uploads/thumb_bottini.jpg
     videoLink: "472860043"
     videoCategory: Publicidade
     videoRoles:
@@ -11,8 +11,8 @@ videoGrid:
       - Motion Designer
     videoDescription: Campanha publicitária Dahruj Rent a Car, quem faz conta assina. - 2020
   - videoTitle: "Liquidação Anual Fiat Forte "
-    videoImage: /assets/uploads/liquidação-anual-fiat-forte.png
-    videoGif: /assets/uploads/liquidação-anual-fiat-forte.png
+    videoImage: /assets/uploads/thumb_liquidacaoanualfiatforte.jpg
+    videoGif: /assets/uploads/thumb_liquidacaoanualfiatforte.jpg
     videoLink: "472848853"
     videoRoles:
       - Editor
@@ -20,8 +20,8 @@ videoGrid:
     videoCategory: Publicidade
     videoDescription: Campanha publicitária Liquidação Anual de Seminovos Fiat Forte - 2019
   - videoTitle: Inauguração Fiat Ventuno
-    videoImage: /assets/uploads/fiat-ventuno.png
-    videoGif: /assets/uploads/fiat-ventuno.png
+    videoImage: /assets/uploads/thumb_fiatventuno.jpg
+    videoGif: /assets/uploads/thumb_fiatventuno.jpg
     videoLink: "472842251"
     videoCategory: Publicidade
     videoRoles:
