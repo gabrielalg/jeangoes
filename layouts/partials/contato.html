@@ -34,14 +34,13 @@
                 <form netlify data-netlify="true" name="Contato" method="post" id="contato-form" class="form">
                     <p class="form-message"></p>
 
-                    <input id="nome-form" type="text" name="nome" placeholder="nome" class="form-field" />
+                    <input id="nome-form" type="text" name="nome" placeholder="nome" class="form-field" required/>
 
                     <input id="email-form" type="email" name="email" placeholder="e-mail" class="form-field" required/>
 
                     <input id="assunto-form" type="text" name="assunto" placeholder="assunto" class="form-field" />
 
-                    <textarea id="mensagem-form" name="mensagem" form="contato-form" placeholder="mensagem"
-                        class="form-field scroll" required></textarea>
+                    <textarea id="mensagem-form" name="mensagem" form="contato-form" placeholder="mensagem" class="form-field scroll" required></textarea>
 
                     <input class="hidden" name="bot-field" placeholder="Não preencha esse campo se você for humano."/>
 

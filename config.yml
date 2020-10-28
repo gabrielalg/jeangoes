@@ -46,12 +46,11 @@ params:
     # - Roteiro
 
   allVideoRoles:
-    - Assistente de Câmera
+    - Diretor
+    - Roteirista
     - Diretor de Fotografia
     # - Editor
     - Montador
     - Produtor
+    - Assistente de Câmera
     - Assistente de Direção
-    - Diretor
-    - Roteirista
-
