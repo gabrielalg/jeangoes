@@ -4,7 +4,7 @@ videoGrid:
   - videoTitle: Inauguração Fiat Ventuno
     videoImage: /assets/uploads/fiat-ventuno.png
     videoGif: /assets/uploads/fiat-ventuno.png
-    videoLink: 472842251/b9fa1dc550
+    videoLink: "472842251"
     videoCategory: Publicidade
     videoRoles:
       - Editor
@@ -23,7 +23,7 @@ videoGrid:
   - videoTitle: "Liquidação Anual Fiat Forte "
     videoImage: /assets/uploads/liquidação-anual-fiat-forte.png
     videoGif: /assets/uploads/liquidação-anual-fiat-forte.png
-    videoLink: 472848853/3fb4582552
+    videoLink: "472848853"
     videoRoles:
       - Editor
       - Motion Designer
@@ -32,7 +32,7 @@ videoGrid:
   - videoTitle: "Nissan Dahruj Bike Day "
     videoImage: /assets/uploads/nissan-dahruj-bike-day.png
     videoGif: /assets/uploads/nissan-dahruj-bike-day.png
-    videoLink: 472842417/58771530e5
+    videoLink: "472842417"
     videoCategory: Evento
     videoRoles:
       - Editor
@@ -40,7 +40,7 @@ videoGrid:
   - videoTitle: A Força de Uma Marca Jeep
     videoImage: /assets/uploads/jeep-dahruj-castelo.png
     videoGif: /assets/uploads/jeep-dahruj-castelo.png
-    videoLink: 472851168/8abda64996
+    videoLink: "472851168"
     videoCategory: Institucional
     videoRoles:
       - Editor
