@@ -8,6 +8,7 @@ videoGrid:
     videoCategory: Publicidade
     videoRoles:
       - Editor
+      - Motion Designer
     videoDescription: Vídeo Publicitário para a inauguração da nova loja da Fiat
       Ventuno em Osasco em 2020.
   - videoTitle: Dahruj Rent a Car - Ciro Bottini
@@ -17,6 +18,7 @@ videoGrid:
     videoCategory: Publicidade
     videoRoles:
       - Editor
+      - Motion Designer
     videoDescription: Campanha publicitária Dahruj Rent a Car, quem faz conta assina. - 2020
   - videoTitle: "Liquidação Anual Fiat Forte "
     videoImage: /assets/uploads/liquidação-anual-fiat-forte.png
@@ -24,6 +26,7 @@ videoGrid:
     videoLink: 472848853/3fb4582552
     videoRoles:
       - Editor
+      - Motion Designer
     videoCategory: Publicidade
     videoDescription: Campanha publicitária Liquidação Anual de Seminovos Fiat Forte - 2019
   - videoTitle: "Nissan Dahruj Bike Day "
