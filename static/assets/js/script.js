@@ -222,14 +222,14 @@ $(document).ready(function () {
     let modalContent = $(this.parentElement).find('#videoContent').html();
 
     if(modalLink === '') {
-      $('.video-wrap-modal').addClass('hide')
+      $('.container-video-modal').addClass('hide')
       $('.video-img-desc').addClass('show')
       $('.bottom-content').removeAttr('style')
     } else {
       $('#modal').find('#videoLink').attr('src',`https://player.vimeo.com/video/${modalLink}?color=ffffff&muted=1?silenciado=1`);
       $('#modal').find('#videoImage').css({ 'background-image': `url('/assets/uploads/pages/bg-cinza.jpg')` });
       $('.bottom-content').css({ 'padding-top':'10px' })
-      $('.video-wrap-modal').removeClass('hide');
+      $('.container-video-modal').removeClass('hide');
       $('.video-img-desc').removeClass('show')
     }
 

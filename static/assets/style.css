@@ -596,7 +596,7 @@ textarea {
 #cover {
   position: absolute;
   height: 100%;
-  width: calc(100% - 330px);
+  width: calc(100% - 385px);
   background-color: #2f2f31;
   z-index: 9999;
   text-align: center;
@@ -679,6 +679,15 @@ textarea {
   margin-bottom: 7vh;
 }
 
+.container-video-modal {
+  padding: 30px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  flex: 1;
+  order: 2;
+}
+
 .video-wrap-modal {
   /* min-width: 130vh; */
   width: 100%;
@@ -688,12 +697,10 @@ textarea {
 }
 
 .video-modal-cinema {
-  max-width: 790px;
-  margin: 0 auto;
-  padding: 30px 0;
   align-self: center;
-  order: 2;
-  flex: 1;
+  width: 90vh;
+  min-width: 730px;
+  max-width: 1080px;
 }
 
 .video-container {
@@ -843,10 +850,8 @@ footer {
 .grid-title {
   order: 2;
   position: relative;
-  /* width: 32%; */
-  min-width: 310px;
   z-index: 50;
-  min-width: 330px;
+  min-width: 385px;
 }
 
 .grid {
@@ -894,13 +899,6 @@ footer {
 .padding-bottom {
   padding-bottom: 15px;
 }
-
-/* 
-.grid .grid-item {
-  padding-top: 56.25%;
-  position: relative;
-  width: 100%;
-} */
 
 .grid-media {
   padding-top: 56.25%;
@@ -1050,7 +1048,7 @@ footer {
 }
 
 .modal-info-text {
-  width: 75%;
+  width: 78%;
   display: flex; 
   flex-direction: column; 
   justify-content: space-between;
@@ -1058,7 +1056,7 @@ footer {
 
 .bottom-info img {
   align-self: flex-start;
-  width: 25%;
+  width: 22%;
   min-width: 240px;
   margin-left: 30px;
 }
@@ -1478,6 +1476,14 @@ footer {
 /* CORTE FULL HD */
 
 @media screen and (max-width: 1400px) {
+  #cover {
+    width: calc(100% - 330px);
+  }
+
+  .grid-title {
+    min-width: 330px;
+  }
+  
   .inicio-content {
     justify-content: space-evenly;
   }
@@ -1539,6 +1545,11 @@ footer {
     margin: 0;
     margin-bottom: 20px;
     justify-content: center;
+  }
+
+  .video-modal-cinema {
+    min-width: 600px;
+    width: 600px;
   }
 
 }
@@ -1864,10 +1875,15 @@ footer {
     height: 0;
   }
 
-  .video-modal-cinema {
-    padding: 0;
+  .container-video-modal {
     order: -1;
+    padding: 0;
     flex: unset;
+  }
+
+  .video-modal-cinema {
+    min-width: 100%;
+    width: 100%;
   }
 
   .bottom-info {
@@ -1994,10 +2010,6 @@ footer {
 
   .grid-promotion {
     margin: 10px;
-  }
-
-  .video-modal-cinema {
-    max-width: 100%;
   }
 
 }
