@@ -17,7 +17,7 @@ params:
     - Assistente de Câmera
     - Assistente de Direção
   perfilWhats:
-    linkWhatsContact: Coloque o link do WhatsApp aqui
+    linkWhatsContact: https://api.whatsapp.com/send?phone=5519995223659
     viewWhats: true
   perfilFace:
     linkFaceContact: Coloque o link do Facebook aqui
@@ -42,7 +42,7 @@ params:
     linkVimeoContact: https://vimeo.com/user72822778
     viewVimeo: true
   thumbRect: /assets/uploads/jean_thumb.jpg
-  curriculum: /assets/uploads/curriculum.pdf
+  curriculum: /assets/uploads/cv-jean-goes-2020.pdf
   contactEmail: jean.goes00@gmail.com
   contactDescription: Motion Designer • Editor de Vídeos • Roteirista • Diretor •
     Fotógrafo • Produtor Audiovisual
