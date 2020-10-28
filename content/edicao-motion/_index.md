@@ -56,8 +56,8 @@ videoGrid:
       - Motion Designer
   - videoTitle: Jeep Território
     videoDescription: Campanha Jeep Território 2019
-    videoImage: /assets/uploads/jeep-território.png
-    videoGif: /assets/uploads/jeep-território.png
+    videoImage: /assets/uploads/thumb_jeepterritorio.jpg
+    videoGif: /assets/uploads/thumb_jeepterritorio.jpg
     videoLink: "472857477"
     videoCategory: Institucional
     videoRoles:
@@ -65,8 +65,8 @@ videoGrid:
   - videoTitle: Vídeo de Apresentação Prof. Orestes
     videoDescription: Vídeo de Apresentação para o Professor Orestes Toledo,
       candidato a vereador em Campinas. - 2020
-    videoImage: /assets/uploads/orestes.png
-    videoGif: /assets/uploads/orestes.png
+    videoImage: /assets/uploads/thumb_orestes.jpg
+    videoGif: /assets/uploads/thumb_orestes.jpg
     videoLink: "472871467"
     videoCategory: Institucional
     videoRoles:
