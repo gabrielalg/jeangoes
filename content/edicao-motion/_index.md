@@ -74,8 +74,8 @@ videoGrid:
       - Motion Designer
   - videoTitle: Sanasa Sem Sair de Casa
     videoDescription: Campanha Sanasa Online. - 2020
-    videoImage: /assets/uploads/sanasa.png
-    videoGif: /assets/uploads/sanasa.png
+    videoImage: /assets/uploads/thumb_sanasa.jpg
+    videoGif: /assets/uploads/thumb_sanasa.jpg
     videoLink: "472861662"
     videoCategory: Institucional
     videoRoles:
@@ -83,8 +83,8 @@ videoGrid:
       - Motion Designer
   - videoTitle: Momento Honda Dahruj
     videoDescription: Campanha Publicitária Honda Dahruj. - 2019
-    videoImage: /assets/uploads/momento-honda-dahruj.png
-    videoGif: /assets/uploads/momento-honda-dahruj.png
+    videoImage: /assets/uploads/thumb_momentohondadahruj.jpg
+    videoGif: /assets/uploads/thumb_momentohondadahruj.jpg
     videoLink: "472847252"
     videoCategory: Publicidade
     videoRoles:
@@ -92,8 +92,8 @@ videoGrid:
       - Motion Designer
   - videoTitle: Compra Online Dahruj Chevrolet
     videoDescription: Campanha de Compra Online após início da quarentena da Covid-19 - 2020
-    videoImage: /assets/uploads/compra-online-dahruj-chevrolet.png
-    videoGif: /assets/uploads/compra-online-dahruj-chevrolet.png
+    videoImage: /assets/uploads/thumb_compraonlinedahrujchevrolet.jpg
+    videoGif: /assets/uploads/thumb_compraonlinedahrujchevrolet.jpg
     videoLink: "472851956"
     videoCategory: Publicidade
     videoRoles:
@@ -101,8 +101,8 @@ videoGrid:
       - Motion Designer
   - videoTitle: Inauguração Nissan Nova Loja
     videoDescription: Vídeo de Inauguração da Loja Nissan em Indaiatuba. 2019
-    videoImage: /assets/uploads/nissan-indaiatuba.png
-    videoGif: /assets/uploads/nissan-indaiatuba.png
+    videoImage: /assets/uploads/thumb_nissanindaiatuba.jpg
+    videoGif: /assets/uploads/thumb_nissanindaiatuba.jpg
     videoLink: "472856862"
     videoCategory: Publicidade
     videoRoles:
@@ -110,8 +110,8 @@ videoGrid:
       - Motion Designer
   - videoTitle: Você de Novo Honda Dahruj
     videoDescription: Campanha publicitária Honda HR-V. - 2019
-    videoImage: /assets/uploads/você-de-honda-novo.png
-    videoGif: /assets/uploads/você-de-honda-novo.png
+    videoImage: /assets/uploads/thumb_vocedehondanovo.jpg
+    videoGif: /assets/uploads/thumb_vocedehondanovo.jpg
     videoLink: "472847322"
     videoCategory: Publicidade
     videoRoles:
