@@ -72,4 +72,13 @@ videoGrid:
     videoRoles:
       - Editor
       - Motion Designer
+  - videoTitle: Sanasa Sem Sair de Casa
+    videoDescription: Campanha Sanasa Online. - 2020
+    videoImage: /assets/uploads/sanasa.png
+    videoGif: /assets/uploads/sanasa.png
+    videoLink: "472861662"
+    videoCategory: Institucional
+    videoRoles:
+      - Editor
+      - Motion Designer
 ---
