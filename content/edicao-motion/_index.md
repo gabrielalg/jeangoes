@@ -81,4 +81,13 @@ videoGrid:
     videoRoles:
       - Editor
       - Motion Designer
+  - videoTitle: Momento Honda Dahruj
+    videoDescription: Campanha Publicitária Honda Dahruj. - 2019
+    videoImage: /assets/uploads/momento-honda-dahruj.png
+    videoGif: /assets/uploads/momento-honda-dahruj.png
+    videoLink: "472847252"
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+      - Motion Designer
 ---
