@@ -1,53 +1,45 @@
 ---
 title: Edição e Motion
 videoGrid:
-  - videoTitle: A Força de Uma Marca Jeep Dahruj
-    videoImage: /assets/uploads/pages/frame4.png
-    videoGif: /assets/uploads/gifs/reel-jean.gif
-    videoLink: "448393321"
+  - videoTitle: Inauguração Fiat Ventuno
+    videoImage: /assets/uploads/fiat-ventuno.png
+    videoGif: /assets/uploads/fiat-ventuno.png
+    videoLink: 472842251/b9fa1dc550
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+    videoDescription: Vídeo Publicitário para a inauguração da nova loja da Fiat
+      Ventuno em Osasco em 2020.
+  - videoTitle: Dahruj Rent a Car - Ciro Bottini
+    videoImage: /assets/uploads/bottini.png
+    videoGif: /assets/uploads/bottini.png
+    videoLink: 472860043/1124994eef
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+    videoDescription: Campanha publicitária Dahruj Rent a Car, quem faz conta assina. - 2020
+  - videoTitle: "Liquidação Anual Fiat Forte "
+    videoImage: /assets/uploads/liquidação-anual-fiat-forte.png
+    videoGif: /assets/uploads/liquidação-anual-fiat-forte.png
+    videoLink: 472848853/3fb4582552
+    videoRoles:
+      - Editor
+    videoCategory: Publicidade
+    videoDescription: Campanha publicitária Liquidação Anual de Seminovos Fiat Forte - 2019
+  - videoTitle: "Nissan Dahruj Bike Day "
+    videoImage: /assets/uploads/nissan-dahruj-bike-day.png
+    videoGif: /assets/uploads/nissan-dahruj-bike-day.png
+    videoLink: 472842417/58771530e5
+    videoCategory: Evento
+    videoRoles:
+      - Editor
+    videoDescription: Evento Patrocinado pela Nissan Dahruj. - 2019
+  - videoTitle: A Força de Uma Marca Jeep
+    videoImage: /assets/uploads/jeep-dahruj-castelo.png
+    videoGif: /assets/uploads/jeep-dahruj-castelo.png
+    videoLink: 472851168/8abda64996
     videoCategory: Institucional
     videoRoles:
-      - Assistente de Direção
       - Editor
-      - Produtor
-      - Diretor de Fotografia
-    videoDescription: Escreva a descrição do vídeo aqui
-  - videoTitle: Um outro título
-    videoImage: /assets/uploads/pages/frame2.png
-    videoGif: /assets/uploads/gifs/reel-jean.gif
-    videoLink: "239438136"
-    videoCategory: Publicidade
-    videoRoles:
-      - Editor
-      - Produtor
-      - Diretor de Fotografia
-    videoDescription: Escreva a descrição do vídeo aqui
-  - videoTitle: Terceiro Título
-    videoImage: /assets/uploads/pages/frame3.png
-    videoGif: /assets/uploads/gifs/reel-jean.gif
-    videoLink: "448393321"
-    videoRoles:
-      - Produtor
-      - Diretor de Fotografia
-    videoCategory: Evento
-    videoDescription: Escreva a descrição do vídeo aqui
-  - videoTitle: Quarto Título
-    videoImage: /assets/uploads/pages/frame1.png
-    videoGif: /assets/uploads/pages/frame1.png
-    videoLink: "239438136"
-    videoCategory: Evento
-    videoRoles:
-      - Produtor  
-      - Assistente de Direção
-      - Editor
-      - Diretor de Fotografia
-    videoDescription: Escreva a descrição do vídeo aqui
-  - videoTitle: Quinto Título
-    videoImage: /assets/uploads/pages/frame5.png
-    videoGif: /assets/uploads/gifs/reel-jean.gif
-    videoLink: "239438136"
-    videoCategory: Publicidade
-    videoRoles:
-      - Editor
-    videoDescription: Escreva a descrição do vídeo aqui
+    videoDescription: Campanha Jeep nova loja Castelo - 2020
 ---
