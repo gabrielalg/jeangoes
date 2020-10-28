@@ -4,9 +4,9 @@ backend:
 
 locale: 'pt'
 
-site_url: https://jeangoes.netlify.app/
+site_url: https://www.jeangoes.com/
 logo_url: "../assets/uploads/pages/logo-jean-rgb.svg"
-display_url: https://jeangoes.netlify.app/
+display_url: https://www.jeangoes.com/
 
 # publish_mode: editorial_workflow
 media_folder: static/assets/uploads

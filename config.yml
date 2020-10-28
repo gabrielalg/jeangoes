@@ -25,7 +25,7 @@ params:
   perfilLinkedin:
     linkLinkedinContact: https://www.linkedin.com/in/jeangoes00/
     viewLinkedin: true
-  dominio: https://jeangoes.netlify.app
+  dominio: https://www.jeangoes.com
   perfilInsta:
     linkInstaContact: https://www.instagram.com/jeangoes_/
     viewInsta: true
