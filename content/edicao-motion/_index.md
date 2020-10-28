@@ -54,4 +54,12 @@ videoGrid:
     videoRoles:
       - Editor
       - Motion Designer
+  - videoTitle: Jeep Território
+    videoDescription: Campanha Jeep Território 2019
+    videoImage: /assets/uploads/jeep-território.png
+    videoGif: /assets/uploads/jeep-território.png
+    videoLink: "472857477"
+    videoCategory: Institucional
+    videoRoles:
+      - Editor
 ---
