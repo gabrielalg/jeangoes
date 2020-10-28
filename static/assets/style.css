@@ -163,7 +163,7 @@ li {
   flex-direction: row;
   height: 100%;
   width: 100%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   position: fixed;
   min-width: 260px;
 }
@@ -186,7 +186,7 @@ li {
   align-items: flex-start;
   overflow: hidden;
   padding: 10px 10px 0;
-  min-width: 200px;
+  width: 200px;
 }
 
 .menu-item {
