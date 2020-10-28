@@ -1,16 +1,6 @@
 ---
 title: Edição e Motion
 videoGrid:
-  - videoTitle: Inauguração Fiat Ventuno
-    videoImage: /assets/uploads/fiat-ventuno.png
-    videoGif: /assets/uploads/fiat-ventuno.png
-    videoLink: "472842251"
-    videoCategory: Publicidade
-    videoRoles:
-      - Editor
-      - Motion Designer
-    videoDescription: Vídeo Publicitário para a inauguração da nova loja da Fiat
-      Ventuno em Osasco em 2020.
   - videoTitle: Dahruj Rent a Car - Ciro Bottini
     videoImage: /assets/uploads/bottini.png
     videoGif: /assets/uploads/bottini.png
@@ -29,14 +19,16 @@ videoGrid:
       - Motion Designer
     videoCategory: Publicidade
     videoDescription: Campanha publicitária Liquidação Anual de Seminovos Fiat Forte - 2019
-  - videoTitle: "Nissan Dahruj Bike Day "
-    videoImage: /assets/uploads/nissan-dahruj-bike-day.png
-    videoGif: /assets/uploads/nissan-dahruj-bike-day.png
-    videoLink: "472842417"
-    videoCategory: Evento
+  - videoTitle: Inauguração Fiat Ventuno
+    videoImage: /assets/uploads/fiat-ventuno.png
+    videoGif: /assets/uploads/fiat-ventuno.png
+    videoLink: "472842251"
+    videoCategory: Publicidade
     videoRoles:
       - Editor
-    videoDescription: Evento Patrocinado pela Nissan Dahruj. - 2019
+      - Motion Designer
+    videoDescription: Vídeo Publicitário para a inauguração da nova loja da Fiat
+      Ventuno em Osasco em 2020.
   - videoTitle: A Força de Uma Marca Jeep
     videoImage: /assets/uploads/jeep-dahruj-castelo.png
     videoGif: /assets/uploads/jeep-dahruj-castelo.png
@@ -45,4 +37,12 @@ videoGrid:
     videoRoles:
       - Editor
     videoDescription: Campanha Jeep nova loja Castelo - 2020
+  - videoTitle: "Nissan Dahruj Bike Day "
+    videoImage: /assets/uploads/nissan-dahruj-bike-day.png
+    videoGif: /assets/uploads/nissan-dahruj-bike-day.png
+    videoLink: "472842417"
+    videoCategory: Evento
+    videoRoles:
+      - Editor
+    videoDescription: Evento Patrocinado pela Nissan Dahruj. - 2019
 ---
