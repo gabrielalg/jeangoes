@@ -19,17 +19,7 @@ videoGrid:
       - Diretor
       - Montador
     videoContent: >-
-      Prêmio do Júri Popular - Filma Bauru - 2019
-
-
-      Seleção Oficial - Festival Toró - 2018
-
-
-      Seleção Oficial - Mostra Luta - 2018
-
-
-      Seleção Oficial - Loco de Ouro - 2018
-
+      
 
       ![Louros Mandela II](/assets/uploads/louros_mandelaii.png "Louros Mandela II")
 ---
