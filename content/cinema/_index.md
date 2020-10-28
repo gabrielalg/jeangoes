@@ -18,12 +18,24 @@ videoGrid:
       - Roteirista
       - Diretor
       - Montador
-    videoContent: |-
+    videoContent: >-
       Prêmio do Júri Popular - Filma Bauru - 2019
+
 
       Seleção Oficial - Festival Toró - 2018
 
+
       Seleção Oficial - Mostra Luta - 2018
 
+
       Seleção Oficial - Loco de Ouro - 2018
+
+
+      ![Festival Curta Campos do Jordao](/assets/uploads/seleo-oficial-festival-curta-campos-do-jordo-2020.png "Festival Curta Campos do Jordao")
+
+
+      ![Festival Toro](/assets/uploads/seleo-oficial-festival-tor-2018.png "Festival Toro")
+
+
+      ![Filma Bauru](/assets/uploads/filma-bauru.png "Filma Bauru")
 ---
