@@ -35,16 +35,6 @@
 
           <div id="simple-title">
             <h1 class="page-title">{{ .Params.title }}</h1>
-            <p>Selecione uma categoria para filtrar:</p>
-            <ul id="tag-container">
-
-                {{ range .Site.Params.allOtherCategories }}
-
-                <li> <a href="javascript:;" class="tag-btn grid-item-tag"> {{ . }} <span></span></a></li>
-          
-                {{end}}
-      
-            </ul>
           </div>
 
         </div>

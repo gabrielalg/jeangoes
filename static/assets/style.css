@@ -1329,7 +1329,6 @@ footer {
   font-size: 24px;
 }
 
-
 .grid-promotion {
   width: 50%;
   margin: 20px;
@@ -1343,7 +1342,7 @@ footer {
   font-size: 18px;
   width: 100%;
   flex: 1;
-  line-height: 20px;
+  line-height: 22px;
   align-items: center;
   display: flex;
 }
@@ -1351,7 +1350,6 @@ footer {
 .content-bottom-promotion p:last-child {
   margin-bottom: 0;
 }
-
 
 .contato-promotion .contato-link {
   background-color: #2f2f31;

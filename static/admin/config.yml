@@ -145,7 +145,7 @@ collections: # A list of collections the CMS should be able to edit
                 name: videoRoles
                 widget: select
                 multiple: true
-                options: ["Assistente de Direção", "Diretor", "Diretor de Fotografia", "Editor", "Montagem", "Produtor", "Roteirista"]
+                options: ["Assistente de Câmera", "Assistente de Direção", "Diretor", "Diretor de Fotografia", "Editor", "Montador", "Produtor", "Roteirista"]
       - file: "content/cinema/_index.md"
         label: "Cinema"
         name: "cinema"
@@ -180,7 +180,7 @@ collections: # A list of collections the CMS should be able to edit
                 name: videoRoles
                 widget: select
                 multiple: true
-                options: ["Assistente de Direção", "Diretor", "Diretor de Fotografia", "Editor", "Montagem", "Produtor", "Roteirista"]
+                options: ["Assistente de Câmera", "Assistente de Direção", "Diretor", "Diretor de Fotografia", "Editor", "Montador", "Produtor", "Roteirista"]
               - label: Conteúdo
                 name: videoContent
                 required: false
@@ -201,8 +201,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: image
               - label: Categoria
                 name: otherCategory
-                widget: select
-                options: ["Videoclipes", "Realizações", "Mostras e Festivais"]
+                widget: string
               - label: Descrição
                 name: otherDescription 
                 widget: text

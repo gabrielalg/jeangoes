@@ -41,21 +41,17 @@ params:
     - Evento
     - Institucional
     - Publicidade
-    - Curta-metragem
-    - Longa-metragem
+    # - Curta-metragem
+    # - Longa-metragem
     # - Roteiro
 
   allVideoRoles:
+    - Assistente de Câmera
+    - Diretor de Fotografia
+    # - Editor
+    - Montador
+    - Produtor
     - Assistente de Direção
     - Diretor
-    - Diretor de Fotografia
-    - Editor
-    - Montagem
-    - Produtor
     - Roteirista
-
-  allOtherCategories:
-    - Mostras e Festivais
-    - Realizações
-    - Videoclipes
 
