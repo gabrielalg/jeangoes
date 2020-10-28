@@ -117,4 +117,39 @@ videoGrid:
     videoRoles:
       - Editor
       - Motion Designer
+  - videoTitle: Mega Missão Honda Dahruj
+    videoDescription: Campanha Mega Missão Honda. - 2019
+    videoImage: /assets/uploads/mega-missão-honda.png
+    videoGif: /assets/uploads/mega-missão-honda.png
+    videoLink: "472879305"
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+      - Motion Designer
+  - videoTitle: Campanha Vá de Original, Vá de Goodyear
+    videoDescription: Campanha Goodyear. - 2019
+    videoImage: /assets/uploads/goodyear.png
+    videoGif: /assets/uploads/goodyear.png
+    videoLink: "472862072"
+    videoCategory: Institucional
+    videoRoles:
+      - Editor
+      - Motion Designer
+  - videoTitle: Novo Audi E-Tron
+    videoDescription: Lançamento Audi E-Tron. - 2020
+    videoImage: /assets/uploads/audi-e-tron.png
+    videoGif: /assets/uploads/audi-e-tron.png
+    videoLink: "472864052"
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+      - Motion Designer
+  - videoTitle: Audi R8
+    videoDescription: Lançamento Audi R8. 2020
+    videoImage: /assets/uploads/audi-r8.png
+    videoGif: /assets/uploads/audi-r8.png
+    videoLink: "472863816"
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
 ---
