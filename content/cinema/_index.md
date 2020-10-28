@@ -31,11 +31,5 @@ videoGrid:
       Seleção Oficial - Loco de Ouro - 2018
 
 
-      ![Festival Curta Campos do Jordao](/assets/uploads/seleo-oficial-festival-curta-campos-do-jordo-2020.png "Festival Curta Campos do Jordao")
-
-
-      ![Festival Toro](/assets/uploads/seleo-oficial-festival-tor-2018.png "Festival Toro")
-
-
-      ![Filma Bauru](/assets/uploads/filma-bauru.png "Filma Bauru")
+      ![Louros Mandela II](/assets/uploads/louros_mandelaii.png "Louros Mandela II")
 ---
