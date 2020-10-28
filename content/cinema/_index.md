@@ -11,8 +11,8 @@ videoGrid:
       posse por parte do Poder Público junto ao proprietário do Terreno em Março
       de 2017. Hoje ocupam outro terreno e seguem lutando pelo direito a
       moradia.
-    videoImage: /assets/uploads/mandela_still5.jpg
-    videoGif: /assets/uploads/mandela_still5.jpg
+    videoImage: /assets/uploads/thumb_mandela.jpg
+    videoGif: /assets/uploads/thumb_mandela.jpg
     videoCategory: Curta-metragem
     videoRoles:
       - Roteirista
