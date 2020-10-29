@@ -430,8 +430,8 @@ li {
 }
 
 .foto-perfil {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   align-self: center;
 }
@@ -493,7 +493,7 @@ li {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 5px;
   /* flex: 1; */
 }
 
@@ -2052,10 +2052,6 @@ footer {
     right: 0;
   }
 
-  .foto-perfil {
-    width: 140px;
-    height: 140px;
-  }
 
   .resume-header {
     flex-wrap: wrap;
