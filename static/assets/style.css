@@ -2037,7 +2037,7 @@ footer {
   .contato-content {
     width: 97.5vw;
     padding: 0 20px;
-    /* min-height: calc(100vh - 120px); */
+    min-height: calc(100vh - 120px);
   }
 
   .contato-actions {
