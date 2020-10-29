@@ -21,12 +21,13 @@
                     <img class="foto-perfil" src="{{ .fotoPerfil }}" />
 
                     <div class="resume-description">
+                        <div class="resume-btn-wrapper"> 
+                            <a href="{{ .dominio }}{{ .curriculum }}" class="resume-btn" target="_blank">
+                                <img src="../assets/icons/download-button.svg" class="resume-icon">
+                                Currículo
+                            </a>
+                        </div>
                         <p class="resume-text">{{ .contactDescription }}</p>
-        
-                        <a href="{{ .dominio }}{{ .curriculum }}" class="resume-btn" target="_blank">
-                            <img src="../assets/icons/download-button.svg" class="resume-icon">
-                            Currículo
-                        </a>
                     </div>
                    
                 </div>

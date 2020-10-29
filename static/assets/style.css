@@ -430,62 +430,62 @@ li {
 }
 
 .foto-perfil {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   align-self: center;
 }
 
-.resume-btn {
-  background-color: #003399;
-  color: #fff;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  padding: 5px 20px;
-  margin-top: 8px;
-  width: 115px;
-  height: 30px;
+.resume-btn-wrapper, .resume-btn {
+  background-color: #242426;
+  margin: 0 auto;
+  width: 105px;
   border-radius: 20px;
 }
 
+.resume-btn {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  height: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 .resume-btn:hover {
-  background-color: #0039ac;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .resume-icon {
   width: 12px;
   height: 12px;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .resume-text {
   color: #fff;
   font-size: 14px;
   line-height: 18px;
-  margin: 0 3px;
+  margin: 10px 0;
   overflow: hidden;
 }
 
 .resume-description {
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
-  text-align: start;
-  margin-top: 10px;
-  height: 110px;
-  width: 180px;
+  margin-top: -15px;
 }
 
 .resume-header {
   display: flex;
-  margin-bottom: 20px;
   margin-top: 10px;
   justify-content: center;
   width: 100%;
   /* height: 100%; */
   /* flex: 1; */
   align-self: center;
+  flex-direction: column;
 }
 
 .form {
@@ -504,7 +504,7 @@ li {
   color: #fff;
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 20px;
   padding: 4px 10px;
   border: 1px solid transparent;
 }
@@ -2037,7 +2037,7 @@ footer {
   .contato-content {
     width: 97.5vw;
     padding: 0 20px;
-    min-height: calc(100vh - 120px);
+    /* min-height: calc(100vh - 120px); */
   }
 
   .contato-actions {
@@ -2059,11 +2059,6 @@ footer {
   .resume-header {
     flex-wrap: wrap;
     margin-bottom: 10px;
-  }
-
-  .resume-btn {
-    margin: 0 auto;
-    margin-top: 8px;
   }
 
   .resume-description {
