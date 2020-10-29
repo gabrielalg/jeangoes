@@ -506,6 +506,7 @@ li {
   font-size: 14px;
   line-height: 20px;
   padding: 4px 10px;
+  min-height: 36px;
   border: 1px solid transparent;
 }
 
