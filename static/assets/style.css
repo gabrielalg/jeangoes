@@ -493,7 +493,7 @@ li {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
   /* flex: 1; */
 }
 
@@ -506,7 +506,7 @@ li {
   font-size: 14px;
   line-height: 20px;
   padding: 4px 10px;
-  min-height: 36px;
+  min-height: 38px;
   border: 1px solid transparent;
 }
 
