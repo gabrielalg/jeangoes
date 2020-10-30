@@ -175,7 +175,7 @@ li {
 .menu-layout {
   min-width: 240px;
   /* flex:1; */
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .menu {
@@ -186,7 +186,6 @@ li {
   align-items: flex-start;
   overflow: hidden;
   padding: 10px 10px 0;
-  width: 200px;
 }
 
 .menu-item {
@@ -444,17 +443,19 @@ li {
 }
 
 .resume-btn {
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
   font-size: 14px;
   display: flex;
   align-items: center;
   padding: 5px 15px;
   height: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: #003399;
+  /* border: 1px solid rgba(255, 255, 255, 0.4); */
 }
 
 .resume-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #0039ac;
+  /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 .resume-icon {
@@ -809,7 +810,7 @@ footer {
 
 .assinatura-inicio {
   position: absolute;
-  right: -5px;
+  right: 0;
   bottom: 30px;
 }
 
@@ -2038,11 +2039,11 @@ footer {
   .contato-content {
     width: 97.5vw;
     padding: 0 20px;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 105px);
   }
 
   .contato-actions {
-    width: 91vw;
+    width: calc(100vw - 30px);
     margin: 0 10px;
     right: 230px;
     padding: 14px;
@@ -2050,19 +2051,6 @@ footer {
 
   .contato-actions-open {
     right: 0;
-  }
-
-
-  .resume-header {
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-
-  .resume-description {
-    margin-left: 0;
-    text-align: center;
-    height: auto;
-    width: auto;
   }
 
   .text-contato {

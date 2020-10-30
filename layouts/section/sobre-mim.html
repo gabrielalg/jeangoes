@@ -37,10 +37,12 @@
 
             <div class="container-about">
                 <img class="foto-perfil" src="{{ .Site.Params.fotoPerfil }}" />
-                <a href="{{ .Site.Params.dominio }}{{ .Site.Params.curriculum }}" class="resume-btn" target="_blank">
-                    <img src="../assets/icons/download-button.svg" class="resume-icon">
-                    Currículo
-                </a>
+                <div class="resume-btn-wrapper"> 
+                  <a href="{{ .Site.Params.dominio }}{{ .Site.Params.curriculum }}" class="resume-btn" target="_blank">
+                      <img src="../assets/icons/download-button.svg" class="resume-icon">
+                      Currículo
+                  </a>
+                </div>
                 <a href="mailto:{{ .Site.Params.contactEmail }}" class="email">{{ .Site.Params.contactEmail }}</a>
                 <div class="sm-contato">
 

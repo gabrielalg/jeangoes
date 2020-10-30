@@ -2,3 +2,7 @@
 
 # Redirect default Netlify subdomain to primary domain
 https://jeangoes.netlify.app/* https://www.jeangoes.com/:splat 301!
+http://jeangoes.netlify.app/* https://www.jeangoes.com/:splat 301!
+
+http://jeangoes.com/* https://www.jeangoes.com/:splat 301!
+http://www.jeangoes.com/* https://www.jeangoes.com/:splat 301!
