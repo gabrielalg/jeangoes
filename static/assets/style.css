@@ -447,9 +447,10 @@ li {
   font-size: 14px;
   display: flex;
   align-items: center;
-  padding: 5px 15px;
+  padding: 0 15px;
   height: 28px;
   background-color: #003399;
+  line-height: 21px;
   /* border: 1px solid rgba(255, 255, 255, 0.4); */
 }
 
