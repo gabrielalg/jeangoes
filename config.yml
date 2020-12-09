@@ -6,6 +6,17 @@ disableKinds:
   - taxonomy
   - term
   
+headers:
+  - for: /images/*
+    values:
+      Cache-Control: 'public, max-age=604800'
+  - for: /*.css
+    values:
+      Cache-Control: 'public, max-age=604800'
+  - for: /*.js
+    values:
+      Cache-Control: 'public, max-age=604800'
+
 params:
   favSite: /assets/uploads/fav_jean.png
   allVideoRoles:
