@@ -5,7 +5,7 @@ title: Jean Goes
 disableKinds:
   - taxonomy
   - term
-  
+
 params:
   favSite: /assets/uploads/fav_jean.png
   allVideoRoles:
