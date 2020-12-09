@@ -7,7 +7,7 @@ disableKinds:
   - term
   
 headers:
-  - for: /images/*
+  - for: /assets/*
     values:
       Cache-Control: 'public, max-age=604800'
   - for: /*.css
