@@ -9,7 +9,7 @@ videoGrid:
     videoRoles:
       - Editor
       - Motion Designer
-    videoDescription: Campanha publicitária Dahruj Rent a Car, quem faz conta assina. - 2020
+    videoDescription: Campanha publicitária Dahruj Rent a Car, quem faz conta assina - 2020 Campanha publicitária Dahruj Rent a Car, quem faz conta assina - 2020 Campanha publicitária Dahruj Rent a Car, quem faz conta assina - 2020 Campanha publicitária Dahruj Rent a Car, quem faz conta assina - 2020 Campanha publicitária Dahruj Rent a Car, quem faz conta assina - 2020
   - videoTitle: "Liquidação Anual Fiat Forte "
     videoImage: /assets/uploads/thumb_liquidacaoanualfiatforte.jpg
     videoGif: /assets/uploads/thumb_liquidacaoanualfiatforte.jpg

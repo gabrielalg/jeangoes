@@ -988,7 +988,7 @@ footer {
 
 .modal-content {
   padding: 20px;
-  width: 135vh;
+  width: 120vh;
   /* max-width: 90vw; */
   max-width: 1300px;
 }
@@ -1050,11 +1050,26 @@ footer {
   min-height: max-content;
 }
 
+.bottom-info-motion {
+  background-color: transparent;
+  padding: 0;
+  padding-top: 15px;
+}
+
+.bottom-info-motion p {
+  max-height: 55px;
+  overflow-y: auto;
+}
+
 .modal-info-text {
   width: 78%;
   display: flex; 
   flex-direction: column; 
   justify-content: space-between;
+}
+
+.modal-info-motion {
+  width: 100%;
 }
 
 .bottom-info img {
@@ -1067,9 +1082,9 @@ footer {
 .bottom-info p {
   margin: 0;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 21px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .bottom-info h3 {

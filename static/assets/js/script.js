@@ -160,9 +160,11 @@ $(document).ready(function () {
     let modalLink = $(this).find('#videoLink').val();
     let modalImage = $(this).find('#videoImage').val();
     let modalRoles = $(this).find('#videoRoles').val().split(', ');
+    let modalDescription = $(this).find('#videoDescription').val();
     $('#modal').find('#videoTitle').text(modalTitle);
     $('#modal').find('#videoLink').attr('src',`https://player.vimeo.com/video/${modalLink}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1`);
     $('#modal').find('#videoImage').css({ 'background-image': `url('${modalImage}')` });
+    $('#modal').find('#videoDescription').text(modalDescription);
 
     var htmlContent = '';
     for (var i = 0; i < modalRoles.length; i++) {
