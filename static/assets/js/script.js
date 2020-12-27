@@ -162,7 +162,7 @@ $(document).ready(function () {
     let modalRoles = $(this).find('#videoRoles').val().split(', ');
     let modalDescription = $(this).find('#videoDescription').val();
     $('#modal').find('#videoTitle').text(modalTitle);
-    $('#modal').find('.videoLink').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
+    $('#modal').find('#videoLink').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
     $('#modal').find('#videoImage').css({ 'background-image': `url('${modalImage}')` });
     $('#modal').find('#videoDescription').text(modalDescription);
 
@@ -268,7 +268,7 @@ $(document).ready(function () {
     setTimeout(() => {
       $('#modal').css('display', 'none');
       $('#modal').find('#videoTitle').text('');
-      $('#modal').find('.videoLink').removeAttr('src');
+      $('#modal').find('#videoLink').removeAttr('src');
       $('#modal').find('#videoImage').removeAttr('style');
       $('#modal').find('#videoRoles').html('');
       $('#modal').find('#videoContent').html('');
