@@ -1096,11 +1096,11 @@ footer {
   color: rgba(255, 255, 255, 0.9)
 }
 
-.bottom-content ul li {
+.bottom-content ul li, .content-bottom-promotion ul li {
   list-style-type: disc;
 }
 
-.bottom-content ol li {
+.bottom-content ol li, .content-bottom-promotion ol li {
   list-style-type: decimal;
 }
 
@@ -1118,17 +1118,18 @@ footer {
   /* padding: 2px 5px; */
 }
 
-.bottom-content blockquote {
+.bottom-content blockquote, .content-bottom-promotion blockquote {
   font-style: italic;
   font-size: 18px;
   border-left: 3px solid rgba(255, 255, 255, 0.6);
   margin: 20px;
+  padding: 2px 5px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.bottom-content blockquote p {
+.bottom-content blockquote p, .content-bottom-promotion blockquote p {
   font-size: 18px;
-  margin: 10px;
+  margin: 10px !important;
 }
 
 .empty-state {
@@ -1255,7 +1256,6 @@ footer {
 
 .banner-img {
   width: 100%;
-  background-image: url("/assets/uploads/fita-crepe/bastidores.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1331,6 +1331,10 @@ footer {
   font-size: 24px;
 }
 
+.content-bottom-promotion img {
+  max-width: 100%;
+}
+
 .grid-promotion {
   width: 50%;
   margin: 20px;
@@ -1340,13 +1344,9 @@ footer {
   width: 100%;
 }
 
-.content-bottom-promotion p {
+.content-bottom-promotion p, .content-bottom-promotion li {
   font-size: 18px;
-  width: 100%;
-  flex: 1;
   line-height: 22px;
-  align-items: center;
-  display: flex;
 }
 
 .content-bottom-promotion p:last-child {
@@ -1359,6 +1359,22 @@ footer {
 
 .contato-promotion .contato-link:hover {
   background-color: #242426;
+}
+
+.facebook-stripe {
+  display: flex;
+  background-color: #242426;
+  justify-content: space-between;
+  padding: 15px;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.facebook-stripe p {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px;
+  margin-left: 0;
 }
 
 /* -------- LOADING -------------- */
@@ -1628,6 +1644,15 @@ footer {
 
   .header-promotion-bottom p {
     align-items: flex-start;
+  }
+
+  .facebook-stripe {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .facebook-stripe p {
+    margin-top: 0;
   }
 
 }
