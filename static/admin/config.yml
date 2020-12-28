@@ -215,9 +215,24 @@ collections: # A list of collections the CMS should be able to edit
         label: "Fita Crepe Produções"
         name: "fita-crepe"
         fields:
-          - label: Fita Crepe Produções
-            name: aboutDescription
+          - label: "Logo Fita Crepe"
+            name: "logoFitaCrepe"
+            widget: image
+          - label: "Banner Fita Crepe"
+            name: "bannerFitaCrepe"
+            widget: image
+          - label: "Texto do Bloco 1 (ícone de Câmera)"
+            name: "cameraText"
             widget: text
+          - label: "Texto do Bloco 2 (ícone de Computador)"
+            name: "computerText"
+            widget: text
+          - label: "Imagem ao lado do 'Sobre'"
+            name: "fotoContentFitaCrepe"
+            widget: image
+          - label: "Sobre a Fita Crepe"
+            name: "contentFitaCrepe"
+            widget: markdown
       - file: "content/sobre-mim/_index.md"
         label: "Sobre Mim"
         name: "sobre-mim"
