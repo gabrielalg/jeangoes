@@ -35,9 +35,9 @@
 
           <div class="header-promotion">
       
-              <div class="header-promotion-top banner-img">
+              <div class="header-promotion-top banner-img" style="background-image: url('{{ .Params.bannerFitaCrepe }}');">
                   <div class="gradiente-banner">
-                    <img src="/assets/uploads/fita-crepe/fita-crepe-logo.png" class="foto-perfil perfil-promotion"/>
+                    <img src="{{ .Params.logoFitaCrepe }}" class="foto-perfil perfil-promotion"/>
                     <h1 class="page-title title-promotion">{{ .Params.title }}</h1>
                   </div>
               </div>
@@ -48,9 +48,8 @@
                       <img src="/assets/uploads/fita-crepe/camera.svg" />
                     </div>
                       
-                      <p> Produção de filmes e peças publicitárias. 
-                        Trazemos uma solução completa para você com 
-                        equipamentos modernos e produção sob-medida. 
+                      <p>
+                        {{ .Params.cameraText }}
                       </p>
                   </div>
       
@@ -59,9 +58,8 @@
                       <img src="/assets/uploads/fita-crepe/pc-edicao.svg" />
                     </div>
                       
-                      <p> Edição e finalização de vídeos, motion design e 
-                        branding. Criamos soluções visuais prontas
-                        para mídias sociais, cinema e TV.
+                      <p> 
+                        {{ .Params.computerText }}
                       </p>
                   </div>
       
@@ -72,21 +70,34 @@
           <div class="bottom-promotion">
       
               <div class="content-bottom-promotion">
-                  <h3>Dizem por aí que não se faz cinema sem fita crepe. Nós concordamos.</h3>
-                  <p>
-                    A Fita Crepe é uma produtora audiovisual situada em Campinas - SP, 
-                    fundada em 2018, que tem como meta produzir os mais diversos audiovisuais, 
-                    como curtas-metragens, filmes publicitários, videoclipes, videos 
-                    institucionais, entre outros. Realizou os projetos “Mandela II”, 
-                    “A Previsão do Pôr do Sol”, “Culpa” e “Mata”. 
-                  </p>
+                {{ .Params.contentFitaCrepe | markdownify }}
               </div>
       
               <div class="grid-promotion">
-                <img src="/assets/uploads/foto_site.jpg" />
+                <img src="{{ .Params.fotoContentFitaCrepe }}" />
               </div>
       
           </div>
+
+          <iframe 
+          allowtransparency="true" 
+          allowfullscreen="true" 
+          scrolling="no" 
+          allow="encrypted-media" 
+          style="display:none; border: medium none; visibility: visible; width: 0; height: 0;" 
+          src="" class="" width="0" height="0" frameborder="0"></iframe>
+          <div class="facebook-stripe">
+            <p>Curta nossa página no Facebook</p>
+            <iframe src="https://www.facebook.com/v9.0/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fproducoesfitacrepe&tabs&width=400&height=130&small_header=false&hide_cover=false&show_facepile=true&appId&width=400" 
+                    width="400px" height="130px" 
+                    style="border:none; overflow:hidden; width: 400px; height: 130px;" 
+                    scrolling="no" 
+                    frameborder="0" 
+                    allowfullscreen="true" 
+                    allow="web-share">
+            </iframe>
+          </div>
+     
         
         </div>
 
