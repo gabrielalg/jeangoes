@@ -12,14 +12,4 @@ contentFitaCrepe: >-
 
 
   A Fita Crepe é uma produtora audiovisual situada em Campinas - SP, fundada em 2018, que tem como meta produzir os mais diversos audiovisuais, como curtas-metragens, filmes publicitários, videoclipes, videos institucionais, entre outros. Realizou os projetos “Mandela II”, “A Previsão do Pôr do Sol”, “Culpa” e “Mata”.
-
-
-
-
-  ESTE É UM TESTE DE TROCA DE ELEMENTOS 
-
-
-
-
-  ![Logo Fitra Crepe](/assets/uploads/fita-crepe-logo.png "Logo Fitra Crepe")
 ---
