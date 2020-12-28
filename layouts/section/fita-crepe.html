@@ -1,5 +1,11 @@
 {{ define "main" }}
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v9.0" 
+        nonce="XLbiFFcW">
+</script>
+
 <section id="pages" class="pages scroll">
   <!-- <div class="page-container"> -->
 
@@ -79,23 +85,23 @@
       
           </div>
 
-          <iframe 
-          allowtransparency="true" 
-          allowfullscreen="true" 
-          scrolling="no" 
-          allow="encrypted-media" 
-          style="display:none; border: medium none; visibility: visible; width: 0; height: 0;" 
-          src="" class="" width="0" height="0" frameborder="0"></iframe>
           <div class="facebook-stripe">
-            <p>Curta nossa página no Facebook</p>
-            <iframe src="https://www.facebook.com/v9.0/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fproducoesfitacrepe&tabs&width=400&height=130&small_header=false&hide_cover=false&show_facepile=true&appId&width=400" 
-                    width="400px" height="130px" 
-                    style="border:none; overflow:hidden; width: 400px; height: 130px;" 
-                    scrolling="no" 
-                    frameborder="0" 
-                    allowfullscreen="true" 
-                    allow="web-share">
-            </iframe>
+            <p>Curta nossa página no Facebook →</p>
+            
+            <div class="fb-page" 
+                 style="width:400px"
+                 data-href="https://www.facebook.com/producoesfitacrepe" 
+                 data-tabs="" data-width="400" data-height="130" 
+                 data-small-header="false" 
+                 data-adapt-container-width="true" 
+                 data-hide-cover="false" 
+                 data-show-facepile="true">
+                  <blockquote cite="https://www.facebook.com/producoesfitacrepe" 
+                             class="fb-xfbml-parse-ignore">
+                              <a href="https://www.facebook.com/producoesfitacrepe">
+                              </a>
+                  </blockquote>
+            </div>
           </div>
      
         
