@@ -113,10 +113,10 @@ collections: # A list of collections the CMS should be able to edit
             name: "linkYoutube"
             widget: string
             hint: "Colocar só o ID do vídeo no YouTube. 
-            Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM', 
-            o ID que deve ser inserido é: mdi3b65XgKM. 
-            ATENÇÃO: Caso seja definido também um link para o Vimeo, a prioridade é sempre do YOUTUBE. 
-            Caso você queira que apareça o vídeo do Vimeo, não preencha este campo."
+              Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM', 
+              o ID que deve ser inserido é: mdi3b65XgKM. 
+              ATENÇÃO: Caso seja definido também um link para o Vimeo, a prioridade é sempre do YOUTUBE. 
+              Caso você queira que apareça o vídeo do Vimeo, não preencha este campo."
             required: false
           - label: "Link do Vídeo do Início (Vimeo)"
             name: "linkVimeo"
@@ -149,17 +149,17 @@ collections: # A list of collections the CMS should be able to edit
                 widget: string
                 required: false
                 hint: "Colocar só o ID do vídeo no YouTube. 
-                Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM', 
-                o ID que deve ser inserido é: mdi3b65XgKM. 
-                ATENÇÃO: Caso seja definido também um link para o Vimeo, a prioridade é sempre do YOUTUBE. 
-                Caso você queira que apareça o vídeo do Vimeo, não preencha este campo."
+                  Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM', 
+                  o ID que deve ser inserido é: mdi3b65XgKM. 
+                  ATENÇÃO: Caso seja definido também um link para o Vimeo, a prioridade é sempre do YOUTUBE. 
+                  Caso você queira que apareça o vídeo do Vimeo, não preencha este campo."
               - label: Link do Vimeo
                 name: videoVimeoLink
                 widget: string
                 required: false
                 hint: "Colocar só o ID do vídeo no Vimeo. 
-                Exemplo: o link do vídeo é 'https://vimeo.com/448393321', 
-                o ID que deve ser inserido é: 448393321."
+                  Exemplo: o link do vídeo é 'https://vimeo.com/448393321', 
+                  o ID que deve ser inserido é: 448393321."
               - label: Categoria
                 name: videoCategory
                 widget: select
