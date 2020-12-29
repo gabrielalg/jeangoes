@@ -56,18 +56,29 @@
             
                 <div class="video-wrap" >
                     <div class="video-container" style="background-color: #242426;">
-                        <!-- <iframe src="https://player.vimeo.com/video/{{ .Params.linkVimeo }}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1" 
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                        frameborder="0" 
-                        allow="autoplay; fullscreen" 
-                        allowfullscreen>
-                        </iframe>
-                        <script src="https://player.vimeo.com/api/player.js"></script> -->
-                        <iframe id="ytplayer" 
-                                type="text/html" 
-                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                                src="https://www.youtube-nocookie.com/embed/{{ .Params.linkYoutube }}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0&playlist={{ .Params.linkYoutube }}"
-                                frameborder="0" allowfullscreen>
+                        {{ if (and (.Params.linkVimeo) (.Params.linkYoutube)) }}
+                            <iframe id="ytplayer" 
+                                    type="text/html" 
+                                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                    src="https://www.youtube-nocookie.com/embed/{{ .Params.linkYoutube }}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0&playlist={{ .Params.linkYoutube }}"
+                                    frameborder="0" allowfullscreen>
+                            </iframe>
+                        {{ else if (.Params.linkYoutube) }}
+                            <iframe id="ytplayer" 
+                                    type="text/html" 
+                                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                    src="https://www.youtube-nocookie.com/embed/{{ .Params.linkYoutube }}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0&playlist={{ .Params.linkYoutube }}"
+                                    frameborder="0" allowfullscreen>
+                            </iframe>
+                        {{ else if (.Params.linkVimeo)}}
+                            <iframe src="https://player.vimeo.com/video/{{ .Params.linkVimeo }}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1" 
+                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen" 
+                                    allowfullscreen>
+                            </iframe>
+                            <script src="https://player.vimeo.com/api/player.js"></script>
+                        {{ end }}
                     </div>
                 </div>
 

@@ -157,12 +157,29 @@ $(document).ready(function () {
 
   $('.open-modal').on('click', function () {
     let modalTitle = $(this).find('#videoTitle').val();
-    let modalLink = $(this).find('#videoLink').val();
     let modalImage = $(this).find('#videoImage').val();
     let modalRoles = $(this).find('#videoRoles').val().split(', ');
     let modalDescription = $(this).find('#videoDescription').val();
+    let modalLink = "";
+
+    let youtubeLink = $(this).find('#videoYoutubeLink').val();
+    let vimeoLink = $(this).find('#videoVimeoLink').val();
+
+    if (youtubeLink.trim() !== "" && vimeoLink.trim() !== "" ) {
+      modalLink = youtubeLink;
+      $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
+      $('#modal').find('#videoLinkYT').removeClass('hide');
+    } else if (youtubeLink.trim() !== "") {
+      modalLink = youtubeLink;
+      $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
+      $('#modal').find('#videoLinkYT').removeClass('hide');
+    } else if (vimeoLink.trim() !== "") {
+      modalLink = vimeoLink;
+      $('#modal').find('#videoLinkVM').attr('src',`https://player.vimeo.com/video/${modalLink}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1`);
+      $('#modal').find('#videoLinkVM').removeClass('hide');
+    }
+
     $('#modal').find('#videoTitle').text(modalTitle);
-    $('#modal').find('#videoLink').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
     $('#modal').find('#videoImage').css({ 'background-image': `url('${modalImage}')` });
     $('#modal').find('#videoDescription').text(modalDescription);
 
@@ -268,7 +285,8 @@ $(document).ready(function () {
     setTimeout(() => {
       $('#modal').css('display', 'none');
       $('#modal').find('#videoTitle').text('');
-      $('#modal').find('#videoLink').removeAttr('src');
+      $('#modal').find('#videoLinkYT').removeAttr('src').addClass('hide');
+      $('#modal').find('#videoLinkVM').removeAttr('src').addClass('hide');
       $('#modal').find('#videoImage').removeAttr('style');
       $('#modal').find('#videoRoles').html('');
       $('#modal').find('#videoContent').html('');
