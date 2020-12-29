@@ -109,18 +109,18 @@ collections: # A list of collections the CMS should be able to edit
         label: "Início"
         name: "inicio"
         fields:
-          - label: "Link do Vídeo do Início (Youtube)", 
-            name: "linkYoutube", 
-            widget: string,
+          - label: "Link do Vídeo do Início (Youtube)"
+            name: "linkYoutube"
+            widget: string
             hint: "Colocar só o ID do vídeo no YouTube. 
             Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM', 
             o ID que deve ser inserido é: mdi3b65XgKM. 
             ATENÇÃO: Caso seja definido também um link para o Vimeo, a prioridade é sempre do YOUTUBE. 
             Caso você queira que apareça o vídeo do Vimeo, não preencha este campo."
             required: false
-          - label: "Link do Vídeo do Início (Vimeo)", 
-            name: "linkVimeo", 
-            widget: string,
+          - label: "Link do Vídeo do Início (Vimeo)"
+            name: "linkVimeo"
+            widget: string
             hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: 448393321."
             required: false
       - file: "content/edicao-motion/_index.md"
