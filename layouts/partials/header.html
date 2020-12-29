@@ -22,7 +22,7 @@
 
   <nav class="menu shadow" id="menu">
     <img src="../assets/icons/triangle.svg" class="setas" />
-    <!-- {{ $url := .URL }} -->
+    {{ $url := .RelPermalink }}
     <a href="/" class="menu-item {{ if eq $url "/" }}item-active{{ end }}">
       <p>Início</p>
     </a>

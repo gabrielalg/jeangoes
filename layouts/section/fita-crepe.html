@@ -1,5 +1,11 @@
 {{ define "main" }}
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v9.0" 
+        nonce="XLbiFFcW">
+</script>
+
 <section id="pages" class="pages scroll">
   <!-- <div class="page-container"> -->
 
@@ -35,9 +41,9 @@
 
           <div class="header-promotion">
       
-              <div class="header-promotion-top banner-img">
+              <div class="header-promotion-top banner-img" style="background-image: url('{{ .Params.bannerFitaCrepe }}');">
                   <div class="gradiente-banner">
-                    <img src="/assets/uploads/fita-crepe/fita-crepe-logo.png" class="foto-perfil perfil-promotion"/>
+                    <img src="{{ .Params.logoFitaCrepe }}" class="foto-perfil perfil-promotion"/>
                     <h1 class="page-title title-promotion">{{ .Params.title }}</h1>
                   </div>
               </div>
@@ -48,9 +54,8 @@
                       <img src="/assets/uploads/fita-crepe/camera.svg" />
                     </div>
                       
-                      <p> Produção de filmes e peças publicitárias. 
-                        Trazemos uma solução completa para você com 
-                        equipamentos modernos e produção sob-medida. 
+                      <p>
+                        {{ .Params.cameraText }}
                       </p>
                   </div>
       
@@ -59,9 +64,8 @@
                       <img src="/assets/uploads/fita-crepe/pc-edicao.svg" />
                     </div>
                       
-                      <p> Edição e finalização de vídeos, motion design e 
-                        branding. Criamos soluções visuais prontas
-                        para mídias sociais, cinema e TV.
+                      <p> 
+                        {{ .Params.computerText }}
                       </p>
                   </div>
       
@@ -72,21 +76,34 @@
           <div class="bottom-promotion">
       
               <div class="content-bottom-promotion">
-                  <h3>Dizem por aí que não se faz cinema sem fita crepe. Nós concordamos.</h3>
-                  <p>
-                    A Fita Crepe é uma produtora audiovisual situada em Campinas - SP, 
-                    fundada em 2018, que tem como meta produzir os mais diversos audiovisuais, 
-                    como curtas-metragens, filmes publicitários, videoclipes, videos 
-                    institucionais, entre outros. Realizou os projetos “Mandela II”, 
-                    “A Previsão do Pôr do Sol”, “Culpa” e “Mata”. 
-                  </p>
+                {{ .Params.contentFitaCrepe | markdownify }}
               </div>
       
               <div class="grid-promotion">
-                <img src="/assets/uploads/foto_site.jpg" />
+                <img src="{{ .Params.fotoContentFitaCrepe }}" />
               </div>
       
           </div>
+
+          <div class="facebook-stripe">
+            <p>Curta nossa página no Facebook →</p>
+            
+            <div class="fb-page" 
+                 style="width:400px"
+                 data-href="https://www.facebook.com/producoesfitacrepe" 
+                 data-tabs="" data-width="400" data-height="130" 
+                 data-small-header="false" 
+                 data-adapt-container-width="true" 
+                 data-hide-cover="false" 
+                 data-show-facepile="true">
+                  <blockquote cite="https://www.facebook.com/producoesfitacrepe" 
+                             class="fb-xfbml-parse-ignore">
+                              <a href="https://www.facebook.com/producoesfitacrepe">
+                              </a>
+                  </blockquote>
+            </div>
+          </div>
+     
         
         </div>
 

@@ -5,7 +5,6 @@ title: Jean Goes
 disableKinds:
   - taxonomy
   - term
-
 params:
   favSite: /assets/uploads/fav_jean.png
   allVideoRoles:
@@ -46,5 +45,7 @@ params:
   contactEmail: jean.goes00@gmail.com
   contactDescription: Motion Designer • Editor de Vídeos • Roteirista • Diretor •
     Fotógrafo • Produtor Audiovisual
-  description: Site portfólio de Jean Goes.
+  description: Site portfólio de Jean Goes. Graduado em Produção Audiovisual, atuo
+    profissionalmente há mais de 3 anos com edição de vídeo, motion graphics,
+    captação de vídeo e direção audiovisual.
   thumbQuad: /assets/uploads/jean_thumb_quad.jpg
