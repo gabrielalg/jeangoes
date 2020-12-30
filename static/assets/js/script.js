@@ -290,19 +290,16 @@ $(document).ready(function () {
       $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?modestbranding=1&color=white&rel=0`);
       $('#modal').find('#videoImage').css({ 'background-image': `url('/assets/uploads/pages/bg-cinza.jpg')` });
       $('#modal').find('#videoLinkYT').removeClass('hide');
-      console.log('Caiu no Youtube - 1ª condição')
     } else if (youtubeLink.trim() !== "") {
       modalLink = youtubeLink;
       $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?modestbranding=1&color=white&rel=0`);
       $('#modal').find('#videoImage').css({ 'background-image': `url('/assets/uploads/pages/bg-cinza.jpg')` });
       $('#modal').find('#videoLinkYT').removeClass('hide');
-      console.log('Caiu no Youtube - 2ª condição')
     } else if (vimeoLink.trim() !== "") {
       modalLink = vimeoLink;
       $('#modal').find('#videoLinkVM').attr('src',`https://player.vimeo.com/video/${modalLink}?color=ffffff&`);
       $('#modal').find('#videoImage').css({ 'background-image': `url('/assets/uploads/pages/bg-cinza.jpg')` });
       $('#modal').find('#videoLinkVM').removeClass('hide');
-      console.log('Caiu no vimeo - 3ª condição')
     }
 
     if(modalContent.trim() === '') {
