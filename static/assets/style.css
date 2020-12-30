@@ -684,7 +684,7 @@ textarea {
 }
 
 .container-video-modal {
-  padding: 30px; 
+  padding: 30px;
   display: flex; 
   flex-direction: column; 
   justify-content: center;
@@ -1408,6 +1408,10 @@ footer {
   display: block;
 }
 
+.yt-video-margin {
+  margin-bottom: 30px;
+}
+
 /* -------- LOADING -------------- */
 
 .lds-ellipsis, .cover-loading {
@@ -1941,6 +1945,16 @@ footer {
     flex: unset;
   }
 
+  .no-reorder {
+    padding: 20px 20px 10px 20px;
+    order: 2;
+    display: flex;
+  }
+
+  .yt-video-margin {
+    margin-bottom: 20px;
+  }
+
   .video-modal-cinema {
     min-width: 100%;
     width: 100%;
@@ -1951,7 +1965,7 @@ footer {
     justify-content: flex-start;
     /* height: 100%; */
     flex: 1;
-    padding: 20px 4vw;
+    padding: 20px 0;
   }
 
   .bottom-info img {
