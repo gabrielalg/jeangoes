@@ -1979,6 +1979,10 @@ footer {
     padding-top: 18px;
   }
 
+  .bottom-info-motion p {
+    max-height: 135px;
+  }
+
   .modal-info-text {
     width: 100%;
     flex: 1;
