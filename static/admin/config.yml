@@ -225,6 +225,20 @@ collections: # A list of collections the CMS should be able to edit
               - label: Categoria
                 name: otherCategory
                 widget: string
+              - label: ID do YouTube
+                name: videoYoutubeLink
+                widget: string
+                required: false
+                hint: "Colocar só o ID do vídeo no YouTube. 
+                  Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM', 
+                  o ID que deve ser inserido é: mdi3b65XgKM."
+              - label: ID do Vimeo
+                name: videoVimeoLink
+                widget: string
+                required: false
+                hint: "Colocar só o ID do vídeo no Vimeo. 
+                  Exemplo: o link do vídeo é 'https://vimeo.com/448393321', 
+                  o ID que deve ser inserido é: 448393321."
               - label: Descrição
                 name: otherDescription 
                 widget: text

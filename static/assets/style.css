@@ -1963,9 +1963,8 @@ footer {
   .bottom-info {
     flex-direction: column;
     justify-content: flex-start;
-    /* height: 100%; */
     flex: 1;
-    padding: 20px 0;
+    padding: 20px 4vw;
   }
 
   .bottom-info img {
@@ -1973,6 +1972,11 @@ footer {
     margin: 0;
     margin-bottom: 10px;
     order: -1;
+  }
+
+  .bottom-info-motion {
+    padding: 0;
+    padding-top: 18px;
   }
 
   .modal-info-text {
