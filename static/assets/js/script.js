@@ -209,6 +209,7 @@ $(document).ready(function () {
       }
     });
     let modalContent = $(this.parentElement).find('#otherContent').html();
+    let modalLink = "";
 
     let youtubeLink = $(this).find('#videoYoutubeLink').val();
     let vimeoLink = $(this).find('#videoVimeoLink').val();
@@ -260,7 +261,6 @@ $(document).ready(function () {
   $('.open-cinema-modal').on('click', function () {
     $('#modal').css('display', 'flex');
     let modalTitle = $(this).find('#videoTitle').val();
-    let modalLink = $(this).find('#videoLink').val();
     let modalDescription = $(this).find('#videoDescription').val();
     let modalRoles = $(this).find('#videoRoles').val().split(', ');
     let modalCategory = $(this).find('#videoCategory').val();
@@ -272,15 +272,37 @@ $(document).ready(function () {
       }
     });
     let modalContent = $(this.parentElement).find('#videoContent').html();
+    let modalLink = "";
 
-    if(modalLink === '') {
-      $('.container-video-modal').addClass('hide')
-      $('.bottom-content').removeAttr('style')
+    let youtubeLink = $(this).find('#videoYoutubeLink').val();
+    let vimeoLink = $(this).find('#videoVimeoLink').val();
+
+    if (youtubeLink.trim() === "" && vimeoLink.trim() === "") {
+      $('.container-video-modal').addClass('hide');
+      $('.bottom-content').removeAttr('style');
     } else {
-      $('#modal').find('#videoLink').attr('src',`https://player.vimeo.com/video/${modalLink}?color=ffffff&muted=1?silenciado=1`);
-      $('#modal').find('#videoImage').css({ 'background-image': `url('/assets/uploads/pages/bg-cinza.jpg')` });
-      $('.bottom-content').css({ 'padding-top':'10px' })
+      $('.bottom-content').css({ 'padding-top':'10px' });
       $('.container-video-modal').removeClass('hide');
+    }
+
+    if (youtubeLink.trim() !== "" && vimeoLink.trim() !== "" ) {
+      modalLink = youtubeLink;
+      $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?modestbranding=1&color=white&rel=0`);
+      $('#modal').find('#videoImage').css({ 'background-image': `url('/assets/uploads/pages/bg-cinza.jpg')` });
+      $('#modal').find('#videoLinkYT').removeClass('hide');
+      console.log('Caiu no Youtube - 1ª condição')
+    } else if (youtubeLink.trim() !== "") {
+      modalLink = youtubeLink;
+      $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?modestbranding=1&color=white&rel=0`);
+      $('#modal').find('#videoImage').css({ 'background-image': `url('/assets/uploads/pages/bg-cinza.jpg')` });
+      $('#modal').find('#videoLinkYT').removeClass('hide');
+      console.log('Caiu no Youtube - 2ª condição')
+    } else if (vimeoLink.trim() !== "") {
+      modalLink = vimeoLink;
+      $('#modal').find('#videoLinkVM').attr('src',`https://player.vimeo.com/video/${modalLink}?color=ffffff&`);
+      $('#modal').find('#videoImage').css({ 'background-image': `url('/assets/uploads/pages/bg-cinza.jpg')` });
+      $('#modal').find('#videoLinkVM').removeClass('hide');
+      console.log('Caiu no vimeo - 3ª condição')
     }
 
     if(modalContent.trim() === '') {

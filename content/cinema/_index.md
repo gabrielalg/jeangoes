@@ -1,7 +1,8 @@
 ---
 title: Cinema
 videoGrid:
-  - videoLink: "472894802"
+  - videoYoutubeLink: "mdi3b65XgKM"
+    videoVimeoLink: "472894802"
     videoTitle: Mandela II
     videoDescription: Curta-metragem documental que aborda as desigualdades no
       acesso a terra e a moradia no Brasil, usando como foco principal do
@@ -23,7 +24,8 @@ videoGrid:
       
 
       ![Louros Mandela II](/assets/uploads/louros_mandelaii.png "Louros Mandela II")
-  - videoLink: "473042590"
+  - videoYoutubeLink: "mdi3b65XgKM"
+    videoVimeoLink: "473042590"
     videoTitle: A Previsão do Pôr do Sol
     videoDescription: >-
       Laís é uma jovem de 26 anos que trabalha durante o dia e estuda durante a
