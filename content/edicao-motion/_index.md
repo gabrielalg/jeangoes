@@ -14,7 +14,7 @@ videoGrid:
   - videoTitle: "Liquidação Anual Fiat Forte "
     videoImage: /assets/uploads/thumb_liquidacaoanualfiatforte.jpg
     videoGif: /assets/uploads/thumb_liquidacaoanualfiatforte.jpg
-    videoYoutubeLink: "nR_98LhzsEw"
+    videoYoutubeLink: "5jsfIB1TvyQ"
     videoVimeoLink: "472848853"
     videoRoles:
       - Editor

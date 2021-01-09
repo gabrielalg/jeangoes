@@ -40,6 +40,43 @@ function resizeAllGridItems() {
   }
 }
 
+// -------- API YOUTUBE 
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady(idYoutube) {
+if(idYoutube == null) return
+player = new YT.Player('videoLinkYT', {
+  videoId: idYoutube,
+  host: 'http://www.youtube-nocookie.com',
+  playerVars: { 
+      'autoplay': 1, 
+      'playsinline': 1, 
+      'color': 'white',
+      'modestbranding': 1,
+      'rel': 0,
+  },
+  events: {
+  'onReady': onPlayerReady
+  }
+});
+document.getElementById('videoLinkYT').setAttribute("style", "position:absolute;top:0;left:0;width:100%;height:100%;");
+}
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  event.target.mute();
+  event.target.playVideo();
+}
+
+// --------- FIM
+
 $(document).ready(function () {
 
   window.addEventListener('resize', resizeAllGridItems);
@@ -59,10 +96,6 @@ $(document).ready(function () {
   var openInterval, closeInterval ;
 
   // ABRIR E FECHAR CONTATO
-
-  // if ($('#pages').hasScrollBar()) {
-  //   $('#contato').addClass('absolute')
-  // }
 
   $('.openmenu').on('click', function (event) {
     $('.contato-actions').addClass('transform contato-actions-open disable-btn');
@@ -104,8 +137,6 @@ $(document).ready(function () {
       } else {
         content.style.maxHeight = contentHeight + 'px';
       }
-      // maxHeight = content.style.maxHeight
-      // alert(maxHeight)
     });
     
   }
@@ -167,11 +198,13 @@ $(document).ready(function () {
 
     if (youtubeLink.trim() !== "" && vimeoLink.trim() !== "" ) {
       modalLink = youtubeLink;
-      $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
+      onYouTubeIframeAPIReady(modalLink);
+      // $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
       $('#modal').find('#videoLinkYT').removeClass('hide');
     } else if (youtubeLink.trim() !== "") {
       modalLink = youtubeLink;
-      $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
+      onYouTubeIframeAPIReady(modalLink);
+      // $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
       $('#modal').find('#videoLinkYT').removeClass('hide');
     } else if (vimeoLink.trim() !== "") {
       modalLink = vimeoLink;
@@ -335,7 +368,9 @@ $(document).ready(function () {
     setTimeout(() => {
       $('#modal').css('display', 'none');
       $('#modal').find('#videoTitle').text('');
-      $('#modal').find('#videoLinkYT').removeAttr('src').addClass('hide');
+      // $('#modal').find('#videoLinkYT').removeAttr('src').addClass('hide');
+      $('#modal').find('#videoLinkYT').remove();
+      $('#modal').find('.appendYT').append('<div id="videoLinkYT" class="hide"></div>');
       $('#modal').find('#videoLinkVM').removeAttr('src').addClass('hide');
       $('#modal').find('#linkYT').removeAttr('src');
       $('#modal').find('#linkVM').removeAttr('src');

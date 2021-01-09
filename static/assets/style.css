@@ -602,7 +602,7 @@ textarea {
   height: calc(100% - 62px);
   width: calc(100% - 385px);
   background-color: #2f2f31;
-  z-index: 9999;
+  z-index: 55;
   text-align: center;
 }
 
