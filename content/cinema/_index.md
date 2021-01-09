@@ -1,7 +1,7 @@
 ---
 title: Cinema
 videoGrid:
-  - videoYoutubeLink: "mdi3b65XgKM"
+  - videoYoutubeLink:
     videoVimeoLink: "472894802"
     videoTitle: Mandela II
     videoDescription: Curta-metragem documental que aborda as desigualdades no
@@ -24,7 +24,7 @@ videoGrid:
       
 
       ![Louros Mandela II](/assets/uploads/louros_mandelaii.png "Louros Mandela II")
-  - videoYoutubeLink: "mdi3b65XgKM"
+  - videoYoutubeLink:
     videoVimeoLink: "473042590"
     videoTitle: A Previsão do Pôr do Sol
     videoDescription: >-

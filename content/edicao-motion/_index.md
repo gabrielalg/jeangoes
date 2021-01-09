@@ -4,7 +4,7 @@ videoGrid:
   - videoTitle: Dahruj Rent a Car - Ciro Bottini
     videoImage: /assets/uploads/thumb_bottini.jpg
     videoGif: /assets/uploads/thumb_bottini.jpg
-    videoYoutubeLink: "wv3FNpkvCgk"
+    videoYoutubeLink:
     videoVimeoLink: "472860043"
     videoCategory: Publicidade
     videoRoles:
@@ -14,7 +14,7 @@ videoGrid:
   - videoTitle: "Liquidação Anual Fiat Forte "
     videoImage: /assets/uploads/thumb_liquidacaoanualfiatforte.jpg
     videoGif: /assets/uploads/thumb_liquidacaoanualfiatforte.jpg
-    videoYoutubeLink: "5jsfIB1TvyQ"
+    videoYoutubeLink:
     videoVimeoLink: "472848853"
     videoRoles:
       - Editor
