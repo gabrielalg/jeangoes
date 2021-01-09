@@ -64,7 +64,6 @@
                                     frameborder="0" allowfullscreen>
                         </iframe> -->
                         {{ else if (.Params.linkYoutube) }}
-
                         <div id="ytplayer"></div>
 
                         {{ else if (.Params.linkVimeo)}}
@@ -94,13 +93,14 @@
                             videoId: '{{ .Params.linkYoutube }}',
                             host: 'http://www.youtube-nocookie.com',
                             playerVars: { 
-                                'autoplay': 1, 
+                                'autoplay': 1,
                                 'playsinline': 1, 
                                 'color': 'white',
                                 'modestbranding': 1,
                                 'rel': 0,
                                 'loop': 1, 
-                                'playlist': '{{.Params.linkYoutube}}'},
+                                'playlist': '{{.Params.linkYoutube}}'
+                            },
                             events: {
                             'onReady': onPlayerReady
                             }
