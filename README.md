@@ -4,5 +4,6 @@ Em 2020, o Jean me contatou para ajudá-lo a construir um site que mostrasse o s
 
 Iniciei o projeto prototipando o site no Adobe XD e dei sequência no desenvolvimento utilizando o gerador de sites estáticos Hugo que foi integrado posteriormente com o CMS do Netlify, o que permitiu que a troca do conteúdo fosse dinâmica.
 
-Você pode conferir o resultado no link [www.jeangoes.com](https://www.jeangoes.com/). 🧐
+Você pode conferir o resultado no link [www.jeangoes.com](https://www.jeangoes.com/). 😉
 
+![Mockup Design Site Jean](./static/assets/uploads/pages/Device-Set_v01_Mockup_JeanGoes_low.png)
