@@ -3,13 +3,23 @@ title: Edição e Motion
 videoGrid:
   - videoTitle: CCXPverso | Uma jornada que começa na CCXP Worlds 21
     videoDescription: Vídeo Manifesto da CCXP, com a apresentação do cronograma de
-      eventos em 2021 e 2022
+      eventos em 2021 e 2022.
     videoImage: /assets/uploads/00000000001.jpeg
     videoGif: /assets/uploads/00000000001.jpeg
     videoYoutubeLink: ulXJosRZQCs
     videoCategory: Evento
     videoRoles:
       - Motion Designer
+  - videoYoutubeLink: Va2VDj0IRZ4
+    videoTitle: Trailer Bruttal 2 Temporada
+    videoDescription: Trailer animado para a 2 temporada da Bruttal, que é o Selo de
+      histórias em quadrinhos estrelando os personagens originais do Omelete.
+    videoImage: /assets/uploads/0000000000000000002.jpeg
+    videoGif: /assets/uploads/0000000000000000002.jpeg
+    videoCategory: Publicidade
+    videoRoles:
+      - Motion Designer
+      - Editor
   - videoYoutubeLink: ""
     videoVimeoLink: "472888361"
     videoTitle: Reel 2020
