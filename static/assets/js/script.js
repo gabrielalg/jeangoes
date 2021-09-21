@@ -207,12 +207,10 @@ $(document).ready(function () {
     if (youtubeLink.trim() !== "" && vimeoLink.trim() !== "") {
       modalLink = youtubeLink;
       onYouTubeIframeAPIReady(modalLink);
-      // $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
       $("#modal").find("#videoLinkYT").removeClass("hide");
     } else if (youtubeLink.trim() !== "") {
       modalLink = youtubeLink;
       onYouTubeIframeAPIReady(modalLink);
-      // $('#modal').find('#videoLinkYT').attr('src',`https://www.youtube-nocookie.com/embed/${modalLink}?autoplay=1&mute=1&loop=1&modestbranding=1&color=white&rel=0`);
       $("#modal").find("#videoLinkYT").removeClass("hide");
     } else if (vimeoLink.trim() !== "") {
       modalLink = vimeoLink;
@@ -220,7 +218,7 @@ $(document).ready(function () {
         .find("#videoLinkVM")
         .attr(
           "src",
-          `https://player.vimeo.com/video/${modalLink}?autoplay=1&loop=1&color=ffffff&muted=1?silenciado=1`
+          `https://player.vimeo.com/video/${modalLink}?autoplay=1&loop=1&color=ffffff`
         );
       $("#modal").find("#videoLinkVM").removeClass("hide");
     }
@@ -376,7 +374,7 @@ $(document).ready(function () {
         .find("#videoLinkVM")
         .attr(
           "src",
-          `https://player.vimeo.com/video/${modalLink}?color=ffffff&`
+          `https://player.vimeo.com/video/${modalLink}?color=ffffff`
         );
       $("#modal").find("#videoImage").css({
         "background-image": `url('/assets/uploads/pages/bg-cinza.jpg')`,
@@ -415,7 +413,6 @@ $(document).ready(function () {
     setTimeout(() => {
       $("#modal").css("display", "none");
       $("#modal").find("#videoTitle").text("");
-      // $('#modal').find('#videoLinkYT').removeAttr('src').addClass('hide');
       $("#modal").find("#videoLinkYT").remove();
       $("#modal")
         .find(".appendYT")
