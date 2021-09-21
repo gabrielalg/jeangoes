@@ -2,7 +2,7 @@
 title: Edição e Motion
 videoGrid:
   - videoTitle: CCXPverso | Uma jornada que começa na CCXP Worlds 21
-    videoDescription: Vídeo Manifesto da CCXP, com a apresentação do cronograma de
+    videoDescription: Vídeo Manifesto da CCXP, com a apresentação do cronograma dos
       eventos em 2021 e 2022.
     videoImage: /assets/uploads/00000000001.jpeg
     videoGif: /assets/uploads/00000000001.jpeg
@@ -20,6 +20,16 @@ videoGrid:
     videoRoles:
       - Motion Designer
       - Editor
+  - videoYoutubeLink: dK-SJfC2N0U
+    videoImage: /assets/uploads/0000000003.jpeg
+    videoGif: /assets/uploads/0000000003.jpeg
+    videoTitle: Teaser CCXP Worlds 2021
+    videoDescription: Teaser para a edição de 2021 da CCXP, um dos maiores eventos
+      de cultura pop do mundo, acontecendo em formato totalmente digital neste
+      ano por conta de medidas sanitárias contra o aumento da pandemia
+    videoCategory: Evento
+    videoRoles:
+      - Motion Designer
   - videoYoutubeLink: ""
     videoVimeoLink: "472888361"
     videoTitle: Reel 2020
