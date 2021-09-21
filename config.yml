@@ -34,6 +34,9 @@ params:
     - Evento
     - Institucional
     - Publicidade
+    - Mídias Sociais
+    - Identidade
+    - Reel
   perfilYoutube:
     linkYoutubeContact: Coloque o link do YouTube aqui
     viewYoutube: false
@@ -43,9 +46,11 @@ params:
   thumbRect: /assets/uploads/jean_thumb.jpg
   curriculum: /assets/uploads/cv-jean-goes-2020.pdf
   contactEmail: jean.goes00@gmail.com
-  contactDescription: Motion Designer • Editor de Vídeos • Roteirista • Diretor •
+  contactDescription:
+    Motion Designer • Editor de Vídeos • Roteirista • Diretor •
     Produtor Audiovisual
-  description: Site portfólio de Jean Goes. Graduado em Produção Audiovisual, atuo
+  description:
+    Site portfólio de Jean Goes. Graduado em Produção Audiovisual, atuo
     profissionalmente há mais de 4 anos com edição de vídeo, motion designer,
     roteirização e direção audiovisual.
   thumbQuad: /assets/uploads/jean_thumb_quad.jpg

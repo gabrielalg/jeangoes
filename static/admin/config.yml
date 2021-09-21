@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-locale: 'pt'
+locale: "pt"
 
 site_url: https://www.jeangoes.com/
 logo_url: "../assets/uploads/pages/logo-jean-rgb.svg"
@@ -23,81 +23,167 @@ collections: # A list of collections the CMS should be able to edit
         label: "Configurações"
         name: "config"
         fields:
-          - {label: "Configurações Gerais", name: "params", widget: object, fields: [
-              {label: "Logo (.svg) ", name: "logoSite", widget: image},
-              {
-                label: "Favicon do Site (.png) | 256 x 256", 
-                name: "favSite", 
-                widget: image, 
-                hint: "O Favicon é o ícone que aparece na barra dos navegadores."
-              },
-              {
-                label: "Thumbnail Retangular (.jpg ou .png) | 1200 x 630", 
-                name: "thumbRect", 
-                widget: image, 
-                hint: "A thumbnail é a imagem que aparece quando você compartilha o link do seu site."
-              },
-              {
-                label: "Thumbnail Quadrada (.jpg ou .png)  | 630 x 630", 
-                name: "thumbQuad", 
-                widget: image,
-                hint: "Algumas plataformas, como o WhatsApp, só reconhecem thumbnails quadradas e por isso é importante upar também essa versão."
-              },
-              {
-                label: "Descrição do Site", 
-                name: "description",  
-                widget: "text", 
-                hint: "A descrição do site aparece nos links compartilhados e na pesquisa do Google."
-              },
-              {
-                label: "Foto de Perfil (Quadrada)", 
-                name: "fotoPerfil", 
-                widget: image
-              },
-              {
-                label: "Descrição na Barra de Contato", 
-                name: "contactDescription",  
-                widget: "string", 
-                pattern: ['^.{0,100}$', "Máximo de 100 caracteres"],
-                hint: "Máximo de 100 caracteres."
-              },
-              {
-                label: "Currículo",
-                name: "curriculum",
-                widget: "file",
-                config: ,
-                  multiple: false
-              },
-              {
-                label: "E-mail",
-                name: "contactEmail",
-                widget: "string"
-              },
-              {label: "Perfil do Vimeo", name: "perfilVimeo", widget: object, fields: [
-                {label: "Link", name: "linkVimeoContact", widget: string},
-                {label: "Visualizar", name: "viewVimeo", widget: "boolean"}
-              ]},
-              {label: "Perfil do YouTube", name: perfilYoutube, widget: object, fields: [
-                {label: "Link", name: "linkYoutubeContact", widget: string},
-                {label: "Visualizar", name: "viewYoutube", widget: "boolean"}
-              ]},
-              {label: "Perfil do Instagram", name: perfilInsta, widget: object, fields: [
-                {label: "Link", name: "linkInstaContact", widget: string},
-                {label: "Visualizar", name: "viewInsta", widget: "boolean"}
-              ]},
-              {label: "Link do WhastApp", name: perfilWhats, widget: object, fields: [
-                {label: "Link", name: "linkWhatsContact", widget: string},
-                {label: "Visualizar", name: "viewWhats", widget: "boolean"}
-              ]},
-              {label: "Perfil do Linkedin", name: perfilLinkedin, widget: object, fields: [
-                {label: "Link", name: "linkLinkedinContact", widget: string},
-                {label: "Visualizar", name: "viewLinkedin", widget: "boolean"}
-              ]},
-              {label: "Perfil do Facebook", name: perfilFace, widget: object, fields: [
-                {label: "Link", name: "linkFaceContact", widget: string},
-                {label: "Visualizar", name: "viewFace", widget: "boolean"}
-              ]}
-            ]}
+          - {
+              label: "Configurações Gerais",
+              name: "params",
+              widget: object,
+              fields:
+                [
+                  { label: "Logo (.svg) ", name: "logoSite", widget: image },
+                  {
+                    label: "Favicon do Site (.png) | 256 x 256",
+                    name: "favSite",
+                    widget: image,
+                    hint: "O Favicon é o ícone que aparece na barra dos navegadores.",
+                  },
+                  {
+                    label: "Thumbnail Retangular (.jpg ou .png) | 1200 x 630",
+                    name: "thumbRect",
+                    widget: image,
+                    hint: "A thumbnail é a imagem que aparece quando você compartilha o link do seu site.",
+                  },
+                  {
+                    label: "Thumbnail Quadrada (.jpg ou .png)  | 630 x 630",
+                    name: "thumbQuad",
+                    widget: image,
+                    hint: "Algumas plataformas, como o WhatsApp, só reconhecem thumbnails quadradas e por isso é importante upar também essa versão.",
+                  },
+                  {
+                    label: "Descrição do Site",
+                    name: "description",
+                    widget: "text",
+                    hint: "A descrição do site aparece nos links compartilhados e na pesquisa do Google.",
+                  },
+                  {
+                    label: "Foto de Perfil (Quadrada)",
+                    name: "fotoPerfil",
+                    widget: image,
+                  },
+                  {
+                    label: "Descrição na Barra de Contato",
+                    name: "contactDescription",
+                    widget: "string",
+                    pattern: ["^.{0,100}$", "Máximo de 100 caracteres"],
+                    hint: "Máximo de 100 caracteres.",
+                  },
+                  {
+                    label: "Currículo",
+                    name: "curriculum",
+                    widget: "file",
+                    config,
+                    multiple: false,
+                  },
+                  { label: "E-mail", name: "contactEmail", widget: "string" },
+                  {
+                    label: "Perfil do Vimeo",
+                    name: "perfilVimeo",
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Link",
+                          name: "linkVimeoContact",
+                          widget: string,
+                        },
+                        {
+                          label: "Visualizar",
+                          name: "viewVimeo",
+                          widget: "boolean",
+                        },
+                      ],
+                  },
+                  {
+                    label: "Perfil do YouTube",
+                    name: perfilYoutube,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Link",
+                          name: "linkYoutubeContact",
+                          widget: string,
+                        },
+                        {
+                          label: "Visualizar",
+                          name: "viewYoutube",
+                          widget: "boolean",
+                        },
+                      ],
+                  },
+                  {
+                    label: "Perfil do Instagram",
+                    name: perfilInsta,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Link",
+                          name: "linkInstaContact",
+                          widget: string,
+                        },
+                        {
+                          label: "Visualizar",
+                          name: "viewInsta",
+                          widget: "boolean",
+                        },
+                      ],
+                  },
+                  {
+                    label: "Link do WhastApp",
+                    name: perfilWhats,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Link",
+                          name: "linkWhatsContact",
+                          widget: string,
+                        },
+                        {
+                          label: "Visualizar",
+                          name: "viewWhats",
+                          widget: "boolean",
+                        },
+                      ],
+                  },
+                  {
+                    label: "Perfil do Linkedin",
+                    name: perfilLinkedin,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Link",
+                          name: "linkLinkedinContact",
+                          widget: string,
+                        },
+                        {
+                          label: "Visualizar",
+                          name: "viewLinkedin",
+                          widget: "boolean",
+                        },
+                      ],
+                  },
+                  {
+                    label: "Perfil do Facebook",
+                    name: perfilFace,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Link",
+                          name: "linkFaceContact",
+                          widget: string,
+                        },
+                        {
+                          label: "Visualizar",
+                          name: "viewFace",
+                          widget: "boolean",
+                        },
+                      ],
+                  },
+                ],
+            }
 
   - name: "pages"
     label: "Páginas"
@@ -112,10 +198,10 @@ collections: # A list of collections the CMS should be able to edit
           - label: "ID do Vídeo no YouTube"
             name: "linkYoutube"
             widget: string
-            hint: "Colocar só o ID do vídeo no YouTube. 
-              Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM', 
-              o ID que deve ser inserido é: mdi3b65XgKM. 
-              ATENÇÃO: Caso seja definido também um ID para o Vimeo, a prioridade é sempre do YOUTUBE. 
+            hint: "Colocar só o ID do vídeo no YouTube.
+              Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM',
+              o ID que deve ser inserido é: mdi3b65XgKM.
+              ATENÇÃO: Caso seja definido também um ID para o Vimeo, a prioridade é sempre do YOUTUBE.
               Caso você queira que apareça o vídeo do Vimeo, não preencha este campo."
             required: false
           - label: "ID do Vídeo no Vimeo"
@@ -148,27 +234,46 @@ collections: # A list of collections the CMS should be able to edit
                 name: videoYoutubeLink
                 widget: string
                 required: false
-                hint: "Colocar só o ID do vídeo no YouTube. 
-                  Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM', 
-                  o ID que deve ser inserido é: mdi3b65XgKM. 
-                  ATENÇÃO: Caso seja definido também um ID para o Vimeo, a prioridade é sempre do YOUTUBE. 
+                hint: "Colocar só o ID do vídeo no YouTube.
+                  Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM',
+                  o ID que deve ser inserido é: mdi3b65XgKM.
+                  ATENÇÃO: Caso seja definido também um ID para o Vimeo, a prioridade é sempre do YOUTUBE.
                   Caso você queira que apareça o vídeo do Vimeo, não preencha este campo."
               - label: ID do Vimeo
                 name: videoVimeoLink
                 widget: string
                 required: false
-                hint: "Colocar só o ID do vídeo no Vimeo. 
-                  Exemplo: o link do vídeo é 'https://vimeo.com/448393321', 
+                hint: "Colocar só o ID do vídeo no Vimeo.
+                  Exemplo: o link do vídeo é 'https://vimeo.com/448393321',
                   o ID que deve ser inserido é: 448393321."
               - label: Categoria
                 name: videoCategory
                 widget: select
-                options: ["Publicidade", "Evento", "Institucional"]
+                options:
+                  [
+                    "Publicidade",
+                    "Evento",
+                    "Institucional",
+                    "Mídias Sociais",
+                    "Identidade",
+                    "Reel",
+                  ]
               - label: Funções
                 name: videoRoles
                 widget: select
                 multiple: true
-                options: ["Assistente de Câmera", "Assistente de Direção", "Diretor", "Diretor de Fotografia", "Editor", "Montador", "Motion Designer", "Produtor", "Roteirista"]
+                options:
+                  [
+                    "Assistente de Câmera",
+                    "Assistente de Direção",
+                    "Diretor",
+                    "Diretor de Fotografia",
+                    "Editor",
+                    "Montador",
+                    "Motion Designer",
+                    "Produtor",
+                    "Roteirista",
+                  ]
       - file: "content/cinema/_index.md"
         label: "Cinema"
         name: "cinema"
@@ -194,27 +299,45 @@ collections: # A list of collections the CMS should be able to edit
                 name: videoYoutubeLink
                 widget: string
                 required: false
-                hint: "Colocar só o ID do vídeo no YouTube. 
-                  Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM', 
-                  o ID que deve ser inserido é: mdi3b65XgKM. 
-                  ATENÇÃO: Caso seja definido também um ID para o Vimeo, a prioridade é sempre do YOUTUBE. 
+                hint: "Colocar só o ID do vídeo no YouTube.
+                  Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM',
+                  o ID que deve ser inserido é: mdi3b65XgKM.
+                  ATENÇÃO: Caso seja definido também um ID para o Vimeo, a prioridade é sempre do YOUTUBE.
                   Caso você queira que apareça o vídeo do Vimeo, não preencha este campo."
               - label: ID do Vimeo
                 name: videoVimeoLink
                 widget: string
                 required: false
-                hint: "Colocar só o ID do vídeo no Vimeo. 
-                  Exemplo: o link do vídeo é 'https://vimeo.com/448393321', 
+                hint: "Colocar só o ID do vídeo no Vimeo.
+                  Exemplo: o link do vídeo é 'https://vimeo.com/448393321',
                   o ID que deve ser inserido é: 448393321."
               - label: Categoria
                 name: videoCategory
                 widget: select
-                options: ["Publicidade", "Evento", "Institucional", "Curta-metragem", "Longa-metragem", "Roteiro"]
+                options:
+                  [
+                    "Publicidade",
+                    "Evento",
+                    "Institucional",
+                    "Curta-metragem",
+                    "Longa-metragem",
+                    "Roteiro",
+                  ]
               - label: Funções
                 name: videoRoles
                 widget: select
                 multiple: true
-                options: ["Assistente de Câmera", "Assistente de Direção", "Diretor", "Diretor de Fotografia", "Editor", "Montador", "Produtor", "Roteirista"]
+                options:
+                  [
+                    "Assistente de Câmera",
+                    "Assistente de Direção",
+                    "Diretor",
+                    "Diretor de Fotografia",
+                    "Editor",
+                    "Montador",
+                    "Produtor",
+                    "Roteirista",
+                  ]
               - label: Conteúdo
                 name: videoContent
                 required: false
@@ -240,18 +363,18 @@ collections: # A list of collections the CMS should be able to edit
                 name: videoYoutubeLink
                 widget: string
                 required: false
-                hint: "Colocar só o ID do vídeo no YouTube. 
-                  Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM', 
+                hint: "Colocar só o ID do vídeo no YouTube.
+                  Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM',
                   o ID que deve ser inserido é: mdi3b65XgKM."
               - label: ID do Vimeo
                 name: videoVimeoLink
                 widget: string
                 required: false
-                hint: "Colocar só o ID do vídeo no Vimeo. 
-                  Exemplo: o link do vídeo é 'https://vimeo.com/448393321', 
+                hint: "Colocar só o ID do vídeo no Vimeo.
+                  Exemplo: o link do vídeo é 'https://vimeo.com/448393321',
                   o ID que deve ser inserido é: 448393321."
               - label: Descrição
-                name: otherDescription 
+                name: otherDescription
                 widget: text
               - label: Conteúdo
                 name: otherContent
@@ -281,8 +404,7 @@ collections: # A list of collections the CMS should be able to edit
       - file: "content/sobre-mim/_index.md"
         label: "Sobre Mim"
         name: "sobre-mim"
-        fields: 
+        fields:
           - label: Sobre Mim
             name: aboutDescription
             widget: markdown
-          
