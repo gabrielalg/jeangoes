@@ -1,10 +1,29 @@
 ---
 title: Edição e Motion
 videoGrid:
+  - videoTitle: CCXPverso | Uma jornada que começa na CCXP Worlds 21
+    videoDescription: Vídeo Manifesto da CCXP, com a apresentação do cronograma de
+      eventos em 2021 e 2022
+    videoImage: /assets/uploads/00000000001.jpeg
+    videoGif: /assets/uploads/00000000001.jpeg
+    videoYoutubeLink: ulXJosRZQCs
+    videoCategory: Evento
+    videoRoles:
+      - Motion Designer
+  - videoYoutubeLink: ""
+    videoVimeoLink: "472888361"
+    videoTitle: Reel 2020
+    videoCategory: Publicidade
+    videoRoles:
+      - Editor
+      - Motion Designer
+    videoImage: /assets/uploads/jean_thumb.jpg
+    videoGif: /assets/uploads/jean_thumb.jpg
+    videoDescription: Reel com trabalhos de edição e motion realizados em 2020
   - videoTitle: Dahruj Rent a Car - Ciro Bottini
     videoImage: /assets/uploads/thumb_bottini.jpg
     videoGif: /assets/uploads/thumb_bottini.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472860043"
     videoCategory: Publicidade
     videoRoles:
@@ -14,7 +33,7 @@ videoGrid:
   - videoTitle: "Liquidação Anual Fiat Forte "
     videoImage: /assets/uploads/thumb_liquidacaoanualfiatforte.jpg
     videoGif: /assets/uploads/thumb_liquidacaoanualfiatforte.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472848853"
     videoRoles:
       - Editor
@@ -24,7 +43,7 @@ videoGrid:
   - videoTitle: Inauguração Fiat Ventuno
     videoImage: /assets/uploads/thumb_fiatventuno.jpg
     videoGif: /assets/uploads/thumb_fiatventuno.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472842251"
     videoCategory: Publicidade
     videoRoles:
@@ -35,7 +54,7 @@ videoGrid:
   - videoTitle: A Força de Uma Marca Jeep
     videoImage: /assets/uploads/thumb_jeepdahrujcastelo.jpg
     videoGif: /assets/uploads/thumb_jeepdahrujcastelo.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472851168"
     videoCategory: Institucional
     videoRoles:
@@ -44,7 +63,7 @@ videoGrid:
   - videoTitle: "Nissan Dahruj Bike Day "
     videoImage: /assets/uploads/thumb_nissandahrujbikeday.jpg
     videoGif: /assets/uploads/thumb_nissandahrujbikeday.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472842417"
     videoCategory: Evento
     videoRoles:
@@ -54,7 +73,7 @@ videoGrid:
     videoDescription: Reabertura Loja Fiat Forte. 2020
     videoImage: /assets/uploads/thumb_reaberturafiatforte.jpg
     videoGif: /assets/uploads/thumb_reaberturafiatforte.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472849004"
     videoCategory: Publicidade
     videoRoles:
@@ -64,7 +83,7 @@ videoGrid:
     videoDescription: Campanha Jeep Território 2019
     videoImage: /assets/uploads/thumb_jeepterritorio.jpg
     videoGif: /assets/uploads/thumb_jeepterritorio.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472857477"
     videoCategory: Institucional
     videoRoles:
@@ -74,7 +93,7 @@ videoGrid:
       candidato a vereador em Campinas. - 2020
     videoImage: /assets/uploads/thumb_orestes.jpg
     videoGif: /assets/uploads/thumb_orestes.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472871467"
     videoCategory: Institucional
     videoRoles:
@@ -84,7 +103,7 @@ videoGrid:
     videoDescription: Campanha Sanasa Online. - 2020
     videoImage: /assets/uploads/thumb_sanasa.jpg
     videoGif: /assets/uploads/thumb_sanasa.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472861662"
     videoCategory: Institucional
     videoRoles:
@@ -94,7 +113,7 @@ videoGrid:
     videoDescription: Campanha Publicitária Honda Dahruj. - 2019
     videoImage: /assets/uploads/thumb_momentohondadahruj.jpg
     videoGif: /assets/uploads/thumb_momentohondadahruj.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472847252"
     videoCategory: Publicidade
     videoRoles:
@@ -104,7 +123,7 @@ videoGrid:
     videoDescription: Campanha de Compra Online após início da quarentena da Covid-19 - 2020
     videoImage: /assets/uploads/thumb_compraonlinedahrujchevrolet.jpg
     videoGif: /assets/uploads/thumb_compraonlinedahrujchevrolet.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472851956"
     videoCategory: Publicidade
     videoRoles:
@@ -114,7 +133,7 @@ videoGrid:
     videoDescription: Vídeo de Inauguração da Loja Nissan em Indaiatuba. 2019
     videoImage: /assets/uploads/thumb_nissanindaiatuba.jpg
     videoGif: /assets/uploads/thumb_nissanindaiatuba.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472856862"
     videoCategory: Publicidade
     videoRoles:
@@ -124,7 +143,7 @@ videoGrid:
     videoDescription: Campanha publicitária Honda HR-V. - 2019
     videoImage: /assets/uploads/thumb_vocedehondanovo.jpg
     videoGif: /assets/uploads/thumb_vocedehondanovo.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472847322"
     videoCategory: Publicidade
     videoRoles:
@@ -134,7 +153,7 @@ videoGrid:
     videoDescription: Campanha Mega Missão Honda. - 2019
     videoImage: /assets/uploads/thumb_megamissaohonda.jpg
     videoGif: /assets/uploads/thumb_megamissaohonda.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472879305"
     videoCategory: Publicidade
     videoRoles:
@@ -144,7 +163,7 @@ videoGrid:
     videoDescription: Campanha Goodyear. - 2019
     videoImage: /assets/uploads/thumb_goodyear.jpg
     videoGif: /assets/uploads/thumb_goodyear.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472862072"
     videoCategory: Institucional
     videoRoles:
@@ -154,7 +173,7 @@ videoGrid:
     videoDescription: Lançamento Audi E-Tron. - 2020
     videoImage: /assets/uploads/thumb_audietron.jpg
     videoGif: /assets/uploads/thumb_audietron.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472864052"
     videoCategory: Publicidade
     videoRoles:
@@ -164,7 +183,7 @@ videoGrid:
     videoDescription: Lançamento Audi R8. 2020
     videoImage: /assets/uploads/thumb_audir8.jpg
     videoGif: /assets/uploads/thumb_audir8.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472863816"
     videoCategory: Publicidade
     videoRoles:
@@ -173,7 +192,7 @@ videoGrid:
     videoDescription: Lançamento do Audi Q3. - 2020
     videoImage: /assets/uploads/thumb_audiq3.jpg
     videoGif: /assets/uploads/thumb_audiq3.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472864821"
     videoCategory: Publicidade
     videoRoles:
@@ -183,7 +202,7 @@ videoGrid:
     videoDescription: Evento Audi Experience para os modelos esportivos. - 2019
     videoImage: /assets/uploads/thumb_audiexperience.jpg
     videoGif: /assets/uploads/thumb_audiexperience.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472864327"
     videoCategory: Evento
     videoRoles:
@@ -192,7 +211,7 @@ videoGrid:
     videoDescription: Open de Beach Tennis. - 2019
     videoImage: /assets/uploads/thumb_beachtennis.jpg
     videoGif: /assets/uploads/thumb_beachtennis.jpg
-    videoYoutubeLink:
+    videoYoutubeLink: null
     videoVimeoLink: "472864327"
     videoCategory: Evento
     videoRoles:
