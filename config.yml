@@ -28,7 +28,7 @@ params:
   perfilInsta:
     linkInstaContact: https://www.instagram.com/jeangoes_/
     viewInsta: true
-  fotoPerfil: /assets/uploads/perfil_jean.jpg
+  fotoPerfil: /assets/uploads/000005.jpeg
   logoSite: /assets/uploads/jeangoes-logo.svg
   allVideoCategories:
     - Evento
@@ -44,8 +44,8 @@ params:
   curriculum: /assets/uploads/cv-jean-goes-2020.pdf
   contactEmail: jean.goes00@gmail.com
   contactDescription: Motion Designer • Editor de Vídeos • Roteirista • Diretor •
-    Fotógrafo • Produtor Audiovisual
+    Produtor Audiovisual
   description: Site portfólio de Jean Goes. Graduado em Produção Audiovisual, atuo
-    profissionalmente há mais de 3 anos com edição de vídeo, motion graphics,
-    captação de vídeo e direção audiovisual.
+    profissionalmente há mais de 4 anos com edição de vídeo, motion designer,
+    roteirização e direção audiovisual.
   thumbQuad: /assets/uploads/jean_thumb_quad.jpg
