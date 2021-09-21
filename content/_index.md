@@ -1,5 +1,5 @@
 ---
 title: Jean Goes
-linkYoutube: watch?v=ulXJosRZQCs
+linkYoutube: ulXJosRZQCs
 linkVimeo: ""
 ---
