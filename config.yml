@@ -28,7 +28,7 @@ params:
   perfilInsta:
     linkInstaContact: https://www.instagram.com/jeangoes_/
     viewInsta: true
-  fotoPerfil: /assets/uploads/000006.jpeg
+  fotoPerfil: /assets/uploads/000007.jpeg
   logoSite: /assets/uploads/jeangoes-logo.svg
   allVideoCategories:
     - Evento
