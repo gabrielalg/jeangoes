@@ -1,9 +1,7 @@
 ---
 title: Cinema
 videoGrid:
-  - videoYoutubeLink:
-    videoVimeoLink: "472894802"
-    videoTitle: Mandela II
+  - videoImage: /assets/uploads/thumb_mandela.jpg
     videoDescription: Curta-metragem documental que aborda as desigualdades no
       acesso a terra e a moradia no Brasil, usando como foco principal do
       documentário a Ocupação Mandela, situada na cidade de Campinas. Os
@@ -12,31 +10,54 @@ videoGrid:
       posse por parte do Poder Público junto ao proprietário do Terreno em Março
       de 2017. Hoje ocupam outro terreno e seguem lutando pelo direito a
       moradia.
-    videoImage: /assets/uploads/thumb_mandela.jpg
-    videoGif: /assets/uploads/thumb_mandela.jpg
-    videoCategory: Curta-metragem
+    videoYoutubeLink: null
     videoRoles:
       - Roteirista
       - Diretor
       - Montador
       - Produtor
+    videoVimeoLink: "472894802"
+    videoGif: /assets/uploads/thumb_mandela.jpg
+    videoCategory: Curta-metragem
+    videoTitle: Mandela II
     videoContent: >-
       
 
       ![Louros Mandela II](/assets/uploads/louros_mandelaii.png "Louros Mandela II")
-  - videoYoutubeLink:
-    videoVimeoLink: "473042590"
-    videoTitle: A Previsão do Pôr do Sol
+  - videoImage: /assets/uploads/thumb_previsao.jpg
     videoDescription: >-
       Laís é uma jovem de 26 anos que trabalha durante o dia e estuda durante a
       noite, o que faz 
 
       com que passe a maior parte do seu tempo livre se deslocando pela cidade grande onde mora. Sua ansiedade faz com que se preocupe muito diariamente com problemas insignificantes, enquanto evita confrontar um conflito sério com seu pai, com o qual não  conversa há mais de um ano. Em um dia comum, Laís sai da rotina ao admirar um belo pôr  do sol, e após conversas com seus amigos e terapeuta, mudanças passam a ocorrer em sua vida.
-    videoImage: /assets/uploads/thumb_previsao.jpg
-    videoGif: /assets/uploads/thumb_previsao.jpg
-    videoCategory: Curta-metragem
+    videoYoutubeLink: null
     videoRoles:
       - Diretor de Fotografia
       - Produtor
+    videoVimeoLink: "473042590"
+    videoGif: /assets/uploads/thumb_previsao.jpg
+    videoCategory: Curta-metragem
+    videoTitle: A Previsão do Pôr do Sol
     videoContent: "![](/assets/uploads/louros_previsao.png)"
+  - videoYoutubeLink: tw3Xv6tZG8U
+    videoCategory: Curta-metragem
+    videoRoles:
+      - Assistente de Direção
+    videoImage: /assets/uploads/000004.jpeg
+    videoTitle: Temporário - Curta-metragem
+    videoDescription: >-
+      SINOPSE: Uma misteriosa viajante do tempo conhecida somente pela alcunha
+      de Crononauta (Janaína Batista) encontra-se presa ao Brasil dos dias de
+      hoje, impossibilitada de voltar para sua época e local de origem. Uma
+      forte chuva obriga a Crononauta a procurar abrigo em uma casa abandonada –
+      e é ali, isolada, que ela se dá conta de que o tempo presente é o ponto de
+      partida para muitas situações adversas testemunhadas por ela no futuro, do
+      ponto de vista ambiental, político e social. Contudo, será somente a
+      partir de um encontro inesperado com uma pessoa em situação de rua
+      (Eduardo Leoncio) que a Crononauta irá se mobilizar efetivamente para
+      impedir que esse futuro se concretize.
+
+
+      Direção e Roteiro: Rafael Ghiraldelli
+    videoGif: /assets/uploads/000004.jpeg
 ---
