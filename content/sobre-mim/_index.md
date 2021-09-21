@@ -3,9 +3,9 @@ title: Sobre Mim
 aboutDescription: >-
   Graduado em Produção Audiovisual pela Faculdade Metropolitana de Campinas
   (UNIMETROCAMP WYDEN), trabalho desde o final de 2020 como Motion Designer na
-  Omelete Company. Paralelamente participo de projetos de filmes independentes,
-  às vezes criando e às vezes me envolvendo em projetos de conhecidos e também
-  faço freelas de edição e motion.
+  Omelete Company, a maior empresa de entretenimento do Brasil, responsável por
+  marcas gigantes no meio da cultura pop e do mundo dos games como CCXP,
+  Omelete, The Enemy, Gaules e Game XP. 
 
 
   Em cinema, dirigi e roteirizei 4 curtas-metragens, tendo vencido o “Prêmio do Júri Popular” como melhor filme do “3º Filma Bauru” em 2019 com o filme “Mandela II”. Atuei como Produtor e Diretor de Fotografia do curta-metragem “A Previsão do Pôr do Sol”, filme exibido no 47º Festival de Cinema de Gramado em 2019, integrando a 2ª Mostra de Filmes Universitários. Além dos curtas também trabalhei na produção de 3 videoclipes musicais, tendo assinado a Direção nos videoclipes “Forró Brasil” e “João e Maria” e como Diretor de Fotografia do videoclipe de rap “Colecionador de Rótulos”. Trabalhei como 1° Assistente de Direção no curta-metragem “Temporário” no ano de 2021. Além disso também montei todos os filmes que dirigi.
