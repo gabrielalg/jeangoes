@@ -7,7 +7,7 @@ videoGrid:
     videoImage: /assets/uploads/00000000001.jpeg
     videoGif: /assets/uploads/00000000001.jpeg
     videoYoutubeLink: ulXJosRZQCs
-    videoCategory: Evento
+    videoCategory: Mídias Sociais
     videoRoles:
       - Motion Designer
   - videoYoutubeLink: Va2VDj0IRZ4
@@ -16,7 +16,7 @@ videoGrid:
       histórias em quadrinhos estrelando os personagens originais do Omelete.
     videoImage: /assets/uploads/0000000000000000002.jpeg
     videoGif: /assets/uploads/0000000000000000002.jpeg
-    videoCategory: Publicidade
+    videoCategory: Mídias Sociais
     videoRoles:
       - Motion Designer
       - Editor
@@ -27,7 +27,7 @@ videoGrid:
     videoDescription: Teaser para a edição de 2021 da CCXP, um dos maiores eventos
       de cultura pop do mundo, acontecendo em formato totalmente digital neste
       ano por conta de medidas sanitárias contra o aumento da pandemia
-    videoCategory: Evento
+    videoCategory: Mídias Sociais
     videoRoles:
       - Motion Designer
   - videoTitle: Videocase CCXP Worlds 2020
@@ -43,7 +43,7 @@ videoGrid:
   - videoYoutubeLink: ""
     videoVimeoLink: "472888361"
     videoTitle: Reel 2020
-    videoCategory: Publicidade
+    videoCategory: Reel
     videoRoles:
       - Editor
       - Motion Designer
