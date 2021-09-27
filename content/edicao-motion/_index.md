@@ -30,6 +30,16 @@ videoGrid:
     videoCategory: Evento
     videoRoles:
       - Motion Designer
+  - videoTitle: Videocase CCXP Worlds 2020
+    videoYoutubeLink: Rm-BnbVCaew
+    videoCategory: Institucional
+    videoRoles:
+      - Motion Designer
+    videoImage: /assets/uploads/case_ccxpw_v3.00_00_49_19.still001.jpg
+    videoDescription: Videocase sobre a primeira edição da CCXP Wolrds em 2020,
+      evento em formato totalmente digital assistido simultaneamente em 139
+      países com mais de 3,5 Milhões de expectadores ao redor do globo.
+    videoGif: /assets/uploads/case_ccxpw_v3.00_00_49_19.still001.jpg
   - videoYoutubeLink: ""
     videoVimeoLink: "472888361"
     videoTitle: Reel 2020
