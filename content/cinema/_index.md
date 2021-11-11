@@ -44,7 +44,7 @@ videoGrid:
     videoRoles:
       - Assistente de Direção
     videoImage: /assets/uploads/000004.jpeg
-    videoTitle: Temporário - Curta-metragem
+    videoTitle: Temporário
     videoDescription: >-
       SINOPSE: Uma misteriosa viajante do tempo conhecida somente pela alcunha
       de Crononauta (Janaína Batista) encontra-se presa ao Brasil dos dias de
@@ -60,4 +60,47 @@ videoGrid:
 
       Direção e Roteiro: Rafael Ghiraldelli
     videoGif: /assets/uploads/000004.jpeg
+  - videoTitle: A Carteira
+    videoYoutubeLink: 6CxYkXHeMFs&t=13s
+    videoImage: /assets/uploads/a-carteira.jpeg
+    videoGif: /assets/uploads/a-carteira.jpeg
+    videoCategory: Curta-metragem
+    videoRoles:
+      - Diretor
+      - Roteirista
+      - Montador
+      - Produtor
+    videoDescription: >-
+      Curta-metragem de ficção, produzido em 2016, gravado durante a graduação
+      em Produção Audiovisual na Faculdade Metrocamp em Campinas.
+
+      Sinopse: Um homem comum em um dia qualquer encontra uma carteira perdida em um banco de uma praça, o que causa diversos problemas em seu dia.
+  - videoTitle: Culpa
+    videoDescription: Curta-metragem independente de ficção, produzido em 2016 do
+      gênero suspense. O filme conta a história de Leandro, um pai que chega
+      desesperado a uma delegacia de polícia, decidido a confessar um crime
+      terrível. A delegada Rocha se responsabiliza pela investigação controversa
+      do caso, onde as evidências nem sempre são o que parecem ser.
+    videoImage: /assets/uploads/culpa-curta.jpeg
+    videoGif: /assets/uploads/culpa-curta.jpeg
+    videoCategory: Curta-metragem
+    videoRoles:
+      - Diretor
+      - Roteirista
+      - Produtor
+      - Montador
+    videoYoutubeLink: XvJZSmUtG6A
+  - videoTitle: Mata
+    videoYoutubeLink: qiMSdgL-CIM
+    videoDescription: Curta-metragem documental do gênero musical sobre Mata Ciliar,
+      Desmatamento e Agronegócio realizado durante a graduação de Produção
+      Audiovisual, na Faculdade Metrocamp no ano de 2016.
+    videoImage: /assets/uploads/screen-shot-2021-11-11-at-14.54.02.png
+    videoGif: /assets/uploads/screen-shot-2021-11-11-at-14.54.02.png
+    videoCategory: Curta-metragem
+    videoRoles:
+      - Diretor
+      - Montador
+      - Roteirista
+      - Produtor
 ---
