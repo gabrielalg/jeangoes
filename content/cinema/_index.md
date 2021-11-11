@@ -60,21 +60,6 @@ videoGrid:
 
       Direção e Roteiro: Rafael Ghiraldelli
     videoGif: /assets/uploads/000004.jpeg
-  - videoTitle: A Carteira
-    videoYoutubeLink: 6CxYkXHeMFs&t=13s
-    videoImage: /assets/uploads/a-carteira.jpeg
-    videoGif: /assets/uploads/a-carteira.jpeg
-    videoCategory: Curta-metragem
-    videoRoles:
-      - Diretor
-      - Roteirista
-      - Montador
-      - Produtor
-    videoDescription: >-
-      Curta-metragem de ficção, produzido em 2016, gravado durante a graduação
-      em Produção Audiovisual na Faculdade Metrocamp em Campinas.
-
-      Sinopse: Um homem comum em um dia qualquer encontra uma carteira perdida em um banco de uma praça, o que causa diversos problemas em seu dia.
   - videoTitle: Culpa
     videoDescription: Curta-metragem independente de ficção, produzido em 2016 do
       gênero suspense. O filme conta a história de Leandro, um pai que chega
@@ -90,6 +75,21 @@ videoGrid:
       - Produtor
       - Montador
     videoYoutubeLink: XvJZSmUtG6A
+  - videoTitle: A Carteira
+    videoYoutubeLink: 6CxYkXHeMFs
+    videoImage: /assets/uploads/a-carteira.jpeg
+    videoGif: /assets/uploads/a-carteira.jpeg
+    videoCategory: Curta-metragem
+    videoRoles:
+      - Diretor
+      - Roteirista
+      - Montador
+      - Produtor
+    videoDescription: >-
+      Curta-metragem de ficção, produzido em 2016, gravado durante a graduação
+      em Produção Audiovisual na Faculdade Metrocamp em Campinas.
+
+      Sinopse: Um homem comum em um dia qualquer encontra uma carteira perdida em um banco de uma praça, o que causa diversos problemas em seu dia.
   - videoTitle: Mata
     videoYoutubeLink: qiMSdgL-CIM
     videoDescription: Curta-metragem documental do gênero musical sobre Mata Ciliar,
