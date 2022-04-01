@@ -32,12 +32,12 @@ videoGrid:
     videoDescription: Vídeo de divulgação do Poster oficial da CCXPW21, em
       comemoração aos 20 anos do filme Harry Potter e a Pedra Filosofal.
     videoTitle: Poster CCXPW21 - 20 anos Harry Potter e a Pedra Filosofal
-    videoImage: /assets/uploads/screen-shot-2022-04-01-at-16.12.34.png
+    videoImage: /assets/uploads/screen-shot-2022-04-01-at-16.19.55.png
     videoCategory: Mídias Sociais
     videoRoles:
       - Editor
       - Motion Designer
-    videoGif: /assets/uploads/screen-shot-2022-04-01-at-16.12.34.png
+    videoGif: /assets/uploads/screen-shot-2022-04-01-at-16.19.55.png
   - videoYoutubeLink: Va2VDj0IRZ4
     videoTitle: Trailer Bruttal 2 Temporada
     videoDescription: Trailer animado para a 2 temporada da Bruttal, que é o Selo de
