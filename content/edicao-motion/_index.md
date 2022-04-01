@@ -1,6 +1,24 @@
 ---
 title: Edição e Motion
 videoGrid:
+  - videoYoutubeLink: inVF4F0bjQg
+    videoTitle: "CCXP WORLDS 21: POR QUE A CCXPW 21 FEZ HISTÓRIA?"
+    videoDescription: Aftermovie CCXP Worlds 2021
+    videoImage: /assets/uploads/screen-shot-2022-04-01-at-15.59.27.png
+    videoCategory: Evento
+    videoRoles:
+      - Motion Designer
+    videoGif: /assets/uploads/screen-shot-2022-04-01-at-15.59.27.png
+  - videoYoutubeLink: JkQ95YD5nH0
+    videoTitle: Trailer Omelete Live Oscar 2022
+    videoDescription: Trailer para divulgação da Live de cobertura da cerimonia do
+      Oscar pelo Omelete.
+    videoCategory: Evento
+    videoRoles:
+      - Editor
+      - Motion Designer
+    videoGif: /assets/uploads/screen-shot-2022-04-01-at-16.04.41.png
+    videoImage: /assets/uploads/screen-shot-2022-04-01-at-16.04.41.png
   - videoTitle: CCXPverso | Uma jornada que começa na CCXP Worlds 21
     videoDescription: Vídeo Manifesto da CCXP, com a apresentação do cronograma dos
       eventos em 2021 e 2022.
@@ -10,6 +28,16 @@ videoGrid:
     videoCategory: Mídias Sociais
     videoRoles:
       - Motion Designer
+  - videoYoutubeLink: ffWksSgw_s8
+    videoDescription: Vídeo de divulgação do Poster oficial da CCXPW21, em
+      comemoração aos 20 anos do filme Harry Potter e a Pedra Filosofal.
+    videoTitle: Poster CCXPW21 - 20 anos Harry Potter e a Pedra Filosofal
+    videoImage: /assets/uploads/screen-shot-2022-04-01-at-16.12.34.png
+    videoCategory: Mídias Sociais
+    videoRoles:
+      - Editor
+      - Motion Designer
+    videoGif: /assets/uploads/screen-shot-2022-04-01-at-16.12.34.png
   - videoYoutubeLink: Va2VDj0IRZ4
     videoTitle: Trailer Bruttal 2 Temporada
     videoDescription: Trailer animado para a 2 temporada da Bruttal, que é o Selo de
