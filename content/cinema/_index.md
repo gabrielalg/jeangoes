@@ -30,36 +30,16 @@ videoGrid:
       noite, o que faz 
 
       com que passe a maior parte do seu tempo livre se deslocando pela cidade grande onde mora. Sua ansiedade faz com que se preocupe muito diariamente com problemas insignificantes, enquanto evita confrontar um conflito sério com seu pai, com o qual não  conversa há mais de um ano. Em um dia comum, Laís sai da rotina ao admirar um belo pôr  do sol, e após conversas com seus amigos e terapeuta, mudanças passam a ocorrer em sua vida.
-    videoYoutubeLink: null
+    videoYoutubeLink: oanDkwgMxno
     videoRoles:
       - Diretor de Fotografia
       - Produtor
-    videoVimeoLink: "473042590"
+      - Montador
+    videoVimeoLink: ""
     videoGif: /assets/uploads/thumb_previsao.jpg
     videoCategory: Curta-metragem
     videoTitle: A Previsão do Pôr do Sol
     videoContent: "![](/assets/uploads/louros_previsao.png)"
-  - videoYoutubeLink: tw3Xv6tZG8U
-    videoCategory: Curta-metragem
-    videoRoles:
-      - Assistente de Direção
-    videoImage: /assets/uploads/000004.jpeg
-    videoTitle: Temporário
-    videoDescription: >-
-      SINOPSE: Uma misteriosa viajante do tempo conhecida somente pela alcunha
-      de Crononauta (Janaína Batista) encontra-se presa ao Brasil dos dias de
-      hoje, impossibilitada de voltar para sua época e local de origem. Uma
-      forte chuva obriga a Crononauta a procurar abrigo em uma casa abandonada –
-      e é ali, isolada, que ela se dá conta de que o tempo presente é o ponto de
-      partida para muitas situações adversas testemunhadas por ela no futuro, do
-      ponto de vista ambiental, político e social. Contudo, será somente a
-      partir de um encontro inesperado com uma pessoa em situação de rua
-      (Eduardo Leoncio) que a Crononauta irá se mobilizar efetivamente para
-      impedir que esse futuro se concretize.
-
-
-      Direção e Roteiro: Rafael Ghiraldelli
-    videoGif: /assets/uploads/000004.jpeg
   - videoTitle: Culpa
     videoDescription: Curta-metragem independente de ficção, produzido em 2016 do
       gênero suspense. O filme conta a história de Leandro, um pai que chega
@@ -75,6 +55,19 @@ videoGrid:
       - Produtor
       - Montador
     videoYoutubeLink: XvJZSmUtG6A
+  - videoYoutubeLink: ""
+    videoVimeoLink: "472871467"
+    videoTitle: Professor Orestes
+    videoDescription: Mini curta-metragem sobre o Professor Orestes Toledo,
+      Professor de História e Diretor do Museu da Imagem e Som de Campinas no
+      lançamento de sua candidatura a vereador em Campinas. - 2020
+    videoImage: /assets/uploads/thumb_orestes.jpg
+    videoGif: /assets/uploads/thumb_orestes.jpg
+    videoCategory: Curta-metragem
+    videoRoles:
+      - Montador
+      - Diretor
+      - Roteirista
   - videoTitle: A Carteira
     videoYoutubeLink: 6CxYkXHeMFs
     videoImage: /assets/uploads/a-carteira.jpeg
@@ -103,4 +96,25 @@ videoGrid:
       - Montador
       - Roteirista
       - Produtor
+  - videoYoutubeLink: tw3Xv6tZG8U
+    videoCategory: Curta-metragem
+    videoRoles:
+      - Assistente de Direção
+    videoImage: /assets/uploads/000004.jpeg
+    videoTitle: Temporário
+    videoDescription: >-
+      SINOPSE: Uma misteriosa viajante do tempo conhecida somente pela alcunha
+      de Crononauta (Janaína Batista) encontra-se presa ao Brasil dos dias de
+      hoje, impossibilitada de voltar para sua época e local de origem. Uma
+      forte chuva obriga a Crononauta a procurar abrigo em uma casa abandonada –
+      e é ali, isolada, que ela se dá conta de que o tempo presente é o ponto de
+      partida para muitas situações adversas testemunhadas por ela no futuro, do
+      ponto de vista ambiental, político e social. Contudo, será somente a
+      partir de um encontro inesperado com uma pessoa em situação de rua
+      (Eduardo Leoncio) que a Crononauta irá se mobilizar efetivamente para
+      impedir que esse futuro se concretize.
+
+
+      Direção e Roteiro: Rafael Ghiraldelli
+    videoGif: /assets/uploads/000004.jpeg
 ---
