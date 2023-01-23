@@ -1,6 +1,26 @@
 ---
 title: Edição e Motion
 videoGrid:
+  - videoTitle: Vinheta "E SE?" Omelete
+    videoDescription: Roteirização, Direção e Pós-Produção da vinheta para o novo
+      programa do canal Omelete para o YouTube "E SE?"
+    videoImage: /assets/uploads/screenshot-2023-01-23-at-18.02.02.png
+    videoGif: /assets/uploads/screenshot-2023-01-23-at-18.02.02.png
+    videoVimeoLink: "792018094"
+    videoCategory: Identidade
+    videoRoles:
+      - Montador
+      - Diretor
+      - Roteirista
+      - Motion Designer
+  - videoTitle: Campanha Linker - Banco PJ
+    videoYoutubeLink: LgRsdIjAMYg
+    videoDescription: Motion Designer na campanha do Banco Linker para CNPJ
+    videoImage: /assets/uploads/screenshot-2023-01-23-at-18.12.19.png
+    videoGif: /assets/uploads/screenshot-2023-01-23-at-18.12.19.png
+    videoCategory: Institucional
+    videoRoles:
+      - Motion Designer
   - videoYoutubeLink: inVF4F0bjQg
     videoTitle: "CCXP WORLDS 21: POR QUE A CCXPW 21 FEZ HISTÓRIA?"
     videoDescription: Aftermovie CCXP Worlds 2021
