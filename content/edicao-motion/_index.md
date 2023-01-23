@@ -166,17 +166,6 @@ videoGrid:
     videoCategory: Institucional
     videoRoles:
       - Editor
-  - videoTitle: Vídeo de Apresentação Prof. Orestes
-    videoDescription: Vídeo de Apresentação para o Professor Orestes Toledo,
-      candidato a vereador em Campinas. - 2020
-    videoImage: /assets/uploads/thumb_orestes.jpg
-    videoGif: /assets/uploads/thumb_orestes.jpg
-    videoYoutubeLink: null
-    videoVimeoLink: "472871467"
-    videoCategory: Institucional
-    videoRoles:
-      - Editor
-      - Motion Designer
   - videoTitle: Sanasa Sem Sair de Casa
     videoDescription: Campanha Sanasa Online. - 2020
     videoImage: /assets/uploads/thumb_sanasa.jpg
@@ -227,26 +216,6 @@ videoGrid:
     videoRoles:
       - Editor
       - Motion Designer
-  - videoTitle: Mega Missão Honda Dahruj
-    videoDescription: Campanha Mega Missão Honda. - 2019
-    videoImage: /assets/uploads/thumb_megamissaohonda.jpg
-    videoGif: /assets/uploads/thumb_megamissaohonda.jpg
-    videoYoutubeLink: null
-    videoVimeoLink: "472879305"
-    videoCategory: Publicidade
-    videoRoles:
-      - Editor
-      - Motion Designer
-  - videoTitle: Campanha Vá de Original, Vá de Goodyear
-    videoDescription: Campanha Goodyear. - 2019
-    videoImage: /assets/uploads/thumb_goodyear.jpg
-    videoGif: /assets/uploads/thumb_goodyear.jpg
-    videoYoutubeLink: null
-    videoVimeoLink: "472862072"
-    videoCategory: Institucional
-    videoRoles:
-      - Editor
-      - Motion Designer
   - videoTitle: Novo Audi E-Tron
     videoDescription: Lançamento Audi E-Tron. - 2020
     videoImage: /assets/uploads/thumb_audietron.jpg
@@ -280,15 +249,6 @@ videoGrid:
     videoDescription: Evento Audi Experience para os modelos esportivos. - 2019
     videoImage: /assets/uploads/thumb_audiexperience.jpg
     videoGif: /assets/uploads/thumb_audiexperience.jpg
-    videoYoutubeLink: null
-    videoVimeoLink: "472864327"
-    videoCategory: Evento
-    videoRoles:
-      - Editor
-  - videoTitle: "Nissan Beach Tennis "
-    videoDescription: Open de Beach Tennis. - 2019
-    videoImage: /assets/uploads/thumb_beachtennis.jpg
-    videoGif: /assets/uploads/thumb_beachtennis.jpg
     videoYoutubeLink: null
     videoVimeoLink: "472864327"
     videoCategory: Evento
