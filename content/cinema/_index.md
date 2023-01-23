@@ -68,6 +68,17 @@ videoGrid:
       - Montador
       - Diretor
       - Roteirista
+  - videoTitle: Videoclipe Documental "Colecionador de Rótulos"
+    videoYoutubeLink: GfF5ytk1XxA
+    videoDescription: Videoclipe realizado para a música "Colecionador de Rótulos"
+      do Ep "Pra cada dia da semana" do grupo de rap "Kabbalah Mc's".
+    videoImage: /assets/uploads/screenshot-2023-01-23-at-18.37.46.png
+    videoGif: /assets/uploads/screenshot-2023-01-23-at-18.37.46.png
+    videoCategory: Curta-metragem
+    videoRoles:
+      - Montador
+      - Diretor de Fotografia
+      - Roteirista
   - videoTitle: A Carteira
     videoYoutubeLink: 6CxYkXHeMFs
     videoImage: /assets/uploads/a-carteira.jpeg
