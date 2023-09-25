@@ -259,16 +259,6 @@ videoGrid:
     videoRoles:
       - Editor
       - Motion Designer
-  - videoTitle: Novo Audi E-Tron
-    videoDescription: Lançamento Audi E-Tron. - 2020
-    videoImage: /assets/uploads/thumb_audietron.jpg
-    videoGif: /assets/uploads/thumb_audietron.jpg
-    videoYoutubeLink: null
-    videoVimeoLink: "472864052"
-    videoCategory: Publicidade
-    videoRoles:
-      - Editor
-      - Motion Designer
   - videoTitle: Audi R8
     videoDescription: Lançamento Audi R8. 2020
     videoImage: /assets/uploads/thumb_audir8.jpg
