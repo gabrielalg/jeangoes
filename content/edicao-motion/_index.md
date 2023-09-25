@@ -1,6 +1,14 @@
 ---
 title: Edição e Motion
 videoGrid:
+  - videoYoutubeLink: CVRqzcs_vp8
+    videoImage: /assets/uploads/__falaqueeuteovo_vinheta.png
+    videoDescription: Animação e sonorização do quadro "Fala que eu te Ovo" para o canal Omelete.
+    videoTitle: Vinheta "Fala Que Eu te OVO" - Omelete
+    videoCategory: Identidade
+    videoRoles:
+      - Motion Designer
+    videoGif: /assets/uploads/__falaqueeuteovo_vinheta.png
   - videoYoutubeLink: xBiciBw5gFc
     videoImage: /assets/uploads/screenshot-2023-09-25-at-00.42.43.png
     videoTitle: Reels CCXP Tudo Termina na CCXP
@@ -11,14 +19,6 @@ videoGrid:
       - Editor
       - Roteirista
     videoGif: /assets/uploads/screenshot-2023-09-25-at-00.42.43.png
-  - videoYoutubeLink: CVRqzcs_vp8
-    videoImage: /assets/uploads/__falaqueeuteovo_vinheta.png
-    videoDescription: Animação e sonorização do quadro "Fala que eu te Ovo" para o canal Omelete.
-    videoTitle: Vinheta "Fala Que Eu te OVO" - Omelete
-    videoCategory: Identidade
-    videoRoles:
-      - Motion Designer
-    videoGif: /assets/uploads/__falaqueeuteovo_vinheta.png
   - videoTitle: Vinheta "E SE?" Omelete
     videoDescription: Roteirização, Direção e Pós-Produção da vinheta para o novo
       programa do canal Omelete para o YouTube "E SE?"
@@ -48,6 +48,16 @@ videoGrid:
     videoCategory: Institucional
     videoRoles:
       - Motion Designer
+  - videoYoutubeLink: Va2VDj0IRZ4
+    videoTitle: Trailer Bruttal 2 Temporada
+    videoDescription: Trailer animado para a 2 temporada da Bruttal, que é o Selo de
+      histórias em quadrinhos estrelando os personagens originais do Omelete.
+    videoImage: /assets/uploads/0000000000000000002.jpeg
+    videoGif: /assets/uploads/0000000000000000002.jpeg
+    videoCategory: Mídias Sociais
+    videoRoles:
+      - Motion Designer
+      - Editor
   - videoTitle: Vinheta "Tribo Game Arena" - Gaules CCXP 2022
     videoImage: /assets/uploads/screenshot-2023-09-25-at-00.33.38.png
     videoYoutubeLink: IeyLhxPxV7E
@@ -56,6 +66,16 @@ videoGrid:
     videoCategory: Identidade
     videoRoles:
       - Motion Designer
+  - videoYoutubeLink: ffWksSgw_s8
+    videoDescription: Vídeo de divulgação do Poster oficial da CCXPW21, em
+      comemoração aos 20 anos do filme Harry Potter e a Pedra Filosofal.
+    videoTitle: Poster CCXPW21 - 20 anos Harry Potter e a Pedra Filosofal
+    videoImage: /assets/uploads/screen-shot-2022-04-01-at-16.19.55.png
+    videoCategory: Mídias Sociais
+    videoRoles:
+      - Editor
+      - Motion Designer
+    videoGif: /assets/uploads/screen-shot-2022-04-01-at-16.19.55.png
   - videoYoutubeLink: tRvnK6x7yeA
     videoCategory: Identidade
     videoRoles:
@@ -91,26 +111,6 @@ videoGrid:
     videoCategory: Mídias Sociais
     videoRoles:
       - Motion Designer
-  - videoYoutubeLink: ffWksSgw_s8
-    videoDescription: Vídeo de divulgação do Poster oficial da CCXPW21, em
-      comemoração aos 20 anos do filme Harry Potter e a Pedra Filosofal.
-    videoTitle: Poster CCXPW21 - 20 anos Harry Potter e a Pedra Filosofal
-    videoImage: /assets/uploads/screen-shot-2022-04-01-at-16.19.55.png
-    videoCategory: Mídias Sociais
-    videoRoles:
-      - Editor
-      - Motion Designer
-    videoGif: /assets/uploads/screen-shot-2022-04-01-at-16.19.55.png
-  - videoYoutubeLink: Va2VDj0IRZ4
-    videoTitle: Trailer Bruttal 2 Temporada
-    videoDescription: Trailer animado para a 2 temporada da Bruttal, que é o Selo de
-      histórias em quadrinhos estrelando os personagens originais do Omelete.
-    videoImage: /assets/uploads/0000000000000000002.jpeg
-    videoGif: /assets/uploads/0000000000000000002.jpeg
-    videoCategory: Mídias Sociais
-    videoRoles:
-      - Motion Designer
-      - Editor
   - videoYoutubeLink: dK-SJfC2N0U
     videoImage: /assets/uploads/0000000003.jpeg
     videoGif: /assets/uploads/0000000003.jpeg
