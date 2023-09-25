@@ -1,6 +1,24 @@
 ---
 title: Edição e Motion
 videoGrid:
+  - videoYoutubeLink: xBiciBw5gFc
+    videoImage: /assets/uploads/screenshot-2023-09-25-at-00.42.43.png
+    videoTitle: Reels CCXP Tudo Termina na CCXP
+    videoDescription: Roteiro, motion e edição de Reels humorístico para a CCXP 2022.
+    videoCategory: Mídias Sociais
+    videoRoles:
+      - Motion Designer
+      - Editor
+      - Roteirista
+    videoGif: /assets/uploads/screenshot-2023-09-25-at-00.42.43.png
+  - videoYoutubeLink: CVRqzcs_vp8
+    videoImage: /assets/uploads/__falaqueeuteovo_vinheta.png
+    videoDescription: Animação e sonorização do quadro "Fala que eu te Ovo" para o canal Omelete.
+    videoTitle: Vinheta "Fala Que Eu te OVO" - Omelete
+    videoCategory: Identidade
+    videoRoles:
+      - Motion Designer
+    videoGif: /assets/uploads/__falaqueeuteovo_vinheta.png
   - videoTitle: Vinheta "E SE?" Omelete
     videoDescription: Roteirização, Direção e Pós-Produção da vinheta para o novo
       programa do canal Omelete para o YouTube "E SE?"
@@ -13,6 +31,15 @@ videoGrid:
       - Diretor
       - Roteirista
       - Motion Designer
+  - videoYoutubeLink: zQQQpcZaCIg
+    videoCategory: Identidade
+    videoRoles:
+      - Motion Designer
+    videoTitle: Revelação Credencial Unlock CCXP 2023
+    videoDescription: Vídeo de divulgação em redes sociais da nova credencial de
+      Unlock da CCXP 2023.
+    videoImage: /assets/uploads/print-1920x1080.png
+    videoGif: /assets/uploads/print-1920x1080.png
   - videoTitle: Campanha Linker - Banco PJ
     videoYoutubeLink: LgRsdIjAMYg
     videoDescription: Motion Designer na campanha do Banco Linker para CNPJ
@@ -21,6 +48,22 @@ videoGrid:
     videoCategory: Institucional
     videoRoles:
       - Motion Designer
+  - videoTitle: Vinheta "Tribo Game Arena" - Gaules CCXP 2022
+    videoImage: /assets/uploads/screenshot-2023-09-25-at-00.33.38.png
+    videoYoutubeLink: IeyLhxPxV7E
+    videoDescription: Vinheta para o palco Tribo Game Arena na CCXP22
+    videoGif: /assets/uploads/screenshot-2023-09-25-at-00.33.38.png
+    videoCategory: Identidade
+    videoRoles:
+      - Motion Designer
+  - videoYoutubeLink: tRvnK6x7yeA
+    videoCategory: Identidade
+    videoRoles:
+      - Motion Designer
+    videoImage: /assets/uploads/quadros_chocadeira.png
+    videoTitle: Vinheta "Chocadeira" - Omelete CCXP22
+    videoDescription: Vinheta para o quadro "Chocadeira" do canal Omelete na CCXP22
+    videoGif: /assets/uploads/quadros_chocadeira.png
   - videoYoutubeLink: inVF4F0bjQg
     videoTitle: "CCXP WORLDS 21: POR QUE A CCXPW 21 FEZ HISTÓRIA?"
     videoDescription: Aftermovie CCXP Worlds 2021
