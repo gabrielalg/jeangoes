@@ -40,6 +40,15 @@ videoGrid:
       Unlock da CCXP 2023.
     videoImage: /assets/uploads/print-1920x1080.png
     videoGif: /assets/uploads/print-1920x1080.png
+  - videoDescription: Filme de revelação da credencial da CCXP23 em parceria com o Prime Video
+    videoTitle: CCXP23 + Prime Video - Revelação Credencial CCXP23
+    videoCategory: Publicidade
+    videoRoles:
+      - Motion Designer
+    videoVimeoLink: ""
+    videoYoutubeLink: rjA2MBetd5I
+    videoImage: /assets/uploads/screenshot-2023-09-27-at-20.50.14.png
+    videoGif: /assets/uploads/screenshot-2023-09-27-at-20.50.14.png
   - videoTitle: Campanha Linker - Banco PJ
     videoYoutubeLink: LgRsdIjAMYg
     videoDescription: Motion Designer na campanha do Banco Linker para CNPJ
@@ -245,16 +254,6 @@ videoGrid:
     videoGif: /assets/uploads/thumb_nissanindaiatuba.jpg
     videoYoutubeLink: null
     videoVimeoLink: "472856862"
-    videoCategory: Publicidade
-    videoRoles:
-      - Editor
-      - Motion Designer
-  - videoTitle: Você de Novo Honda Dahruj
-    videoDescription: Campanha publicitária Honda HR-V. - 2019
-    videoImage: /assets/uploads/thumb_vocedehondanovo.jpg
-    videoGif: /assets/uploads/thumb_vocedehondanovo.jpg
-    videoYoutubeLink: null
-    videoVimeoLink: "472847322"
     videoCategory: Publicidade
     videoRoles:
       - Editor
