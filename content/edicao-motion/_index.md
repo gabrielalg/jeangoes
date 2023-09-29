@@ -9,16 +9,14 @@ videoGrid:
     videoRoles:
       - Motion Designer
     videoGif: /assets/uploads/__falaqueeuteovo_vinheta.png
-  - videoYoutubeLink: xBiciBw5gFc
-    videoImage: /assets/uploads/screenshot-2023-09-25-at-00.42.43.png
-    videoTitle: Reels CCXP Tudo Termina na CCXP
-    videoDescription: Roteiro, motion e edição de Reels humorístico para a CCXP 2022.
+  - videoYoutubeLink: QjCml84On4M
     videoCategory: Mídias Sociais
     videoRoles:
       - Motion Designer
-      - Editor
-      - Roteirista
-    videoGif: /assets/uploads/screenshot-2023-09-25-at-00.42.43.png
+    videoImage: /assets/uploads/screenshot-2023-09-29-at-16.28.49.png
+    videoTitle: Stickers Instagram - CCXP23
+    videoDescription: Animação dos doodles da CCXP23 para stickers no Instagram
+    videoGif: /assets/uploads/screenshot-2023-09-29-at-16.28.49.png
   - videoTitle: Vinheta "E SE?" Omelete
     videoDescription: Roteirização, Direção e Pós-Produção da vinheta para o novo
       programa do canal Omelete para o YouTube "E SE?"
@@ -31,6 +29,16 @@ videoGrid:
       - Diretor
       - Roteirista
       - Motion Designer
+  - videoYoutubeLink: xBiciBw5gFc
+    videoImage: /assets/uploads/screenshot-2023-09-25-at-00.42.43.png
+    videoTitle: Reels CCXP Tudo Termina na CCXP
+    videoDescription: Roteiro, motion e edição de Reels humorístico para a CCXP 2022.
+    videoCategory: Mídias Sociais
+    videoRoles:
+      - Motion Designer
+      - Editor
+      - Roteirista
+    videoGif: /assets/uploads/screenshot-2023-09-25-at-00.42.43.png
   - videoYoutubeLink: zQQQpcZaCIg
     videoCategory: Identidade
     videoRoles:
@@ -199,16 +207,6 @@ videoGrid:
     videoRoles:
       - Editor
     videoDescription: Evento Patrocinado pela Nissan Dahruj. - 2019
-  - videoTitle: Fiat Forte de Portas Abertas
-    videoDescription: Reabertura Loja Fiat Forte. 2020
-    videoImage: /assets/uploads/thumb_reaberturafiatforte.jpg
-    videoGif: /assets/uploads/thumb_reaberturafiatforte.jpg
-    videoYoutubeLink: null
-    videoVimeoLink: "472849004"
-    videoCategory: Publicidade
-    videoRoles:
-      - Editor
-      - Motion Designer
   - videoTitle: Jeep Território
     videoDescription: Campanha Jeep Território 2019
     videoImage: /assets/uploads/thumb_jeepterritorio.jpg
