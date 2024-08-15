@@ -1,6 +1,24 @@
 ---
 title: Edição e Motion
 videoGrid:
+  - videoYoutubeLink: ri53tB51600
+    videoImage: /assets/uploads/captura-de-tela-2024-08-15-às-17.15.02.png
+    videoDescription: Case Study do novo KV feito para a CCXP24
+    videoTitle: Case Study KV CCXP24
+    videoCategory: Identidade
+    videoRoles:
+      - Motion Designer
+      - Editor
+    videoGif: /assets/uploads/captura-de-tela-2024-08-15-às-17.15.02.png
+  - videoYoutubeLink: nwY1CPSns-Y
+    videoTitle: Teaser Abertura de Vendas CCXP24
+    videoDescription: Teaser feito para a abertura de vendas de ingressos da CCXP24.
+    videoImage: /assets/uploads/captura-de-tela-2024-08-15-às-17.22.36.png
+    videoCategory: Publicidade
+    videoRoles:
+      - Motion Designer
+      - Editor
+    videoGif: /assets/uploads/captura-de-tela-2024-08-15-às-17.22.36.png
   - videoYoutubeLink: CVRqzcs_vp8
     videoImage: /assets/uploads/__falaqueeuteovo_vinheta.png
     videoDescription: Animação e sonorização do quadro "Fala que eu te Ovo" para o canal Omelete.
