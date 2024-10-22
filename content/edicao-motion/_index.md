@@ -19,6 +19,14 @@ videoGrid:
       - Motion Designer
       - Editor
     videoGif: /assets/uploads/captura-de-tela-2024-08-15-às-17.22.36.png
+  - videoYoutubeLink: watch?v=Gx9UY164ihc
+    videoImage: /assets/uploads/captura-de-tela-2024-10-22-às-16.28.22.png
+    videoGif: /assets/uploads/captura-de-tela-2024-10-22-às-16.28.22.png
+    videoTitle: gamescom latam 2024 | Aperte o start e vem jogar!
+    videoCategory: Publicidade
+    videoRoles:
+      - Motion Designer
+    videoDescription: Lyric vídeo publicitário para a gamescom latam 2024.
   - videoYoutubeLink: CVRqzcs_vp8
     videoImage: /assets/uploads/__falaqueeuteovo_vinheta.png
     videoDescription: Animação e sonorização do quadro "Fala que eu te Ovo" para o canal Omelete.
