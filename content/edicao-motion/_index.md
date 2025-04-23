@@ -35,6 +35,14 @@ videoGrid:
     videoRoles:
       - Motion Designer
     videoDescription: Lyric vídeo publicitário para a gamescom latam 2024.
+  - videoTitle: Campanha Linker - Banco PJ
+    videoYoutubeLink: LgRsdIjAMYg
+    videoDescription: Motion Designer na campanha do Banco Linker para CNPJ
+    videoImage: /assets/uploads/screenshot-2023-01-23-at-18.12.19.png
+    videoGif: /assets/uploads/screenshot-2023-01-23-at-18.12.19.png
+    videoCategory: Institucional
+    videoRoles:
+      - Motion Designer
   - videoYoutubeLink: CVRqzcs_vp8
     videoImage: /assets/uploads/__falaqueeuteovo_vinheta.png
     videoDescription: Animação e sonorização do quadro "Fala que eu te Ovo" para o canal Omelete.
@@ -91,14 +99,6 @@ videoGrid:
     videoYoutubeLink: rjA2MBetd5I
     videoImage: /assets/uploads/screenshot-2023-09-27-at-20.50.14.png
     videoGif: /assets/uploads/screenshot-2023-09-27-at-20.50.14.png
-  - videoTitle: Campanha Linker - Banco PJ
-    videoYoutubeLink: LgRsdIjAMYg
-    videoDescription: Motion Designer na campanha do Banco Linker para CNPJ
-    videoImage: /assets/uploads/screenshot-2023-01-23-at-18.12.19.png
-    videoGif: /assets/uploads/screenshot-2023-01-23-at-18.12.19.png
-    videoCategory: Institucional
-    videoRoles:
-      - Motion Designer
   - videoYoutubeLink: Va2VDj0IRZ4
     videoTitle: Trailer Bruttal 2 Temporada
     videoDescription: Trailer animado para a 2 temporada da Bruttal, que é o Selo de
