@@ -1,6 +1,14 @@
 ---
 title: Edição e Motion
 videoGrid:
+  - videoYoutubeLink: watch?v=oLEZZQObtrw
+    videoCategory: Publicidade
+    videoRoles:
+      - Motion Designer
+    videoTitle: Anatomia de uma CCXP
+    videoDescription: Filme de Abertura de Vendas de Ingressos para a CCXP25
+    videoImage: /assets/uploads/captura-de-tela-2025-04-23-às-16.08.49.png
+    videoGif: /assets/uploads/captura-de-tela-2025-04-23-às-16.08.49.png
   - videoYoutubeLink: ri53tB51600
     videoImage: /assets/uploads/captura-de-tela-2024-08-15-às-17.15.02.png
     videoDescription: Case Study do novo KV feito para a CCXP24
