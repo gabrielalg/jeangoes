@@ -1,7 +1,7 @@
 ---
 title: Edição e Motion
 videoGrid:
-  - videoYoutubeLink: watch?v=oLEZZQObtrw
+  - videoYoutubeLink: oLEZZQObtrw?si=-gyNLrNU7slnj_m8
     videoCategory: Publicidade
     videoRoles:
       - Motion Designer
