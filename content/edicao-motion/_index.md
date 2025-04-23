@@ -299,16 +299,6 @@ videoGrid:
     videoCategory: Publicidade
     videoRoles:
       - Editor
-  - videoTitle: Novo Audi Q3
-    videoDescription: Lançamento do Audi Q3. - 2020
-    videoImage: /assets/uploads/thumb_audiq3.jpg
-    videoGif: /assets/uploads/thumb_audiq3.jpg
-    videoYoutubeLink: null
-    videoVimeoLink: "472864821"
-    videoCategory: Publicidade
-    videoRoles:
-      - Editor
-      - Motion Designer
   - videoTitle: Audi Experience
     videoDescription: Evento Audi Experience para os modelos esportivos. - 2019
     videoImage: /assets/uploads/thumb_audiexperience.jpg
