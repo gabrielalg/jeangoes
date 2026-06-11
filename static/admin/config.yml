@@ -2,201 +2,201 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-locale: "pt"
+locale: 'pt'
 
-site_url: https://www.jeangoes.com/
-logo_url: "../assets/uploads/pages/logo-jean-rgb.svg"
-display_url: https://www.jeangoes.com/
+site_url: https://www.jeangoes.netlify.app/
+logo_url: '../assets/uploads/pages/logo-jean-rgb.svg'
+display_url: https://www.jeangoes.netlify.app/
 
 # publish_mode: editorial_workflow
 media_folder: static/assets/uploads
 public_folder: /assets/uploads
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "settings"
-    label: "Configurações Gerais"
+  - name: 'settings'
+    label: 'Configurações Gerais'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
     files:
-      - file: "config.yml"
-        label: "Configurações"
-        name: "config"
+      - file: 'config.yml'
+        label: 'Configurações'
+        name: 'config'
         fields:
           - {
-              label: "Configurações Gerais",
-              name: "params",
+              label: 'Configurações Gerais',
+              name: 'params',
               widget: object,
               fields:
                 [
-                  { label: "Logo (.svg) ", name: "logoSite", widget: image },
+                  { label: 'Logo (.svg) ', name: 'logoSite', widget: image },
                   {
-                    label: "Favicon do Site (.png) | 256 x 256",
-                    name: "favSite",
+                    label: 'Favicon do Site (.png) | 256 x 256',
+                    name: 'favSite',
                     widget: image,
-                    hint: "O Favicon é o ícone que aparece na barra dos navegadores.",
+                    hint: 'O Favicon é o ícone que aparece na barra dos navegadores.',
                   },
                   {
-                    label: "Thumbnail Retangular (.jpg ou .png) | 1200 x 630",
-                    name: "thumbRect",
+                    label: 'Thumbnail Retangular (.jpg ou .png) | 1200 x 630',
+                    name: 'thumbRect',
                     widget: image,
-                    hint: "A thumbnail é a imagem que aparece quando você compartilha o link do seu site.",
+                    hint: 'A thumbnail é a imagem que aparece quando você compartilha o link do seu site.',
                   },
                   {
-                    label: "Thumbnail Quadrada (.jpg ou .png)  | 630 x 630",
-                    name: "thumbQuad",
+                    label: 'Thumbnail Quadrada (.jpg ou .png)  | 630 x 630',
+                    name: 'thumbQuad',
                     widget: image,
-                    hint: "Algumas plataformas, como o WhatsApp, só reconhecem thumbnails quadradas e por isso é importante upar também essa versão.",
+                    hint: 'Algumas plataformas, como o WhatsApp, só reconhecem thumbnails quadradas e por isso é importante upar também essa versão.',
                   },
                   {
-                    label: "Descrição do Site",
-                    name: "description",
-                    widget: "text",
-                    hint: "A descrição do site aparece nos links compartilhados e na pesquisa do Google.",
+                    label: 'Descrição do Site',
+                    name: 'description',
+                    widget: 'text',
+                    hint: 'A descrição do site aparece nos links compartilhados e na pesquisa do Google.',
                   },
                   {
-                    label: "Foto de Perfil (Quadrada)",
-                    name: "fotoPerfil",
+                    label: 'Foto de Perfil (Quadrada)',
+                    name: 'fotoPerfil',
                     widget: image,
                   },
                   {
-                    label: "Descrição na Barra de Contato",
-                    name: "contactDescription",
-                    widget: "string",
-                    pattern: ["^.{0,100}$", "Máximo de 100 caracteres"],
-                    hint: "Máximo de 100 caracteres.",
+                    label: 'Descrição na Barra de Contato',
+                    name: 'contactDescription',
+                    widget: 'string',
+                    pattern: ['^.{0,100}$', 'Máximo de 100 caracteres'],
+                    hint: 'Máximo de 100 caracteres.',
                   },
                   {
-                    label: "Currículo",
-                    name: "curriculum",
-                    widget: "file",
+                    label: 'Currículo',
+                    name: 'curriculum',
+                    widget: 'file',
                     config,
                     multiple: false,
                   },
-                  { label: "E-mail", name: "contactEmail", widget: "string" },
+                  { label: 'E-mail', name: 'contactEmail', widget: 'string' },
                   {
-                    label: "Perfil do Vimeo",
-                    name: "perfilVimeo",
+                    label: 'Perfil do Vimeo',
+                    name: 'perfilVimeo',
                     widget: object,
                     fields:
                       [
                         {
-                          label: "Link",
-                          name: "linkVimeoContact",
+                          label: 'Link',
+                          name: 'linkVimeoContact',
                           widget: string,
                         },
                         {
-                          label: "Visualizar",
-                          name: "viewVimeo",
-                          widget: "boolean",
+                          label: 'Visualizar',
+                          name: 'viewVimeo',
+                          widget: 'boolean',
                         },
                       ],
                   },
                   {
-                    label: "Perfil do YouTube",
+                    label: 'Perfil do YouTube',
                     name: perfilYoutube,
                     widget: object,
                     fields:
                       [
                         {
-                          label: "Link",
-                          name: "linkYoutubeContact",
+                          label: 'Link',
+                          name: 'linkYoutubeContact',
                           widget: string,
                         },
                         {
-                          label: "Visualizar",
-                          name: "viewYoutube",
-                          widget: "boolean",
+                          label: 'Visualizar',
+                          name: 'viewYoutube',
+                          widget: 'boolean',
                         },
                       ],
                   },
                   {
-                    label: "Perfil do Instagram",
+                    label: 'Perfil do Instagram',
                     name: perfilInsta,
                     widget: object,
                     fields:
                       [
                         {
-                          label: "Link",
-                          name: "linkInstaContact",
+                          label: 'Link',
+                          name: 'linkInstaContact',
                           widget: string,
                         },
                         {
-                          label: "Visualizar",
-                          name: "viewInsta",
-                          widget: "boolean",
+                          label: 'Visualizar',
+                          name: 'viewInsta',
+                          widget: 'boolean',
                         },
                       ],
                   },
                   {
-                    label: "Link do WhastApp",
+                    label: 'Link do WhastApp',
                     name: perfilWhats,
                     widget: object,
                     fields:
                       [
                         {
-                          label: "Link",
-                          name: "linkWhatsContact",
+                          label: 'Link',
+                          name: 'linkWhatsContact',
                           widget: string,
                         },
                         {
-                          label: "Visualizar",
-                          name: "viewWhats",
-                          widget: "boolean",
+                          label: 'Visualizar',
+                          name: 'viewWhats',
+                          widget: 'boolean',
                         },
                       ],
                   },
                   {
-                    label: "Perfil do Linkedin",
+                    label: 'Perfil do Linkedin',
                     name: perfilLinkedin,
                     widget: object,
                     fields:
                       [
                         {
-                          label: "Link",
-                          name: "linkLinkedinContact",
+                          label: 'Link',
+                          name: 'linkLinkedinContact',
                           widget: string,
                         },
                         {
-                          label: "Visualizar",
-                          name: "viewLinkedin",
-                          widget: "boolean",
+                          label: 'Visualizar',
+                          name: 'viewLinkedin',
+                          widget: 'boolean',
                         },
                       ],
                   },
                   {
-                    label: "Perfil do Facebook",
+                    label: 'Perfil do Facebook',
                     name: perfilFace,
                     widget: object,
                     fields:
                       [
                         {
-                          label: "Link",
-                          name: "linkFaceContact",
+                          label: 'Link',
+                          name: 'linkFaceContact',
                           widget: string,
                         },
                         {
-                          label: "Visualizar",
-                          name: "viewFace",
-                          widget: "boolean",
+                          label: 'Visualizar',
+                          name: 'viewFace',
+                          widget: 'boolean',
                         },
                       ],
                   },
                 ],
             }
 
-  - name: "pages"
-    label: "Páginas"
+  - name: 'pages'
+    label: 'Páginas'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
     files:
-      - file: "content/_index.md"
-        label: "Início"
-        name: "inicio"
+      - file: 'content/_index.md'
+        label: 'Início'
+        name: 'inicio'
         fields:
-          - label: "ID do Vídeo no YouTube"
-            name: "linkYoutube"
+          - label: 'ID do Vídeo no YouTube'
+            name: 'linkYoutube'
             widget: string
             hint: "Colocar só o ID do vídeo no YouTube.
               Exemplo: o link do vídeo é 'https://youtu.be/mdi3b65XgKM',
@@ -204,14 +204,14 @@ collections: # A list of collections the CMS should be able to edit
               ATENÇÃO: Caso seja definido também um ID para o Vimeo, a prioridade é sempre do YOUTUBE.
               Caso você queira que apareça o vídeo do Vimeo, não preencha este campo."
             required: false
-          - label: "ID do Vídeo no Vimeo"
-            name: "linkVimeo"
+          - label: 'ID do Vídeo no Vimeo'
+            name: 'linkVimeo'
             widget: string
             hint: "Colocar só o ID do vídeo no Vimeo. Exemplo: o link do vídeo é 'https://vimeo.com/448393321', o ID que deve ser inserido é: 448393321."
             required: false
-      - file: "content/edicao-motion/_index.md"
-        label: "Edição e Motion"
-        name: "edicao-motion"
+      - file: 'content/edicao-motion/_index.md'
+        label: 'Edição e Motion'
+        name: 'edicao-motion'
         fields:
           - label: Edição e Motion
             name: videoGrid
@@ -229,7 +229,7 @@ collections: # A list of collections the CMS should be able to edit
               - label: Gif
                 name: videoGif
                 widget: image
-                hint: "Obs: O Gif só aparece quando o usuário passa o mouse na imagem do vídeo."
+                hint: 'Obs: O Gif só aparece quando o usuário passa o mouse na imagem do vídeo.'
               - label: ID do YouTube
                 name: videoYoutubeLink
                 widget: string
@@ -251,12 +251,12 @@ collections: # A list of collections the CMS should be able to edit
                 widget: select
                 options:
                   [
-                    "Publicidade",
-                    "Evento",
-                    "Institucional",
-                    "Mídias Sociais",
-                    "Identidade",
-                    "Reel",
+                    'Publicidade',
+                    'Evento',
+                    'Institucional',
+                    'Mídias Sociais',
+                    'Identidade',
+                    'Reel',
                   ]
               - label: Funções
                 name: videoRoles
@@ -264,19 +264,19 @@ collections: # A list of collections the CMS should be able to edit
                 multiple: true
                 options:
                   [
-                    "Assistente de Câmera",
-                    "Assistente de Direção",
-                    "Diretor",
-                    "Diretor de Fotografia",
-                    "Editor",
-                    "Montador",
-                    "Motion Designer",
-                    "Produtor",
-                    "Roteirista",
+                    'Assistente de Câmera',
+                    'Assistente de Direção',
+                    'Diretor',
+                    'Diretor de Fotografia',
+                    'Editor',
+                    'Montador',
+                    'Motion Designer',
+                    'Produtor',
+                    'Roteirista',
                   ]
-      - file: "content/cinema/_index.md"
-        label: "Cinema"
-        name: "cinema"
+      - file: 'content/cinema/_index.md'
+        label: 'Cinema'
+        name: 'cinema'
         fields:
           - label: Cinema
             name: videoGrid
@@ -294,7 +294,7 @@ collections: # A list of collections the CMS should be able to edit
               - label: Gif
                 name: videoGif
                 widget: image
-                hint: "Obs: O Gif só aparece quando o usuário passa o mouse na imagem do vídeo."
+                hint: 'Obs: O Gif só aparece quando o usuário passa o mouse na imagem do vídeo.'
               - label: ID do YouTube
                 name: videoYoutubeLink
                 widget: string
@@ -316,12 +316,12 @@ collections: # A list of collections the CMS should be able to edit
                 widget: select
                 options:
                   [
-                    "Publicidade",
-                    "Evento",
-                    "Institucional",
-                    "Curta-metragem",
-                    "Longa-metragem",
-                    "Roteiro",
+                    'Publicidade',
+                    'Evento',
+                    'Institucional',
+                    'Curta-metragem',
+                    'Longa-metragem',
+                    'Roteiro',
                   ]
               - label: Funções
                 name: videoRoles
@@ -329,22 +329,22 @@ collections: # A list of collections the CMS should be able to edit
                 multiple: true
                 options:
                   [
-                    "Assistente de Câmera",
-                    "Assistente de Direção",
-                    "Diretor",
-                    "Diretor de Fotografia",
-                    "Editor",
-                    "Montador",
-                    "Produtor",
-                    "Roteirista",
+                    'Assistente de Câmera',
+                    'Assistente de Direção',
+                    'Diretor',
+                    'Diretor de Fotografia',
+                    'Editor',
+                    'Montador',
+                    'Produtor',
+                    'Roteirista',
                   ]
               - label: Conteúdo
                 name: videoContent
                 required: false
                 widget: markdown
-      - file: "content/outros/_index.md"
-        label: "Outros"
-        name: "outros"
+      - file: 'content/outros/_index.md'
+        label: 'Outros'
+        name: 'outros'
         fields:
           - label: Outros
             name: otherGrid
@@ -379,31 +379,31 @@ collections: # A list of collections the CMS should be able to edit
               - label: Conteúdo
                 name: otherContent
                 widget: markdown
-      - file: "content/fita-crepe/_index.md"
-        label: "Fita Crepe Produções"
-        name: "fita-crepe"
+      - file: 'content/fita-crepe/_index.md'
+        label: 'Fita Crepe Produções'
+        name: 'fita-crepe'
         fields:
-          - label: "Logo Fita Crepe"
-            name: "logoFitaCrepe"
+          - label: 'Logo Fita Crepe'
+            name: 'logoFitaCrepe'
             widget: image
-          - label: "Banner Fita Crepe"
-            name: "bannerFitaCrepe"
+          - label: 'Banner Fita Crepe'
+            name: 'bannerFitaCrepe'
             widget: image
-          - label: "Texto do Bloco 1 (ícone de Câmera)"
-            name: "cameraText"
+          - label: 'Texto do Bloco 1 (ícone de Câmera)'
+            name: 'cameraText'
             widget: text
-          - label: "Texto do Bloco 2 (ícone de Computador)"
-            name: "computerText"
+          - label: 'Texto do Bloco 2 (ícone de Computador)'
+            name: 'computerText'
             widget: text
           - label: "Imagem ao lado do 'Sobre'"
-            name: "fotoContentFitaCrepe"
+            name: 'fotoContentFitaCrepe'
             widget: image
-          - label: "Sobre a Fita Crepe"
-            name: "contentFitaCrepe"
+          - label: 'Sobre a Fita Crepe'
+            name: 'contentFitaCrepe'
             widget: markdown
-      - file: "content/sobre-mim/_index.md"
-        label: "Sobre Mim"
-        name: "sobre-mim"
+      - file: 'content/sobre-mim/_index.md'
+        label: 'Sobre Mim'
+        name: 'sobre-mim'
         fields:
           - label: Sobre Mim
             name: aboutDescription

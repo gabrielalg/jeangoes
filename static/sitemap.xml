@@ -6,37 +6,37 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://www.jeangoes.com/</loc>
+  <loc>https://www.jeangoes.netlify.app/</loc>
   <lastmod>2020-12-16T03:11:27+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.jeangoes.com/edicao-motion/</loc>
+  <loc>https://www.jeangoes.netlify.app/edicao-motion/</loc>
   <lastmod>2020-12-16T03:11:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.jeangoes.com/cinema/</loc>
+  <loc>https://www.jeangoes.netlify.app/cinema/</loc>
   <lastmod>2020-12-16T03:11:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.jeangoes.com/outros/</loc>
+  <loc>https://www.jeangoes.netlify.app/outros/</loc>
   <lastmod>2020-12-16T03:11:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.jeangoes.com/fita-crepe/</loc>
+  <loc>https://www.jeangoes.netlify.app/fita-crepe/</loc>
   <lastmod>2020-12-16T03:11:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.jeangoes.com/sobre-mim/</loc>
+  <loc>https://www.jeangoes.netlify.app/sobre-mim/</loc>
   <lastmod>2020-12-16T03:11:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.jeangoes.com/assets/uploads/cv-jean-goes-2020.pdf</loc>
+  <loc>https://www.jeangoes.netlify.app/assets/uploads/cv-jean-goes-2020.pdf</loc>
   <lastmod>2020-12-16T03:11:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
